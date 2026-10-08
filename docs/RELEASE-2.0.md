@@ -1,5 +1,7 @@
 # PickPop 2.0 — entrega candidata local
 
+**Atualização de publicação:** após autorização expressa, a versão 2.0 foi integrada em `main`, enviada ao GitHub e confirmada no domínio oficial. Consulte `DEPLOY-2.0.md` para os testes em produção, a pontuação Lighthouse publicada e o aviso não crítico do selo Netlify. O texto abaixo preserva o registro da entrega local anterior à autorização.
+
 ## Situação
 
 MVP funcional implementado e testado localmente, continuando a identidade e os arquivos originais. A versão está na branch local `pickpop-2-mvp`; não foi enviada ao GitHub nem publicada na Netlify. O ZIP original e a versão de produção anterior foram preservados.

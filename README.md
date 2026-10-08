@@ -1,5 +1,7 @@
 # PickPop
 
+**PickPop 2.0 publicado:** https://pickpop.netlify.app/ — confira `docs/DEPLOY-2.0.md` para a verificação em produção e as pendências comerciais.
+
 Plataforma americana de descoberta de ideias de compra. A versão 2.0 continua o projeto original com Good Finder, filtros de estilo/orçamento, favoritos, quiz explicável, comparações, blog e coleções editoriais.
 
 ## Prévia local
