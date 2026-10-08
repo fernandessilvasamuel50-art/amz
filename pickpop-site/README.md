@@ -74,9 +74,9 @@ Configuração da conexão Git:
 | Functions directory | Manter padrão; não há funções neste MVP |
 | Environment variables | Nenhuma necessária atualmente |
 
-`netlify.toml` contém o build e diretório de publicação. É necessário Python 3.9+ no ambiente de build. Para envio manual autorizado, publique **somente o conteúdo de `pickpop-site/dist`**, não o repositório ou a pasta de fontes. Os cabeçalhos de segurança estão em `_headers`.
+O `netlify.toml` na raiz do repositório fixa base, build e diretório de publicação, independentemente dos padrões antigos do painel. A configuração dentro desta pasta também permite usá-la isoladamente. É necessário Python 3.9+ no ambiente de build. Para envio manual autorizado, publique **somente o conteúdo de `pickpop-site/dist`**, não o repositório ou a pasta de fontes. Os cabeçalhos de segurança estão em `_headers`.
 
-A conexão Git/Netlify pode publicar automaticamente um push na branch de produção. A evolução 2.0 foi mantida na branch local `pickpop-2-mvp`; nenhum deploy ou push dessa versão foi realizado. O servidor local replica os cabeçalhos para os testes, mas usa cache desativado para facilitar a revisão.
+A conexão Git/Netlify pode publicar automaticamente um push na branch de produção. O proprietário autorizou expressamente a publicação da versão 2.0 após a revisão local. A versão anterior está preservada pela tag `pickpop-before-2.0-20261008`; o resultado da publicação deve ser confirmado no domínio oficial. O servidor local replica os cabeçalhos para os testes, mas usa cache desativado para facilitar a revisão.
 
 ## Entrega e pendências
 

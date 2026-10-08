@@ -24,4 +24,4 @@ Visite `http://127.0.0.1:8082/`. Python 3.9+ é usado apenas para gerar páginas
 
 As 20 ideias são demonstrativas, sem produtos reais, preços atuais, API ou comissões. Amazon abre como pesquisa comum. Contato empresarial e integrações permanecem desativados até receber informações verdadeiras.
 
-A versão candidata permanece na branch local `pickpop-2-mvp`. Um push na branch ligada à Netlify pode gerar deploy; por isso a publicação exige autorização explícita.
+A versão 2.0 foi desenvolvida na branch `pickpop-2-mvp`; sua publicação foi autorizada expressamente pelo proprietário. O ponto anterior está preservado pela tag `pickpop-before-2.0-20261008`. A configuração Netlify na raiz define base `pickpop-site`, build `python build.py` e publicação `dist`.

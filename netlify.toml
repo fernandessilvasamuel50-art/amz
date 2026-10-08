@@ -1,0 +1,5 @@
+# Root configuration makes Git deployments independent of old dashboard defaults.
+[build]
+  base = "pickpop-site"
+  command = "python build.py"
+  publish = "dist"
