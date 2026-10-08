@@ -1,0 +1,6 @@
+# Local preview processes and browser-generated test output.
+*.log
+*.pid
+**/__pycache__/
+**/node_modules/
+pickpop-site/tests/artifacts/
