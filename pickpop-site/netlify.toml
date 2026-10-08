@@ -1,6 +1,7 @@
-# Deploy this folder as a static site. No build command is required.
+# Only deploy after the project owner approves the candidate.
 [build]
-  publish = "."
+  command = "python build.py"
+  publish = "dist"
 
 [[headers]]
   for = "/*"

@@ -17,10 +17,12 @@ if (Get-Command Get-AppxPackage -ErrorAction SilentlyContinue) {
 
 foreach ($pickpopCandidate in $pickpopCandidates) {
     $pickpopVersion = & $pickpopCandidate.Path @($pickpopCandidate.Prefix) --version 2>&1
-    if ($LASTEXITCODE -eq 0 -and "$pickpopVersion" -match 'Python 3\.') {
+    if ($LASTEXITCODE -eq 0 -and "$pickpopVersion" -match 'Python (\d+)\.(\d+)' -and ([int]$Matches[1] -gt 3 -or ([int]$Matches[1] -eq 3 -and [int]$Matches[2] -ge 9))) {
+        & $pickpopCandidate.Path @($pickpopCandidate.Prefix) (Join-Path $PSScriptRoot 'build.py')
+        if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
         & $pickpopCandidate.Path @($pickpopCandidate.Prefix) (Join-Path $PSScriptRoot 'serve.py') --port $Port
         exit $LASTEXITCODE
     }
 }
-Write-Host 'A working Python 3 installation is required. See README.md for preview instructions.'
+Write-Host 'A working Python 3.9 or newer installation is required. See README.md for preview instructions.'
 exit 1
