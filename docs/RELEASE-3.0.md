@@ -34,7 +34,15 @@ O campo de habilitação comercial corresponde à autorização e confirmação 
 
 Lighthouse mobile local: **97 Performance, 100 Accessibility, 100 Best Practices e 100 SEO**. São medidas de laboratório, não dados de usuários reais. A revisão visual final também removeu o círculo decorativo dos cartões que cobria parte das fotografias.
 
-Capturas e relatórios de laboratório ficam em `pickpop-site/tests/artifacts/`, ignorados pelo Git. Estado de produção será registrado após a verificação efetiva do domínio.
+Capturas e relatórios de laboratório ficam em `pickpop-site/tests/artifacts/`, ignorados pelo Git. Os resultados anteriores ao deploy foram preservados na subpasta `predeploy-3/`.
+
+## Publicação e testes no domínio oficial
+
+**Publicado e confirmado em https://pickpop.netlify.app/** em 8 de outubro de 2026 UTC, a partir do commit de aplicação `127d034` em `main`. Catálogo, configuração com `pickpop03-20`, sitemap, robots e CSS correspondem ao artefato final; as seis fotografias públicas são idênticas aos arquivos locais revisados. Todas as 28 páginas públicas conferidas retornaram HTTP 200; caminhos de segredos e desenvolvimento testados retornaram 404.
+
+O teste funcional completo em Chrome publicado foi **aprovado na repetição isolada: 87 layouts**, busca, filtros, orçamento honesto, favoritos, comparação, quiz, teclado, links, imagens e metadados. A primeira execução recebeu um HTTP 403 durante a navegação; isso foi investigado e não omitido do registro. Nenhum erro JavaScript não tratado ou chamada externa foi registrado na execução aprovada.
+
+Produção: **28 auditorias axe sem violações automáticas A/AA**. A asserção estrita de console falhou pelo único aviso conhecido do selo Netlify, que tenta executar script inline no iframe e é bloqueado pela CSP. O comando integral não foi considerado aprovado; a proteção permaneceu ativa. Lighthouse mobile publicado: **93/100/92/100** em Performance/Accessibility/Best Practices/SEO, respectivamente. Detalhes, ponto de retorno e ajuste opcional do selo estão em `DEPLOY-3.0.md`.
 
 ## Arquivos principais alterados
 

@@ -99,7 +99,7 @@ const output = path.join(__dirname, 'artifacts');
     for (const width of [360, 768, 1440]) {
       await page.setViewportSize({ width, height: 900 });
       for (const route of routes) {
-        const response = await page.goto(base + route); assert.equal(response.status(), route === '/missing-page' ? 404 : 200);
+        const response = await page.goto(base + route); assert.equal(response.status(), route === '/missing-page' ? 404 : 200, `Page status at ${width}: ${route}`);
         if (route === '/' || route === '/find/') await ready();
         assert.equal(await page.locator('html').getAttribute('lang'), 'en-US'); assert.equal(await page.locator('h1').count(), 1, route);
         assert.equal(await page.locator('link[rel="canonical"]').count(), 1); assert.equal(await page.locator('meta[name="description"]').count(), 1);

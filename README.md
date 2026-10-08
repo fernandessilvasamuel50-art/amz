@@ -1,6 +1,6 @@
 # PickPop
 
-**PickPop 3.0 — catálogo real em preparação para publicação:** https://pickpop.netlify.app/ — confira `docs/DEPLOY-2.0.md` para a verificação em produção e as pendências comerciais.
+**PickPop 3.0 — primeira entrega do catálogo real publicada:** https://pickpop.netlify.app/ — confira `docs/DEPLOY-3.0.md` e `docs/RELEASE-3.0.md` para a verificação em produção e as pendências comerciais. A meta de vinte produtos permanece pendente; seis passaram pelas verificações e estão públicos.
 
 Plataforma americana de descoberta de ideias de compra. A versão 2.0 continua o projeto original com Good Finder, filtros de estilo/orçamento, favoritos, quiz explicável, comparações, blog e coleções editoriais.
 
