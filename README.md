@@ -1,27 +1,27 @@
 # PickPop
 
-An American English shopping inspiration prototype with a colorful original design, a budget-first idea finder, category filters, locally saved favorites, and three editorial guides.
+Plataforma americana de descoberta de ideias de compra. A versão 2.0 continua o projeto original com Good Finder, filtros de estilo/orçamento, favoritos, quiz explicável, comparações, blog e coleções editoriais.
 
-The existing project is in [`pickpop-site/`](pickpop-site/). See its [README](pickpop-site/README.md) for features, local testing, and prototype limitations.
+## Prévia local
 
-## Local preview
+Abra `pickpop-site/start-local.cmd` no Windows, ou:
 
-On Windows, double-click `pickpop-site/start-local.cmd`. It uses an available Python 3 installation or the runtime bundled with the Codex desktop app.
-
-Alternatively:
-
-```bash
+```sh
 cd pickpop-site
-python serve.py
+python build.py
+python serve.py --directory dist --port 8082
 ```
 
-Open http://127.0.0.1:8080. The preview runs only on your computer. No build step is needed.
+Visite `http://127.0.0.1:8082/`. Python 3.9+ é usado apenas para gerar páginas e visualizar localmente. Não há publicação automática por esses comandos.
 
-## Project contents
+## Arquivos
 
-- `pickpop-site/`: reviewed HTML, CSS, JavaScript, guides, local launcher, and browser regression checks.
-- `pickpop-site-v1.zip`: the unchanged original prototype archive.
+- `pickpop-site/`: aplicação, templates, catálogo e testes. Consulte o [README completo](pickpop-site/README.md).
+- `docs/AUDIT-2.0.md`: auditoria e arquitetura recomendada.
+- `docs/CATALOG.md`: cadastro de dados e preparação das integrações.
+- `docs/RELEASE-2.0.md`: entrega por fase e validações executadas.
+- `pickpop-site-v1.zip`: arquivo original preservado.
 
-The catalog contains 20 illustrative shopping ideas and planning budgets. It does not provide verified products, current prices, a live Amazon API, or affiliate tracking. Amazon buttons open ordinary retail searches.
+As 20 ideias são demonstrativas, sem produtos reais, preços atuais, API ou comissões. Amazon abre como pesquisa comum. Contato empresarial e integrações permanecem desativados até receber informações verdadeiras.
 
-Uploading this repository does not deploy the website. Publishing requires the project owner's separate authorization.
+A versão candidata permanece na branch local `pickpop-2-mvp`. Um push na branch ligada à Netlify pode gerar deploy; por isso a publicação exige autorização explícita.

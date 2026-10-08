@@ -4,3 +4,4 @@
 **/__pycache__/
 **/node_modules/
 pickpop-site/tests/artifacts/
+.tools/

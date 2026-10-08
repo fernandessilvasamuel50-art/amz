@@ -16,7 +16,7 @@ The repository has a static, dependency-free runtime. Python is used only for lo
 4. Metadata is incomplete: no canonical URLs, sitemap, consistent OG images, or editorial directory. Do not index query-filter pages or demo detail pages as product offers.
 5. Saved ideas have defensive storage handling but no explicit persistence preference. Add an opt-out that also removes previously saved local data.
 6. Repeated header/footer markup can drift. Use shared static fragments at generation time while retaining existing article bodies and homepage illustrations.
-7. Google Fonts is an existing external request. Preserve typography, disclose it, and use preconnect/font display swap. No analytics/paid AI/API requests should be activated.
+7. Google Fonts was an existing external request. The final candidate preserves the same typefaces as local WOFF2 files with their SIL Open Font Licenses, font preloads and display swap. No analytics/paid AI/API requests are activated.
 8. No secret was found in reviewed application/configuration files. Current rendering uses DOM text rather than injecting search text. Future URLs, catalog fields, local IDs and static generation still need validation. Existing hosting headers are useful but no CSP is present.
 9. The contact channel, accepted Associate status, official links, authorized imagery and API credentials have not been supplied. Preserve these as explicit configuration gaps. Do not invent product records to resolve them.
 

@@ -1,86 +1,83 @@
-# pickpop. — Budget-first discovery site (prototype 1)
+# PickPop 2.0 — candidato local ao MVP
 
-A responsive, English-language shopping inspiration site with a fun original CSS design, a budget-first idea finder, saved ideas, four categories, and three original editorial articles.
+Evolução do projeto existente, com HTML estático, CSS original e módulos JavaScript. Não há React, banco de dados, servidor para visitantes ou dependências pagas. Todos os textos públicos estão em inglês americano.
 
-## Try locally
+## Visualizar
 
-On Windows, double-click `start-local.cmd` in this folder. The launcher finds a working Python 3 installation, or uses the Python runtime already bundled with the Codex desktop app. It does not install anything.
-Or run from a terminal, with no build dependencies:
+No Windows, abra `start-local.cmd`. Ele encontra Python 3 ou o runtime do Codex, gera as páginas e inicia uma prévia apenas neste computador.
 
-```bash
+Com Python 3.9 ou superior:
+
+```sh
 cd pickpop-site
-python serve.py
+python build.py
+python serve.py --directory dist --port 8082
 ```
 
-Visit `http://127.0.0.1:8080` in your browser. Press Ctrl+C in the terminal to stop.
-The preview binds only to this computer, disables caching while you edit, and serves the existing `404.html` for missing pages. It does not publish anything.
-If port 8080 is busy, use `python serve.py --port 8081` and open `http://127.0.0.1:8081`.
-On Windows you can also use `py -3 serve.py`. Do **not** double-click `index.html`: a server is needed for absolute paths like `/assets/...`.
+Abra `http://127.0.0.1:8082/`. Use Ctrl+C para parar. Se a porta estiver ocupada, escolha outra. Não abra `index.html` diretamente: o catálogo usa requisições locais e caminhos absolutos.
 
-## Technical review and local testing
+## Funcionalidades
 
-This revision continues the existing HTML/CSS/JavaScript prototype. The original ZIP is preserved in the parent folder. No live products, current prices, API integration, or affiliate tracking were added.
+- Good Finder: pesquisa real sobre o catálogo interno, cinco categorias, orçamento exato, estilos, prioridade e ordenação.
+- Favoritos com persistência opcional, tratamento de armazenamento bloqueado e sincronização entre abas.
+- Quiz Find Your Vibe em quatro etapas, com critérios determinísticos e motivos da seleção.
+- Comparação de até três ideias, carregamento, erros com nova tentativa e estados sem resultados.
+- Quatro guias editoriais, três coleções e páginas de detalhes, About, Privacy, Disclosure e Contact.
+- Páginas estáticas com canonical, metadados individuais, Open Graph, sitemap e Schema factual. Filtros e detalhes demonstrativos não são indexáveis.
+- Fontes locais com licenças, navegação por teclado, controles para celular e movimento reduzido.
 
-- Search combines keywords, category, and an inclusive planning budget. Hyphenated queries work; the slider uses $5 steps, including for incoming URL budgets.
-- Quick budget controls use "Up to" to match the inclusive cap. Sorting refers to illustrative budgets rather than verified product prices.
-- "Reset filters" restores the default $50 view. "See all ideas" clears filters and raises the cap to $300 to show all 20 examples. "Show all saved ideas" keeps the saved view while clearing its search/category/budget restrictions.
-- Saved IDs are validated and deduplicated; blocked browser storage keeps favorites for the current visit and explains the limitation. Changes synchronize between tabs on the same origin. Heart buttons keep keyboard focus after updates.
-- Shared navigation works on the homepage, all guides, informational pages, and the 404 page. Escape closes the mobile menu and returns focus; labels track open/closed state.
-- Mobile controls have larger touch targets, the search field avoids iOS focus zoom, and small screens use a single card column. Original colors, illustrations, editorial content, and brand styling remain.
-- Amazon buttons still open ordinary, untagged retail searches. PickPop's planning budget is not sent to Amazon.
+O catálogo preserva **20 conceitos ilustrativos**, não produtos específicos verificados. Os valores são alvos editoriais demonstrativos, nunca preços atuais ou garantia de compra dentro do orçamento. Itens verificados sem preço autorizado não são excluídos por uma falsa promessa de preço.
 
-Manual checks: search for `coffee mug`, try budgets of $5/$25/$100, combine Pets with `cat`, switch sorting, save/remove a heart, reload, use the Saved view, and follow each guide back to the finder. Check mobile menu open/close and keyboard navigation.
+Os botões atuais abrem pesquisas comuns na Amazon, sem tag ou comissão. API, links remunerados e analytics externos estão desativados. O endereço de contato depende de informação do proprietário; a página explica isso sem simular um formulário.
 
-An optional browser regression check is in `tests/smoke.cjs`. With the local preview running, Node.js, Playwright, and Chrome available:
+## Estrutura e edição
 
-```bash
-npm install --no-save --package-lock=false playwright
-node tests/smoke.cjs
+- `data/catalog.json`: fonte única do catálogo. Veja `../docs/CATALOG.md`.
+- `data/site.json`: configurações públicas, nunca segredos.
+- `templates/`: fonte das páginas, cabeçalho/rodapé compartilhados e artigos.
+- `build.py`: gera 36 páginas na raiz e um artefato limpo em `dist/`.
+- `assets/js/`: busca, favoritos, cartões, quiz, comparação e limites das futuras integrações.
+- `assets/css/styles.css`: identidade preservada; `platform.css`: evolução da experiência.
+- `assets/fonts/`: DM Sans e Outfit, com as licenças SIL OFL.
+- `tests/`: regras de catálogo, fluxos no navegador, acessibilidade e validação estática.
+
+Edite os templates; os HTML gerados são sobrescritos pelo build. `dist/` é gerado e ignorado pelo Git. O arquivo ZIP original permanece preservado. O build não publica o site.
+
+## Testes
+
+```sh
+python build.py
+python tests/validate_site.py
+node --test tests/catalog.test.mjs
 ```
 
-The default test browser is installed Chrome. Set `PICKPOP_BROWSER=msedge` to use installed Edge, or `PICKPOP_TEST_URL` for another local port. These are development-only dependencies; visitors and the static site require no npm setup. The check covers search, budgets, sorting, favorites/storage, empty states, keyboard focus, article links, menus, 404 handling, and seven pages at 320, 375, 390, 768, 1024, and 1440 pixels. It saves screenshots and results to `tests/artifacts/`. Browser emulation does not replace testing on physical phones.
+Os testes no navegador são opcionais para desenvolvimento; não fazem parte do build da Netlify. Com Node, Chrome e uma prévia em execução:
 
-## Publish on Netlify for free
+```sh
+npm install --no-save --package-lock=false playwright axe-core lighthouse
+```
 
-Publishing is a separate, future step and requires the project owner's authorization. Nothing in the local preview or tests publishes the site.
+Configure `PICKPOP_TEST_URL=http://127.0.0.1:8082` no terminal e execute `node tests/mvp.cjs` e `node tests/quality.cjs`. O teste de qualidade usa essa porta por padrão; o teste de fluxos usa 8080 quando a variável não é definida. `PICKPOP_BROWSER=msedge` seleciona Edge. `PICKPOP_AXE_PATH` permite usar uma cópia local do axe. Capturas e relatórios ficam em `tests/artifacts/`, ignorados no Git.
 
-1. Create/log into a Netlify account.
-2. In Netlify, choose to deploy a site manually (drag-and-drop deployment).
-3. Drag the **entire `pickpop-site` folder** (or upload the unzipped folder) to the deploy area.
-4. Netlify issues a `*.netlify.app` address; you can later attach a custom domain. Hosting is subject to your provider's current plan limits and policies.
-5. Check the pages, mobile layout, policy text, and external links before sharing publicly.
+O teste de fluxos verifica todas as 36 páginas em 360, 768 e 1440 px, busca, orçamento, filtros, favoritos, quiz, comparação, teclado, links e metadados. O axe verifica páginas representativas em mobile/desktop. Lighthouse pode ser executado separadamente contra a prévia local. Testes automáticos não equivalem à certificação WCAG ou à verificação em celulares físicos.
 
-No npm, build step, database, or payment method is needed for the code itself. The project is compatible with any ordinary static-file host serving paths rooted at `/`.
+## Netlify — somente após autorização
 
-## What really works now
+Configuração da conexão Git:
 
-- Free-text keyword search over **20 hand-authored example product ideas**.
-- Budget slider, quick budget pills, category filters, price sort.
-- Saved ideas using browser local storage, accessible button states.
-- Mobile-friendly layout, working navigation, three original articles, privacy/about pages.
-- Amazon search links that go to Amazon retail search **without any referral tag**.
+| Campo | Valor |
+| --- | --- |
+| Branch to deploy | `main`, apenas após aprovar e integrar o candidato |
+| Base directory | `pickpop-site` |
+| Build command | `python build.py` |
+| Publish directory | `dist` |
+| Functions directory | Manter padrão; não há funções neste MVP |
+| Environment variables | Nenhuma necessária atualmente |
 
-## What is intentionally not live
+`netlify.toml` contém o build e diretório de publicação. É necessário Python 3.9+ no ambiente de build. Para envio manual autorizado, publique **somente o conteúdo de `pickpop-site/dist`**, não o repositório ou a pasta de fontes. Os cabeçalhos de segurança estão em `_headers`.
 
-**This is not a live Amazon product search engine.** The data is manually curated *illustrative ideas*, not verified specific Amazon products. All indicated dollar amounts are example *planning budgets*, not actual current Amazon prices. Do not market those amounts as verified Amazon prices. The current links go to ordinary retail searches and **do not generate commissions**. No affiliate status is claimed.
+A conexão Git/Netlify pode publicar automaticamente um push na branch de produção. A evolução 2.0 foi mantida na branch local `pickpop-2-mvp`; nenhum deploy ou push dessa versão foi realizado. O servidor local replica os cabeçalhos para os testes, mas usa cache desativado para facilitar a revisão.
 
-Before real affiliate monetization:
+## Entrega e pendências
 
-1. Prepare original content that meets Amazon Associates review requirements.
-2. Apply to the Amazon.com Associates program using the actual public site.
-3. Once permitted, generate compliant **specific tracking links** via Amazon's tools and replace generic search URLs where appropriate.
-4. Add disclosures per local applicable requirements and Amazon's Program policies. The Amazon-required statement is: `As an Amazon Associate I earn from qualifying purchases.` **Only use after becoming an Amazon Associate.**
-5. For live images, pricing, availability and automatic catalog integration, use only officially authorized Amazon content/tools and comply with their license, caching and display restrictions. Never scrape Amazon product pages.
-6. Review the business name, privacy page, contact details, legal requirements, analytics/cookie practices, site URL and terms before launch.
-
-## Customize
-
-- Brand, colors, layout and responsiveness: `assets/css/styles.css` and `index.html`.
-- Shared menu behavior: `assets/js/navigation.js`.
-- Example catalog, budget, product-search links and filters: `assets/js/app.js` near `const products = [...]`.
-- Articles: `guides/*.html`.
-- Terms, disclosures and privacy: `about.html`, `privacy.html`.
-- Favicon: `assets/favicon.svg`.
-- Hosting configuration: `netlify.toml`.
-
-For later iterations, replace the prototype product cards with vetted content and integrate an official API when eligible, while retaining the usable finder, content pages and styling.
+Leia `../docs/AUDIT-2.0.md` para o diagnóstico e decisões, `../docs/RELEASE-2.0.md` para os resultados executados e `../docs/CATALOG.md` para cadastro e limites comerciais. A aprovação de publicação, um contato verdadeiro, os produtos verificados, links oficiais e eventuais acessos externos dependem do proprietário.
