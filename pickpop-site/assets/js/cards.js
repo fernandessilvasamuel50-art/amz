@@ -12,7 +12,11 @@ export function productCard(match, { config, store, onSave, comparison = [], onC
   const card = element('article', 'product-card');
   const visual = element('div', 'product-visual'); visual.style.background = item.color;
   const chip = element('span', 'product-chip', item.chip);
-  const icon = element('span', 'product-icon', item.emoji); icon.setAttribute('aria-hidden', 'true');
+  let icon;
+  if (item.image?.type === 'photo' && item.image.authorized && /^\/assets\/products\/[a-z0-9-]+\.webp$/.test(item.image.src)) {
+    icon = element('img', 'product-photo'); icon.src = item.image.src; icon.alt = item.image.alt;
+    icon.width = item.image.width; icon.height = item.image.height; icon.loading = 'lazy'; icon.decoding = 'async';
+  } else { icon = element('span', 'product-icon', item.emoji); icon.setAttribute('aria-hidden', 'true'); }
   const heart = element('button', 'heart-button' + (store.ids.includes(item.id) ? ' active' : ''), store.ids.includes(item.id) ? '♥' : '♡');
   heart.type = 'button'; heart.dataset.productId = item.id;
   heart.setAttribute('aria-label', `${store.ids.includes(item.id) ? 'Remove from' : 'Save to'} favorites: ${item.name}`);
@@ -38,9 +42,9 @@ export function productCard(match, { config, store, onSave, comparison = [], onC
   link.setAttribute('aria-label', `${destination.label} for ${item.name} (opens in a new tab; verify the current price)`);
   link.addEventListener('click', () => track('retailer_click', { id: item.id, sponsored: destination.sponsored }));
   if (destination.sponsored) copy.append(element('p', 'affiliate-note', 'Paid link. As an Amazon Associate I earn from qualifying purchases.'));
-  copy.append(category, heading, description, why, reference, link);
+  copy.append(category, element('p', 'product-brand', item.brand || 'Editorial concept'), heading, description, why, reference, link);
   const actions = element('div', 'card-tools');
-  const more = element('a', '', 'Explore this idea →'); more.href = detail.href;
+  const more = element('a', '', 'Details & photo credit →'); more.href = detail.href;
   actions.append(more);
   if (onCompare) {
     const compare = element('button', 'compare-choice', 'Compare'); compare.type = 'button'; compare.dataset.compareId = item.id;

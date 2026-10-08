@@ -2,13 +2,13 @@ import { CATEGORIES, LABELS, money, parseBudget, matchCatalog } from './catalog.
 import { element, productCard } from './cards.js';
 import { track } from './metrics.js';
 
-export function initQuiz({ items, config, store }) {
+export function initQuiz({ items, config, store, provider }) {
   const root = document.getElementById('quiz-app');
   if (!root) return;
   let step = 0;
   const answers = { category: 'kitchen', budget: 50, style: 'any', priority: 'everyday-convenience' };
   const questions = [
-    { key: 'category', title: 'What are you shopping for?', options: CATEGORIES.map(key => [key, key[0].toUpperCase() + key.slice(1), { kitchen: '☕', home: '⌂', tech: '⌘', pets: '♡', gifts: '✦' }[key]]) },
+    { key: 'category', title: 'What are you shopping for?', options: CATEGORIES.map(key => [key, key[0].toUpperCase() + key.slice(1), { kitchen: '☕', home: '⌂', organization: '✳', tech: '⌘', pets: '♡', gifts: '✦' }[key]]) },
     { key: 'budget', title: "What's your budget?", options: [5, 10, 25, 50, 100, 200].map(value => [value, money(value), '$']) },
     { key: 'style', title: "What's your style?", options: [['any', 'A little of everything', '✳'], ['minimalist', 'Minimalist', '○'], ['modern', 'Modern', '◇'], ['cozy', 'Cozy', '☼']] },
     { key: 'priority', title: 'What matters most to you?', options: ['saving-money', 'small-spaces', 'everyday-convenience', 'aesthetic-design', 'gift-giving'].map(key => [key, LABELS[key], '✦']) }
@@ -53,11 +53,11 @@ export function initQuiz({ items, config, store }) {
       actions.append(next); root.append(actions);
       if (focus) heading.focus({ preventScroll: true });
     } else {
-      const matches = matchCatalog(items, { category: answers.category, budget: answers.budget, preferences: answers.style === 'any' ? [] : [answers.style], priority: answers.priority, sort: 'featured' }, config);
+      const matches = provider.search({ category: answers.category, budget: answers.budget, preferences: answers.style === 'any' ? [] : [answers.style], priority: answers.priority, sort: 'featured' });
       const heading = element('h3', 'quiz-heading', matches.length ? 'A little more you.' : 'Your vibe deserves a better match.'); heading.tabIndex = -1;
       root.append(heading, element('p', 'quiz-answer-summary', `${answers.category} · ${money(answers.budget)} budget preference · ${answers.style === 'any' ? 'any style' : LABELS[answers.style]} · ${LABELS[answers.priority]}`));
-      root.append(element('p', 'quiz-honesty', 'These are example concepts selected by category, editorial style tags, priority, and illustrative planning target. They are not verified Amazon products or prices.'));
-      if (!matches.length) root.append(element('p', '', 'Our starter catalog has no idea matching all four answers. Try another style, priority, or budget; we will not substitute unrelated ideas.'));
+      root.append(element('p', 'quiz-honesty', 'These source-reviewed products match your category, editorial style, and priority. No live prices are available: your budget is a preference, not a price guarantee.'));
+      if (!matches.length) root.append(element('p', '', 'Our curated catalog has no product matching these answers. Try another category, style, or priority; we will not substitute unrelated ideas.'));
       const grid = element('div', 'product-grid quiz-results');
       matches.slice(0, 3).forEach(match => grid.append(productCard(match, { config, store, onSave: id => { store.toggle(id); } })));
       root.append(grid);

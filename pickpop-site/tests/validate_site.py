@@ -78,7 +78,15 @@ def validate():
                 assert 'noopener' in attrs.get('rel', ''), page
     locations = [element.text for element in ET.parse(DIST / 'sitemap.xml').findall('.//{http://www.sitemaps.org/schemas/sitemap/0.9}loc')]
     assert len(locations) == len(set(locations))
-    assert all('/ideas/' not in url and '/find/' not in url and '/contact/' not in url for url in locations)
+    assert all('/find/' not in url and '/contact/' not in url for url in locations)
+    catalog = json.loads((ROOT / 'data/catalog.json').read_text(encoding='utf-8'))
+    for item in catalog['items']:
+        assert item['verification']['status'] == 'verified' and item['price'] is None
+        assert origin + '/ideas/' + item['id'] + '/' in locations
+        assert item['image']['authorized'] and item['image']['variantReviewed']
+        assert target(item['image']['src']).is_file()
+        assert item['affiliateUrl'] == item['productUrl'] + '?tag=pickpop03-20'
+    assert len(list((ROOT / 'templates/articles').glob('*.html'))) >= 10
     assert all(target(url).is_file() for url in locations)
     assert 'Sitemap: ' + origin + '/sitemap.xml' in (DIST / 'robots.txt').read_text()
     assert (DIST / 'assets/social-card.png').read_bytes().startswith(b'\x89PNG')

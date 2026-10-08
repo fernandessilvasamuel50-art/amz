@@ -1,4 +1,4 @@
-export const CATEGORIES = ['kitchen', 'home', 'tech', 'pets', 'gifts'];
+export const CATEGORIES = ['kitchen', 'home', 'organization', 'tech', 'pets', 'gifts'];
 export const PREFERENCES = ['minimalist', 'modern', 'cozy', 'budget-friendly', 'space-saving', 'gift-ideas'];
 export const PRIORITIES = ['saving-money', 'small-spaces', 'everyday-convenience', 'aesthetic-design', 'gift-giving'];
 export const LABELS = {
@@ -34,6 +34,7 @@ export function validateCatalog(data) {
     if (item.verification.status === 'demo' && (item.price || item.asin || item.productUrl || item.affiliateUrl || item.benefits.length || item.features.length)) throw new Error('Demo records cannot claim real product facts');
     if (item.planningBudget !== null && parseBudget(item.planningBudget, null) === null) throw new Error('Invalid planning budget');
     if (item.verification.status === 'verified' && (!item.verification.sources?.length || !item.verification.reviewedAt)) throw new Error('Verified records need sources and review date');
+    if (item.verification.status === 'verified' && (!item.brand || !/^[A-Z0-9]{10}$/.test(item.asin) || item.productUrl !== 'https://www.amazon.com/dp/' + item.asin || item.image?.type !== 'photo' || !item.image.authorized || !item.image.variantReviewed || !/^\/assets\/products\/[a-z0-9-]+\.webp$/.test(item.image.src) || !item.image.author || !item.image.licenseUrl)) throw new Error('Real products require verified identities and licensed variant-reviewed photos');
   }
   return data.items;
 }
@@ -67,7 +68,7 @@ export function matchCatalog(items, filters, config) {
     if (filters.savedOnly && !filters.saved?.includes(item.id)) continue;
     if (!preferences.every(preference => item.styles.includes(preference))) continue;
     if (filters.priority && !item.priorities.includes(filters.priority)) continue;
-    const haystack = normalize([item.name, item.tags, item.category, item.description, ...item.styles].join(' '));
+    const haystack = normalize([item.name, item.brand || '', item.model || '', item.tags, item.search, item.category, item.description, ...(item.features || []), ...item.styles].join(' '));
     if (!words.every(word => haystack.includes(word))) continue;
     const price = authorizedPrice(item, config);
     // Demo targets preserve the prototype's idea filter; they are never actual prices.
@@ -86,6 +87,7 @@ export function matchCatalog(items, filters, config) {
   }
   const direction = filters.sort === 'asc' ? 1 : -1;
   matches.sort((a, b) => {
+    if (filters.sort === 'name') return a.item.name.localeCompare(b.item.name, 'en-US');
     if (['asc', 'desc'].includes(filters.sort)) {
       if (a.reference === null && b.reference !== null) return 1;
       if (b.reference === null && a.reference !== null) return -1;
@@ -98,7 +100,7 @@ export function matchCatalog(items, filters, config) {
 
 export function retailerDestination(item, config) {
   const affiliate = config?.affiliate;
-  if (item.verification.status === 'verified' && affiliate?.enabled && affiliate.approved && affiliate.associateTag && item.affiliateVerification?.status === 'owner-provided') {
+  if (item.verification.status === 'verified' && affiliate?.enabled && affiliate.approved && affiliate.associateTag && ['owner-provided', 'owner-tag-confirmed'].includes(item.affiliateVerification?.status)) {
     const url = safeAmazonURL(item.affiliateUrl);
     if (url && (new URL(url).hostname === 'amzn.to' || new URL(url).searchParams.get('tag') === affiliate.associateTag)) return { url, sponsored: true, label: 'View on Amazon' };
   }

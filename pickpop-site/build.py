@@ -42,7 +42,7 @@ def validate():
         if not re.fullmatch(r'[a-z0-9-]+', item['id']) or item['id'] in ids:
             raise ValueError('Invalid or duplicate catalog ID')
         ids.add(item['id'])
-        if item['category'] not in ['kitchen', 'home', 'tech', 'pets', 'gifts'] or not re.fullmatch(r'#[0-9a-fA-F]{6}', item['color']):
+        if item['category'] not in ['kitchen', 'home', 'organization', 'tech', 'pets', 'gifts'] or not re.fullmatch(r'#[0-9a-fA-F]{6}', item['color']):
             raise ValueError('Invalid catalog presentation')
         if not all(style in LABELS for style in item['styles']):
             raise ValueError('Invalid style tag')
@@ -52,6 +52,25 @@ def validate():
             raise ValueError('Demo items must not claim real product data')
         if item['verification']['status'] == 'verified' and (not item['verification']['sources'] or not item['verification']['reviewedAt']):
             raise ValueError('Verified items require factual sources and review date')
+        if item['verification']['status'] == 'verified':
+            if not item.get('brand') or not re.fullmatch(r'[A-Z0-9]{10}', item.get('asin', '')):
+                raise ValueError('Real products require a brand and verified ASIN')
+            if item['productUrl'] != 'https://www.amazon.com/dp/' + item['asin']:
+                raise ValueError('Product destination must match the verified ASIN')
+            image = item['image']
+            if image.get('type') != 'photo' or not image.get('authorized') or not image.get('variantReviewed'):
+                raise ValueError('Published real products require licensed, variant-reviewed photographs')
+            if not re.fullmatch(r'/assets/products/[a-z0-9-]+\.webp', image.get('src', '')) or not (ROOT / image['src'].lstrip('/')).is_file():
+                raise ValueError('Missing authorized local product photo')
+            if not all(image.get(key) for key in ['author', 'license', 'licenseUrl', 'source', 'changes', 'alt', 'width', 'height']):
+                raise ValueError('Photo attribution is incomplete')
+            if not image['licenseUrl'].startswith('https://creativecommons.org/'):
+                raise ValueError('Only reviewed open image licenses are supported in this release')
+            if item.get('price') is not None:
+                raise ValueError('Current release has no authorized price source')
+            paid = item.get('affiliateUrl')
+            if paid and paid != item['productUrl'] + '?tag=' + CONFIG['affiliate']['associateTag']:
+                raise ValueError('Affiliate URL must preserve the verified ASIN and configured owner tag')
 
 
 def safe_destination(item):
@@ -64,7 +83,7 @@ def safe_destination(item):
             if url.scheme != 'https' or url.hostname not in ['amazon.com', 'www.amazon.com', 'amzn.to'] or url.username or url.password:
                 raise ValueError('Invalid Amazon destination')
             paid = key == 'affiliateUrl'
-            if paid and CONFIG['affiliate']['enabled'] and item.get('affiliateVerification', {}).get('status') == 'owner-provided':
+            if paid and CONFIG['affiliate']['enabled'] and item.get('affiliateVerification', {}).get('status') in ['owner-provided', 'owner-tag-confirmed']:
                 from urllib.parse import parse_qs
                 if url.hostname == 'amzn.to' or parse_qs(url.query).get('tag') == [CONFIG['affiliate']['associateTag']]:
                     return value, True, 'View on Amazon'
@@ -107,8 +126,18 @@ def page(route, title, description, content, interactive=False, index=True, kind
         INDEXABLE.append(canonical)
 
 
+def photo(item, class_name):
+    image = item['image']
+    return f'<img class="{class_name}" src="{ESC(image["src"], quote=True)}" alt="{ESC(image["alt"], quote=True)}" width="{image["width"]}" height="{image["height"]}" loading="lazy" decoding="async">'
+
+
+def photo_credit(item):
+    image = item['image']
+    return f'<p class="photo-credit">Photo: {ESC(image["author"])} · <a href="{ESC(image["source"], quote=True)}" target="_blank" rel="noopener noreferrer">Original photograph</a> · <a href="{ESC(image["licenseUrl"], quote=True)}" target="_blank" rel="noopener noreferrer">{ESC(image["license"])}</a>. {ESC(image["changes"])} This photograph and its WebP adaptation remain under the stated image license. No endorsement is implied.</p>'
+
+
 def static_card(item):
-    return f'''<article class="collection-idea"><span class="collection-icon" aria-hidden="true">{ESC(item['emoji'])}</span><div><span class="product-category">Example {ESC(item['category'])} idea</span><h3><a href="/ideas/{item['id']}/">{ESC(item['name'])}</a></h3><p>{ESC(item['description'])}</p><a class="text-link" href="/ideas/{item['id']}/">What to consider →</a></div></article>'''
+    return f'''<article class="collection-idea">{photo(item, 'collection-photo')}<div><span class="product-category">{ESC(item['brand'])} · {ESC(item['category'])}</span><h3><a href="/ideas/{item['id']}/">{ESC(item['name'])}</a></h3><p>{ESC(item['description'])}</p><a class="text-link" href="/ideas/{item['id']}/">Details & photo credit →</a></div></article>'''
 
 
 def generate():
@@ -132,15 +161,15 @@ def generate():
     page('/guides/', 'The Good Edit — Home & Kitchen Guides | PickPop', 'Practical guides for small kitchens, thoughtful gifts, coffee corners, and everyday spaces. Choose with intention and keep your budget in view.', intro('Ideas worth <em>opening.</em>', 'Useful reads for real decisions. No invented hands-on tests, product ratings, or pressure to buy.', 'THE GOOD EDIT') + '<div class="shell editorial-grid">' + ''.join(guides) + '</div>')
 
     collections = [
-        ('small-kitchen', 'Small kitchen, big intention.', 'Make the most of a small space.', 'Choose an idea that solves a daily annoyance before adding another object to the counter. Measure your available space, check care instructions, and consider storage between uses.', ['spice', 'glass', 'rack', 'blender'], '/guides/small-kitchen.html'),
-        ('coffee-corner', 'Your little coffee corner.', 'A small ritual, thoughtfully chosen.', 'Start with how you actually drink coffee. The following concepts are shopping prompts, not tested products or guaranteed bargains. Think about cleanup, storage, and what you already own.', ['mug', 'frother'], '/guides/coffee-maker-small-apartment.html'),
-        ('feel-good-home', 'A feel-good kind of home.', 'Personality without the extra clutter.', 'Pick one space you use every day and one problem to improve. Check dimensions and materials rather than buying everything that fits a look.', ['basket', 'lamp', 'plant', 'candle'], '/guides/smart-gifts.html')
+        ('small-kitchen', 'Small kitchen, big intention.', 'Make room for the routine you enjoy.', 'Measure your space and check the complete setup before choosing. A manual brewer needs space for water preparation and filters as well as the brewer itself.', [i['id'] for i in CATALOG['items'] if i['category'] == 'kitchen'], '/guides/small-kitchen.html'),
+        ('coffee-corner', 'Your little coffee corner.', 'A small ritual, thoughtfully chosen.', 'Start with how you actually drink coffee. These source-reviewed options are not hands-on reviews or guaranteed bargains. Think about cleanup, consumables, and what you already own.', [i['id'] for i in CATALOG['items'] if 'coffee' in i['tags']], '/guides/coffee-maker-small-apartment.html'),
+        ('feel-good-home', 'A feel-good kind of home.', 'A considered desk belongs at home, too.', 'Choose a tool for a task, not just a look. Compare connectivity, footprint, and the equipment you already use before adding anything to your workspace.', [i['id'] for i in CATALOG['items'] if i['category'] in ['home', 'organization', 'tech']], '/guides/desk-reset.html')
     ]
     collection_tiles = []
     by_id = {item['id']: item for item in CATALOG['items']}
     for slug, title, subtitle, editorial, ids, guide in collections:
         route = '/collections/' + slug + '/'
-        content = intro(ESC(title), ESC(subtitle), 'A PICKPOP COLLECTION') + f'<div class="shell collection-body"><p>{ESC(editorial)}</p><p class="results-disclaimer">These are illustrative concepts, not verified products or current offers. No retailer prices are displayed.</p><div class="collection-grid">' + ''.join(static_card(by_id[id]) for id in ids) + f'</div><a class="btn btn-dark" href="{guide}">Read the related guide →</a><a class="text-link" href="/find/">Make your own shortlist →</a></div>'
+        content = intro(ESC(title), ESC(subtitle), 'A PICKPOP COLLECTION') + f'<div class="shell collection-body"><p>{ESC(editorial)}</p><p class="results-disclaimer">Source-reviewed products; no live price or stock information. As an Amazon Associate I earn from qualifying purchases.</p><div class="collection-grid">' + ''.join(static_card(by_id[id]) for id in ids) + f'</div><a class="btn btn-dark" href="{guide}">Read the related guide →</a><a class="text-link" href="/find/">Make your own shortlist →</a></div>'
         page(route, title + ' | PickPop', subtitle + ' Explore editorial shopping prompts and practical considerations before choosing a specific product.', content)
         collection_tiles.append(f'<article class="collection-tile"><span aria-hidden="true">✳</span><p class="overline">THE INTENTIONAL EDIT</p><h2><a href="{route}">{ESC(title)}</a></h2><p>{ESC(subtitle)}</p><a class="text-link" href="{route}">Explore the collection →</a></article>')
     page('/collections/', 'Thoughtful Shopping Collections | PickPop', 'Explore small-kitchen ideas, coffee-corner inspiration, and feel-good home concepts with practical editorial guidance.', intro('A few good <em>directions.</em>', 'Thoughtful edits for the corners of life you care about. Browse a theme, then make it yours.', 'COLLECTIONS') + '<div class="shell collections-grid">' + ''.join(collection_tiles) + '</div>')
@@ -152,8 +181,11 @@ def generate():
         facts = '<p>No product specifications, reviews, prices, or availability have been verified for this concept.</p>' if demo else '<ul>' + ''.join('<li>' + ESC(str(fact)) + '</li>' for fact in item['benefits'] + item['features']) + '</ul>'
         disclosure = '<p class="affiliate-note">Paid link. As an Amazon Associate I earn from qualifying purchases.</p>' if paid else '<p class="p-small">No paid affiliate link is active for this idea.</p>'
         tags = ', '.join(LABELS[style] for style in item['styles'])
-        content = f'''<div class="shell page-shell"><nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a> / <a href="/collections/">Collections</a> / {ESC(item['name'])}</nav><div class="idea-layout"><div class="idea-illustration" style="background:{item['color']}" role="img" aria-label="Illustrative symbol for {ESC(item['name'], quote=True)}"><span aria-hidden="true">{ESC(item['emoji'])}</span></div><article class="idea-copy"><p class="overline">{ESC(status)}</p><h1>{ESC(item['name'])}</h1><p>{ESC(item['description'])}</p><h2>Why explore this idea?</h2><p>Our catalog associates this concept with {ESC(tags.lower())}. These are editorial discovery tags, not manufacturer claims.</p><h2>Before you choose</h2><ul>{''.join('<li>'+ESC(text)+'</li>' for text in item['considerations'])}</ul><h2>What we know</h2>{facts}{disclosure}<a class="btn btn-coral" href="{ESC(url, quote=True)}" target="_blank" rel="noopener noreferrer {'sponsored' if paid else 'nofollow'}">{label} ↗</a><p class="p-small">Opens Amazon in a new tab. Check the specific product, final price, taxes, delivery, and returns there. PickPop does not sell or fulfill orders.</p><a class="text-link" href="/find/?{ESC(urlencode({'q': item['name']}), quote=True)}#finder">Back to the finder →</a></article></div></div>'''
+        sources_html = ''.join('<li><a href="' + ESC(url, quote=True) + '" target="_blank" rel="noopener noreferrer">' + ESC(urlparse(url).hostname) + ' product information</a></li>' for url in item['verification']['sources'])
+        content = f'''<div class="shell page-shell"><nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a> / <a href="/collections/">Collections</a> / {ESC(item['name'])}</nav><div class="idea-layout"><figure class="idea-illustration product-detail-photo">{photo(item, "detail-photo")}{photo_credit(item)}</figure><article class="idea-copy"><p class="overline">{ESC(status)}</p><h1>{ESC(item['name'])}</h1><p>{ESC(item['description'])}</p><h2>Why explore this idea?</h2><p>Our catalog associates this concept with {ESC(tags.lower())}. These are editorial discovery tags, not manufacturer claims.</p><h2>Before you choose</h2><ul>{''.join('<li>'+ESC(text)+'</li>' for text in item['considerations'])}</ul><h2>What we know</h2><p><strong>{ESC(item.get("brand", ""))}</strong> · Model: {ESC(item.get("model", ""))} · ASIN: {ESC(item.get("asin", ""))}</p>{facts}<h2>Sources & verification</h2><p>Reviewed {ESC(item["verification"]["reviewedAt"])}. Model identity and listed characteristics are source reviewed; current price and availability are not verified. These are editorial recommendations, not hands-on tests.</p><ul class="source-list">{sources_html}</ul>{disclosure}<a class="btn btn-coral" href="{ESC(url, quote=True)}" target="_blank" rel="noopener noreferrer {'sponsored' if paid else 'nofollow'}">{label} ↗</a><p class="p-small">Opens Amazon in a new tab. Check the specific product, final price, taxes, delivery, and returns there. PickPop does not sell or fulfill orders.</p><a class="text-link" href="/find/?{ESC(urlencode({'q': item['name']}), quote=True)}#finder">Back to the finder →</a></article></div></div>'''
         page('/ideas/' + item['id'] + '/', item['name'] + ' — What to Consider | PickPop', 'Explore this ' + ('example shopping concept' if demo else 'sourced recommendation') + ' and practical questions to ask before choosing: ' + item['name'] + '.', content, index=not demo)
+
+    page('/image-credits/', 'Product Photography Credits & Licenses | PickPop', 'Authors, original sources, open image licenses, and modifications for PickPop product photographs.', intro('The people behind <em>the pictures.</em>', 'Independent photography, credited where it belongs.', 'PHOTO CREDITS') + '<div class="shell policy-body">' + ''.join('<h2>' + ESC(item['name']) + '</h2>' + photo_credit(item) for item in CATALOG['items']) + '</div>')
 
     page('/about.html', 'About PickPop — Thoughtful Shopping Discovery', 'Learn how PickPop matches shopping ideas to your needs, style, and budget without pretending to have live retailer data.', source('about.html'))
     privacy = source('privacy.html').replace('This helps you see saved items on return visits.', 'You can turn off “Remember my favorites” in the finder. This removes stored favorite IDs; current-tab favorites remain only for that visit. A small preference key, pickpop-persistence, remembers your choice. Clearing site data resets the choice.').replace('No public contact address has been configured in this demo yet. Add a real business contact method before public launch.', 'See our <a href="/contact/">contact page</a> for the current contact status. No contact form or third-party submission service is active.')
@@ -161,7 +193,7 @@ def generate():
     page('/privacy.html', 'Privacy Policy | PickPop', 'How PickPop handles browser favorites, optional persistence, hosting, and retailer links. No external analytics is enabled.', privacy)
     enabled = CONFIG['affiliate']['enabled']
     disclosure = '<p class="affiliate-note">As an Amazon Associate I earn from qualifying purchases.</p><p>Some Amazon links are paid affiliate links. They are labeled near the recommendation. A qualifying purchase may earn PickPop a commission.</p>' if enabled else '<p><strong>No paid affiliate links are active.</strong> Current Amazon buttons open ordinary retailer searches. PickPop does not claim Amazon Associates approval or commissions.</p>'
-    page('/disclosure/', 'Affiliate Disclosure & Editorial Standards | PickPop', 'Understand PickPop retailer links, affiliate status, and the distinction between example concepts and verified product information.', intro('A little <em>transparency.</em>', 'Good decisions deserve clear information.', 'AFFILIATE DISCLOSURE') + '<div class="shell policy-body">' + disclosure + '<h2>Where a purchase happens</h2><p>Links take you to Amazon. PickPop does not collect payments, manage inventory, or fulfill purchases. Retailer prices, sellers, taxes, shipping, and return terms should be checked there.</p><h2>Ideas and information</h2><p>Example concepts are labeled throughout the finder. Editorial tags and planning targets are shopping prompts, not product tests, ratings, current prices, or guarantees. We do not use offer or review markup for them.</p><h2>Our editorial standard</h2><p>We explain why an idea matches your selected filters and what to check before choosing a specific item. No personal testing is claimed. Verified recommendations will require source records and a review date.</p><a class="text-link" href="/about.html">More about PickPop →</a></div>')
+    page('/disclosure/', 'Affiliate Disclosure & Editorial Standards | PickPop', 'Understand PickPop retailer links, affiliate status, and the distinction between example concepts and verified product information.', intro('A little <em>transparency.</em>', 'Good decisions deserve clear information.', 'AFFILIATE DISCLOSURE') + '<div class="shell policy-body">' + disclosure + '<h2>Where a purchase happens</h2><p>Links take you to Amazon. PickPop does not collect payments, manage inventory, or fulfill purchases. Retailer prices, sellers, taxes, shipping, and return terms should be checked there.</p><h2>Ideas and information</h2><p>Real recommendations include manufacturer sources, an Amazon product URL, a review date, and independent photo-license records. Editorial style tags are our curation choices, not manufacturer claims. No live prices, stock information, ratings, or tested performance are displayed.</p><h2>Our editorial standard</h2><p>We explain why an idea matches your selected filters and what to check before choosing a specific item. No personal testing is claimed. Source records and photo credits are available on each product detail page. Our affiliate relationship does not establish that we have tested a product.</p><a class="text-link" href="/about.html">More about PickPop →</a></div>')
     email = CONFIG.get('contactEmail')
     contact = f'<a class="btn btn-coral" href="mailto:{ESC(email, quote=True)}">Email {ESC(email)} ↗</a><p>Your email is sent through your own email app. PickPop has no contact-form backend.</p>' if email else '<div class="article-callout"><strong>Our public inbox is not open yet.</strong><p>A business contact address has not been provided. We will publish a real address here when it is configured; this page does not collect messages.</p></div>'
     page('/contact/', 'Contact PickPop | PickPop', 'Find the current PickPop contact status and where to direct questions about Amazon orders, sellers, or returns.', intro('Say <em>hello.</em>', 'Questions about an idea, an editorial correction, or the way PickPop works?', 'CONTACT') + '<div class="shell policy-body">' + contact + '<h2>Questions about an Amazon purchase?</h2><p>For orders, delivery, returns, seller issues, or payment questions, use the support options on Amazon. PickPop does not have access to your Amazon orders.</p><h2>Before you share</h2><p>Do not send passwords, payment information, or account credentials. Read our <a href="/privacy.html">privacy policy</a> for details about this site.</p></div>', index=bool(email))

@@ -1,6 +1,6 @@
 # PickPop
 
-**PickPop 2.0 publicado:** https://pickpop.netlify.app/ — confira `docs/DEPLOY-2.0.md` para a verificação em produção e as pendências comerciais.
+**PickPop 3.0 — catálogo real em preparação para publicação:** https://pickpop.netlify.app/ — confira `docs/DEPLOY-2.0.md` para a verificação em produção e as pendências comerciais.
 
 Plataforma americana de descoberta de ideias de compra. A versão 2.0 continua o projeto original com Good Finder, filtros de estilo/orçamento, favoritos, quiz explicável, comparações, blog e coleções editoriais.
 
@@ -24,6 +24,6 @@ Visite `http://127.0.0.1:8082/`. Python 3.9+ é usado apenas para gerar páginas
 - `docs/RELEASE-2.0.md`: entrega por fase e validações executadas.
 - `pickpop-site-v1.zip`: arquivo original preservado.
 
-As 20 ideias são demonstrativas, sem produtos reais, preços atuais, API ou comissões. Amazon abre como pesquisa comum. Contato empresarial e integrações permanecem desativados até receber informações verdadeiras.
+A versão 3.0 contém seis produtos reais com fontes, ASINs e fotografias independentes licenciadas; dez artigos completos e busca local. Links remunerados usam a tag oficial `pickpop03-20`. Não há preços/estoque ao vivo nem API conectada. A meta de vinte produtos ainda depende das verificações registradas em `docs/RESEARCH-3.0.md`. Consulte `docs/RELEASE-3.0.md` para testes e limitações.
 
 A versão 2.0 foi desenvolvida na branch `pickpop-2-mvp`; sua publicação foi autorizada expressamente pelo proprietário. O ponto anterior está preservado pela tag `pickpop-before-2.0-20261008`. A configuração Netlify na raiz define base `pickpop-site`, build `python build.py` e publicação `dist`.

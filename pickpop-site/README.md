@@ -1,4 +1,6 @@
-# PickPop 2.0 — candidato local ao MVP
+# PickPop 3.0 — catálogo real
+
+A versão atual tem seis produtos verificados com fotografias licenciadas, dez artigos e links com a tag `pickpop03-20`. Consulte `../docs/RELEASE-3.0.md` e `../docs/CATALOG-3.0.md` para as verificações e o cadastro atual. As instruções de dados demonstrativos abaixo documentam a fundação 2.0; o catálogo público agora usa registros verificados.
 
 Evolução do projeto existente, com HTML estático, CSS original e módulos JavaScript. Não há React, banco de dados, servidor para visitantes ou dependências pagas. Todos os textos públicos estão em inglês americano.
 

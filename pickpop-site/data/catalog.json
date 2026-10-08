@@ -2,807 +2,404 @@
   "schemaVersion": 1,
   "items": [
     {
-      "id": "mug",
-      "name": "Everyday ceramic mug",
+      "id": "chemex-six-cup",
+      "name": "CHEMEX Six-Cup Classic Series Coffeemaker",
+      "brand": "CHEMEX",
+      "model": "CM-6A",
       "category": "kitchen",
-      "emoji": "☕",
-      "color": "#f3e4bd",
-      "chip": "Little ritual",
-      "description": "A cheerful cup for your morning pause.",
-      "tags": "coffee cup mug ceramic drink tea gifts minimal cozy",
-      "search": "ceramic coffee mug",
-      "planningBudget": 18,
+      "emoji": "✳",
+      "color": "#fff3db",
+      "chip": "Source reviewed",
+      "description": "A glass pour-over brewer with a wood collar for a deliberate, hands-on coffee routine.",
+      "tags": "coffee coffeemaker coffee maker pour over glass brewer carafe",
+      "search": "CHEMEX Six-Cup Classic Series Coffeemaker",
+      "planningBudget": null,
       "verification": {
-        "status": "demo",
-        "sources": [],
-        "reviewedAt": null
+        "status": "verified",
+        "sources": [
+          "https://chemexcoffeemaker.com/collections/classic-series-nav/products/six-cup-classic-chemex",
+          "https://www.amazon.com/dp/B0000YWF5E"
+        ],
+        "reviewedAt": "2026-10-08",
+        "scope": "Model identity and listed characteristics reviewed from manufacturer and Amazon product pages. Live stock and prices are not verified."
       },
       "price": null,
-      "asin": null,
-      "productUrl": null,
-      "affiliateUrl": null,
-      "image": {
-        "type": "illustration",
-        "source": "system emoji",
-        "authorized": true
+      "asin": "B0000YWF5E",
+      "productUrl": "https://www.amazon.com/dp/B0000YWF5E",
+      "affiliateUrl": "https://www.amazon.com/dp/B0000YWF5E?tag=pickpop03-20",
+      "affiliateVerification": {
+        "status": "owner-tag-confirmed",
+        "reviewedAt": "2026-10-08",
+        "method": "Direct Amazon.com product URL with the owner-supplied Associates tag; ASIN identity checked against Amazon product title."
       },
-      "benefits": [],
-      "features": [],
+      "image": {
+        "type": "photo",
+        "authorized": true,
+        "src": "/assets/products/chemex-six-cup.webp",
+        "alt": "CHEMEX Six-Cup Classic Series Coffeemaker photographed independently",
+        "width": 960,
+        "height": 640,
+        "source": "https://commons.wikimedia.org/wiki/File:Die_Chemex_6_Cup.jpg",
+        "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Die_Chemex_6_Cup.jpg",
+        "author": "Coffee Circle from Berlin, Deutschland",
+        "license": "CC BY 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+        "changes": "Resized and encoded as WebP. No product appearance altered.",
+        "variantReviewed": true
+      },
+      "benefits": [
+        "One vessel for manual brewing and serving."
+      ],
+      "features": [
+        "30 fl oz capacity; CHEMEX counts a cup as 5 fl oz.",
+        "Wood collar and leather tie."
+      ],
       "considerations": [
-        "Check capacity, handle comfort, glaze information, and dishwasher or microwave instructions."
+        "Requires compatible filters and a separate way to heat water.",
+        "Glass needs careful handling; this is not an automatic machine."
       ],
       "styles": [
         "minimalist",
         "cozy",
-        "gift-ideas",
-        "budget-friendly"
+        "gift-ideas"
       ],
       "priorities": [
-        "everyday-convenience",
-        "saving-money",
         "aesthetic-design",
         "gift-giving"
-      ]
+      ],
+      "retailerName": "Chemex Pour-Over Glass Coffeemaker - Classic Series - 6-Cup - Exclusive Packaging"
     },
     {
-      "id": "frother",
-      "name": "Handheld milk frother",
-      "category": "kitchen",
-      "emoji": "🥛",
-      "color": "#e8dfff",
-      "chip": "Small joy",
-      "description": "A tiny upgrade for homemade lattes.",
-      "tags": "coffee milk frother cappuccino kitchen tool",
-      "search": "handheld milk frother",
-      "planningBudget": 16,
+      "id": "logitech-m185",
+      "name": "Logitech M185 Compact Ambidextrous Wireless Mouse — Swift Grey",
+      "brand": "Logitech",
+      "model": "M185",
+      "category": "tech",
+      "emoji": "✳",
+      "color": "#e9e3ff",
+      "chip": "Source reviewed",
+      "description": "A compact mouse with a USB receiver for a straightforward desktop or laptop setup.",
+      "tags": "mouse computer laptop wireless usb desk pointing device",
+      "search": "Logitech M185 Compact Ambidextrous Wireless Mouse — Swift Grey",
+      "planningBudget": null,
       "verification": {
-        "status": "demo",
-        "sources": [],
-        "reviewedAt": null
+        "status": "verified",
+        "sources": [
+          "https://www.logitech.com/en-us/shop/p/m185-wireless-mouse",
+          "https://www.amazon.com/dp/B004YAVF8I"
+        ],
+        "reviewedAt": "2026-10-08",
+        "scope": "Model identity and listed characteristics reviewed from manufacturer and Amazon product pages. Live stock and prices are not verified."
       },
       "price": null,
-      "asin": null,
-      "productUrl": null,
-      "affiliateUrl": null,
+      "asin": "B004YAVF8I",
+      "productUrl": "https://www.amazon.com/dp/B004YAVF8I",
+      "affiliateUrl": "https://www.amazon.com/dp/B004YAVF8I?tag=pickpop03-20",
+      "affiliateVerification": {
+        "status": "owner-tag-confirmed",
+        "reviewedAt": "2026-10-08",
+        "method": "Direct Amazon.com product URL with the owner-supplied Associates tag; ASIN identity checked against Amazon product title."
+      },
       "image": {
-        "type": "illustration",
-        "source": "system emoji",
-        "authorized": true
+        "type": "photo",
+        "authorized": true,
+        "src": "/assets/products/logitech-m185.webp",
+        "alt": "Logitech M185 Compact Ambidextrous Wireless Mouse — Swift Grey photographed independently",
+        "width": 960,
+        "height": 720,
+        "source": "https://commons.wikimedia.org/wiki/File:Logitech_M185_mouse_HS05.jpg",
+        "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e9/Logitech_M185_mouse_HS05.jpg",
+        "author": "Hayden Schiff",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+        "changes": "Resized and encoded as WebP. No product appearance altered.",
+        "variantReviewed": true
       },
-      "benefits": [],
-      "features": [],
+      "benefits": [
+        "A separate pointing device without a cable across the desk."
+      ],
+      "features": [
+        "2.4 GHz wireless connection through a USB receiver.",
+        "Ambidextrous shape; uses one AA battery."
+      ],
       "considerations": [
-        "Check power source, cleaning instructions, and what liquids the manufacturer permits."
-      ],
-      "styles": [
-        "space-saving",
-        "budget-friendly"
-      ],
-      "priorities": [
-        "everyday-convenience",
-        "saving-money",
-        "small-spaces"
-      ]
-    },
-    {
-      "id": "spice",
-      "name": "Space-saving spice jars",
-      "category": "kitchen",
-      "emoji": "🫙",
-      "color": "#fce0db",
-      "chip": "Tidy favorite",
-      "description": "Make a small shelf work beautifully.",
-      "tags": "jars organizer kitchen storage spices",
-      "search": "glass spice jars set",
-      "planningBudget": 25,
-      "verification": {
-        "status": "demo",
-        "sources": [],
-        "reviewedAt": null
-      },
-      "price": null,
-      "asin": null,
-      "productUrl": null,
-      "affiliateUrl": null,
-      "image": {
-        "type": "illustration",
-        "source": "system emoji",
-        "authorized": true
-      },
-      "benefits": [],
-      "features": [],
-      "considerations": [
-        "Measure shelf depth and check jar capacity, lid type, and labeling options."
-      ],
-      "styles": [
-        "minimalist",
-        "space-saving",
-        "budget-friendly"
-      ],
-      "priorities": [
-        "everyday-convenience",
-        "saving-money",
-        "small-spaces",
-        "aesthetic-design"
-      ]
-    },
-    {
-      "id": "glass",
-      "name": "Glass food containers",
-      "category": "kitchen",
-      "emoji": "🥗",
-      "color": "#d9eecf",
-      "chip": "Everyday hero",
-      "description": "A little order for meal-prep days.",
-      "tags": "glass containers kitchen meal prep storage food box",
-      "search": "glass meal prep containers",
-      "planningBudget": 30,
-      "verification": {
-        "status": "demo",
-        "sources": [],
-        "reviewedAt": null
-      },
-      "price": null,
-      "asin": null,
-      "productUrl": null,
-      "affiliateUrl": null,
-      "image": {
-        "type": "illustration",
-        "source": "system emoji",
-        "authorized": true
-      },
-      "benefits": [],
-      "features": [],
-      "considerations": [
-        "Check lid seals, stackability, and manufacturer instructions for heat and cleaning."
+        "Requires a compatible USB port; it is not a Bluetooth mouse.",
+        "Check the included receiver and battery with the seller."
       ],
       "styles": [
         "minimalist",
         "space-saving"
       ],
       "priorities": [
-        "everyday-convenience",
         "small-spaces",
-        "aesthetic-design"
-      ]
+        "everyday-convenience"
+      ],
+      "retailerName": "Logitech M185 Compact Ambidextrous 2.4 GHz Wireless Mouse - Swift Grey"
     },
     {
-      "id": "basket",
-      "name": "Woven storage basket",
-      "category": "home",
-      "emoji": "🧺",
-      "color": "#f5e6ca",
-      "chip": "Cozy pick",
-      "description": "A softer way to hide the clutter.",
-      "tags": "home baskets storage organization cozy laundry",
-      "search": "woven storage basket",
-      "planningBudget": 28,
-      "verification": {
-        "status": "demo",
-        "sources": [],
-        "reviewedAt": null
-      },
-      "price": null,
-      "asin": null,
-      "productUrl": null,
-      "affiliateUrl": null,
-      "image": {
-        "type": "illustration",
-        "source": "system emoji",
-        "authorized": true
-      },
-      "benefits": [],
-      "features": [],
-      "considerations": [
-        "Measure the storage spot and check weave, lining, handles, and care instructions."
-      ],
-      "styles": [
-        "minimalist",
-        "cozy"
-      ],
-      "priorities": [
-        "everyday-convenience",
-        "aesthetic-design"
-      ]
-    },
-    {
-      "id": "lamp",
-      "name": "Cozy bedside lamp",
-      "category": "home",
-      "emoji": "💡",
-      "color": "#ece4ff",
-      "chip": "Soft glow",
-      "description": "Warm up a nook or nightstand.",
-      "tags": "lamp home bedside light lighting bedroom desk",
-      "search": "small bedside lamp warm light",
-      "planningBudget": 39,
-      "verification": {
-        "status": "demo",
-        "sources": [],
-        "reviewedAt": null
-      },
-      "price": null,
-      "asin": null,
-      "productUrl": null,
-      "affiliateUrl": null,
-      "image": {
-        "type": "illustration",
-        "source": "system emoji",
-        "authorized": true
-      },
-      "benefits": [],
-      "features": [],
-      "considerations": [
-        "Check dimensions, bulb compatibility, electrical ratings, and brightness controls."
-      ],
-      "styles": [
-        "modern",
-        "cozy",
-        "gift-ideas"
-      ],
-      "priorities": [
-        "everyday-convenience",
-        "aesthetic-design",
-        "gift-giving"
-      ]
-    },
-    {
-      "id": "plant",
-      "name": "Mini indoor planter",
-      "category": "home",
-      "emoji": "🪴",
-      "color": "#dbeed7",
-      "chip": "Fresh energy",
-      "description": "A green touch for shelves and desks.",
-      "tags": "home planter pot plants greenery indoor",
-      "search": "small indoor planter pot",
-      "planningBudget": 19,
-      "verification": {
-        "status": "demo",
-        "sources": [],
-        "reviewedAt": null
-      },
-      "price": null,
-      "asin": null,
-      "productUrl": null,
-      "affiliateUrl": null,
-      "image": {
-        "type": "illustration",
-        "source": "system emoji",
-        "authorized": true
-      },
-      "benefits": [],
-      "features": [],
-      "considerations": [
-        "Check drainage and match pot size to the plant and the space you have."
-      ],
-      "styles": [
-        "minimalist",
-        "cozy",
-        "space-saving",
-        "gift-ideas",
-        "budget-friendly"
-      ],
-      "priorities": [
-        "everyday-convenience",
-        "saving-money",
-        "small-spaces",
-        "aesthetic-design",
-        "gift-giving"
-      ]
-    },
-    {
-      "id": "candle",
-      "name": "Home candle set",
-      "category": "home",
-      "emoji": "🕯️",
-      "color": "#ffe1c7",
-      "chip": "Reset moment",
-      "description": "Set the mood for a quieter evening.",
-      "tags": "home candle gifts cozy decor fragrance",
-      "search": "decorative candle set",
-      "planningBudget": 22,
-      "verification": {
-        "status": "demo",
-        "sources": [],
-        "reviewedAt": null
-      },
-      "price": null,
-      "asin": null,
-      "productUrl": null,
-      "affiliateUrl": null,
-      "image": {
-        "type": "illustration",
-        "source": "system emoji",
-        "authorized": true
-      },
-      "benefits": [],
-      "features": [],
-      "considerations": [
-        "Check ingredients and burn instructions; keep flames away from pets and children."
-      ],
-      "styles": [
-        "cozy",
-        "gift-ideas",
-        "budget-friendly"
-      ],
-      "priorities": [
-        "everyday-convenience",
-        "saving-money",
-        "aesthetic-design",
-        "gift-giving"
-      ]
-    },
-    {
-      "id": "cables",
-      "name": "Desk cable organizer",
+      "id": "logitech-k120",
+      "name": "Logitech K120 Full Size Wired Keyboard — Black",
+      "brand": "Logitech",
+      "model": "K120, US layout",
       "category": "tech",
-      "emoji": "🔌",
-      "color": "#d7e9fa",
-      "chip": "Less clutter",
-      "description": "Keep chargers from running wild.",
-      "tags": "cable desk computer gadget tech wire organizer office",
-      "search": "desktop cable organizer",
-      "planningBudget": 14,
+      "emoji": "✳",
+      "color": "#e9e3ff",
+      "chip": "Source reviewed",
+      "description": "A full-size USB keyboard with a number pad for a desk that has room for a wired setup.",
+      "tags": "keyboard computer typing usb wired desk number pad",
+      "search": "Logitech K120 Full Size Wired Keyboard — Black",
+      "planningBudget": null,
       "verification": {
-        "status": "demo",
-        "sources": [],
-        "reviewedAt": null
+        "status": "verified",
+        "sources": [
+          "https://support.logi.com/hc/en-ca/articles/360024728534-Specifications-Keyboard-K120",
+          "https://www.amazon.com/dp/B003ELVLKU"
+        ],
+        "reviewedAt": "2026-10-08",
+        "scope": "Model identity and listed characteristics reviewed from manufacturer and Amazon product pages. Live stock and prices are not verified."
       },
       "price": null,
-      "asin": null,
-      "productUrl": null,
-      "affiliateUrl": null,
-      "image": {
-        "type": "illustration",
-        "source": "system emoji",
-        "authorized": true
+      "asin": "B003ELVLKU",
+      "productUrl": "https://www.amazon.com/dp/B003ELVLKU",
+      "affiliateUrl": "https://www.amazon.com/dp/B003ELVLKU?tag=pickpop03-20",
+      "affiliateVerification": {
+        "status": "owner-tag-confirmed",
+        "reviewedAt": "2026-10-08",
+        "method": "Direct Amazon.com product URL with the owner-supplied Associates tag; ASIN identity checked against Amazon product title."
       },
-      "benefits": [],
-      "features": [],
+      "image": {
+        "type": "photo",
+        "authorized": true,
+        "src": "/assets/products/logitech-k120.webp",
+        "alt": "Logitech K120 Full Size Wired Keyboard — Black photographed independently",
+        "width": 960,
+        "height": 439,
+        "source": "https://commons.wikimedia.org/wiki/File:Logitech_K120_Keyboard.jpg",
+        "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/4/41/Logitech_K120_Keyboard.jpg",
+        "author": "TaurusEmerald",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "changes": "Resized and encoded as WebP. No product appearance altered.",
+        "variantReviewed": true
+      },
+      "benefits": [
+        "A dedicated number pad for data entry."
+      ],
+      "features": [
+        "Corded USB connection.",
+        "Full-size keyboard layout with a number pad."
+      ],
       "considerations": [
-        "Check cable diameters, surface compatibility, and adhesive removal instructions."
+        "A full-size footprint takes more desk space than a compact keyboard.",
+        "Confirm the US key layout and computer compatibility before buying."
       ],
       "styles": [
-        "minimalist",
-        "space-saving",
-        "budget-friendly"
+        "minimalist"
       ],
-      "priorities": [
-        "everyday-convenience",
-        "saving-money",
-        "small-spaces",
-        "aesthetic-design"
-      ]
-    },
-    {
-      "id": "stand",
-      "name": "Adjustable phone stand",
-      "category": "tech",
-      "emoji": "📱",
-      "color": "#e2dcf4",
-      "chip": "Work smarter",
-      "description": "Hands-free help wherever you sit.",
-      "tags": "phone stand gadget tech desk table smartphone",
-      "search": "adjustable phone stand desk",
-      "planningBudget": 18,
-      "verification": {
-        "status": "demo",
-        "sources": [],
-        "reviewedAt": null
-      },
-      "price": null,
-      "asin": null,
-      "productUrl": null,
-      "affiliateUrl": null,
-      "image": {
-        "type": "illustration",
-        "source": "system emoji",
-        "authorized": true
-      },
-      "benefits": [],
-      "features": [],
-      "considerations": [
-        "Check phone dimensions, case thickness, charging access, and stability."
-      ],
-      "styles": [
-        "minimalist",
-        "modern",
-        "space-saving",
-        "budget-friendly"
-      ],
-      "priorities": [
-        "everyday-convenience",
-        "saving-money",
-        "small-spaces",
-        "aesthetic-design"
-      ]
-    },
-    {
-      "id": "headset",
-      "name": "Over-ear headphones",
-      "category": "tech",
-      "emoji": "🎧",
-      "color": "#d8ddfb",
-      "chip": "Daily essential",
-      "description": "Find a listening setup that suits you.",
-      "tags": "tech headphone audio music bluetooth wireless",
-      "search": "wireless over ear headphones",
-      "planningBudget": 75,
-      "verification": {
-        "status": "demo",
-        "sources": [],
-        "reviewedAt": null
-      },
-      "price": null,
-      "asin": null,
-      "productUrl": null,
-      "affiliateUrl": null,
-      "image": {
-        "type": "illustration",
-        "source": "system emoji",
-        "authorized": true
-      },
-      "benefits": [],
-      "features": [],
-      "considerations": [
-        "Check device compatibility, fit, connection type, and return terms."
-      ],
-      "styles": [
-        "modern",
-        "gift-ideas"
-      ],
-      "priorities": [
-        "everyday-convenience",
-        "aesthetic-design",
-        "gift-giving"
-      ]
-    },
-    {
-      "id": "speaker",
-      "name": "Compact Bluetooth speaker",
-      "category": "tech",
-      "emoji": "🔊",
-      "color": "#fbdbc9",
-      "chip": "Good sound",
-      "description": "Bring playlists from room to room.",
-      "tags": "music sound speaker bluetooth portable gadget tech",
-      "search": "compact bluetooth speaker",
-      "planningBudget": 45,
-      "verification": {
-        "status": "demo",
-        "sources": [],
-        "reviewedAt": null
-      },
-      "price": null,
-      "asin": null,
-      "productUrl": null,
-      "affiliateUrl": null,
-      "image": {
-        "type": "illustration",
-        "source": "system emoji",
-        "authorized": true
-      },
-      "benefits": [],
-      "features": [],
-      "considerations": [
-        "Check device compatibility, charging needs, dimensions, and manufacturer specifications."
-      ],
-      "styles": [
-        "modern",
-        "gift-ideas"
-      ],
-      "priorities": [
-        "everyday-convenience",
-        "aesthetic-design",
-        "gift-giving"
-      ]
-    },
-    {
-      "id": "bowl",
-      "name": "Slow-feeder pet bowl",
-      "category": "pets",
-      "emoji": "🐶",
-      "color": "#feebba",
-      "chip": "Pet favorite",
-      "description": "A thoughtful addition to mealtime.",
-      "tags": "dog cat pet bowl slow feeder food",
-      "search": "slow feeder dog bowl",
-      "planningBudget": 17,
-      "verification": {
-        "status": "demo",
-        "sources": [],
-        "reviewedAt": null
-      },
-      "price": null,
-      "asin": null,
-      "productUrl": null,
-      "affiliateUrl": null,
-      "image": {
-        "type": "illustration",
-        "source": "system emoji",
-        "authorized": true
-      },
-      "benefits": [],
-      "features": [],
-      "considerations": [
-        "Check suitability for your pet, bowl size, materials, and cleaning instructions."
-      ],
-      "styles": [
-        "budget-friendly"
-      ],
-      "priorities": [
-        "everyday-convenience",
-        "saving-money"
-      ]
-    },
-    {
-      "id": "toy",
-      "name": "Interactive cat toy",
-      "category": "pets",
-      "emoji": "🐈",
-      "color": "#e9dafa",
-      "chip": "Playtime pick",
-      "description": "Make space for more daily play.",
-      "tags": "cat kitten pets pet toy interactive",
-      "search": "interactive cat toy",
-      "planningBudget": 23,
-      "verification": {
-        "status": "demo",
-        "sources": [],
-        "reviewedAt": null
-      },
-      "price": null,
-      "asin": null,
-      "productUrl": null,
-      "affiliateUrl": null,
-      "image": {
-        "type": "illustration",
-        "source": "system emoji",
-        "authorized": true
-      },
-      "benefits": [],
-      "features": [],
-      "considerations": [
-        "Check age and size suitability; supervise play and inspect for damage."
-      ],
-      "styles": [
-        "budget-friendly"
-      ],
-      "priorities": [
-        "everyday-convenience",
-        "saving-money"
-      ]
-    },
-    {
-      "id": "leash",
-      "name": "Everyday dog leash",
-      "category": "pets",
-      "emoji": "🐕",
-      "color": "#d5eddd",
-      "chip": "Walk ready",
-      "description": "Find an easy everyday walking setup.",
-      "tags": "dog pet leash collar walking outdoors",
-      "search": "durable dog leash",
-      "planningBudget": 24,
-      "verification": {
-        "status": "demo",
-        "sources": [],
-        "reviewedAt": null
-      },
-      "price": null,
-      "asin": null,
-      "productUrl": null,
-      "affiliateUrl": null,
-      "image": {
-        "type": "illustration",
-        "source": "system emoji",
-        "authorized": true
-      },
-      "benefits": [],
-      "features": [],
-      "considerations": [
-        "Check length, hardware, size suitability, and manufacturer use instructions."
-      ],
-      "styles": [
-        "budget-friendly"
-      ],
-      "priorities": [
-        "everyday-convenience",
-        "saving-money"
-      ]
-    },
-    {
-      "id": "fountain",
-      "name": "Pet water fountain",
-      "category": "pets",
-      "emoji": "💧",
-      "color": "#d3e8fc",
-      "chip": "Daily care",
-      "description": "A handy idea for a pet-friendly home.",
-      "tags": "pet cat dog water fountain bowl drink",
-      "search": "cat water fountain",
-      "planningBudget": 38,
-      "verification": {
-        "status": "demo",
-        "sources": [],
-        "reviewedAt": null
-      },
-      "price": null,
-      "asin": null,
-      "productUrl": null,
-      "affiliateUrl": null,
-      "image": {
-        "type": "illustration",
-        "source": "system emoji",
-        "authorized": true
-      },
-      "benefits": [],
-      "features": [],
-      "considerations": [
-        "Check cleaning requirements, filter replacement costs, and electrical instructions."
-      ],
-      "styles": [],
       "priorities": [
         "everyday-convenience"
-      ]
+      ],
+      "retailerName": "Logitech K120 Full Size Wired Keyboard USB Plug-and-Play Windows - Black"
     },
     {
-      "id": "blender",
-      "name": "Compact personal blender",
-      "category": "kitchen",
-      "emoji": "🍓",
-      "color": "#fde0dc",
-      "chip": "Fresh start",
-      "description": "Small-batch smoothies and easy mornings.",
-      "tags": "blender kitchen smoothie appliance juice small compact",
-      "search": "personal blender for smoothies",
-      "planningBudget": 65,
+      "id": "logitech-c920",
+      "name": "Logitech HD Pro Webcam C920",
+      "brand": "Logitech",
+      "model": "C920",
+      "category": "tech",
+      "emoji": "✳",
+      "color": "#e9e3ff",
+      "chip": "Source reviewed",
+      "description": "An external USB webcam for a desk where a separate camera position is useful.",
+      "tags": "webcam camera usb video calls computer desk meeting",
+      "search": "Logitech HD Pro Webcam C920",
+      "planningBudget": null,
       "verification": {
-        "status": "demo",
-        "sources": [],
-        "reviewedAt": null
+        "status": "verified",
+        "sources": [
+          "https://www.logitech.com/en-gb/shop/p/c920-pro-hd-webcam",
+          "https://www.amazon.com/dp/B006JH8T3S"
+        ],
+        "reviewedAt": "2026-10-08",
+        "scope": "Model identity and listed characteristics reviewed from manufacturer and Amazon product pages. Live stock and prices are not verified."
       },
       "price": null,
-      "asin": null,
-      "productUrl": null,
-      "affiliateUrl": null,
-      "image": {
-        "type": "illustration",
-        "source": "system emoji",
-        "authorized": true
+      "asin": "B006JH8T3S",
+      "productUrl": "https://www.amazon.com/dp/B006JH8T3S",
+      "affiliateUrl": "https://www.amazon.com/dp/B006JH8T3S?tag=pickpop03-20",
+      "affiliateVerification": {
+        "status": "owner-tag-confirmed",
+        "reviewedAt": "2026-10-08",
+        "method": "Direct Amazon.com product URL with the owner-supplied Associates tag; ASIN identity checked against Amazon product title."
       },
-      "benefits": [],
-      "features": [],
+      "image": {
+        "type": "photo",
+        "authorized": true,
+        "src": "/assets/products/logitech-c920.webp",
+        "alt": "Logitech HD Pro Webcam C920 photographed independently",
+        "width": 960,
+        "height": 640,
+        "source": "https://commons.wikimedia.org/wiki/File:Webcam_01.jpg",
+        "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/5/55/Webcam_01.jpg",
+        "author": "Pmwiki1",
+        "license": "CC0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "changes": "Resized and encoded as WebP. No product appearance altered.",
+        "variantReviewed": true
+      },
+      "benefits": [
+        "Can be positioned independently of a laptop screen."
+      ],
+      "features": [
+        "Supports 1080p video at up to 30 frames per second.",
+        "Two microphones for stereo audio."
+      ],
       "considerations": [
-        "Check usable capacity, dimensions, cleaning requirements, and permitted ingredients."
+        "Call resolution also depends on the app, connection, and computer.",
+        "This listing is C920, not C920s or C920x; verify the selected variant."
       ],
       "styles": [
         "modern",
         "space-saving"
       ],
       "priorities": [
-        "everyday-convenience",
         "small-spaces",
-        "aesthetic-design"
-      ]
+        "everyday-convenience"
+      ],
+      "retailerName": "Logitech HD Pro Webcam C920, Widescreen Video Calling and Recording, 1080p Camera, Desktop or Laptop Webcam"
     },
     {
-      "id": "airfryer",
-      "name": "Countertop air fryer",
+      "id": "lodge-twelve-inch",
+      "name": "Lodge Pre-Seasoned Cast Iron Skillet — 12 Inches",
+      "brand": "Lodge",
+      "model": "L10SK3",
       "category": "kitchen",
-      "emoji": "🍟",
-      "color": "#e8e3da",
-      "chip": "Kitchen helper",
-      "description": "Explore compact countertop cooking.",
-      "tags": "air fryer kitchen appliance cooking oven",
-      "search": "compact air fryer",
-      "planningBudget": 115,
+      "emoji": "✳",
+      "color": "#fff3db",
+      "chip": "Source reviewed",
+      "description": "A classic 12-inch cast iron skillet for a kitchen with room for substantial cookware.",
+      "tags": "cast iron skillet frying pan cookware cooking kitchen",
+      "search": "Lodge Pre-Seasoned Cast Iron Skillet — 12 Inches",
+      "planningBudget": null,
       "verification": {
-        "status": "demo",
-        "sources": [],
-        "reviewedAt": null
+        "status": "verified",
+        "sources": [
+          "https://www.lodgecastiron.com/products/round-cast-iron-classic-skillet/?variant=51685752242548",
+          "https://www.amazon.com/dp/B00006JSUB"
+        ],
+        "reviewedAt": "2026-10-08",
+        "scope": "Model identity and listed characteristics reviewed from manufacturer and Amazon product pages. Live stock and prices are not verified."
       },
       "price": null,
-      "asin": null,
-      "productUrl": null,
-      "affiliateUrl": null,
-      "image": {
-        "type": "illustration",
-        "source": "system emoji",
-        "authorized": true
+      "asin": "B00006JSUB",
+      "productUrl": "https://www.amazon.com/dp/B00006JSUB",
+      "affiliateUrl": "https://www.amazon.com/dp/B00006JSUB?tag=pickpop03-20",
+      "affiliateVerification": {
+        "status": "owner-tag-confirmed",
+        "reviewedAt": "2026-10-08",
+        "method": "Direct Amazon.com product URL with the owner-supplied Associates tag; ASIN identity checked against Amazon product title."
       },
-      "benefits": [],
-      "features": [],
+      "image": {
+        "type": "photo",
+        "authorized": true,
+        "src": "/assets/products/lodge-twelve-inch.webp",
+        "alt": "Lodge Pre-Seasoned Cast Iron Skillet — 12 Inches photographed independently",
+        "width": 823,
+        "height": 960,
+        "source": "https://commons.wikimedia.org/wiki/File:Lodge_skillet.jpg",
+        "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Lodge_skillet.jpg",
+        "author": "Cullen328",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "changes": "Resized and encoded as WebP. No product appearance altered.",
+        "variantReviewed": true
+      },
+      "benefits": [
+        "A single pan format for several documented cooking methods."
+      ],
+      "features": [
+        "12-inch cast iron skillet, model L10SK3.",
+        "Manufacturer lists 7.69 lb weight and a 2.25-inch height."
+      ],
       "considerations": [
-        "Measure usable cooking space and required clearances; follow electrical and cleaning instructions."
+        "This is heavy cookware; check weight and available storage.",
+        "Follow the manufacturer care routine: hand wash, dry, and oil. Handles require appropriate heat protection."
       ],
       "styles": [
-        "modern"
+        "cozy",
+        "gift-ideas"
       ],
       "priorities": [
         "everyday-convenience",
-        "aesthetic-design"
-      ]
+        "gift-giving"
+      ],
+      "retailerName": "Lodge Pre-Seasoned Cast Iron Skillet, PFAS-Free, 12 Inches"
     },
     {
-      "id": "rack",
-      "name": "Over-sink drying rack",
-      "category": "kitchen",
-      "emoji": "🍽️",
-      "color": "#e3e8ee",
-      "chip": "Smart space",
-      "description": "A helpful idea for smaller counters.",
-      "tags": "kitchen rack drying dishes organization over sink",
-      "search": "over sink drying rack",
-      "planningBudget": 48,
+      "id": "kong-classic-medium",
+      "name": "KONG Classic Stuffable Dog Toy — Medium, Red",
+      "brand": "KONG",
+      "model": "Classic Medium",
+      "category": "pets",
+      "emoji": "✳",
+      "color": "#eaf1df",
+      "chip": "Source reviewed",
+      "description": "A red natural-rubber, stuffable toy for an appropriately sized and supervised dog.",
+      "tags": "dog pet toy chew rubber stuffable enrichment treat kong",
+      "search": "KONG Classic Stuffable Dog Toy — Medium, Red",
+      "planningBudget": null,
       "verification": {
-        "status": "demo",
-        "sources": [],
-        "reviewedAt": null
+        "status": "verified",
+        "sources": [
+          "https://www.kongcompany.com/kong-classic/",
+          "https://www.amazon.com/dp/B000AYN7LU"
+        ],
+        "reviewedAt": "2026-10-08",
+        "scope": "Model identity and listed characteristics reviewed from manufacturer and Amazon product pages. Live stock and prices are not verified."
       },
       "price": null,
-      "asin": null,
-      "productUrl": null,
-      "affiliateUrl": null,
-      "image": {
-        "type": "illustration",
-        "source": "system emoji",
-        "authorized": true
+      "asin": "B000AYN7LU",
+      "productUrl": "https://www.amazon.com/dp/B000AYN7LU",
+      "affiliateUrl": "https://www.amazon.com/dp/B000AYN7LU?tag=pickpop03-20",
+      "affiliateVerification": {
+        "status": "owner-tag-confirmed",
+        "reviewedAt": "2026-10-08",
+        "method": "Direct Amazon.com product URL with the owner-supplied Associates tag; ASIN identity checked against Amazon product title."
       },
-      "benefits": [],
-      "features": [],
+      "image": {
+        "type": "photo",
+        "authorized": true,
+        "src": "/assets/products/kong-classic-medium.webp",
+        "alt": "KONG Classic Stuffable Dog Toy — Medium, Red photographed independently",
+        "width": 960,
+        "height": 721,
+        "source": "https://commons.wikimedia.org/wiki/File:KONG_-_the_perfect_toy_for_a_dog_(50751011862).jpg",
+        "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/4/45/KONG_-_the_perfect_toy_for_a_dog_%2850751011862%29.jpg",
+        "author": "Olgierd (Creative Commons licensed only)",
+        "license": "CC BY 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+        "changes": "Resized and encoded as WebP. No product appearance altered.",
+        "variantReviewed": true
+      },
+      "benefits": [
+        "An option for a supervised food-based play routine."
+      ],
+      "features": [
+        "Red natural-rubber Classic formula.",
+        "Hollow design can hold suitable food or treats."
+      ],
       "considerations": [
-        "Measure sink width and check load limits, materials, and storage options."
+        "Select size and rubber strength for your individual dog using manufacturer guidance.",
+        "No dog toy is indestructible. Supervise, inspect for damage, and replace worn toys; consult your veterinarian if unsure."
       ],
       "styles": [
-        "minimalist",
-        "space-saving"
+        "gift-ideas"
       ],
       "priorities": [
         "everyday-convenience",
-        "small-spaces",
-        "aesthetic-design"
-      ]
-    },
-    {
-      "id": "monitor",
-      "name": "Desk monitor riser",
-      "category": "tech",
-      "emoji": "🖥️",
-      "color": "#dce7ec",
-      "chip": "Desk refresh",
-      "description": "Create a little breathing room below.",
-      "tags": "monitor riser stand desk tech office home",
-      "search": "wooden monitor riser desk",
-      "planningBudget": 55,
-      "verification": {
-        "status": "demo",
-        "sources": [],
-        "reviewedAt": null
-      },
-      "price": null,
-      "asin": null,
-      "productUrl": null,
-      "affiliateUrl": null,
-      "image": {
-        "type": "illustration",
-        "source": "system emoji",
-        "authorized": true
-      },
-      "benefits": [],
-      "features": [],
-      "considerations": [
-        "Check monitor weight, desk measurements, stability, and compatibility with your setup."
+        "gift-giving"
       ],
-      "styles": [
-        "minimalist",
-        "modern"
-      ],
-      "priorities": [
-        "everyday-convenience",
-        "aesthetic-design"
-      ]
+      "retailerName": "KONG Classic Stuffable Dog Toy, Natural Rubber Chew, for Medium Dogs"
     }
   ]
 }

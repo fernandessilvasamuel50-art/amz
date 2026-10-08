@@ -3,7 +3,18 @@
   "origin": "https://pickpop.netlify.app",
   "locale": "en-US",
   "contactEmail": null,
-  "affiliate": { "enabled": false, "approved": false, "associateTag": null },
-  "amazonContent": { "enabled": false, "provider": "creators-api", "serverEndpoint": null },
-  "analytics": { "enabled": false }
+  "affiliate": {
+    "enabled": true,
+    "approved": true,
+    "associateTag": "pickpop03-20",
+    "confirmation": "Owner confirmed initial US Associates enrollment and updated the official tag on 2026-10-08; Amazon manages final account review."
+  },
+  "amazonContent": {
+    "enabled": false,
+    "provider": "creators-api",
+    "serverEndpoint": null
+  },
+  "analytics": {
+    "enabled": false
+  }
 }

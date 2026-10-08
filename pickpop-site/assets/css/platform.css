@@ -135,3 +135,7 @@ button:disabled { cursor:wait;opacity:.65; }
 @media(prefers-reduced-motion:reduce) { *,*:before,*:after { animation:none!important;transition:none!important;scroll-behavior:auto!important; } }
 
 .footer-grid h2{font-family:var(--heading);font-size:13px;line-height:1.4;letter-spacing:normal;margin:0 0 20px}
+
+/* Independently licensed product photography. Preserve the complete object. */
+.product-visual:has(.product-photo)::before{content:none}
+.product-photo{width:100%;height:100%;object-fit:contain;display:block;padding:14px;background:#fffdf9;box-sizing:border-box}.product-visual{overflow:hidden;position:relative}.product-visual .product-chip,.product-visual .heart-button{z-index:1}.product-brand{font-size:.8rem;font-weight:700;margin:4px 0;color:#504844}.idea-illustration.product-detail-photo{display:flex;flex-direction:column;gap:12px;background:#fffdf9!important}.product-detail-photo img{width:100%;height:auto;max-height:460px;object-fit:contain}.photo-credit{font-size:.8rem;line-height:1.6;padding:12px;text-align:left}.collection-photo{width:150px;height:150px;object-fit:contain;background:#fff}.source-list{overflow-wrap:anywhere}.affiliate-note{line-height:1.5}

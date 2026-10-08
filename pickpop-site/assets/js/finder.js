@@ -1,11 +1,12 @@
 import { loadCatalog, CATEGORIES, PREFERENCES, PRIORITIES, LABELS, parseBudget, money, matchCatalog } from './catalog.js';
+import { CuratedCatalogProvider } from './providers.js';
 import { createSavedStore } from './saved.js';
 import { element, productCard } from './cards.js';
 import { initQuiz } from './quiz.js';
 import { renderComparison } from './comparison.js';
 import { track } from './metrics.js';
 const $ = id => document.getElementById(id);
-let items = [], config, store, initialized = false, comparison = [];
+let items = [], config, provider, store, initialized = false, comparison = [];
 const filters = { query: '', category: 'all', budget: 50, preferences: [], priority: '', savedOnly: false, sort: 'featured' };
 const params = new URLSearchParams(location.search);
 filters.query = (params.get('q') || '').slice(0, 120); filters.budget = parseBudget(params.get('budget'));
@@ -49,15 +50,15 @@ function compareIdea(id) {
 }
 function render() {
   const grid = $('product-grid'); if (!grid || !store) return;
-  const matches = matchCatalog(items, { ...filters, saved: store.ids }, config), fragment = document.createDocumentFragment();
+  const matches = provider.search({ ...filters, saved: store.ids }), fragment = document.createDocumentFragment();
   matches.forEach(match => fragment.append(productCard(match, { config, store, onSave: saveIdea, comparison, onCompare: compareIdea })));
   grid.replaceChildren(fragment);
   $('saved-count').textContent = String(store.ids.length); $('saved-toggle').setAttribute('aria-pressed', String(filters.savedOnly)); $('remember-saved').checked = store.persistent;
   $('saved-status').textContent = store.error || (!store.persistent ? 'Saved ideas stay in this tab for this visit. Remembering favorites is off.' : '');
   $('results-summary').textContent = `${matches.length} ${filters.savedOnly ? 'saved' : 'matching'} idea${matches.length === 1 ? '' : 's'} · ${filters.category === 'all' ? 'all categories' : filters.category} · ${money(filters.budget)} budget preference${filters.query ? ` · “${filters.query}”` : ''}${filters.priority ? ` · ${LABELS[filters.priority]}` : ''}.`;
   $('empty-state').hidden = matches.length > 0;
-  $('empty-title').textContent = filters.savedOnly ? (store.ids.length ? 'Your saved ideas are outside these filters.' : 'Your next favorite is waiting.') : 'No match in our starter collection.';
-  $('empty-description').textContent = filters.savedOnly ? 'Save an idea with its heart, or clear the filters to see your shortlist.' : 'Try fewer preferences, another keyword, or a different planning budget. We will not substitute unrelated products.';
+  $('empty-title').textContent = filters.savedOnly ? (store.ids.length ? 'Your saved ideas are outside these filters.' : 'Your next favorite is waiting.') : 'No match in our curated catalog.';
+  $('empty-description').textContent = filters.savedOnly ? 'Save an idea with its heart, or clear the filters to see your shortlist.' : 'Try fewer preferences, another keyword, or another category. We will not substitute unrelated products.';
   $('reset-filters').textContent = filters.savedOnly && store.ids.length ? 'Show all saved ideas →' : 'See all ideas →';
   $('amazon-fallback').hidden = filters.savedOnly; $('amazon-fallback').href = 'https://www.amazon.com/s?k=' + encodeURIComponent(filters.query || (filters.category === 'all' ? 'shopping ideas' : filters.category));
   renderComparison($('comparison'), comparison.map(id => items.find(item => item.id === id)), id => { comparison = comparison.filter(value => value !== id); render(); $('compare-status').focus({ preventScroll: true }); });
@@ -102,8 +103,8 @@ async function boot() {
   const status = $('catalog-status'); if (status) { status.hidden = false; status.textContent = 'Opening the idea catalog…'; }
   $('product-grid')?.setAttribute('aria-busy', 'true'); document.querySelectorAll('[data-catalog-control]').forEach(control => { control.disabled = true; });
   try {
-    ({ items, config } = await loadCatalog()); store = createSavedStore(items.map(item => item.id));
-    initFinder(); initQuiz({ items, config, store }); store.subscribe(render);
+    ({ items, config } = await loadCatalog()); provider = new CuratedCatalogProvider({ schemaVersion: 1, items }, config); store = createSavedStore(items.map(item => item.id));
+    initFinder(); initQuiz({ items, config, store, provider }); store.subscribe(render);
     if (status) status.hidden = true; if ($('catalog-error')) $('catalog-error').hidden = true; initialized = true;
   } catch {
     if (status) status.textContent = 'Our idea catalog could not load. Your saved favorites have not been changed.';
