@@ -1,0 +1,9 @@
+{
+  "name": "PickPop",
+  "origin": "https://pickpop.netlify.app",
+  "locale": "en-US",
+  "contactEmail": null,
+  "affiliate": { "enabled": false, "approved": false, "associateTag": null },
+  "amazonContent": { "enabled": false, "provider": "creators-api", "serverEndpoint": null },
+  "analytics": { "enabled": false }
+}

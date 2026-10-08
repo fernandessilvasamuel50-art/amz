@@ -1,0 +1,808 @@
+{
+  "schemaVersion": 1,
+  "items": [
+    {
+      "id": "mug",
+      "name": "Everyday ceramic mug",
+      "category": "kitchen",
+      "emoji": "☕",
+      "color": "#f3e4bd",
+      "chip": "Little ritual",
+      "description": "A cheerful cup for your morning pause.",
+      "tags": "coffee cup mug ceramic drink tea gifts minimal cozy",
+      "search": "ceramic coffee mug",
+      "planningBudget": 18,
+      "verification": {
+        "status": "demo",
+        "sources": [],
+        "reviewedAt": null
+      },
+      "price": null,
+      "asin": null,
+      "productUrl": null,
+      "affiliateUrl": null,
+      "image": {
+        "type": "illustration",
+        "source": "system emoji",
+        "authorized": true
+      },
+      "benefits": [],
+      "features": [],
+      "considerations": [
+        "Check capacity, handle comfort, glaze information, and dishwasher or microwave instructions."
+      ],
+      "styles": [
+        "minimalist",
+        "cozy",
+        "gift-ideas",
+        "budget-friendly"
+      ],
+      "priorities": [
+        "everyday-convenience",
+        "saving-money",
+        "aesthetic-design",
+        "gift-giving"
+      ]
+    },
+    {
+      "id": "frother",
+      "name": "Handheld milk frother",
+      "category": "kitchen",
+      "emoji": "🥛",
+      "color": "#e8dfff",
+      "chip": "Small joy",
+      "description": "A tiny upgrade for homemade lattes.",
+      "tags": "coffee milk frother cappuccino kitchen tool",
+      "search": "handheld milk frother",
+      "planningBudget": 16,
+      "verification": {
+        "status": "demo",
+        "sources": [],
+        "reviewedAt": null
+      },
+      "price": null,
+      "asin": null,
+      "productUrl": null,
+      "affiliateUrl": null,
+      "image": {
+        "type": "illustration",
+        "source": "system emoji",
+        "authorized": true
+      },
+      "benefits": [],
+      "features": [],
+      "considerations": [
+        "Check power source, cleaning instructions, and what liquids the manufacturer permits."
+      ],
+      "styles": [
+        "space-saving",
+        "budget-friendly"
+      ],
+      "priorities": [
+        "everyday-convenience",
+        "saving-money",
+        "small-spaces"
+      ]
+    },
+    {
+      "id": "spice",
+      "name": "Space-saving spice jars",
+      "category": "kitchen",
+      "emoji": "🫙",
+      "color": "#fce0db",
+      "chip": "Tidy favorite",
+      "description": "Make a small shelf work beautifully.",
+      "tags": "jars organizer kitchen storage spices",
+      "search": "glass spice jars set",
+      "planningBudget": 25,
+      "verification": {
+        "status": "demo",
+        "sources": [],
+        "reviewedAt": null
+      },
+      "price": null,
+      "asin": null,
+      "productUrl": null,
+      "affiliateUrl": null,
+      "image": {
+        "type": "illustration",
+        "source": "system emoji",
+        "authorized": true
+      },
+      "benefits": [],
+      "features": [],
+      "considerations": [
+        "Measure shelf depth and check jar capacity, lid type, and labeling options."
+      ],
+      "styles": [
+        "minimalist",
+        "space-saving",
+        "budget-friendly"
+      ],
+      "priorities": [
+        "everyday-convenience",
+        "saving-money",
+        "small-spaces",
+        "aesthetic-design"
+      ]
+    },
+    {
+      "id": "glass",
+      "name": "Glass food containers",
+      "category": "kitchen",
+      "emoji": "🥗",
+      "color": "#d9eecf",
+      "chip": "Everyday hero",
+      "description": "A little order for meal-prep days.",
+      "tags": "glass containers kitchen meal prep storage food box",
+      "search": "glass meal prep containers",
+      "planningBudget": 30,
+      "verification": {
+        "status": "demo",
+        "sources": [],
+        "reviewedAt": null
+      },
+      "price": null,
+      "asin": null,
+      "productUrl": null,
+      "affiliateUrl": null,
+      "image": {
+        "type": "illustration",
+        "source": "system emoji",
+        "authorized": true
+      },
+      "benefits": [],
+      "features": [],
+      "considerations": [
+        "Check lid seals, stackability, and manufacturer instructions for heat and cleaning."
+      ],
+      "styles": [
+        "minimalist",
+        "space-saving"
+      ],
+      "priorities": [
+        "everyday-convenience",
+        "small-spaces",
+        "aesthetic-design"
+      ]
+    },
+    {
+      "id": "basket",
+      "name": "Woven storage basket",
+      "category": "home",
+      "emoji": "🧺",
+      "color": "#f5e6ca",
+      "chip": "Cozy pick",
+      "description": "A softer way to hide the clutter.",
+      "tags": "home baskets storage organization cozy laundry",
+      "search": "woven storage basket",
+      "planningBudget": 28,
+      "verification": {
+        "status": "demo",
+        "sources": [],
+        "reviewedAt": null
+      },
+      "price": null,
+      "asin": null,
+      "productUrl": null,
+      "affiliateUrl": null,
+      "image": {
+        "type": "illustration",
+        "source": "system emoji",
+        "authorized": true
+      },
+      "benefits": [],
+      "features": [],
+      "considerations": [
+        "Measure the storage spot and check weave, lining, handles, and care instructions."
+      ],
+      "styles": [
+        "minimalist",
+        "cozy"
+      ],
+      "priorities": [
+        "everyday-convenience",
+        "aesthetic-design"
+      ]
+    },
+    {
+      "id": "lamp",
+      "name": "Cozy bedside lamp",
+      "category": "home",
+      "emoji": "💡",
+      "color": "#ece4ff",
+      "chip": "Soft glow",
+      "description": "Warm up a nook or nightstand.",
+      "tags": "lamp home bedside light lighting bedroom desk",
+      "search": "small bedside lamp warm light",
+      "planningBudget": 39,
+      "verification": {
+        "status": "demo",
+        "sources": [],
+        "reviewedAt": null
+      },
+      "price": null,
+      "asin": null,
+      "productUrl": null,
+      "affiliateUrl": null,
+      "image": {
+        "type": "illustration",
+        "source": "system emoji",
+        "authorized": true
+      },
+      "benefits": [],
+      "features": [],
+      "considerations": [
+        "Check dimensions, bulb compatibility, electrical ratings, and brightness controls."
+      ],
+      "styles": [
+        "modern",
+        "cozy",
+        "gift-ideas"
+      ],
+      "priorities": [
+        "everyday-convenience",
+        "aesthetic-design",
+        "gift-giving"
+      ]
+    },
+    {
+      "id": "plant",
+      "name": "Mini indoor planter",
+      "category": "home",
+      "emoji": "🪴",
+      "color": "#dbeed7",
+      "chip": "Fresh energy",
+      "description": "A green touch for shelves and desks.",
+      "tags": "home planter pot plants greenery indoor",
+      "search": "small indoor planter pot",
+      "planningBudget": 19,
+      "verification": {
+        "status": "demo",
+        "sources": [],
+        "reviewedAt": null
+      },
+      "price": null,
+      "asin": null,
+      "productUrl": null,
+      "affiliateUrl": null,
+      "image": {
+        "type": "illustration",
+        "source": "system emoji",
+        "authorized": true
+      },
+      "benefits": [],
+      "features": [],
+      "considerations": [
+        "Check drainage and match pot size to the plant and the space you have."
+      ],
+      "styles": [
+        "minimalist",
+        "cozy",
+        "space-saving",
+        "gift-ideas",
+        "budget-friendly"
+      ],
+      "priorities": [
+        "everyday-convenience",
+        "saving-money",
+        "small-spaces",
+        "aesthetic-design",
+        "gift-giving"
+      ]
+    },
+    {
+      "id": "candle",
+      "name": "Home candle set",
+      "category": "home",
+      "emoji": "🕯️",
+      "color": "#ffe1c7",
+      "chip": "Reset moment",
+      "description": "Set the mood for a quieter evening.",
+      "tags": "home candle gifts cozy decor fragrance",
+      "search": "decorative candle set",
+      "planningBudget": 22,
+      "verification": {
+        "status": "demo",
+        "sources": [],
+        "reviewedAt": null
+      },
+      "price": null,
+      "asin": null,
+      "productUrl": null,
+      "affiliateUrl": null,
+      "image": {
+        "type": "illustration",
+        "source": "system emoji",
+        "authorized": true
+      },
+      "benefits": [],
+      "features": [],
+      "considerations": [
+        "Check ingredients and burn instructions; keep flames away from pets and children."
+      ],
+      "styles": [
+        "cozy",
+        "gift-ideas",
+        "budget-friendly"
+      ],
+      "priorities": [
+        "everyday-convenience",
+        "saving-money",
+        "aesthetic-design",
+        "gift-giving"
+      ]
+    },
+    {
+      "id": "cables",
+      "name": "Desk cable organizer",
+      "category": "tech",
+      "emoji": "🔌",
+      "color": "#d7e9fa",
+      "chip": "Less clutter",
+      "description": "Keep chargers from running wild.",
+      "tags": "cable desk computer gadget tech wire organizer office",
+      "search": "desktop cable organizer",
+      "planningBudget": 14,
+      "verification": {
+        "status": "demo",
+        "sources": [],
+        "reviewedAt": null
+      },
+      "price": null,
+      "asin": null,
+      "productUrl": null,
+      "affiliateUrl": null,
+      "image": {
+        "type": "illustration",
+        "source": "system emoji",
+        "authorized": true
+      },
+      "benefits": [],
+      "features": [],
+      "considerations": [
+        "Check cable diameters, surface compatibility, and adhesive removal instructions."
+      ],
+      "styles": [
+        "minimalist",
+        "space-saving",
+        "budget-friendly"
+      ],
+      "priorities": [
+        "everyday-convenience",
+        "saving-money",
+        "small-spaces",
+        "aesthetic-design"
+      ]
+    },
+    {
+      "id": "stand",
+      "name": "Adjustable phone stand",
+      "category": "tech",
+      "emoji": "📱",
+      "color": "#e2dcf4",
+      "chip": "Work smarter",
+      "description": "Hands-free help wherever you sit.",
+      "tags": "phone stand gadget tech desk table smartphone",
+      "search": "adjustable phone stand desk",
+      "planningBudget": 18,
+      "verification": {
+        "status": "demo",
+        "sources": [],
+        "reviewedAt": null
+      },
+      "price": null,
+      "asin": null,
+      "productUrl": null,
+      "affiliateUrl": null,
+      "image": {
+        "type": "illustration",
+        "source": "system emoji",
+        "authorized": true
+      },
+      "benefits": [],
+      "features": [],
+      "considerations": [
+        "Check phone dimensions, case thickness, charging access, and stability."
+      ],
+      "styles": [
+        "minimalist",
+        "modern",
+        "space-saving",
+        "budget-friendly"
+      ],
+      "priorities": [
+        "everyday-convenience",
+        "saving-money",
+        "small-spaces",
+        "aesthetic-design"
+      ]
+    },
+    {
+      "id": "headset",
+      "name": "Over-ear headphones",
+      "category": "tech",
+      "emoji": "🎧",
+      "color": "#d8ddfb",
+      "chip": "Daily essential",
+      "description": "Find a listening setup that suits you.",
+      "tags": "tech headphone audio music bluetooth wireless",
+      "search": "wireless over ear headphones",
+      "planningBudget": 75,
+      "verification": {
+        "status": "demo",
+        "sources": [],
+        "reviewedAt": null
+      },
+      "price": null,
+      "asin": null,
+      "productUrl": null,
+      "affiliateUrl": null,
+      "image": {
+        "type": "illustration",
+        "source": "system emoji",
+        "authorized": true
+      },
+      "benefits": [],
+      "features": [],
+      "considerations": [
+        "Check device compatibility, fit, connection type, and return terms."
+      ],
+      "styles": [
+        "modern",
+        "gift-ideas"
+      ],
+      "priorities": [
+        "everyday-convenience",
+        "aesthetic-design",
+        "gift-giving"
+      ]
+    },
+    {
+      "id": "speaker",
+      "name": "Compact Bluetooth speaker",
+      "category": "tech",
+      "emoji": "🔊",
+      "color": "#fbdbc9",
+      "chip": "Good sound",
+      "description": "Bring playlists from room to room.",
+      "tags": "music sound speaker bluetooth portable gadget tech",
+      "search": "compact bluetooth speaker",
+      "planningBudget": 45,
+      "verification": {
+        "status": "demo",
+        "sources": [],
+        "reviewedAt": null
+      },
+      "price": null,
+      "asin": null,
+      "productUrl": null,
+      "affiliateUrl": null,
+      "image": {
+        "type": "illustration",
+        "source": "system emoji",
+        "authorized": true
+      },
+      "benefits": [],
+      "features": [],
+      "considerations": [
+        "Check device compatibility, charging needs, dimensions, and manufacturer specifications."
+      ],
+      "styles": [
+        "modern",
+        "gift-ideas"
+      ],
+      "priorities": [
+        "everyday-convenience",
+        "aesthetic-design",
+        "gift-giving"
+      ]
+    },
+    {
+      "id": "bowl",
+      "name": "Slow-feeder pet bowl",
+      "category": "pets",
+      "emoji": "🐶",
+      "color": "#feebba",
+      "chip": "Pet favorite",
+      "description": "A thoughtful addition to mealtime.",
+      "tags": "dog cat pet bowl slow feeder food",
+      "search": "slow feeder dog bowl",
+      "planningBudget": 17,
+      "verification": {
+        "status": "demo",
+        "sources": [],
+        "reviewedAt": null
+      },
+      "price": null,
+      "asin": null,
+      "productUrl": null,
+      "affiliateUrl": null,
+      "image": {
+        "type": "illustration",
+        "source": "system emoji",
+        "authorized": true
+      },
+      "benefits": [],
+      "features": [],
+      "considerations": [
+        "Check suitability for your pet, bowl size, materials, and cleaning instructions."
+      ],
+      "styles": [
+        "budget-friendly"
+      ],
+      "priorities": [
+        "everyday-convenience",
+        "saving-money"
+      ]
+    },
+    {
+      "id": "toy",
+      "name": "Interactive cat toy",
+      "category": "pets",
+      "emoji": "🐈",
+      "color": "#e9dafa",
+      "chip": "Playtime pick",
+      "description": "Make space for more daily play.",
+      "tags": "cat kitten pets pet toy interactive",
+      "search": "interactive cat toy",
+      "planningBudget": 23,
+      "verification": {
+        "status": "demo",
+        "sources": [],
+        "reviewedAt": null
+      },
+      "price": null,
+      "asin": null,
+      "productUrl": null,
+      "affiliateUrl": null,
+      "image": {
+        "type": "illustration",
+        "source": "system emoji",
+        "authorized": true
+      },
+      "benefits": [],
+      "features": [],
+      "considerations": [
+        "Check age and size suitability; supervise play and inspect for damage."
+      ],
+      "styles": [
+        "budget-friendly"
+      ],
+      "priorities": [
+        "everyday-convenience",
+        "saving-money"
+      ]
+    },
+    {
+      "id": "leash",
+      "name": "Everyday dog leash",
+      "category": "pets",
+      "emoji": "🐕",
+      "color": "#d5eddd",
+      "chip": "Walk ready",
+      "description": "Find an easy everyday walking setup.",
+      "tags": "dog pet leash collar walking outdoors",
+      "search": "durable dog leash",
+      "planningBudget": 24,
+      "verification": {
+        "status": "demo",
+        "sources": [],
+        "reviewedAt": null
+      },
+      "price": null,
+      "asin": null,
+      "productUrl": null,
+      "affiliateUrl": null,
+      "image": {
+        "type": "illustration",
+        "source": "system emoji",
+        "authorized": true
+      },
+      "benefits": [],
+      "features": [],
+      "considerations": [
+        "Check length, hardware, size suitability, and manufacturer use instructions."
+      ],
+      "styles": [
+        "budget-friendly"
+      ],
+      "priorities": [
+        "everyday-convenience",
+        "saving-money"
+      ]
+    },
+    {
+      "id": "fountain",
+      "name": "Pet water fountain",
+      "category": "pets",
+      "emoji": "💧",
+      "color": "#d3e8fc",
+      "chip": "Daily care",
+      "description": "A handy idea for a pet-friendly home.",
+      "tags": "pet cat dog water fountain bowl drink",
+      "search": "cat water fountain",
+      "planningBudget": 38,
+      "verification": {
+        "status": "demo",
+        "sources": [],
+        "reviewedAt": null
+      },
+      "price": null,
+      "asin": null,
+      "productUrl": null,
+      "affiliateUrl": null,
+      "image": {
+        "type": "illustration",
+        "source": "system emoji",
+        "authorized": true
+      },
+      "benefits": [],
+      "features": [],
+      "considerations": [
+        "Check cleaning requirements, filter replacement costs, and electrical instructions."
+      ],
+      "styles": [],
+      "priorities": [
+        "everyday-convenience"
+      ]
+    },
+    {
+      "id": "blender",
+      "name": "Compact personal blender",
+      "category": "kitchen",
+      "emoji": "🍓",
+      "color": "#fde0dc",
+      "chip": "Fresh start",
+      "description": "Small-batch smoothies and easy mornings.",
+      "tags": "blender kitchen smoothie appliance juice small compact",
+      "search": "personal blender for smoothies",
+      "planningBudget": 65,
+      "verification": {
+        "status": "demo",
+        "sources": [],
+        "reviewedAt": null
+      },
+      "price": null,
+      "asin": null,
+      "productUrl": null,
+      "affiliateUrl": null,
+      "image": {
+        "type": "illustration",
+        "source": "system emoji",
+        "authorized": true
+      },
+      "benefits": [],
+      "features": [],
+      "considerations": [
+        "Check usable capacity, dimensions, cleaning requirements, and permitted ingredients."
+      ],
+      "styles": [
+        "modern",
+        "space-saving"
+      ],
+      "priorities": [
+        "everyday-convenience",
+        "small-spaces",
+        "aesthetic-design"
+      ]
+    },
+    {
+      "id": "airfryer",
+      "name": "Countertop air fryer",
+      "category": "kitchen",
+      "emoji": "🍟",
+      "color": "#e8e3da",
+      "chip": "Kitchen helper",
+      "description": "Explore compact countertop cooking.",
+      "tags": "air fryer kitchen appliance cooking oven",
+      "search": "compact air fryer",
+      "planningBudget": 115,
+      "verification": {
+        "status": "demo",
+        "sources": [],
+        "reviewedAt": null
+      },
+      "price": null,
+      "asin": null,
+      "productUrl": null,
+      "affiliateUrl": null,
+      "image": {
+        "type": "illustration",
+        "source": "system emoji",
+        "authorized": true
+      },
+      "benefits": [],
+      "features": [],
+      "considerations": [
+        "Measure usable cooking space and required clearances; follow electrical and cleaning instructions."
+      ],
+      "styles": [
+        "modern"
+      ],
+      "priorities": [
+        "everyday-convenience",
+        "aesthetic-design"
+      ]
+    },
+    {
+      "id": "rack",
+      "name": "Over-sink drying rack",
+      "category": "kitchen",
+      "emoji": "🍽️",
+      "color": "#e3e8ee",
+      "chip": "Smart space",
+      "description": "A helpful idea for smaller counters.",
+      "tags": "kitchen rack drying dishes organization over sink",
+      "search": "over sink drying rack",
+      "planningBudget": 48,
+      "verification": {
+        "status": "demo",
+        "sources": [],
+        "reviewedAt": null
+      },
+      "price": null,
+      "asin": null,
+      "productUrl": null,
+      "affiliateUrl": null,
+      "image": {
+        "type": "illustration",
+        "source": "system emoji",
+        "authorized": true
+      },
+      "benefits": [],
+      "features": [],
+      "considerations": [
+        "Measure sink width and check load limits, materials, and storage options."
+      ],
+      "styles": [
+        "minimalist",
+        "space-saving"
+      ],
+      "priorities": [
+        "everyday-convenience",
+        "small-spaces",
+        "aesthetic-design"
+      ]
+    },
+    {
+      "id": "monitor",
+      "name": "Desk monitor riser",
+      "category": "tech",
+      "emoji": "🖥️",
+      "color": "#dce7ec",
+      "chip": "Desk refresh",
+      "description": "Create a little breathing room below.",
+      "tags": "monitor riser stand desk tech office home",
+      "search": "wooden monitor riser desk",
+      "planningBudget": 55,
+      "verification": {
+        "status": "demo",
+        "sources": [],
+        "reviewedAt": null
+      },
+      "price": null,
+      "asin": null,
+      "productUrl": null,
+      "affiliateUrl": null,
+      "image": {
+        "type": "illustration",
+        "source": "system emoji",
+        "authorized": true
+      },
+      "benefits": [],
+      "features": [],
+      "considerations": [
+        "Check monitor weight, desk measurements, stability, and compatibility with your setup."
+      ],
+      "styles": [
+        "minimalist",
+        "modern"
+      ],
+      "priorities": [
+        "everyday-convenience",
+        "aesthetic-design"
+      ]
+    }
+  ]
+}
