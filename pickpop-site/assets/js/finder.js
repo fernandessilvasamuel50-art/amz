@@ -4,7 +4,7 @@ import { createSavedStore } from './saved.js';
 import { element, productCard } from './cards.js';
 import { initQuiz } from './quiz.js';
 import { renderComparison } from './comparison.js';
-import { track } from './metrics.js';
+import { track, searchTopic } from './metrics.js';
 const $ = id => document.getElementById(id);
 let items = [], config, provider, store, initialized = false, comparison = [];
 const filters = { query: '', category: 'all', budget: 50, preferences: [], priority: '', savedOnly: false, sort: 'featured' };
@@ -71,7 +71,7 @@ function reset(all = false) {
 function resultsFocus() {
   if (!$('budget-input').reportValidity()) return;
   filters.budget = parseBudget($('budget-input').value); syncControls(); render();
-  track('search', { category: filters.category, queryLength: filters.query.length, budgetBand: filters.budget <= 25 ? 'up-to-25' : filters.budget <= 100 ? 'up-to-100' : 'over-100' });
+  track('search', { category: filters.category, queryLength: filters.query.length, queryTopic: searchTopic(filters.query), count: provider.search(filters).length, budgetBand: filters.budget <= 25 ? 'up-to-25' : filters.budget <= 100 ? 'up-to-100' : 'over-100' });
   $('results-summary').focus({ preventScroll: true }); $('results').scrollIntoView({ behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth', block: 'start' });
 }
 function initFinder() {

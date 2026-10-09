@@ -1,0 +1,18 @@
+{
+  "scope": "business-observations-only",
+  "period": {"start": "2026-10-09", "end": "2026-10-22"},
+  "marketingSpendBRL": 0,
+  "visitors": null,
+  "countries": null,
+  "pages": null,
+  "searchTopics": null,
+  "productClicks": null,
+  "amazonClicks": null,
+  "trafficSources": null,
+  "googleImpressions": null,
+  "googleClicks": null,
+  "googleQueries": null,
+  "amazonOrders": null,
+  "amazonCommissionUSD": null,
+  "notes": "No business measurement exports available. Unknown is not zero. Local QA events must never populate this report. Orders and commissions require Amazon Associates official reports."
+}

@@ -15,6 +15,12 @@
     "serverEndpoint": null
   },
   "analytics": {
-    "enabled": false
+    "enabled": false,
+    "provider": "ga4",
+    "measurementId": null,
+    "ownerApproved": false
+  },
+  "searchConsole": {
+    "verificationToken": "6si-mwzrd8NFhy4dUq_1LxsyskjEYrEoG_AYTvTQsJI"
   }
 }

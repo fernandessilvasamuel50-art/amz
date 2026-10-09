@@ -1,0 +1,37 @@
+# Pesquisa operacional — 9 de outubro de 2026
+
+## Amazon e atribuição
+
+[Políticas oficiais atuais](https://affiliate-program.amazon.com/help/operating/policies) consultadas; links diretos HTTPS Amazon.com `/dp/ASIN?tag=pickpop03-20`, tag central, divulgação junto aos botões e `rel="sponsored"`. Os links não passam por redirecionador. A política de origem foi mantida em `strict-origin-when-cross-origin`: o navegador informa a origem do PickPop, sem transmitir caminho ou busca. Retirar `noreferrer` não prova que cliques anteriores perderam comissões.
+
+`AFFILIATE-AUDIT.csv` registra individualmente sete identidades, ASINs, links, autores/licenças e pendência de atribuição. As páginas Amazon foram consultadas com o navegador de pesquisa; algumas respostas são de cache. Isso confirma a identidade disponível na fonte, não estoque ou preço atual. Nenhum preço/avaliação foi copiado e nenhuma imagem Amazon foi baixada. URLs foram testadas estruturalmente; a navegação comercial automatizada foi interceptada localmente para não gerar cliques artificiais no painel.
+
+**Validação do proprietário:** entrar normalmente em Amazon Associates USA; usar o [Link Checker oficial](https://affiliate-program.amazon.com/help/node/topic/G6253GFSARDQENZR) para os sete links autoformatados do CSV e conferir se retornam a própria conta. Links gerados por ferramentas oficiais têm regras específicas para o Checker; seguir a [explicação da Amazon](https://affiliate-program.amazon.com/help/node/topic/GM23X5M9YQX5MDKE). Se necessário, pedir confirmação ao suporte dentro da própria conta informando o site e os links. Conferir relatórios oficiais para cliques, pedidos qualificados e comissões. Não fazer compras próprias ou compras de teste. Conferir que `https://pickpop.netlify.app/` está na lista de sites aprovada da conta; incluir perfis sociais apenas quando usados e conforme regras do programa.
+
+## Incremento de catálogo
+
+**Publicado nesta rodada:** OXO Good Grips Silicone Basting & Pastry Brush — Large, modelo 1071061, ASIN B000HD7FJ4. [Fabricante](https://www.oxo.com/silicone-basting-brush-318.html) e [página Amazon](https://www.amazon.com/dp/B000HD7FJ4) conferidos. O fabricante informa 10,7 × 2 × 1 polegadas; o título Amazon arredonda a 10,8. Sem preços. Benefícios e limitações estão no catálogo, em linguagem editorial própria.
+
+Fotografia de Frank O'Grady (fogrady262), [Commons com revisão da licença Flickr](https://commons.wikimedia.org/wiki/File:OXO_Silicone_Basting_Brush_(54816336666).jpg), [original Flickr](https://www.flickr.com/photos/26278084@N00/54816336666), [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Imagem inspecionada com embalagem e configuração da escova grande, normalizada e reduzida para WebP; atribuição e alterações públicas. Não se pressupõe autorização de fabricante por estar na internet.
+
+**Não publicar:** balança OXO foto CC BY 4.0 mostra versão antiga de dois botões. Fabricante atual 11214800 e ASIN B079D9B82W têm outra configuração; a versão antiga B000WJMTNA / 1130800 não resolve a confirmação de variante e relevância comercial da fotografia. Hario Buono foto CC0 identifica a família, mas não comprova capacidade/modelo. Hario V60 02, Bodum Chambord, Bialetti 3-cup e AeroPress permanecem com pendências de variante detalhadas em `RESEARCH-3.0.md`. Não preencher a meta de 12 com fotos de modelos diferentes. Meta progressiva continua aberta: faltam cinco itens de cozinha/organização com identidade e fotografia exatas; fotos próprias, autorização expressa ou acesso oficial de imagem são caminhos válidos.
+
+## Cinco oportunidades editoriais prioritárias
+
+Classificação editorial, não dados de volume. Pesquisa aberta não forneceu volumes mensais, dificuldade numérica ou ranking geolocalizado americano; todos esses indicadores permanecem **indisponíveis**. A concorrência observável inclui varejistas e publicações consolidadas, por exemplo [Homes & Gardens](https://www.homesandgardens.com/buying-guides/coffee-bar-essentials), [Tom's Guide](https://www.tomsguide.com/home/i-upgraded-my-coffee-corner-with-these-5-products-and-theyre-all-under-usd20) e [TechRadar](https://www.techradar.com/home/coffee-machines/im-a-certified-barista-and-these-are-my-3-favorite-small-coffee-machines-that-deliver-delicious-espresso-without-dominating-your-kitchen). Não copiamos suas experiências, ofertas ou resultados de testes.
+
+| Prioridade / busca editorial | Intenção e adequação | Ação executada | Concorrência observável |
+|---|---|---|---|
+| 1. Coffee station ideas for small kitchens | Planejar configuração e acessórios; CHEMEX no catálogo | Comparação counter/tray/cabinet, motivo, limitações e CTA | Guias editoriais e varejistas; posicionamento próprio desconhecido |
+| 2. How to choose a coffee maker for a small apartment | Escolher método e equipamento; opção manual verificada | Manual/automatic/single-serve, infraestrutura, custo total sem preço inventado | Publicações de eletrodomésticos consolidadas |
+| 3. Kitchen essentials for small apartments | Comprar por tarefa; Lodge, CHEMEX e OXO | Ferramentas versáteis/específicas, três produtos com cuidados | Listas e varejistas; não alegamos baixa concorrência |
+| 4. Space-saving kitchen organization | Planejar área útil antes de comprar | Prep/cabinets/coffee e medidas; não fingir que pan de 12" é compacto | Conteúdo editorial de organização |
+| 5. Practical gifts for home lovers | Comprar por rotina do presenteado | Perguntas de compatibilidade, matriz de decisões e dois produtos | Seleções editoriais; tema sazonal sem volume confirmado |
+
+Os dez artigos foram mantidos, sem produção em massa. Os cinco escolhidos ganharam tabelas práticas e recomendações relevantes com fontes e avisos de que não fizemos testes físicos. Artigos sobre recipientes, armários e especiarias continuam úteis, mas não ganham recomendações de itens sem foto/variante comprovada. Sitemap inclui artigos e detalhes; filtros continuam sem indexação. Canonicals usam o domínio oficial e não incluem parâmetros UTM.
+
+## Aquisição e medição
+
+Pinterest: 12 PNGs originais, checklist de smartphone, títulos/descrições/destinos preparados. Adequação é uma hipótese de público para testar, não comprovação de demanda. [Especificações](https://help.pinterest.com/en/business/article/pinterest-product-specs), [agendamento nativo](https://help.pinterest.com/en/business/article/schedule-pins) e [regras vigentes](https://policy.pinterest.com/en/community-guidelines) consultados. Conta solicitou login; nada foi publicado/agendado. Instagram é o único segundo canal proposto, com três rascunhos; autorização pendente. Não usar comunidades que proíbem links comerciais.
+
+Métricas: nenhum serviço externo foi ativado. O adaptador futuro GA4 exige aprovação e consentimento, não carrega scripts Google e não armazena consultas brutas. País/origem de tráfego/visitantes exigem configuração real e relatórios. O painel local `operations/dashboard.html` usa somente observações com fonte e data; campos ausentes não viram zero. Exportações reais ficam na pasta ignorada `operations/private/`. `?diagnostics=1` é teste local voluntário em memória, nunca dado comercial. Para medir cliques agregados e países, fornecer um Measurement ID de propriedade GA4 existente e aprovar configuração de privacidade/consentimento; se não houver propriedade, sua criação e aceite dos termos dependem do proprietário. Search Console mede Google, não todo o tráfego ou vendas Amazon.

@@ -1,0 +1,63 @@
+{
+  "coffee-station.html": {
+    "heading": "A brewer to plan your coffee corner around",
+    "items": [
+      {
+        "id": "chemex-six-cup",
+        "reason": "Its documented 30-fluid-ounce capacity helps you plan servings. Allow separate space for heated water, compatible filters, and cleanup."
+      }
+    ]
+  },
+  "coffee-maker-small-apartment.html": {
+    "heading": "Explore a source-reviewed manual option",
+    "items": [
+      {
+        "id": "chemex-six-cup",
+        "reason": "A manual glass brewer for a hands-on routine. Check its footprint and the supporting equipment before deciding whether it suits your apartment."
+      }
+    ]
+  },
+  "small-apartment-kitchen-essentials.html": {
+    "heading": "Different jobs, considered choices",
+    "items": [
+      {
+        "id": "lodge-twelve-inch",
+        "reason": "The documented 12-inch skillet is an option for a cooking task, provided its size and 7.69-pound weight fit your handling and storage needs."
+      },
+      {
+        "id": "chemex-six-cup",
+        "reason": "A separate choice for manual coffee brewing. It does not replace cookware; allow room for filters and heated water."
+      },
+      {
+        "id": "oxo-basting-brush",
+        "reason": "For a cook who actually bastes or brushes on glazes. It adds one specific job without another countertop appliance; check the documented 10.7-inch length against your drawer."
+      }
+    ]
+  },
+  "small-kitchen.html": {
+    "heading": "Choose for a routine, then check the space",
+    "items": [
+      {
+        "id": "chemex-six-cup",
+        "reason": "Consider it for a manual coffee routine rather than a permanent appliance station. Plan the full working area, not just the brewer."
+      },
+      {
+        "id": "lodge-twelve-inch",
+        "reason": "Consider only if a 12-inch pan fits your meals, cooktop, and storage. Its weight can be a drawback in a small kitchen; smaller is not automatically better."
+      }
+    ]
+  },
+  "smart-gifts.html": {
+    "heading": "Match the gift to the recipient's routine",
+    "items": [
+      {
+        "id": "chemex-six-cup",
+        "reason": "For someone who wants a manual coffee ritual and already has, or wants, the supporting equipment. It needs compatible filters and heated water."
+      },
+      {
+        "id": "lodge-twelve-inch",
+        "reason": "For someone who wants cast iron and is comfortable handling a heavy pan and following its care instructions. Confirm the size before gifting."
+      }
+    ]
+  }
+}

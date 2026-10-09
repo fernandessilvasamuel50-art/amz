@@ -5,3 +5,4 @@
 **/node_modules/
 pickpop-site/tests/artifacts/
 .tools/
+operations/private/

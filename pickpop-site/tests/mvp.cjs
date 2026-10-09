@@ -13,6 +13,7 @@ const output = path.join(__dirname, 'artifacts');
   page.on('pageerror', error => errors.push(error.message));
   context.on('request', request => requests.push(request.url()));
   const ready = async () => { await page.waitForFunction(() => document.querySelector('#product-search') && !document.querySelector('#product-search').disabled); };
+  const catalogCount = JSON.parse(await fs.readFile(path.join(root, 'data/catalog.json'), 'utf8')).items.length;
   const count = () => page.locator('#product-grid .product-card').count();
   const names = () => page.locator('#product-grid .product-copy h3').allTextContents();
   const search = value => page.locator('#product-search').fill(value);
@@ -20,13 +21,13 @@ const output = path.join(__dirname, 'artifacts');
   const reset = () => page.locator('#clear-filters').click();
   try {
     await page.goto(base); await ready();
-    assert.equal(await count(), 6);
+    assert.equal(await count(), catalogCount);
     await search('CHEMEX'); assert.deepEqual(await names(), ['CHEMEX Six-Cup Classic Series Coffeemaker']);
     await search('computer mouse'); assert.deepEqual(await names(), ['Logitech M185 Compact Ambidextrous Wireless Mouse — Swift Grey']);
     await search('L10SK3'); assert.deepEqual(await names(), ['Lodge Pre-Seasoned Cast Iron Skillet — 12 Inches']);
     await search('coffee mug'); assert.equal(await count(), 0); assert.equal(await page.locator('#empty-state').isVisible(), true);
-    await page.locator('#reset-filters').click(); assert.equal(await count(), 6);
-    await budget(5); assert.equal(await count(), 6); assert((await page.locator('#budget-help').textContent()).includes('not excluded'));
+    await page.locator('#reset-filters').click(); assert.equal(await count(), catalogCount);
+    await budget(5); assert.equal(await count(), catalogCount); assert((await page.locator('#budget-help').textContent()).includes('not excluded'));
     await page.locator('[data-category="pets"]').click(); assert.deepEqual(await names(), ['KONG Classic Stuffable Dog Toy — Medium, Red']);
     await search('Logitech'); assert.equal(await count(), 0); await reset();
     await page.locator('[data-category="organization"]').click(); assert.equal(await count(), 0); await reset();
@@ -86,7 +87,7 @@ const output = path.join(__dirname, 'artifacts');
 
     await page.route('**/data/catalog.json', route => route.abort()); await page.reload();
     await page.locator('#catalog-error').waitFor({ state: 'visible' }); assert.equal(await page.locator('#find-button').isDisabled(), true);
-    await page.unroute('**/data/catalog.json'); await page.locator('#catalog-retry').click(); await ready(); assert.equal(await count(), 6);
+    await page.unroute('**/data/catalog.json'); await page.locator('#catalog-retry').click(); await ready(); assert.equal(await count(), catalogCount);
     const privateContext = await browser.newContext();
     await privateContext.addInitScript(() => { Storage.prototype.getItem = () => { throw Error('Blocked'); }; Storage.prototype.setItem = () => { throw Error('Blocked'); }; });
     const privatePage = await privateContext.newPage(); await privatePage.goto(base); await privatePage.waitForFunction(() => !document.querySelector('#product-search').disabled);
@@ -115,8 +116,13 @@ const output = path.join(__dirname, 'artifacts');
         if (width === 1440) for (const href of links) assert.equal((await page.request.get(base + href)).status(), 200, `Broken link on ${route}: ${href}`);
         const retailers = await page.locator('a[href^="https://www.amazon.com/"]').evaluateAll(elements => elements.map(el => ({ href: el.href, rel: el.rel })));
         assert(retailers.every(link => link.rel.includes('noopener') && (!new URL(link.href).searchParams.has('tag') || (new URL(link.href).searchParams.get('tag') === 'pickpop03-20' && link.rel.includes('sponsored')))));
-        const images = await page.locator('img[src^="/assets/products/"]').evaluateAll(elements => elements.map(image => ({ alt: image.alt, width: image.naturalWidth, complete: image.complete })));
-        assert(images.every(image => image.alt && image.complete && image.width > 0), 'Licensed product photos load with alt text');
+        const photos = page.locator('img[src^="/assets/products/"]');
+        for (const image of await photos.all()) {
+          await image.scrollIntoViewIfNeeded();
+          await image.evaluate(img => img.decode());
+        }
+        const images = await photos.evaluateAll(elements => elements.map(image => ({ alt: image.alt, width: image.naturalWidth, complete: image.complete })));
+        assert(images.every(image => image.alt && image.complete && image.width > 0), 'Licensed product photos load with alt text: ' + route);
       }
     }
     await page.goto(base); await ready(); await page.keyboard.press('Tab'); await page.keyboard.press('Enter');

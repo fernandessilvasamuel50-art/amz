@@ -38,9 +38,10 @@ export function productCard(match, { config, store, onSave, comparison = [], onC
   } else reference.append(element('span', '', 'Check the current price on Amazon'));
   const destination = retailerDestination(item, config);
   const link = element('a', 'product-cta', destination.label + ' ↗');
-  link.href = destination.url; link.target = '_blank'; link.rel = 'noopener noreferrer ' + (destination.sponsored ? 'sponsored' : 'nofollow');
+  link.href = destination.url; link.target = '_blank'; link.rel = 'noopener ' + (destination.sponsored ? 'sponsored' : 'nofollow');
+  link.referrerPolicy = 'strict-origin-when-cross-origin';
   link.setAttribute('aria-label', `${destination.label} for ${item.name} (opens in a new tab; verify the current price)`);
-  link.addEventListener('click', () => track('retailer_click', { id: item.id, sponsored: destination.sponsored }));
+  link.addEventListener('click', () => track('retailer_click', { id: item.id, sponsored: destination.sponsored, placement: 'finder' }));
   if (destination.sponsored) copy.append(element('p', 'affiliate-note', 'Paid link. As an Amazon Associate I earn from qualifying purchases.'));
   copy.append(category, element('p', 'product-brand', item.brand || 'Editorial concept'), heading, description, why, reference, link);
   const actions = element('div', 'card-tools');

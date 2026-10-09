@@ -11,6 +11,7 @@ TEMPLATES = ROOT / 'templates'
 DIST = ROOT / 'dist'
 CONFIG = json.loads((ROOT / 'data/site.json').read_text(encoding='utf-8'))
 CATALOG = json.loads((ROOT / 'data/catalog.json').read_text(encoding='utf-8'))
+EDITORIAL = json.loads((ROOT / 'data/editorial.json').read_text(encoding='utf-8'))
 ORIGIN = CONFIG['origin'].rstrip('/')
 PAGES = {}
 INDEXABLE = []
@@ -35,6 +36,9 @@ def validate():
         raise ValueError('Live Amazon content is disabled until a server-side adapter is implemented')
     if CONFIG['analytics']['enabled']:
         raise ValueError('External analytics needs an approved consent-aware adapter')
+    token = CONFIG.get('searchConsole', {}).get('verificationToken')
+    if token and not re.fullmatch(r'[A-Za-z0-9_-]{20,120}', token):
+        raise ValueError('Invalid Search Console verification token')
     if CATALOG['schemaVersion'] != 1 or not isinstance(CATALOG['items'], list):
         raise ValueError('Invalid catalog version')
     ids = set()
@@ -108,9 +112,11 @@ def page(route, title, description, content, interactive=False, index=True, kind
         ]})
     structured = '\n'.join('<script type="application/ld+json">' + json.dumps(value, ensure_ascii=False).replace('<', '\\u003c') + '</script>' for value in metadata)
     script = '<script type="module" src="/assets/js/app.js"></script>' if interactive else '<script type="module" src="/assets/js/page-events.js"></script>'
+    token = CONFIG.get('searchConsole', {}).get('verificationToken')
+    verification = '<meta name="google-site-verification" content="' + ESC(token, quote=True) + '">' if token else ''
     document = f'''<!doctype html>
 <html lang="en-US"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#fffaf3">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#fffaf3">{verification}
 <title>{ESC(title)}</title><meta name="description" content="{ESC(description, quote=True)}">
 <link rel="canonical" href="{ESC(canonical, quote=True)}"><meta name="robots" content="{'index,follow' if index else 'noindex,follow'}">
 <meta property="og:title" content="{ESC(title, quote=True)}"><meta property="og:description" content="{ESC(description, quote=True)}"><meta property="og:type" content="{kind}"><meta property="og:url" content="{canonical}"><meta property="og:locale" content="en_US"><meta property="og:site_name" content="PickPop">
@@ -136,8 +142,24 @@ def photo_credit(item):
     return f'<p class="photo-credit">Photo: {ESC(image["author"])} · <a href="{ESC(image["source"], quote=True)}" target="_blank" rel="noopener noreferrer">Original photograph</a> · <a href="{ESC(image["licenseUrl"], quote=True)}" target="_blank" rel="noopener noreferrer">{ESC(image["license"])}</a>. {ESC(image["changes"])} This photograph and its WebP adaptation remain under the stated image license. No endorsement is implied.</p>'
 
 
-def static_card(item):
-    return f'''<article class="collection-idea">{photo(item, 'collection-photo')}<div><span class="product-category">{ESC(item['brand'])} · {ESC(item['category'])}</span><h3><a href="/ideas/{item['id']}/">{ESC(item['name'])}</a></h3><p>{ESC(item['description'])}</p><a class="text-link" href="/ideas/{item['id']}/">Details & photo credit →</a></div></article>'''
+def amazon_cta(item, placement):
+    url, paid, label = safe_destination(item)
+    note = 'Paid link. As an Amazon Associate I earn from qualifying purchases.' if paid else 'No paid affiliate link is active for this item.'
+    return f'<p class="affiliate-note">{ESC(note)}</p><a class="btn btn-coral" href="{ESC(url, quote=True)}" target="_blank" rel="noopener {"sponsored" if paid else "nofollow"}" referrerpolicy="strict-origin-when-cross-origin" data-product-id="{ESC(item["id"])}" data-placement="{placement}">{label} ↗</a><p class="p-small">Check the selected variant and current price on Amazon.</p>'
+
+
+def static_card(item, reason=None, placement='collection'):
+    why = reason or item['benefits'][0]
+    return f'''<article class="collection-idea">{photo(item, 'collection-photo')}<div><span class="product-category">{ESC(item['brand'])} · {ESC(item['category'])}</span><h3><a href="/ideas/{item['id']}/">{ESC(item['name'])}</a></h3><p>{ESC(item['description'])}</p><p><strong>Why consider it:</strong> {ESC(why)}</p><p><strong>Keep in mind:</strong> {ESC(item['considerations'][0])}</p>{amazon_cta(item, placement)}<a class="text-link" href="/ideas/{item['id']}/">Details, sources & photo credit →</a></div></article>'''
+
+
+def article_picks(filename):
+    edit = EDITORIAL[filename]
+    by_id = {item['id']: item for item in CATALOG['items']}
+    for choice in edit['items']:
+        if choice['id'] not in by_id or not choice['reason'].strip():
+            raise ValueError('Article recommendation needs a verified product and a reason')
+    return '<section class="article-picks" aria-label="Related product recommendations"><h2>' + ESC(edit['heading']) + '</h2><p>Source-reviewed options, not hands-on reviews or a ranked list. Prices and stock are checked on Amazon.</p><div class="article-picks-grid">' + ''.join(static_card(by_id[c['id']], c['reason'], 'article') for c in edit['items']) + '</div></section>'
 
 
 def generate():
@@ -153,6 +175,10 @@ def generate():
         description = re.search(r'<meta name="description" content="(.*?)"', raw).group(1)
         body = re.search(r'<main id="main">(.*?)</main>', raw, re.S).group(1)
         body = body.replace('href="/#guides"', 'href="/guides/"').replace('href="/#finder"', 'href="/find/"').replace('href="/?q=', 'href="/find/?q=')
+        if file.name in EDITORIAL:
+            if '<!-- VERIFIED PICKS -->' not in body:
+                raise ValueError('Missing article recommendation marker: ' + file.name)
+            body = body.replace('<!-- VERIFIED PICKS -->', article_picks(file.name))
         route = '/guides/' + file.name
         schema = {'@context': 'https://schema.org', '@type': 'Article', 'headline': html.unescape(title.split(' | ')[0]), 'description': html.unescape(description), 'inLanguage': 'en-US', 'mainEntityOfPage': ORIGIN + route, 'author': {'@type': 'Organization', 'name': 'PickPop'}, 'publisher': {'@type': 'Organization', 'name': 'PickPop'}}
         page(route, title, html.unescape(description), body, kind='article', schema=schema)
@@ -182,7 +208,7 @@ def generate():
         disclosure = '<p class="affiliate-note">Paid link. As an Amazon Associate I earn from qualifying purchases.</p>' if paid else '<p class="p-small">No paid affiliate link is active for this idea.</p>'
         tags = ', '.join(LABELS[style] for style in item['styles'])
         sources_html = ''.join('<li><a href="' + ESC(url, quote=True) + '" target="_blank" rel="noopener noreferrer">' + ESC(urlparse(url).hostname) + ' product information</a></li>' for url in item['verification']['sources'])
-        content = f'''<div class="shell page-shell"><nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a> / <a href="/collections/">Collections</a> / {ESC(item['name'])}</nav><div class="idea-layout"><figure class="idea-illustration product-detail-photo">{photo(item, "detail-photo")}{photo_credit(item)}</figure><article class="idea-copy"><p class="overline">{ESC(status)}</p><h1>{ESC(item['name'])}</h1><p>{ESC(item['description'])}</p><h2>Why explore this idea?</h2><p>Our catalog associates this concept with {ESC(tags.lower())}. These are editorial discovery tags, not manufacturer claims.</p><h2>Before you choose</h2><ul>{''.join('<li>'+ESC(text)+'</li>' for text in item['considerations'])}</ul><h2>What we know</h2><p><strong>{ESC(item.get("brand", ""))}</strong> · Model: {ESC(item.get("model", ""))} · ASIN: {ESC(item.get("asin", ""))}</p>{facts}<h2>Sources & verification</h2><p>Reviewed {ESC(item["verification"]["reviewedAt"])}. Model identity and listed characteristics are source reviewed; current price and availability are not verified. These are editorial recommendations, not hands-on tests.</p><ul class="source-list">{sources_html}</ul>{disclosure}<a class="btn btn-coral" href="{ESC(url, quote=True)}" target="_blank" rel="noopener noreferrer {'sponsored' if paid else 'nofollow'}">{label} ↗</a><p class="p-small">Opens Amazon in a new tab. Check the specific product, final price, taxes, delivery, and returns there. PickPop does not sell or fulfill orders.</p><a class="text-link" href="/find/?{ESC(urlencode({'q': item['name']}), quote=True)}#finder">Back to the finder →</a></article></div></div>'''
+        content = f'''<div class="shell page-shell"><nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a> / <a href="/collections/">Collections</a> / {ESC(item['name'])}</nav><div class="idea-layout"><figure class="idea-illustration product-detail-photo">{photo(item, "detail-photo")}{photo_credit(item)}</figure><article class="idea-copy"><p class="overline">{ESC(status)}</p><h1>{ESC(item['name'])}</h1><p>{ESC(item['description'])}</p>{amazon_cta(item, 'detail-intro')}<h2>Why consider this product?</h2><p>{ESC(item['benefits'][0])} The discovery tags ({ESC(tags.lower())}) are PickPop editorial choices, not manufacturer claims.</p><h2>Before you choose</h2><ul>{''.join('<li>'+ESC(text)+'</li>' for text in item['considerations'])}</ul><h2>What we know</h2><p><strong>{ESC(item.get("brand", ""))}</strong> · Model: {ESC(item.get("model", ""))} · ASIN: {ESC(item.get("asin", ""))}</p>{facts}<h2>Sources & verification</h2><p>Reviewed {ESC(item["verification"]["reviewedAt"])}. Model identity and listed characteristics are source reviewed; current price and availability are not verified. These are editorial recommendations, not hands-on tests.</p><ul class="source-list">{sources_html}</ul>{disclosure}<a class="btn btn-coral" href="{ESC(url, quote=True)}" target="_blank" rel="noopener {'sponsored' if paid else 'nofollow'}" referrerpolicy="strict-origin-when-cross-origin" data-product-id="{ESC(item['id'])}" data-placement="detail">{label} ↗</a><p class="p-small">Opens Amazon in a new tab. Check the specific product, final price, taxes, delivery, and returns there. PickPop does not sell or fulfill orders.</p><a class="text-link" href="/find/?{ESC(urlencode({'q': item['name']}), quote=True)}#finder">Back to the finder →</a></article></div></div>'''
         page('/ideas/' + item['id'] + '/', item['name'] + ' — What to Consider | PickPop', 'Explore this ' + ('example shopping concept' if demo else 'sourced recommendation') + ' and practical questions to ask before choosing: ' + item['name'] + '.', content, index=not demo)
 
     page('/image-credits/', 'Product Photography Credits & Licenses | PickPop', 'Authors, original sources, open image licenses, and modifications for PickPop product photographs.', intro('The people behind <em>the pictures.</em>', 'Independent photography, credited where it belongs.', 'PHOTO CREDITS') + '<div class="shell policy-body">' + ''.join('<h2>' + ESC(item['name']) + '</h2>' + photo_credit(item) for item in CATALOG['items']) + '</div>')

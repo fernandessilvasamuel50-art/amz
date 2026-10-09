@@ -400,6 +400,73 @@
         "gift-giving"
       ],
       "retailerName": "KONG Classic Stuffable Dog Toy, Natural Rubber Chew, for Medium Dogs"
+    },
+    {
+      "id": "oxo-basting-brush",
+      "name": "OXO Good Grips Silicone Basting & Pastry Brush - Large",
+      "brand": "OXO",
+      "model": "1071061",
+      "category": "kitchen",
+      "emoji": "✳",
+      "color": "#fff3db",
+      "chip": "Source reviewed",
+      "description": "A silicone brush for applying sauces and glazes, with liquid-holding center bristles and a soft grip.",
+      "tags": "brush basting pastry cooking sauce glaze silicone utensil kitchen oxo",
+      "search": "OXO Good Grips Silicone Basting Pastry Brush Large",
+      "planningBudget": null,
+      "verification": {
+        "status": "verified",
+        "sources": [
+          "https://www.oxo.com/silicone-basting-brush-318.html",
+          "https://www.amazon.com/dp/B000HD7FJ4"
+        ],
+        "reviewedAt": "2026-10-09",
+        "scope": "Manufacturer SKU 1071061 and Amazon model identity reviewed. Current stock and prices are not verified. Manufacturer dimensions are 10.7 x 2 x 1 inches; retailer title rounds the length to 10.8 inches."
+      },
+      "price": null,
+      "asin": "B000HD7FJ4",
+      "productUrl": "https://www.amazon.com/dp/B000HD7FJ4",
+      "affiliateUrl": "https://www.amazon.com/dp/B000HD7FJ4?tag=pickpop03-20",
+      "affiliateVerification": {
+        "status": "owner-tag-confirmed",
+        "reviewedAt": "2026-10-09",
+        "method": "Direct product URL with owner-confirmed tag. Product title and model reviewed; Amazon account Link Checker and sales attribution remain owner checks."
+      },
+      "image": {
+        "type": "photo",
+        "authorized": true,
+        "src": "/assets/products/oxo-basting-brush.webp",
+        "alt": "OXO Good Grips large silicone basting brush with its original product packaging",
+        "width": 960,
+        "height": 720,
+        "source": "https://commons.wikimedia.org/wiki/File:OXO_Silicone_Basting_Brush_(54816336666).jpg",
+        "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e1/OXO_Silicone_Basting_Brush_%2854816336666%29.jpg",
+        "author": "Frank O'Grady (fogrady262)",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "changes": "Orientation normalized, resized and encoded as WebP. No product appearance altered.",
+        "variantReviewed": true
+      },
+      "benefits": [
+        "Applies sauces and glazes with a dedicated hand tool."
+      ],
+      "features": [
+        "Silicone bristles, with gaps in the center to carry liquid.",
+        "Tapered outer bristles and a soft non-slip grip.",
+        "Manufacturer lists dishwasher-safe care and 10.7 x 2 x 1 inch dimensions."
+      ],
+      "considerations": [
+        "Check the large brush length against your utensil storage; it is not the smaller pastry-brush model.",
+        "A dedicated brush suits basting tasks; choose it only if that is a job you actually do."
+      ],
+      "styles": [
+        "minimalist",
+        "modern"
+      ],
+      "priorities": [
+        "everyday-convenience"
+      ],
+      "retailerName": "OXO Good Grips Silicone Basting & Pastry Brush - Large, 10.8 in. "
     }
   ]
 }

@@ -18,7 +18,7 @@ const base = process.env.PICKPOP_TEST_URL || 'http://127.0.0.1:8082';
   page.on('console', message => { if (message.type() === 'error') consoleErrors.push(message.text()); });
   page.on('pageerror', error => consoleErrors.push(error.message));
   try {
-    const routes = ['/', '/find/', '/guides/', '/guides/coffee-maker-small-apartment.html', '/collections/', '/collections/small-kitchen/', '/ideas/chemex-six-cup/', '/ideas/kong-classic-medium/', '/image-credits/', '/guides/food-storage-containers.html', '/privacy.html', '/about.html', '/disclosure/', '/contact/'];
+    const routes = ['/', '/find/', '/guides/', '/guides/coffee-maker-small-apartment.html', '/guides/coffee-station.html', '/guides/small-kitchen.html', '/guides/small-apartment-kitchen-essentials.html', '/guides/smart-gifts.html', '/ideas/oxo-basting-brush/', '/collections/', '/collections/small-kitchen/', '/ideas/chemex-six-cup/', '/ideas/kong-classic-medium/', '/image-credits/', '/guides/food-storage-containers.html', '/privacy.html', '/about.html', '/disclosure/', '/contact/'];
     for (const width of [360, 1440]) {
       await page.setViewportSize({ width, height: 900 });
       for (const route of routes) {
