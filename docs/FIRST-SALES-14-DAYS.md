@@ -6,7 +6,7 @@ Período: **9–22 de outubro de 2026**. Sem anúncios, serviços pagos, contas 
 |---|---|---|
 | 1 — 09/10 | Auditoria técnica dos sete links; melhoria dos cinco guias; build/testes/deploy | Executado pelo desenvolvimento; proprietário confirma atribuição Amazon com CSV no Link Checker |
 | 2 — 10/10 | Netlify Analytics autorizado e ativado após atualizar privacidade; selo CSP corrigido; Google buscou o XML ao vivo, sitemap reenviado; indexação recusada por cota. Confirmar site na conta Amazon | Parte técnica executada; medição incluída no plano Free/US$ 0. Snapshot inclui QA. Proprietário confirma Amazon; nenhuma senha no chat |
-| 3 — 11/10 | Rever leitura do sitemap e limite de indexação; cinco prioridades já inspecionadas. Revisar destino e texto dos 12 Pins | Propriedade verificada e sitemap enviado; leitura Google com erro e cinco URLs não indexadas; reavaliar após processamento; proprietário revisa peças e autoriza publicação |
+| 3 — 11/10 | Rever leitura do sitemap e limite de indexação; cinco prioridades já inspecionadas. Concluir acesso Business e aprovar o lote de Pins | Revisão dos 12 Pins antecipada para 10/10: imagens originais, copy/alt, HTTP 200/H1/canonical; fila local de 10 + 2 pronta. Proprietário conclui cadastro/login Business e termos na própria tela. Propriedade Google verificada, sitemap com erro de processamento e cinco prioridades não indexadas; respeitar cotas |
 | 4 — 12/10 | Após autorização, publicar/agendar Pin 01; preparar perfil/boards próprios coerentes com cozinha e organização | URL real do Pin, data, destino; usar ferramenta nativa, nunca bots |
 | 5 — 13/10 | Pin 02; consultar Netlify Analytics por período consistente e registrar janelas de QA | Dados reais da hospedagem, sem confundir IPs/pageviews com compradores. GA4/eventos internos são opcionais e continuam pendentes |
 | 6 — 14/10 | Pin 03; revisar no celular o guia e os CTAs | URL real, screenshot, eventual problema corrigido |
@@ -19,7 +19,7 @@ Período: **9–22 de outubro de 2026**. Sem anúncios, serviços pagos, contas 
 | 13 — 21/10 | Pin 10; reabastecer a fila nativa com Pins 11/12 se houver espaço | Até 10 pendentes; título, descrição e destino corretos. Agendado não equivale a publicado |
 | 14 — 22/10 | Pins 11/12 em horários distintos, se autorizados; relatório da quinzena | Consolidar fonte, período, visitas/cliques disponíveis e relatórios Amazon. Escolher próxima ação por evidência |
 
-As datas estão no CSV. Não há horário “ótimo” demonstrado para nossa conta; testar horários consistentes e revisar quando dados americanos estiverem disponíveis. Não criar mais artigos antes de entender como os guias atuais são descobertos.
+As propostas atualizadas estão em marketing/pinterest/distribution-queue.csv e na prévia queue-review.html. Nenhum Pin publicado/agendado em 10/10; datas reais, URLs e métricas permanecem vazias. Proposta inicial: Pins 01–10 de 12 a 21/10 às 18h America/New_York (também 18h Manaus nesse período); Pins 11/12 em 22/10 às 18h/20h, sujeitos a espaço e aprovação. Conferir fuso e fila da conta; deslocar e reapresentar datas se o acesso/autorização atrasar. Não há horário “ótimo” demonstrado; revisar quando dados americanos estiverem disponíveis. Não criar mais artigos antes de entender como os guias atuais são descobertos.
 
 ## Como decidir depois de 14 dias
 

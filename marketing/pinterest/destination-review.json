@@ -1,0 +1,218 @@
+[
+  {
+    "id": "pin-01",
+    "reviewedAt": "2026-10-10",
+    "httpStatus": 200,
+    "destination": "https://pickpop.netlify.app/guides/coffee-station.html?utm_source=pinterest&utm_medium=organic_social&utm_campaign=first_sales_14d&utm_content=pin-01",
+    "resolvedUrl": "https://pickpop.netlify.app/guides/coffee-station.html?utm_source=pinterest&utm_medium=organic_social&utm_campaign=first_sales_14d&utm_content=pin-01",
+    "canonical": "https://pickpop.netlify.app/guides/coffee-station.html",
+    "heading": "A small-kitchen coffee station, with breathing room.",
+    "imageSha256": "fec632f92948465765636eef89e3634a403dbb5a8ef817e53ffce9e75a9aee5f",
+    "imageBytes": 86690,
+    "dimensions": [
+      1000,
+      1500
+    ],
+    "titleLength": 40,
+    "descriptionLength": 310,
+    "status": "passed-local-and-public-destination-review"
+  },
+  {
+    "id": "pin-02",
+    "reviewedAt": "2026-10-10",
+    "httpStatus": 200,
+    "destination": "https://pickpop.netlify.app/guides/coffee-maker-small-apartment.html?utm_source=pinterest&utm_medium=organic_social&utm_campaign=first_sales_14d&utm_content=pin-02",
+    "resolvedUrl": "https://pickpop.netlify.app/guides/coffee-maker-small-apartment.html?utm_source=pinterest&utm_medium=organic_social&utm_campaign=first_sales_14d&utm_content=pin-02",
+    "canonical": "https://pickpop.netlify.app/guides/coffee-maker-small-apartment.html",
+    "heading": "Choose a coffee maker for your small apartment.",
+    "imageSha256": "4d29ab0dbdee97f199e6649d3e121910d6e5698797aea5aa6651817991311bc5",
+    "imageBytes": 83545,
+    "dimensions": [
+      1000,
+      1500
+    ],
+    "titleLength": 48,
+    "descriptionLength": 334,
+    "status": "passed-local-and-public-destination-review"
+  },
+  {
+    "id": "pin-03",
+    "reviewedAt": "2026-10-10",
+    "httpStatus": 200,
+    "destination": "https://pickpop.netlify.app/guides/small-kitchen.html?utm_source=pinterest&utm_medium=organic_social&utm_campaign=first_sales_14d&utm_content=pin-03",
+    "resolvedUrl": "https://pickpop.netlify.app/guides/small-kitchen.html?utm_source=pinterest&utm_medium=organic_social&utm_campaign=first_sales_14d&utm_content=pin-03",
+    "canonical": "https://pickpop.netlify.app/guides/small-kitchen.html",
+    "heading": "Small kitchen organization, with room to cook.",
+    "imageSha256": "76f611fa857ba3327f299403cdec34f47bc42884263bd3a14512ca05c4208829",
+    "imageBytes": 86447,
+    "dimensions": [
+      1000,
+      1500
+    ],
+    "titleLength": 56,
+    "descriptionLength": 336,
+    "status": "passed-local-and-public-destination-review"
+  },
+  {
+    "id": "pin-04",
+    "reviewedAt": "2026-10-10",
+    "httpStatus": 200,
+    "destination": "https://pickpop.netlify.app/guides/small-apartment-kitchen-essentials.html?utm_source=pinterest&utm_medium=organic_social&utm_campaign=first_sales_14d&utm_content=pin-04",
+    "resolvedUrl": "https://pickpop.netlify.app/guides/small-apartment-kitchen-essentials.html?utm_source=pinterest&utm_medium=organic_social&utm_campaign=first_sales_14d&utm_content=pin-04",
+    "canonical": "https://pickpop.netlify.app/guides/small-apartment-kitchen-essentials.html",
+    "heading": "Kitchen essentials for your small apartment.",
+    "imageSha256": "3585009bf438a716b7471f97f3fd614f367266c5f4d16243f44d65676784157b",
+    "imageBytes": 87331,
+    "dimensions": [
+      1000,
+      1500
+    ],
+    "titleLength": 57,
+    "descriptionLength": 332,
+    "status": "passed-local-and-public-destination-review"
+  },
+  {
+    "id": "pin-05",
+    "reviewedAt": "2026-10-10",
+    "httpStatus": 200,
+    "destination": "https://pickpop.netlify.app/collections/coffee-corner/?utm_source=pinterest&utm_medium=organic_social&utm_campaign=first_sales_14d&utm_content=pin-05",
+    "resolvedUrl": "https://pickpop.netlify.app/collections/coffee-corner/?utm_source=pinterest&utm_medium=organic_social&utm_campaign=first_sales_14d&utm_content=pin-05",
+    "canonical": "https://pickpop.netlify.app/collections/coffee-corner/",
+    "heading": "Your little coffee corner.",
+    "imageSha256": "ab8f83bc06f5699335b3a2e811e23f57a47c9a383111b6727214556a32369784",
+    "imageBytes": 87415,
+    "dimensions": [
+      1000,
+      1500
+    ],
+    "titleLength": 49,
+    "descriptionLength": 336,
+    "status": "passed-local-and-public-destination-review"
+  },
+  {
+    "id": "pin-06",
+    "reviewedAt": "2026-10-10",
+    "httpStatus": 200,
+    "destination": "https://pickpop.netlify.app/guides/kitchen-cabinet-organization.html?utm_source=pinterest&utm_medium=organic_social&utm_campaign=first_sales_14d&utm_content=pin-06",
+    "resolvedUrl": "https://pickpop.netlify.app/guides/kitchen-cabinet-organization.html?utm_source=pinterest&utm_medium=organic_social&utm_campaign=first_sales_14d&utm_content=pin-06",
+    "canonical": "https://pickpop.netlify.app/guides/kitchen-cabinet-organization.html",
+    "heading": "Cabinets that work with your day.",
+    "imageSha256": "6122c253efa9f96ce27dea866add254525ea6531e82db0783a18cdf7e6172d71",
+    "imageBytes": 84347,
+    "dimensions": [
+      1000,
+      1500
+    ],
+    "titleLength": 43,
+    "descriptionLength": 334,
+    "status": "passed-local-and-public-destination-review"
+  },
+  {
+    "id": "pin-07",
+    "reviewedAt": "2026-10-10",
+    "httpStatus": 200,
+    "destination": "https://pickpop.netlify.app/guides/food-storage-containers.html?utm_source=pinterest&utm_medium=organic_social&utm_campaign=first_sales_14d&utm_content=pin-07",
+    "resolvedUrl": "https://pickpop.netlify.app/guides/food-storage-containers.html?utm_source=pinterest&utm_medium=organic_social&utm_campaign=first_sales_14d&utm_content=pin-07",
+    "canonical": "https://pickpop.netlify.app/guides/food-storage-containers.html",
+    "heading": "Containers with a clear purpose.",
+    "imageSha256": "145d09b20cda444216a78820110a13ee3775436dffed6adc56e438b1305561e7",
+    "imageBytes": 83040,
+    "dimensions": [
+      1000,
+      1500
+    ],
+    "titleLength": 43,
+    "descriptionLength": 318,
+    "status": "passed-local-and-public-destination-review"
+  },
+  {
+    "id": "pin-08",
+    "reviewedAt": "2026-10-10",
+    "httpStatus": 200,
+    "destination": "https://pickpop.netlify.app/guides/drinkware-buying-guide.html?utm_source=pinterest&utm_medium=organic_social&utm_campaign=first_sales_14d&utm_content=pin-08",
+    "resolvedUrl": "https://pickpop.netlify.app/guides/drinkware-buying-guide.html?utm_source=pinterest&utm_medium=organic_social&utm_campaign=first_sales_14d&utm_content=pin-08",
+    "canonical": "https://pickpop.netlify.app/guides/drinkware-buying-guide.html",
+    "heading": "A cup that fits the moment.",
+    "imageSha256": "4231a4b9018db9962f5a6aee47c0d82c7770b00fae784e21d674982a8c67ef29",
+    "imageBytes": 76037,
+    "dimensions": [
+      1000,
+      1500
+    ],
+    "titleLength": 49,
+    "descriptionLength": 340,
+    "status": "passed-local-and-public-destination-review"
+  },
+  {
+    "id": "pin-09",
+    "reviewedAt": "2026-10-10",
+    "httpStatus": 200,
+    "destination": "https://pickpop.netlify.app/guides/spice-storage.html?utm_source=pinterest&utm_medium=organic_social&utm_campaign=first_sales_14d&utm_content=pin-09",
+    "resolvedUrl": "https://pickpop.netlify.app/guides/spice-storage.html?utm_source=pinterest&utm_medium=organic_social&utm_campaign=first_sales_14d&utm_content=pin-09",
+    "canonical": "https://pickpop.netlify.app/guides/spice-storage.html",
+    "heading": "More order. Less spice hunting.",
+    "imageSha256": "7237590520840c006c646557998b0940cb9992fe50541ad0499b8ab7f5a49cf4",
+    "imageBytes": 87060,
+    "dimensions": [
+      1000,
+      1500
+    ],
+    "titleLength": 44,
+    "descriptionLength": 319,
+    "status": "passed-local-and-public-destination-review"
+  },
+  {
+    "id": "pin-10",
+    "reviewedAt": "2026-10-10",
+    "httpStatus": 200,
+    "destination": "https://pickpop.netlify.app/collections/small-kitchen/?utm_source=pinterest&utm_medium=organic_social&utm_campaign=first_sales_14d&utm_content=pin-10",
+    "resolvedUrl": "https://pickpop.netlify.app/collections/small-kitchen/?utm_source=pinterest&utm_medium=organic_social&utm_campaign=first_sales_14d&utm_content=pin-10",
+    "canonical": "https://pickpop.netlify.app/collections/small-kitchen/",
+    "heading": "Small kitchen, big intention.",
+    "imageSha256": "c0be84bf0a68e092d7e330e22e0c2604e3b3754b0dcfdfc6798db851cb5fb9cf",
+    "imageBytes": 84482,
+    "dimensions": [
+      1000,
+      1500
+    ],
+    "titleLength": 43,
+    "descriptionLength": 338,
+    "status": "passed-local-and-public-destination-review"
+  },
+  {
+    "id": "pin-11",
+    "reviewedAt": "2026-10-10",
+    "httpStatus": 200,
+    "destination": "https://pickpop.netlify.app/guides/smart-gifts.html?utm_source=pinterest&utm_medium=organic_social&utm_campaign=first_sales_14d&utm_content=pin-11",
+    "resolvedUrl": "https://pickpop.netlify.app/guides/smart-gifts.html?utm_source=pinterest&utm_medium=organic_social&utm_campaign=first_sales_14d&utm_content=pin-11",
+    "canonical": "https://pickpop.netlify.app/guides/smart-gifts.html",
+    "heading": "Practical gifts, made personal.",
+    "imageSha256": "d3eabdc045d303a034dc1c26fe06a7d8b19aeca0bf04388527ec5214dfebfbbc",
+    "imageBytes": 82381,
+    "dimensions": [
+      1000,
+      1500
+    ],
+    "titleLength": 52,
+    "descriptionLength": 339,
+    "status": "passed-local-and-public-destination-review"
+  },
+  {
+    "id": "pin-12",
+    "reviewedAt": "2026-10-10",
+    "httpStatus": 200,
+    "destination": "https://pickpop.netlify.app/guides/coffee-station.html?utm_source=pinterest&utm_medium=organic_social&utm_campaign=first_sales_14d&utm_content=pin-12",
+    "resolvedUrl": "https://pickpop.netlify.app/guides/coffee-station.html?utm_source=pinterest&utm_medium=organic_social&utm_campaign=first_sales_14d&utm_content=pin-12",
+    "canonical": "https://pickpop.netlify.app/guides/coffee-station.html",
+    "heading": "A small-kitchen coffee station, with breathing room.",
+    "imageSha256": "1a5e521a96a107d6d93781743da3483c10fb6cf4aa9c40ca0ff9674cefbdb48a",
+    "imageBytes": 86459,
+    "dimensions": [
+      1000,
+      1500
+    ],
+    "titleLength": 51,
+    "descriptionLength": 325,
+    "status": "passed-local-and-public-destination-review"
+  }
+]
