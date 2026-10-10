@@ -1,0 +1,19 @@
+{
+  "scope": "unfiltered-hosting-aggregate-not-qualified-business-traffic",
+  "provider": "Netlify Web Analytics",
+  "source": "Netlify owner dashboard, observed UI",
+  "observedAt": "2026-10-10",
+  "enabled": true,
+  "ownerApproved": true,
+  "plan": "Free",
+  "additionalCharge": "None shown; enable screen states included in team plan; billing still shows Free, $0.00 and no additional paid service.",
+  "periodDisplay": "Oct 9 (1:00 PM) to Oct 10 (1:34 PM), dashboard display timezone",
+  "pageviews": 484,
+  "uniqueIpEstimate": 23,
+  "countryPageviews": {"Brazil": 439, "United States": 40, "Belgium": 2, "United Kingdom": 1, "Japan": 1, "France": 1},
+  "topPages": [{"path":"/","pageviews":70},{"path":"/find/","pageviews":42},{"path":"/image-credits/","pageviews":34},{"path":"/guides/","pageviews":34},{"path":"/contact/","pageviews":34}],
+  "topSources": [{"name":"Direct traffic","referrals":484}],
+  "qaExcluded": false,
+  "note": "Historical backfill includes development QA, owner visits, Google inspection and possible bots. Unique visitors are an IP-based estimate, not verified people. US pageviews are not evidence of qualified US shoppers. Do not use this snapshot to claim marketing results, Amazon clicks, purchases or commissions.",
+  "nextAction": "Review after actual authorized Pinterest publishing, use a consistent time window, and record test windows. Netlify does not measure local finder events or Amazon outbound clicks."
+}

@@ -5,10 +5,10 @@ Período: **9–22 de outubro de 2026**. Sem anúncios, serviços pagos, contas 
 | Dia / data | Ação executável | Evidência a registrar / responsável |
 |---|---|---|
 | 1 — 09/10 | Auditoria técnica dos sete links; melhoria dos cinco guias; build/testes/deploy | Executado pelo desenvolvimento; proprietário confirma atribuição Amazon com CSV no Link Checker |
-| 2 — 10/10 | Conferir a lista de sites na conta Amazon e revisar configurações de recebimento dentro da própria conta | Proprietário; nenhuma senha ou informação fiscal no chat |
+| 2 — 10/10 | Netlify Analytics autorizado e ativado após atualizar privacidade; selo CSP corrigido; Google buscou o XML ao vivo, sitemap reenviado; indexação recusada por cota. Confirmar site na conta Amazon | Parte técnica executada; medição incluída no plano Free/US$ 0. Snapshot inclui QA. Proprietário confirma Amazon; nenhuma senha no chat |
 | 3 — 11/10 | Rever leitura do sitemap e limite de indexação; cinco prioridades já inspecionadas. Revisar destino e texto dos 12 Pins | Propriedade verificada e sitemap enviado; leitura Google com erro e cinco URLs não indexadas; reavaliar após processamento; proprietário revisa peças e autoriza publicação |
 | 4 — 12/10 | Após autorização, publicar/agendar Pin 01; preparar perfil/boards próprios coerentes com cozinha e organização | URL real do Pin, data, destino; usar ferramenta nativa, nunca bots |
-| 5 — 13/10 | Pin 02; decidir sobre analytics e consentimento | Measurement ID de propriedade existente e aprovação do proprietário; não criar serviço/aceitar termos sem autorização |
+| 5 — 13/10 | Pin 02; consultar Netlify Analytics por período consistente e registrar janelas de QA | Dados reais da hospedagem, sem confundir IPs/pageviews com compradores. GA4/eventos internos são opcionais e continuam pendentes |
 | 6 — 14/10 | Pin 03; revisar no celular o guia e os CTAs | URL real, screenshot, eventual problema corrigido |
 | 7 — 15/10 | Pin 04; primeira revisão semanal | Pinterest: impressões/cliques disponíveis; Search Console: consultas/cliques quando disponíveis; Amazon: relatórios oficiais. Campos ausentes permanecem indisponíveis |
 | 8 — 16/10 | Pin 05; identificar artigo que recebe interesse observado | Comparar somente dados legítimos da semana; não ranquear por números inventados |
@@ -34,7 +34,7 @@ As datas estão no CSV. Não há horário “ótimo” demonstrado para nossa co
 
 1. Validar sete URLs em `AFFILIATE-AUDIT.csv` dentro da Amazon e confirmar que o site oficial consta na conta.
 2. Entrar na conta Pinterest própria, revisar `marketing/pinterest/contact-sheet.jpg` e `pins.csv`, e autorizar a publicação. Se for preciso criar/converter conta ou aceitar termos, realizar pessoalmente.
-3. Fornecer identificador público de propriedade GA4 existente e aprovar medição/privacidade, ou decidir sobre criação gratuita da propriedade. Nenhuma senha é necessária.
+3. Netlify Analytics já foi aprovado e ativado sem cobrança adicional. Para medir eventos internos e cliques Amazon, considerar GA4 opcional com identificador público e aprovação de privacidade; nenhuma senha é necessária. A medição básica de hospedagem não depende dessa etapa.
 4. Fornecer contato público verdadeiro para `contactEmail` quando desejar um canal institucional direto; esse campo segue sem endereço inventado.
 
 Sem essas etapas, o site fica tecnicamente operacional, mas atribuição confirmada, divulgação ativa e medição completa continuam pendentes.

@@ -23,7 +23,7 @@ Abra http://127.0.0.1:8082/. Ctrl+C encerra a prévia. Não abra o HTML diretame
 - Dez guias, três coleções, detalhes, About, Privacy, Affiliate Disclosure, Contact e créditos de imagens.
 - Links Amazon diretos com `rel="sponsored"`, divulgação visível e origem preservada; sem redirecionamentos ocultos.
 - HTML indexável com títulos, descrições, canonicals, Open Graph, sitemap e Schema factual. Não há avaliações/ofertas inventadas.
-- Analytics externos e Creators API desativados. O adaptador de analytics exige aprovação do proprietário e consentimento. `/find/?diagnostics=1` habilita diagnóstico voluntário em memória, destinado apenas a QA, nunca ao painel comercial.
+- Netlify Web Analytics ativado no plano existente, após autorização em 10/10/2026 e atualização de privacidade. Usa registros da hospedagem, sem SDK/cookies de analytics. Contagens incluem QA e não equivalem a compradores. GA4/eventos externos e Creators API desativados. O adaptador de eventos exige aprovação e consentimento. `/find/?diagnostics=1` é diagnóstico voluntário somente QA.
 - `contactEmail` depende de um canal verdadeiro do proprietário; a página Contact explica sua ausência.
 
 ## Estrutura e edição
@@ -70,4 +70,4 @@ O `netlify.toml` da raiz fixa a configuração. Somente `dist/` deve ser publica
 
 ## Continuidade
 
-Consulte `../docs/GROWTH-OPERATIONS.md` para estado real, testes e próxima ação; `../docs/FIRST-SALES-14-DAYS.md` para o plano; `../marketing/pinterest/` para 12 rascunhos originais; `../operations/` para o painel offline. Pins não estão publicados/agendados, medições comerciais continuam indisponíveis e a meta inicial de 12 produtos permanece em andamento. Não usar dados de QA como tráfego ou comissões.
+Consulte `../docs/GROWTH-OPERATIONS.md` para estado real, testes e próxima ação; `../docs/FIRST-SALES-14-DAYS.md` para o plano; `../marketing/pinterest/` para 12 rascunhos originais; `../operations/` para o painel offline, que separa hospedagem bruta e resultados comerciais. Pins não estão publicados/agendados, cliques Amazon/comissões continuam indisponíveis e a meta de 12 produtos permanece em andamento.
