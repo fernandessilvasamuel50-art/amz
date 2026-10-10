@@ -6,7 +6,7 @@ Período: **9–22 de outubro de 2026**. Sem anúncios, serviços pagos, contas 
 |---|---|---|
 | 1 — 09/10 | Auditoria técnica dos sete links; melhoria dos cinco guias; build/testes/deploy | Executado pelo desenvolvimento; proprietário confirma atribuição Amazon com CSV no Link Checker |
 | 2 — 10/10 | Conferir a lista de sites na conta Amazon e revisar configurações de recebimento dentro da própria conta | Proprietário; nenhuma senha ou informação fiscal no chat |
-| 3 — 11/10 | Inspecionar páginas prioritárias no Search Console; revisar destino e texto dos 12 Pins | Verificação/submissão será registrada com status real; proprietário revisa peças e autoriza publicação |
+| 3 — 11/10 | Rever leitura do sitemap e limite de indexação; cinco prioridades já inspecionadas. Revisar destino e texto dos 12 Pins | Propriedade verificada e sitemap enviado; leitura Google com erro e cinco URLs não indexadas; reavaliar após processamento; proprietário revisa peças e autoriza publicação |
 | 4 — 12/10 | Após autorização, publicar/agendar Pin 01; preparar perfil/boards próprios coerentes com cozinha e organização | URL real do Pin, data, destino; usar ferramenta nativa, nunca bots |
 | 5 — 13/10 | Pin 02; decidir sobre analytics e consentimento | Measurement ID de propriedade existente e aprovação do proprietário; não criar serviço/aceitar termos sem autorização |
 | 6 — 14/10 | Pin 03; revisar no celular o guia e os CTAs | URL real, screenshot, eventual problema corrigido |

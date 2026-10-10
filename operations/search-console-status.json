@@ -1,0 +1,66 @@
+{
+  "source": "Google Search Console owner session, observed UI",
+  "observedAt": "2026-10-10",
+  "property": "https://pickpop.netlify.app/",
+  "verification": "verified-html-tag",
+  "sitemap": {
+    "url": "https://pickpop.netlify.app/sitemap.xml",
+    "submission": "confirmed",
+    "firstReadStatus": "could-not-read",
+    "publicHttpCheck": 200,
+    "validXmlUrls": 27,
+    "note": "Submission does not confirm successful Google reading or indexing. Public checks are not Google's crawl.",
+    "resubmittedAt": "2026-10-10",
+    "resubmission": "confirmed",
+    "currentReadStatus": "could-not-fetch",
+    "googleLiveTest": {
+      "observedAt": "2026-10-10",
+      "indexingAllowed": true,
+      "note": "Google inspection tool access does not confirm sitemap processing or article indexing.",
+      "crawlAllowed": true,
+      "fetch": "successful"
+    }
+  },
+  "inspections": [
+    {
+      "url": "https://pickpop.netlify.app/guides/coffee-station.html",
+      "indexStatus": "unknown-to-google-not-indexed",
+      "googleLiveTest": "available-to-google-indexing-allowed"
+    },
+    {
+      "url": "https://pickpop.netlify.app/guides/coffee-maker-small-apartment.html",
+      "indexStatus": "unknown-to-google-not-indexed",
+      "googleLiveTest": null
+    },
+    {
+      "url": "https://pickpop.netlify.app/guides/small-apartment-kitchen-essentials.html",
+      "indexStatus": "unknown-to-google-not-indexed",
+      "googleLiveTest": null
+    },
+    {
+      "url": "https://pickpop.netlify.app/guides/small-kitchen.html",
+      "indexStatus": "unknown-to-google-not-indexed",
+      "googleLiveTest": null
+    },
+    {
+      "url": "https://pickpop.netlify.app/guides/smart-gifts.html",
+      "indexStatus": "unknown-to-google-not-indexed",
+      "googleLiveTest": null
+    }
+  ],
+  "indexRequest": "not-accepted-daily-quota-exceeded",
+  "performance": "processing-no-impressions-clicks-or-query-data-available",
+  "nextAction": "Allow Google sitemap processing; recheck report on a later day. Respect daily quotas. Preserve HTML verification token. Business metrics remain unavailable.",
+  "indexRequestAttempts": [
+    {
+      "observedAt": "2026-10-09",
+      "result": "not-accepted-daily-quota-exceeded",
+      "url": "https://pickpop.netlify.app/guides/coffee-station.html"
+    },
+    {
+      "observedAt": "2026-10-10",
+      "result": "not-accepted-daily-quota-exceeded",
+      "url": "https://pickpop.netlify.app/guides/coffee-station.html"
+    }
+  ]
+}

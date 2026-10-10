@@ -20,6 +20,13 @@
     "measurementId": null,
     "ownerApproved": false
   },
+  "hostingAnalytics": {
+    "provider": "netlify-web-analytics",
+    "enabled": true,
+    "ownerApproved": true,
+    "approvedAt": "2026-10-10",
+    "condition": "Included in the existing plan only; no additional charge or upgrade authorized."
+  },
   "searchConsole": {
     "verificationToken": "6si-mwzrd8NFhy4dUq_1LxsyskjEYrEoG_AYTvTQsJI"
   }
