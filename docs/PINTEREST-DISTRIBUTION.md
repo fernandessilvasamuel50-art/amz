@@ -1,73 +1,63 @@
-# Pinterest — distribuição preparada em 10/10/2026
+# Pinterest — distribuição confirmada em 10/10/2026
 
-## Situação real
+## Estado real
 
-- Sessão disponível no navegador do Codex inicialmente não autenticada. Proprietário informou possuir conta pessoal e precisar de ajuda para convertê-la.
-- Tela inicial de login informou conta vinculada ao Google; também oferece acesso oficial por QR com confirmação no aplicativo. A primeira tentativa de cadastro realizada pelo proprietário foi recusada com “Esse email já está em uso”. Proprietário depois indicou outro e-mail e autorizou preparar nova conta Business; formulário oficial reaberto. Nenhuma conta nova confirmada até este registro. Dados pessoais, senha e nascimento não são registrados neste relatório nem no Git.
-- Login ainda precisa ser confirmado pela plataforma antes de consultar perfil, Business Hub, pastas ou fila.
-- Nenhum Pin enviado, publicado ou agendado; nenhuma pasta criada; nenhum serviço pago ou integração de terceiros ativado.
-- Ferramenta de terceiros encontrada na pesquisa de plugins não foi conectada: execução restrita ao Pinterest oficial.
+Conta Business gratuita **PickPop (@fernandessilvasamuel50)** autenticada e conferida no Business Hub. Conta pessoal existente convertida após autorização específica para os termos empresariais; nenhuma conta nova criada. Nome/site/categoria casa foram configurados com informações verdadeiras. Nenhum anúncio ativado.
 
-## Preparação concluída
+Autorização expressa recebida para criar três pastas públicas e agendar Pins 01–10 de 12 a 21/10/2026 às 18h no horário mostrado pelo editor. Executado exclusivamente na interface oficial, com as imagens originais. **10 Pins confirmados na fila oficial; nenhum destes Pins publicado em 10/10.** Pins 11/12 ficam reservados, sem upload/agendamento/autorização desta rodada.
 
-1. Lidos os registros existentes e revisadas as 12 peças. Imagens não alteradas: comparação de bytes/SHA-256 com Git aprovada.
-2. Títulos, categorias, keywords e destinos preservados. Descrições revisadas para inglês natural e transparência de afiliação; alt texts descrevem as ilustrações reais.
-3. PNGs 1000×1500, menores que 20 MB; títulos até 100 e descrições até 800 caracteres.
-4. Os 12 links completos com UTM responderam HTTP 200 no PickPop publicado. H1 corresponde ao tema da peça; canonical aponta ao conteúdo sem UTM. Há 11 destinos únicos, pois duas peças abordam aspectos diferentes do mesmo guia de estação de café.
-5. Fila local preparada, com 10 Pins no primeiro lote e dois reservados. Não é fila agendada na plataforma.
-6. URLs de Pins, datas reais e métricas permanecem vazias/null, não zeros ou resultados inventados.
-7. Verificação independente aprovada: PNGs/manifesto/CSV/registros consistentes, lotes de 10 + 2 e quatro casos de proteção de histórico real (conta, aprovação, agendamento e URL de Pin). Primeira execução da proteção foi impedida pelo diretório temporário do isolamento; repetição com arquivos existentes e mocks em memória aprovada. Nenhum build do site foi necessário, pois código público e imagens não mudaram.
-8. Prévia HTML preparada, mas inspeção automatizada dessa página local não executada: a política do navegador bloqueou file://. Nenhuma tentativa de contornar o bloqueio; imagens já inspecionadas diretamente e prévia permanece disponível para revisão manual do proprietário.
+Pastas criadas e verificadas no perfil:
 
-## Arquivos prontos para revisão
+- [Coffee Station Ideas](https://br.pinterest.com/fernandessilvasamuel50/coffee-station-ideas/)
+- [Small Kitchen Organization](https://br.pinterest.com/fernandessilvasamuel50/small-kitchen-organization/)
+- [Everyday Kitchen Essentials](https://br.pinterest.com/fernandessilvasamuel50/everyday-kitchen-essentials/)
 
-- `marketing/pinterest/queue-review.html`: 12 imagens originais, título, descrição, alt, destino, horário e pasta sugeridos.
-- `distribution-queue.csv` / `.json`: fonte operacional das propostas e registros individuais; status inicial awaiting-business-login-and-batch-approval.
-- `pins.csv` / `.json`: textos revisados de publicação.
-- `destination-review.json`: HTTP, canonical, H1, dimensões, limites e hashes conferidos.
-- `prepare-distribution.py`: revisão sem publicação, sem login, sem bot ou agendamento externo. Não sobrescreve histórico real existente.
+Pastas anteriores e seguidores preservados. Fotos/editorial Amazon e funcionalidades do site não foram alterados nesta distribuição.
 
-## Lotes propostos — não agendados
+## Agendamentos reais
 
-Fuso editorial America/New_York. Em 12–22/10/2026, UTC−04:00, igual a Manaus. Conferir a indicação do agendador na conta; não presumir seu fuso. Não há dados que provem um horário ideal para nossa conta.
+[Fila oficial privada](https://br.pinterest.com/fernandessilvasamuel50/scheduled-pins/) — exige login da conta correta.
 
-| Pin | Data proposta | Horário Eastern | Pasta sugerida | Status real |
+O editor e a fila mostram **18:00**, mas não exibem um fuso. A aprovação especificou o horário exibido pelo Pinterest. America/New_York/Manaus permanecem intenções do planejamento inicial; não são confirmação de um instante UTC. `scheduledAt` está sem offset e `scheduledTimeZone` é null. Não modificar nem reenviar o lote apenas por essa ausência de indicação.
+
+| Pin | Data de 2026 | Horário exibido | Pasta | Comprovante oficial |
 |---|---|---|---|---|
-| 01 | 12/10 | 18h | Coffee Station Ideas | Aguardando conta/autorização |
-| 02 | 13/10 | 18h | Coffee Station Ideas | Aguardando conta/autorização |
-| 03 | 14/10 | 18h | Small Kitchen Organization | Aguardando conta/autorização |
-| 04 | 15/10 | 18h | Everyday Kitchen Essentials | Aguardando conta/autorização |
-| 05 | 16/10 | 18h | Coffee Station Ideas | Aguardando conta/autorização |
-| 06 | 17/10 | 18h | Small Kitchen Organization | Aguardando conta/autorização |
-| 07 | 18/10 | 18h | Small Kitchen Organization | Aguardando conta/autorização |
-| 08 | 19/10 | 18h | Everyday Kitchen Essentials | Aguardando conta/autorização |
-| 09 | 20/10 | 18h | Small Kitchen Organization | Aguardando conta/autorização |
-| 10 | 21/10 | 18h | Everyday Kitchen Essentials | Aguardando conta/autorização |
-| 11 | 22/10 | 18h | Everyday Kitchen Essentials | Reservado para próxima rodada |
-| 12 | 22/10 | 20h | Coffee Station Ideas | Reservado para próxima rodada |
+| 01 | 2026-10-12 | 18:00 | Coffee Station Ideas | [Agendamento privado](https://br.pinterest.com/fernandessilvasamuel50/scheduled-pin/3934074558245345920/) |
+| 02 | 2026-10-13 | 18:00 | Coffee Station Ideas | [Agendamento privado](https://br.pinterest.com/fernandessilvasamuel50/scheduled-pin/3934079351226339584/) |
+| 03 | 2026-10-14 | 18:00 | Small Kitchen Organization | [Agendamento privado](https://br.pinterest.com/fernandessilvasamuel50/scheduled-pin/3934082285762746112/) |
+| 04 | 2026-10-15 | 18:00 | Everyday Kitchen Essentials | [Agendamento privado](https://br.pinterest.com/fernandessilvasamuel50/scheduled-pin/3934087045458560192/) |
+| 05 | 2026-10-16 | 18:00 | Coffee Station Ideas | [Agendamento privado](https://br.pinterest.com/fernandessilvasamuel50/scheduled-pin/3934087254469073024/) |
+| 06 | 2026-10-17 | 18:00 | Small Kitchen Organization | [Agendamento privado](https://br.pinterest.com/fernandessilvasamuel50/scheduled-pin/3934088413372564416/) |
+| 07 | 2026-10-18 | 18:00 | Small Kitchen Organization | [Agendamento privado](https://br.pinterest.com/fernandessilvasamuel50/scheduled-pin/3934088988731480704/) |
+| 08 | 2026-10-19 | 18:00 | Everyday Kitchen Essentials | [Agendamento privado](https://br.pinterest.com/fernandessilvasamuel50/scheduled-pin/3934089673542702848/) |
+| 09 | 2026-10-20 | 18:00 | Small Kitchen Organization | [Agendamento privado](https://br.pinterest.com/fernandessilvasamuel50/scheduled-pin/3934087722217994496/) |
+| 10 | 2026-10-21 | 18:00 | Everyday Kitchen Essentials | [Agendamento privado](https://br.pinterest.com/fernandessilvasamuel50/scheduled-pin/3934088130306901184/) |
 
-Pastas ainda não conferidas na conta. Não criar ou selecionar pastas alheias sem verificar seu contexto. Se a autorização chegar após o início proposto, deslocar o calendário e apresentar novamente as datas alteradas.
+Os links acima são de **Pins agendados, privados**, não URLs de publicações acessíveis ao público. `scheduledPinUrl` está registrado; `pinUrl` e `publishedAt` permanecem null até confirmação posterior. Reservas 11/12: proposta 22/10 às 18h/20h, sujeita a espaço na fila e nova autorização explícita.
 
-## Conectar a conta pessoal existente
+## Revisões e evidências
 
-1. Entrar pessoalmente em https://br.pinterest.com/login/ **no navegador do Codex desta conversa**. A sessão de outro navegador ou celular não autentica automaticamente esta aba. A tela informou vínculo Google: usar o botão Google da conta correspondente, em vez de uma senha Pinterest nova.
-2. Depois do login, posso localizar a configuração visível. Caminho oficial desktop: Configurações → Gerenciar conta → Converter para conta Business.
-3. Proprietário conclui a conversão e aceita os termos. Perfil Business é público; Pins e seguidores são preservados. Usar informações verdadeiras: PickPop e https://pickpop.netlify.app/. Não escolher anúncios pagos.
-4. Confirmar Business Hub e perfil correto. Conferir pastas existentes, quantidade de Pins já agendados e fuso.
-5. Preparar a prévia do lote e solicitar **autorização explícita para agendar os Pins 01–10**, especificando conta, datas, horários e pastas reais. A solicitação de preparar a fila não é autorização para clicar Agendar/Publicar.
+- 12 imagens originais inspecionadas e preservadas por SHA-256, 1000×1500 PNG abaixo de 20 MB. Ilustrações editoriais próprias; nenhuma fotografia da Amazon reutilizada nas peças.
+- Copy/alt revisados em inglês americano, títulos até 100 e descrições até 800 caracteres. Descrições avisam sobre os links de afiliado no destino.
+- 12 URLs completas com UTM verificadas HTTP 200, H1 relevante e canonical sem UTM; 11 páginas distintas, com duas propostas diferentes para o guia coffee-station.
+- Antes de cada confirmação nativa: imagem correspondente, título, descrição, destino, alt, pasta pública, data e 06:00 PM conferidos. Divulgação de conteúdo com IA aplicada; opção de pessoa gerada por IA não aplicada; sugestões automáticas de produtos semelhantes desativadas para estas ilustrações editoriais.
+- Fila final mostrou **10 Pins**, títulos, três pastas, datas consecutivas 12–21/10 e 18:00. Captura completa em `pickpop-site/tests/artifacts/pinterest-scheduled-10-pins.jpg`; exportação somente da interface observada em `operations/private/pinterest-observed-scheduled-pins.json`, ambos fora do Git.
+- Um carregamento intermediário da fila mostrou temporariamente zero e o detalhe ficou vazio. Retorno à navegação oficial resolveu; fila final confirmou os dez. Nenhum Pin reenviado ou duplicado por essa falha.
+- Registros JSON/CSV e prévia atualizados; URLs de publicação/métricas ausentes não foram convertidas em zeros.
+- Proteção de `prepare-distribution.py` preservada: não executar para regenerar a fila após conta/autorização/agendamentos reais. Não executar `generate.py`/`render.cjs`, que recriam imagens/manifesto. Sem alteração de código público, sem novo build/deploy do site.
+- Prévia HTML local não teve teste automatizado de layout: file:// foi bloqueado pelo navegador. Nenhuma tentativa de contornar o bloqueio; imagens foram inspecionadas diretamente.
 
-## Execução após autorização
+## Acompanhamento
 
-Usar somente Criar Pin e Agendar na interface oficial Pinterest, sem ads, terceiros, bots ou novos termos aceitos automaticamente. Limite oficial: até 10 Pins futuros, até 30 dias de antecedência; verificar espaço real. Preencher imagem correspondente, título, descrição, alt e URL exata. Confirmar a prévia antes da ação final.
+Acompanhamento neste chat criado e confirmado na ferramenta oficial do Codex: **Conferir Pins do PickPop**, identificador `conferir-pins-do-pickpop`, ativo. Revisão diária às 19h do horário local do app durante a rodada, leitura somente. Verificar publicações/métricas de 12 a 22/10 e encerrar após relatório. Não autoriza novos Pins, reagendamento, anúncios ou a segunda rodada. Computador ligado/app em execução e sessão Pinterest legítima são necessários; novo login, se solicitado, fica com o proprietário. Não há execução futura confirmada ainda.
 
-Após cada ação, observar confirmação e fila no perfil. Registrar URL/ID oferecido pela plataforma, horário confirmado, estado scheduled ou published e evidência. Se um Pin agendado ainda não tiver URL pública disponível, manter URL null e registrar a confirmação/ID disponível; não inventar destino. Agendado não é publicado. Não repetir envio sem conferir se a tentativa anterior criou o Pin.
+Ficar em silêncio sem alteração relevante. Avisar apenas publicação confirmada, dados úteis, falha ou necessidade de intervenção. Métricas dos Pins: impressões/cliques de saída quando Pinterest Analytics disponibilizar; visitas/origens agregadas quando Netlify disponibilizar; vendas/comissões apenas Amazon oficial. Não confundir contagens de hospedagem com visitantes qualificados. Não há métricas ou vendas deste lote disponíveis em 10/10.
 
-Pins 11/12 continuam reservados até haver espaço e aprovação específica da próxima rodada. Acompanhamento: Pinterest Analytics para impressões/cliques de saída por Pin, Netlify para páginas/origens agregadas e relatórios Amazon para pedidos/comissões. Dados ausentes permanecem indisponíveis. IPs da hospedagem não equivalem a compradores; testes e acessos do proprietário precisam ser registrados. Nenhuma métrica de Pinterest está acessível nesta etapa.
+**Próxima ação executável:** conferir a publicação do Pin 01 após a data agendada e registrar sua URL pública. O proprietário não precisa autorizar novamente os dez Pins já agendados. Pins 11/12 requerem autorização separada, quando houver espaço.
 
-## Fontes oficiais consultadas em 10/10/2026
+## Fontes oficiais
 
-- [Conta Business gratuita e conversão](https://help.pinterest.com/en/business/article/get-a-business-account).
-- [Agendamento nativo, 30 dias e 10 pendentes](https://help.pinterest.com/en/business/article/schedule-pins).
-- [Formato e limites de texto/imagem](https://help.pinterest.com/en/business/article/pinterest-product-specs).
-
-Próxima ação: proprietário conclui senha, nascimento verdadeiro e aceite dos termos no formulário Business oficial preparado com o último e-mail solicitado. Se o Pinterest indicar conta existente, usar o login dessa conta. Confirmar acesso real; em seguida, verificar perfil/pastas/fuso/fila e pedir aprovação do lote concreto antes de agendar.
+- [Business gratuito e conversão](https://help.pinterest.com/en/business/article/get-a-business-account)
+- [Agendamento nativo](https://help.pinterest.com/en/business/article/schedule-pins)
+- [Especificações de imagem e texto](https://help.pinterest.com/en/business/article/pinterest-product-specs)
+- [Acompanhamentos no app e execução local](https://learn.chatgpt.com/docs/automations?surface=app)
