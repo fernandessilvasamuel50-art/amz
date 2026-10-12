@@ -66,12 +66,15 @@ class ImportChecks(unittest.TestCase):
         self.assertTrue(item_errors(self.item, ROOT, 'pickpop03-20', {}, True))
 
     def test_manufacturer_permission_requires_exact_hash(self):
-        permissions = json.loads((ROOT / 'data/image-permissions.json').read_text(encoding='utf-8'))
-        for product in json.loads((ROOT.parent / 'docs/catalog-batches/batch-01.json').read_text(encoding='utf-8'))['items']:
-            self.assertFalse(item_errors(product, ROOT, 'pickpop03-20', permissions, True))
-            altered = copy.deepcopy(permissions)
-            altered['permissions'][product['image']['permissionId']]['assets'][product['image']['src']]['sha256'] = '0' * 64
-            self.assertTrue(item_errors(product, ROOT, 'pickpop03-20', altered, True))
+        product = copy.deepcopy(self.item); product['image']['permissionId'] = 'test-only'
+        image = product['image']
+        grant = {'status': 'reviewed', 'scope': 'editorial-coverage', 'reviewedAt': product['verification']['reviewedAt'], 'source': image['licenseUrl'], 'attribution': image['author'], 'assets': {image['src']: {'source': image['source'], 'variantEvidence': 'TEST ONLY', 'sha256': hashlib.sha256((ROOT / image['src'].lstrip('/')).read_bytes()).hexdigest()}}}
+        permissions = {'permissions': {'test-only': grant}}
+        self.assertTrue(item_errors(product, ROOT, 'pickpop03-20', permissions, True), 'Editorial-only permission must not authorize monetized publication')
+        grant.update(affiliateUseAuthorized=True, affiliateUseEvidence='SYNTHETIC TEST ONLY: explicit permission for monetized use')
+        self.assertFalse(item_errors(product, ROOT, 'pickpop03-20', permissions, True))
+        grant['assets'][image['src']]['sha256'] = '0' * 64
+        self.assertTrue(item_errors(product, ROOT, 'pickpop03-20', permissions, True))
 
     def test_cli_dry_run_apply_backup_and_repeat(self):
         artifacts = ROOT / 'tests/artifacts'; artifacts.mkdir(exist_ok=True)

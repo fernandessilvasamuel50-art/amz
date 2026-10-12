@@ -14,6 +14,17 @@ const base=process.env.PICKPOP_TEST_URL||'http://127.0.0.1:8082';
  const axe=await fs.readFile(require.resolve('axe-core/axe.min.js'),'utf8');
  const reports=[];
  try{
+  const catalog=JSON.parse(await fs.readFile(path.join(__dirname,'../data/catalog.json'),'utf8'));
+  if(!catalog.items.some(item=>item.id==='instant-rio-mini-black')){
+   await page.goto(base+'/find/');await ready();
+   assert.equal(await page.locator('#product-grid .product-card').count(),catalog.items.length);
+   assert.equal((await page.request.get(base+'/ideas/instant-rio-mini-black/')).status(),404);
+   assert.equal((await page.request.get(base+'/assets/products/instant-rio-mini-black.webp')).status(),404);
+   assert.deepEqual(errors,[]);assert.deepEqual(external,[]);
+   await fs.writeFile(path.join(__dirname,'artifacts/expansion.json'),JSON.stringify({status:'passed',base,heldProduct:'instant-rio-mini-black',heldProductPage:404,heldPhoto:404,errors,unexpectedExternalRequests:external},null,2));
+   console.log('PASS: held product and unconfirmed photograph excluded from catalog, detail route and public assets. No external requests.');
+   return;
+  }
   await page.goto(base+'/find/?q=pressure%20cooker&category=kitchen&budget=5');await ready();
   assert((await page.locator('#product-grid').textContent()).includes('RIO Mini'));
   const favorite=page.locator('[data-product-id="instant-rio-mini-black"]');await favorite.click();

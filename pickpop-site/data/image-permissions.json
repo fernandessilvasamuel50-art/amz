@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "permissions": {
     "instant-pot-editorial-20261012": {
-      "status": "reviewed",
+      "status": "pending-affiliate-permission",
       "scope": "editorial-coverage",
       "reviewedAt": "2026-10-12",
       "source": "https://instantpot.com/pages/media-press",
@@ -15,7 +15,9 @@
           "originalSha256": "2c3d280a4740afa2dfb0a7bd1f03fc7155ad92d35e649390023178811b1cc727",
           "variantEvidence": "Manufacturer library folder identifies 4QT RIO Mini in Black. Photo shows the black body, flat front panel and low 4QT profile. Amazon title and part number 140-8006-01B match the manufacturer black model 140-8006-01; B is the retailer packaging suffix. Amazon generic Model Number field also lists a conflicting AU code; do not use that field for electrical specifications."
         }
-      }
+      },
+      "affiliateUseAuthorized": false,
+      "affiliateUseEvidence": "No written confirmation for affiliate-monetized use; request prepared, mailbox disconnected."
     }
   }
 }

@@ -114,7 +114,7 @@ def item_errors(item, root, tag, permissions=None, require_evidence=False):
     if permission_id:
         grant = (permissions or {}).get('permissions', {}).get(str(permission_id), {})
         approved = grant.get('assets', {}).get(src, {})
-        if grant.get('status') != 'reviewed' or grant.get('scope') != 'editorial-coverage' or not valid_date(grant.get('reviewedAt')) or image.get('licenseUrl') != grant.get('source') or image.get('author') != grant.get('attribution') or approved.get('source') != image.get('source') or not approved.get('variantEvidence') or not asset or not asset.is_file() or hashlib.sha256(asset.read_bytes()).hexdigest() != approved.get('sha256'):
+        if grant.get('status') != 'reviewed' or grant.get('affiliateUseAuthorized') is not True or not grant.get('affiliateUseEvidence') or grant.get('scope') != 'editorial-coverage' or not valid_date(grant.get('reviewedAt')) or image.get('licenseUrl') != grant.get('source') or image.get('author') != grant.get('attribution') or approved.get('source') != image.get('source') or not approved.get('variantEvidence') or not asset or not asset.is_file() or hashlib.sha256(asset.read_bytes()).hexdigest() != approved.get('sha256'):
             errors.append('Photo is not bound to a reviewed permission and exact approved asset')
     elif image.get('licenseUrl', '').rstrip('/') not in CC_LICENSES:
         errors.append('Unsupported image license; noncommercial/unknown licenses cannot be published')

@@ -50,3 +50,19 @@ The importer does not prove factual accuracy, legal permission or commission att
 - **Batch report:** accepted 1, rejected 0 incomplete import records, catalog total 8. Four research candidates remain unpublished. The rejected image-source paths above are recorded separately; no artificial products were entered merely to pad rejection counts or the catalog.
 - **Next executable action:** resume the remaining four researched candidates only when manufacturer library browser access is actually released, or find another independently permitted manufacturer's assets. MagicFroth official folder: `/folder/351944106856`; candidate file `/file/2051137840497` was identified but not visually inspected/downloaded, so do not mark it approved. Complete a further 5–7 item batch with exact photos/variants and then dry-run/apply, build and tests. Goal 20 needs 12 more products after this increment; goal 50 needs 42. No pending candidate is counted as a real published product.
 - Target 20 is not yet reached. To reach 50, continue small batches with separate verified identity and image-permission evidence; prioritize storage, drinkware and coffee accessories over near-identical appliance variants.
+
+## Rights clarification and next batch — 2026-10-12
+
+Current status supersedes the historical eight-product release above: **7 active products; RIO Mini held pending explicit affiliate-image permission**. Its source record and complete photograph are preserved privately in `operations/private/catalog-hold`; batch-01 remains the historical input. A return point is preserved at `pickpop-before-rights-review-20261012` (`3994a7d`).
+
+The Instant Pot media page permits editorial coverage with attribution, but does not expressly confirm use on remunerated product recommendations. General Terms of Use also grant only a limited noncommercial site-content license. The earlier interpretation was too broad. Do not infer affiliate rights from editorial permission, public download access or an image credit. Registry status is now pending; build/import guards require explicit `affiliateUseAuthorized` and documented evidence for manufacturer permission.
+
+The owner confirmed there is no written permission and authorized emailing the official `media@instantpot.com` contact. The request is prepared in `docs/IMAGE-PERMISSION-REQUEST.md`; Gmail returned USER_NOT_LOGGED_IN, so it has NOT been sent. Connect the owner's Gmail to execute the already authorized request. No password is needed in chat. No approval/response is claimed.
+
+Four prior candidates: MagicFroth, Vortex Mini and InstantHeat Mini have researched identities but no eligible affiliate-photo permission; hold rather than retry the blocked Box library. The rice cooker also lacks exact US ASIN identity. None is imported. Search is moving to other manufacturers and independent photographs whose licenses explicitly allow commercial reuse.
+
+Other manufacturer libraries reviewed: IKEA US media resources (noncommercial scope); McCormick brand assets (commercial use excluded); Duni (editorial/noncommercial only); Herman Miller image FAQ (written permission required); Fadior (commercial/product listing requires written approval). These do not provide an immediately usable affiliate grant. Do not copy their photos.
+
+Research candidates with independent commercial licenses: Microplane Classic hard-handle zester (CC BY-SA 3.0 image, exact model still needs visual verification); Zyliss rotary grater photographed in December 2025 (CC BY 4.0, Original/Restaurant vs Classic variant still must be resolved). No additions counted yet.
+
+Suspension checks: 9 importer tests, 14 Node unit tests, production build (30 pages, 27 sitemap URLs), 968 local references and browser MVP (90 layouts) passed; growth checks passed. Public suspension verification and new batch remain pending.

@@ -1,6 +1,6 @@
 # PickPop — catálogo e operação comercial
 
-Site: https://pickpop.netlify.app/. Oito produtos reais com fontes, ASINs, fotografias com permissões documentadas e links diretos associados à tag oficial **pickpop03-20**; dez artigos, cinco otimizados para decisões de compra. Atribuição, pedidos e comissões dependem dos relatórios oficiais Amazon, não de nossos testes técnicos.
+Site: https://pickpop.netlify.app/. Sete produtos ativos com fontes, ASINs, fotografias com permissões documentadas e links diretos associados à tag oficial **pickpop03-20**; dez artigos, cinco otimizados para decisões de compra. Atribuição, pedidos e comissões dependem dos relatórios oficiais Amazon, não de nossos testes técnicos.
 
 O projeto continua a base original com HTML estático, CSS próprio e módulos JavaScript. Python gera as páginas; não há React, banco de dados ou servidor para visitantes. Conteúdo público em inglês americano. Nenhum preço, avaliação ou estoque ao vivo é apresentado.
 
