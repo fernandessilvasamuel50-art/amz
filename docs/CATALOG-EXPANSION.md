@@ -91,7 +91,7 @@ Additional permission sources reviewed: [IKEA US](https://www.ikea.com/us/en/new
 
 ## Batch 02 — 2026-10-12
 
-This section supersedes the earlier seven-product continuation: **7 active before, 2 imported, 9 in the prepared catalog**. Production verification remains pending until the push/deploy check recorded below. Rollback: `pickpop-before-batch02-20261012` at `3aee2d0`.
+This section supersedes the earlier seven-product continuation: **7 active before, 2 imported, 9 published and verified on the official domain**. Production verification is recorded below. Rollback: `pickpop-before-batch02-20261012` at `3aee2d0`, pushed.
 
 | Imported product | Identity and commercial photograph |
 | --- | --- |
@@ -112,4 +112,8 @@ Executed checks: importer 9 tests passed; Node 14 tests passed; production build
 
 Initial browser test failures were test assumptions: a single-element locator now found two valid quiz reasons; the old empty-search assertion for `coffee mug` now matches the Go kit's actual included mug. Both assertions corrected and reruns passed. Empty state remains tested with `unlisted coffee mug`; the kit is explicitly presented as a coffee maker including a mug, not a standalone drinkware product.
 
-Next: complete public deployment verification, then research the next small lot of different kitchen/storage products with exact image identity. Goal 12 needs 3 further active products, goal 20 needs 11, goal 50 needs 41. Do not reinstate RIO until written affiliate-image authorization. No Pinterest changes or new external accounts/services.
+**Publication:** source commit `0a0a9a3`, pushed to main through the existing Git/Netlify integration. Public update confirmed on 2026-10-12 at 18:43:18 America/Manaus (22:43:18 UTC): catalog equals all nine local records, both photo bytes/hashes match, new detail pages and related guides return HTTP 200 with expected affiliate disclosure/tag/credits; robots/sitemap/canonicals checked, held RIO page/photo remain HTTP 404. Private evidence: `operations/private/batch02-deploy-20261012.json`. No Netlify dashboard deploy ID is asserted. Focused browser suite also passed on https://pickpop.netlify.app/: both products' search, budgets, persistent favorites, comparison, quiz, six responsive accessibility audits and no external requests/errors. These are QA visits, not marketing acquisition or affiliate test purchases.
+
+Focused credential-pattern scan of new records/pages found no common private-key, cloud-key or GitHub token patterns; no credential or private Gmail message data was added to public files. This is not a full security certification. The owner reported that no browser permission prompt appeared for either manufacturer. Do not claim those domains were released; this additional UI comparison remains unperformed and is not needed to use the independently documented photo evidence in this batch. No need to resend the Instant Pot request.
+
+Next: research the next small lot of different kitchen/storage products with exact licensed image identity. Goal 12 needs 3 further active products, goal 20 needs 11, goal 50 needs 41. Do not reinstate RIO until written affiliate-image authorization. No Pinterest changes or new external accounts/services.

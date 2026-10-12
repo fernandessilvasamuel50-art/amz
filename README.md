@@ -24,7 +24,7 @@ Visite `http://127.0.0.1:8082/`. Python 3.9+ é usado apenas para gerar páginas
 - `docs/RELEASE-2.0.md`: entrega por fase e validações executadas.
 - `pickpop-site-v1.zip`: arquivo original preservado.
 
-A versão preparada contém nove produtos reais com fontes, ASINs e fotografias independentes licenciadas; dez artigos completos e busca local. Cinco guias receberam comparações e recomendações comerciais. Não há preços/estoque ao vivo nem API conectada. Testes técnicos de links não confirmam pedidos ou atribuição no painel Amazon. Consulte o registro de expansão para confirmação do deploy de cada lote.
+A versão pública contém nove produtos reais com fontes, ASINs e fotografias independentes licenciadas; dez artigos completos e busca local. Cinco guias receberam comparações e recomendações comerciais. Não há preços/estoque ao vivo nem API conectada. Testes técnicos de links não confirmam pedidos ou atribuição no painel Amazon. Consulte o registro de expansão para confirmação do deploy de cada lote.
 
 Os 12 Pins originais em `marketing/pinterest/` são rascunhos, não publicações ou agendamentos. O painel offline `operations/dashboard.html` exibe somente observações com fonte e data; métricas indisponíveis permanecem indisponíveis. Consulte `docs/FIRST-SALES-14-DAYS.md` para o cronograma de R$ 0.
 
