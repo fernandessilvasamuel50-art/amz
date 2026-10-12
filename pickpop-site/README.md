@@ -1,6 +1,6 @@
 # PickPop — catálogo e operação comercial
 
-Site: https://pickpop.netlify.app/. Nove produtos publicados com fontes, ASINs, fotografias com permissões documentadas e links diretos associados à tag oficial **pickpop03-20**; RIO Mini continua suspenso. Dez artigos, cinco otimizados para decisões de compra. Consulte o registro de expansão para status do deploy. Atribuição, pedidos e comissões dependem dos relatórios oficiais Amazon, não de nossos testes técnicos.
+Site: https://pickpop.netlify.app/. Doze produtos no catálogo preparado com fontes, ASINs, fotografias com permissões documentadas e links diretos associados à tag oficial **pickpop03-20**; RIO Mini continua suspenso. Dez artigos, cinco otimizados para decisões de compra. Consulte o registro de expansão para status do deploy. Atribuição, pedidos e comissões dependem dos relatórios oficiais Amazon, não de nossos testes técnicos.
 
 O projeto continua a base original com HTML estático, CSS próprio e módulos JavaScript. Python gera as páginas; não há React, banco de dados ou servidor para visitantes. Conteúdo público em inglês americano. Nenhum preço, avaliação ou estoque ao vivo é apresentado.
 
@@ -32,7 +32,7 @@ Abra http://127.0.0.1:8082/. Ctrl+C encerra a prévia. Não abra o HTML diretame
 - `data/site.json`: configurações públicas, tag e token público Search Console; nunca segredos.
 - `data/editorial.json`: motivos das recomendações associadas aos artigos.
 - `templates/`: fontes de páginas, artigos e componentes compartilhados.
-- `build.py`: gera 32 páginas e o artefato limpo `dist/`, com 29 URLs no sitemap.
+- `build.py`: gera 35 páginas e o artefato limpo `dist/`, com 32 URLs no sitemap.
 - `assets/js/`: busca, favoritos, quiz, comparação, provedores e diagnóstico.
 - `assets/css/`: identidade visual e ajustes responsivos; fontes locais em `assets/fonts/` com licenças OFL.
 - `tests/`: validação estática, catálogo, eventos, fluxos e acessibilidade.

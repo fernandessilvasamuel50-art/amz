@@ -1,0 +1,13 @@
+{
+  "mode": "applied",
+  "catalogBefore": 9,
+  "accepted": [
+    "baratza-encore-black",
+    "fellow-stagg-ekg-pro-walnut",
+    "victorinox-fibrox-chef"
+  ],
+  "rejected": [],
+  "catalogAfter": 12,
+  "originalSha256": "14f444b8caff9d0a9c6e4954c78d7d47f70c150f7983f39b1d94f8cec80d6930",
+  "note": "Technical validation only. Source facts, ASIN identity and photo permission require documented editorial review; this does not confirm Amazon commission attribution."
+}

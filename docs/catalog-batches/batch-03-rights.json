@@ -1,0 +1,59 @@
+{
+  "reviewedAt": "2026-10-12",
+  "treatment": "Resize/WebP; Fellow cropped to retain entire kettle/base and remove foreground equipment. Metadata stripped. Product appearance not retouched. Each adaptation remains under its source license.",
+  "items": [
+    {
+      "id": "baratza-encore-black",
+      "sourceSha256": "a7aab3c441b4ad549688eede2a4458d020ece771b0feb63fcc874d4d2d7cda30",
+      "webpSha256": "1f2efd9cb24cabe04cb358b068657214d9b680c682f36ff86c77e95fc8223580",
+      "width": 720,
+      "height": 960,
+      "bytes": 82044,
+      "crop": null,
+      "author": "© 2021 Dorian Bodnariuc (massage-techniques)",
+      "title": "Baratza Encore burr coffee grinder and coffee beans",
+      "source": "https://commons.wikimedia.org/wiki/File:Baratza_Encore_burr_coffee_grinder_and_coffee_beans.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6d/Baratza_Encore_burr_coffee_grinder_and_coffee_beans.jpg",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "changes": "Proportionally resized and encoded as WebP; complete photograph retained. No product appearance altered."
+    },
+    {
+      "id": "fellow-stagg-ekg-pro-walnut",
+      "sourceSha256": "7c74f56e1c62460abc8276c607d190dbd5e61ac304836a67bd5c35150f5b80a5",
+      "webpSha256": "daf2536d7daaa050bef24e6bd98a2ab53af8d14eacd9356787f55fbff1cceb63",
+      "width": 960,
+      "height": 881,
+      "bytes": 70276,
+      "crop": [
+        2000,
+        680,
+        3340,
+        1910
+      ],
+      "author": "Cerebral726",
+      "title": "Coffee Pour Over Setup",
+      "source": "https://commons.wikimedia.org/wiki/File:Coffee_Pour_Over_Setup.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c2/Coffee_Pour_Over_Setup.jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "changes": "Cropped to retain the complete kettle and base, proportionally resized and encoded as WebP. No product appearance altered; this crop remains CC BY-SA 4.0."
+    },
+    {
+      "id": "victorinox-fibrox-chef",
+      "sourceSha256": "8ceb5b96702993cb23142e9855a1a2046f207e13779685890c11757270ffd3b5",
+      "webpSha256": "c754f9e49c9142afda59a5284a75434a809fe5db71ea22f25754514615411da5",
+      "width": 960,
+      "height": 540,
+      "bytes": 10944,
+      "crop": null,
+      "author": "Francis Flinch",
+      "title": "Victorinox Fibrox 5.2063.20 chef's knife",
+      "source": "https://commons.wikimedia.org/wiki/File:Victorinox_Fibrox_5.2063.20_chef%27s_knife.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/9/98/Victorinox_Fibrox_5.2063.20_chef%27s_knife.jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "changes": "Proportionally resized and encoded as WebP; complete photograph retained. No product appearance altered."
+    }
+  ]
+}

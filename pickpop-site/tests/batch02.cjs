@@ -12,7 +12,10 @@ const base=process.env.PICKPOP_TEST_URL||'http://127.0.0.1:8082';
  context.on('request',r=>{if(!r.url().startsWith(base))external.push(r.url());});
  const ready=()=>page.waitForFunction(()=>document.querySelector('#product-search')&&!document.querySelector('#product-search').disabled);
  const axe=await fs.readFile(require.resolve('axe-core/axe.min.js'),'utf8');
- const batch=JSON.parse(await fs.readFile(path.join(__dirname,'../../docs/catalog-batches/batch-02.json'),'utf8'));
+ const batchFile=process.env.PICKPOP_BATCH_FILE||'batch-02.json';
+ assert(/^batch-0[23]\.json$/.test(batchFile));
+ const label=batchFile.replace('.json','');
+ const batch=JSON.parse(await fs.readFile(path.join(__dirname,'../../docs/catalog-batches',batchFile),'utf8'));
  try{
   for(const item of batch.items){
    await page.goto(base+'/find/?q='+encodeURIComponent(item.brand)+'&category=kitchen&budget=5');await ready();
@@ -32,26 +35,37 @@ const base=process.env.PICKPOP_TEST_URL||'http://127.0.0.1:8082';
     assert.equal(await link.getAttribute('href'),item.affiliateUrl);
     assert((await link.getAttribute('rel')).includes('sponsored'));
     assert((await page.locator('.photo-credit').textContent()).includes(item.image.author));
-    assert((await page.locator('.photo-credit').textContent()).includes('CC BY 2.0'));
+    assert((await page.locator('.photo-credit').textContent()).includes(item.image.license));
     assert((await page.textContent('body')).includes('As an Amazon Associate I earn from qualifying purchases.'));
     await page.evaluate(axe);
     const audit=await page.evaluate(async()=>window.axe.run(document,{preload:false,runOnly:{type:'tag',values:['wcag2a','wcag2aa','wcag21aa','wcag22aa']}}));
     audits.push({id:item.id,width,violations:audit.violations.map(v=>v.id)});
     assert.equal(audit.violations.length,0);
-    await page.screenshot({path:path.join(__dirname,`artifacts/batch02-${item.id}-${width}.png`),fullPage:true});
+    await page.screenshot({path:path.join(__dirname,`artifacts/${label}-${item.id}-${width}.png`),fullPage:true});
    }
   }
-  await page.goto(base+'/');await ready();
-  for(const [name,value] of [['category','kitchen'],['budget','50'],['style','modern'],['priority','small-spaces']]){
-   await page.locator(`[name="quiz-${name}"][value="${value}"]`).check();await page.locator('#quiz-next').click();
+  const choices={
+   'aeropress-go':['modern','small-spaces'],
+   'kuhn-rikon-swiss-peeler-blue':['modern','small-spaces'],
+   'baratza-encore-black':['minimalist','everyday-convenience'],
+   'fellow-stagg-ekg-pro-walnut':['modern','aesthetic-design'],
+   'victorinox-fibrox-chef':['minimalist','small-spaces']
+  };
+  for(const item of batch.items){
+   const [style,priority]=choices[item.id];
+   assert(item.styles.includes(style)&&item.priorities.includes(priority));
+   await page.goto(base+'/');await ready();
+   for(const [name,value] of [['category',item.category],['budget','50'],['style',style],['priority',priority]]){
+    await page.locator(`[name="quiz-${name}"][value="${value}"]`).check();await page.locator('#quiz-next').click();
+   }
+   const recommendations=(await page.locator('#quiz-app .product-copy').allTextContents()).join(' ');
+   assert(recommendations.includes(item.brand));
+   assert((await page.locator('#quiz-app .why-match').allTextContents()).every(reason=>reason.includes('priority')));
   }
-  const recommendations=(await page.locator('#quiz-app .product-copy').allTextContents()).join(' ');
-  assert(recommendations.includes('AeroPress'));assert(recommendations.includes('Kuhn Rikon'));
-  assert((await page.locator('#quiz-app .why-match').allTextContents()).every(reason=>reason.includes('priority')));
   assert.equal((await page.request.get(base+'/ideas/instant-rio-mini-black/')).status(),404);
   assert.equal((await page.request.get(base+'/assets/products/instant-rio-mini-black.webp')).status(),404);
   assert.deepEqual(errors,[]);assert.deepEqual(external,[]);
-  await fs.writeFile(path.join(__dirname,'artifacts/batch02.json'),JSON.stringify({status:'passed',base,ids:batch.items.map(i=>i.id),audits,errors,unexpectedExternalRequests:external},null,2));
-  console.log('PASS: two additions search, budget, favorites, comparison, quiz, photo/affiliate credit, six responsive accessibility audits; RIO remains held. No external requests.');
+  await fs.writeFile(path.join(__dirname,`artifacts/${label}.json`),JSON.stringify({status:'passed',base,ids:batch.items.map(i=>i.id),audits,errors,unexpectedExternalRequests:external},null,2));
+  console.log(`PASS: ${batch.items.length} additions search, budget, favorites, comparison, individual quiz matches, photo/affiliate credit, ${audits.length} responsive accessibility audits; RIO remains held. No external requests.`);
  }finally{await browser.close();}
 })().catch(e=>{console.error(e);process.exit(1);});

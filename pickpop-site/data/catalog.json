@@ -622,6 +622,239 @@
         "small-spaces",
         "everyday-convenience"
       ]
+    },
+    {
+      "id": "baratza-encore-black",
+      "name": "Baratza Encore Coffee Grinder — Black",
+      "brand": "Baratza",
+      "model": "Encore / ZCG485BLK",
+      "category": "kitchen",
+      "emoji": "✳",
+      "color": "#eae4ff",
+      "chip": "Source reviewed",
+      "description": "An electric burr grinder with stepped adjustments for a home filter-coffee routine, including pour-over and French press.",
+      "tags": "coffee grinder burr grind beans electric conical pour over french press station kitchen black encore",
+      "search": "Baratza Encore Conical Burr Coffee Grinder Black ZCG485BLK",
+      "planningBudget": null,
+      "price": null,
+      "asin": "B007F183LK",
+      "productUrl": "https://www.amazon.com/dp/B007F183LK",
+      "affiliateUrl": "https://www.amazon.com/dp/B007F183LK?tag=pickpop03-20",
+      "retailerName": "Baratza Encore Coffee Grinder ZCG485BLK, Black",
+      "verification": {
+        "status": "verified",
+        "reviewedAt": "2026-10-12",
+        "sources": [
+          "https://www.baratza.com/en-us/product/encoretm-zcg485?sku=ZCG485BLK1AUC1A",
+          "https://www.amazon.com/dp/B007F183LK",
+          "https://commons.wikimedia.org/wiki/File:Baratza_Encore_burr_coffee_grinder_and_coffee_beans.jpg"
+        ],
+        "scope": "Original black Encore identity, manufacturer characteristics and independent photo reviewed. No live price, inventory, rating or physical test claimed.",
+        "identityEvidence": {
+          "amazonTitle": "Baratza Encore Coffee Grinder ZCG485BLK, Black",
+          "manufacturerModel": "US Encore ZCG485 black; manufacturer describes 40 stepped settings and 40 mm M3 conical steel burrs. Amazon title ZCG485BLK, model ENCORE and UPC 838823004857 agree.",
+          "variantMatch": "Original black Encore, not white Encore or Encore ESP ZCG495 with M2 burrs. No espresso-specific ESP features are transferred to this item.",
+          "photoMatch": "Photographer identifies the Encore; inspected black housing visibly says Encore and Baratza, with numbered hopper ring, front pulse button and grounds bin. Copyright 2021 Dorian Bodnariuc; Flickr CC BY-SA 2.0 reviewed by Commons. Nearby beans/jar are background props, not included equipment."
+        }
+      },
+      "affiliateVerification": {
+        "status": "owner-tag-confirmed",
+        "reviewedAt": "2026-10-12",
+        "method": "Ordinary Amazon ASIN/title/model reviewed; direct link uses owner tag pickpop03-20. No paid test click or attribution claim."
+      },
+      "image": {
+        "type": "photo",
+        "authorized": true,
+        "variantReviewed": true,
+        "src": "/assets/products/baratza-encore-black.webp",
+        "alt": "Black Baratza Encore burr grinder with labeled housing and grounds bin; nearby coffee jar is not included",
+        "width": 720,
+        "height": 960,
+        "source": "https://commons.wikimedia.org/wiki/File:Baratza_Encore_burr_coffee_grinder_and_coffee_beans.jpg",
+        "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6d/Baratza_Encore_burr_coffee_grinder_and_coffee_beans.jpg",
+        "author": "© 2021 Dorian Bodnariuc (massage-techniques)",
+        "license": "CC BY-SA 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+        "changes": "Proportionally resized and encoded as WebP; complete photograph retained. No product appearance altered.",
+        "title": "Baratza Encore burr coffee grinder and coffee beans"
+      },
+      "features": [
+        "40 stepped grind settings, adjusted by turning the hopper.",
+        "40 mm M3 conical steel burrs.",
+        "Manufacturer footprint is 13 × 15 cm, with a height of 34 cm."
+      ],
+      "benefits": [
+        "Adds adjustable bean grinding to an existing manual coffee setup.",
+        "Separate grounds bin lets you transfer ground coffee to your chosen brewer."
+      ],
+      "considerations": [
+        "Requires counter space, compatible electrical power and regular cleaning.",
+        "Stepped settings offer less fine adjustment than a stepless espresso grinder; this is not the Encore ESP.",
+        "Brewer, beans and background jar are not included."
+      ],
+      "styles": [
+        "modern",
+        "minimalist"
+      ],
+      "priorities": [
+        "everyday-convenience"
+      ]
+    },
+    {
+      "id": "fellow-stagg-ekg-pro-walnut",
+      "name": "Fellow Stagg EKG Pro Kettle — Matte Black + Walnut",
+      "brand": "Fellow",
+      "model": "1222PRO-WN-US",
+      "category": "kitchen",
+      "emoji": "✳",
+      "color": "#e6efd9",
+      "chip": "Source reviewed",
+      "description": "A temperature-controlled electric gooseneck kettle with a walnut handle for a deliberate pour-over coffee routine.",
+      "tags": "coffee kettle gooseneck electric water tea temperature pour over station walnut black fellow stagg ekg pro",
+      "search": "Fellow Stagg EKG Pro Kettle Matte Black Walnut 1222PRO-WN-US",
+      "planningBudget": null,
+      "price": null,
+      "asin": "B0BF7HJ8MX",
+      "productUrl": "https://www.amazon.com/dp/B0BF7HJ8MX",
+      "affiliateUrl": "https://www.amazon.com/dp/B0BF7HJ8MX?tag=pickpop03-20",
+      "retailerName": "Fellow Stagg EKG Pro Gooseneck Electric Kettle for Pour-Over Coffee, Tea",
+      "verification": {
+        "status": "verified",
+        "reviewedAt": "2026-10-12",
+        "sources": [
+          "https://fellowproducts.com/products/stagg-ekg-electric-pour-over-kettle",
+          "https://www.amazon.com/dp/B0BF7HJ8MX",
+          "https://commons.wikimedia.org/wiki/File:Coffee_Pour_Over_Setup.jpg"
+        ],
+        "scope": "Selected Pro US walnut variant and core kettle characteristics reviewed; independent photograph inspected. No current price, stock, review rating or testing claim.",
+        "identityEvidence": {
+          "amazonTitle": "Fellow Stagg EKG Pro Gooseneck Electric Kettle for Pour-Over Coffee, Tea",
+          "manufacturerModel": "Manufacturer offers Pro in Matte Black + Walnut with 0.9 L capacity and variable temperature. Amazon identifies 1222PRO-WN-US and UPC 840228802532, walnut handle, matte black, 0.9 L.",
+          "variantMatch": "US Pro walnut version, not plain black handle, Maple, original EKG, Pro Studio glass base, Corvo or a replacement kettle body. No specifications exclusive to a later version are imported.",
+          "photoMatch": "Own photo by Cerebral726 explicitly identifies Stagg EKG Pro. Inspected dark matte body, brown walnut handle/lid pull, gooseneck, matte square base and round display/dial match the selected Pro walnut variant. Crop retains the whole kettle and base, excluding other foreground products. The image does not establish the unit's electrical rating; the US destination is specified by the retailer's exact model."
+        }
+      },
+      "affiliateVerification": {
+        "status": "owner-tag-confirmed",
+        "reviewedAt": "2026-10-12",
+        "method": "Amazon US ASIN, model and walnut color reviewed; direct link tagged pickpop03-20. URL validation does not confirm commissions."
+      },
+      "image": {
+        "type": "photo",
+        "authorized": true,
+        "variantReviewed": true,
+        "src": "/assets/products/fellow-stagg-ekg-pro-walnut.webp",
+        "alt": "Fellow Stagg EKG Pro matte black kettle with walnut handle and lid pull on its electric base",
+        "width": 960,
+        "height": 881,
+        "source": "https://commons.wikimedia.org/wiki/File:Coffee_Pour_Over_Setup.jpg",
+        "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c2/Coffee_Pour_Over_Setup.jpg",
+        "author": "Cerebral726",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "changes": "Cropped to retain the complete kettle and base, proportionally resized and encoded as WebP. No product appearance altered; this crop remains CC BY-SA 4.0.",
+        "title": "Coffee Pour Over Setup"
+      },
+      "features": [
+        "0.9-liter capacity.",
+        "Variable temperature control with display and dial.",
+        "Gooseneck spout for controlled pouring; built-in brew timer."
+      ],
+      "benefits": [
+        "Set a water temperature for your chosen manual brewing routine.",
+        "Gooseneck shape supports deliberate pouring into a separate coffee dripper."
+      ],
+      "considerations": [
+        "A kettle heats water; it does not grind coffee or brew it automatically.",
+        "The 0.9-liter capacity may be limiting for larger batches.",
+        "Check compatible power, the selected US model and care instructions. Other background equipment is not included."
+      ],
+      "styles": [
+        "modern",
+        "cozy"
+      ],
+      "priorities": [
+        "everyday-convenience",
+        "aesthetic-design"
+      ]
+    },
+    {
+      "id": "victorinox-fibrox-chef",
+      "name": "Victorinox Fibrox Pro Chef’s Knife — 8 Inches, Black",
+      "brand": "Victorinox",
+      "model": "5.2063.20 / 45520",
+      "category": "kitchen",
+      "emoji": "✳",
+      "color": "#fff0d8",
+      "chip": "Source reviewed",
+      "description": "An extra-wide, straight-edge chef’s knife with a black Fibrox handle for chopping, dicing and slicing in a home kitchen.",
+      "tags": "chef knife chefs knives kitchen chopping dicing slicing vegetable meat prep fibrox black victorinox eight inch 8 inch cook utensil",
+      "search": "Victorinox Fibrox Pro Chef Knife 8 inch Black 5.2063.20 45520",
+      "planningBudget": null,
+      "price": null,
+      "asin": "B008M5U1C2",
+      "productUrl": "https://www.amazon.com/dp/B008M5U1C2",
+      "affiliateUrl": "https://www.amazon.com/dp/B008M5U1C2?tag=pickpop03-20",
+      "retailerName": "Victorinox Fibrox Pro 8 Inch Chef’s Knife, Dishwasher Safe, Black",
+      "verification": {
+        "status": "verified",
+        "reviewedAt": "2026-10-12",
+        "sources": [
+          "https://www.victorinox.com/en-US/Products/Cutlery/Chef%27s-Knives/Fibrox%C2%AE-Chef%E2%80%99s-Knife-Extra-Wide/p/5.2063.20",
+          "https://www.amazon.com/dp/B008M5U1C2",
+          "https://commons.wikimedia.org/wiki/File:Victorinox_Fibrox_5.2063.20_chef%27s_knife.jpg"
+        ],
+        "scope": "Manufacturer 5.2063.20 black Fibrox knife and US retailer 45520 identity matched to an independently photographed, visibly marked blade. No price, inventory, rating or hands-on claim.",
+        "identityEvidence": {
+          "amazonTitle": "Victorinox Fibrox Pro 8 Inch Chef’s Knife, Dishwasher Safe, Black",
+          "manufacturerModel": "US manufacturer specifies 5.2063.20, black TPE handle, extra-wide straight edge and 7.9-inch blade marketed as 8 inches. Amazon lists model 45520, manufacturer part 5.2063.20BK and UPC 046928455201.",
+          "variantMatch": "Same black Fibrox 5.2063.20 chef's knife, not Swiss Classic, rosewood handle, santoku or serrated bread knife. US retail identifier and BK suffix are recorded without changing the blade identity.",
+          "photoMatch": "Francis Flinch's own photograph explicitly identifies 5.2063.20; inspected black Fibrox handle, wide straight blade and visible 5.2063.20 marking. Entire knife retained. No other products appear; photograph licensed CC BY-SA 4.0."
+        }
+      },
+      "affiliateVerification": {
+        "status": "owner-tag-confirmed",
+        "reviewedAt": "2026-10-12",
+        "method": "US product title, manufacturer part and ASIN reviewed. Direct paid link uses pickpop03-20; no test purchase or simulated affiliate clicks."
+      },
+      "image": {
+        "type": "photo",
+        "authorized": true,
+        "variantReviewed": true,
+        "src": "/assets/products/victorinox-fibrox-chef.webp",
+        "alt": "Victorinox Fibrox 5.2063.20 chef’s knife with its black handle and visible blade marking",
+        "width": 960,
+        "height": 540,
+        "source": "https://commons.wikimedia.org/wiki/File:Victorinox_Fibrox_5.2063.20_chef%27s_knife.jpg",
+        "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/9/98/Victorinox_Fibrox_5.2063.20_chef%27s_knife.jpg",
+        "author": "Francis Flinch",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "changes": "Proportionally resized and encoded as WebP; complete photograph retained. No product appearance altered.",
+        "title": "Victorinox Fibrox 5.2063.20 chef's knife"
+      },
+      "features": [
+        "Extra-wide straight-edge blade, marketed as 8 inches; manufacturer measurement is 7.9 inches.",
+        "Black thermoplastic-elastomer Fibrox handle.",
+        "Swiss-made stamped construction, not a forged blade."
+      ],
+      "benefits": [
+        "One chef's knife for common chopping, dicing and slicing tasks.",
+        "Wide blade and shaped handle are designed for kitchen prep."
+      ],
+      "considerations": [
+        "Choose a blade size that fits your hands, cutting board and storage.",
+        "Sharp edge needs careful handling, protected storage and routine maintenance; it does not replace every specialized knife."
+      ],
+      "styles": [
+        "minimalist",
+        "modern",
+        "space-saving"
+      ],
+      "priorities": [
+        "everyday-convenience",
+        "small-spaces"
+      ]
     }
   ]
 }

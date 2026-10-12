@@ -65,6 +65,13 @@ class ImportChecks(unittest.TestCase):
         self.item['image']['permissionId'] = 'unreviewed'
         self.assertTrue(item_errors(self.item, ROOT, 'pickpop03-20', {}, True))
 
+    def test_sharealike_2_commercial_license_allowed_but_noncommercial_rejected(self):
+        self.item['image']['license'] = 'CC BY-SA 2.0'
+        self.item['image']['licenseUrl'] = 'https://creativecommons.org/licenses/by-sa/2.0'
+        self.assertFalse(item_errors(self.item, ROOT, 'pickpop03-20', {}, True))
+        self.item['image']['licenseUrl'] = 'https://creativecommons.org/licenses/by-nc-sa/2.0'
+        self.assertTrue(item_errors(self.item, ROOT, 'pickpop03-20', {}, True))
+
     def test_manufacturer_permission_requires_exact_hash(self):
         product = copy.deepcopy(self.item); product['image']['permissionId'] = 'test-only'
         image = product['image']

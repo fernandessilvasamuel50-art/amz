@@ -143,8 +143,9 @@ def photo(item, class_name):
 
 def photo_credit(item):
     image = item['image']
+    source_title = image.get('title', 'Original photograph')
     rights = 'Used for attributed editorial coverage under the manufacturer permission linked here.' if image.get('permissionId') else 'This photograph and its WebP adaptation remain under the stated image license.'
-    return f'<p class="photo-credit">Photo: {ESC(image["author"])} · <a href="{ESC(image["source"], quote=True)}" target="_blank" rel="noopener noreferrer">Original photograph</a> · <a href="{ESC(image["licenseUrl"], quote=True)}" target="_blank" rel="noopener noreferrer">{ESC(image["license"])}</a>. {ESC(image["changes"])} {rights} No endorsement is implied.</p>'
+    return f'<p class="photo-credit">Photo: {ESC(image["author"])} · <a href="{ESC(image["source"], quote=True)}" target="_blank" rel="noopener noreferrer">{ESC(source_title)}</a> · <a href="{ESC(image["licenseUrl"], quote=True)}" target="_blank" rel="noopener noreferrer">{ESC(image["license"])}</a>. {ESC(image["changes"])} {rights} No endorsement is implied.</p>'
 
 
 def amazon_cta(item, placement):

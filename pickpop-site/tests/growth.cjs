@@ -17,7 +17,7 @@ const base=process.env.PICKPOP_TEST_URL||'http://127.0.0.1:8082';
    const link=page.locator('a[data-placement="detail-intro"]');assert.equal(await link.count(),1);
    assert.equal(await link.getAttribute('href'),item.affiliateUrl);assert((await link.getAttribute('rel')).includes('sponsored'));
    assert(!(await link.getAttribute('rel')).includes('noreferrer'));assert.equal(await link.getAttribute('referrerpolicy'),'strict-origin-when-cross-origin');
-   const y=await link.evaluate(el=>el.getBoundingClientRect().top);assert(y<1300,'CTA appears early on mobile');
+   const y=await link.evaluate(el=>el.getBoundingClientRect().top);assert(y<1300,`CTA appears early on mobile: ${item.id}, y=${y}`);
   }
   let outgoing;
   await context.route('https://www.amazon.com/**',async route=>{outgoing={url:route.request().url(),headers:await route.request().allHeaders()};await route.fulfill({status:200,contentType:'text/html',body:'<title>Local navigation fixture</title>'});});
