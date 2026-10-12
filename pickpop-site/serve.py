@@ -9,6 +9,10 @@ ROOT = Path(__file__).resolve().parent
 
 
 class PreviewHandler(SimpleHTTPRequestHandler):
+    def list_directory(self, path):
+        self.send_error(404)
+        return None
+
     def send_error(self, code, message=None, explain=None):
         if code != 404:
             return super().send_error(code, message, explain)
