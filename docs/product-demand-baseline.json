@@ -1,0 +1,1004 @@
+{
+  "schemaVersion": 1,
+  "consultedAt": "2026-10-12",
+  "baselineCommit": "2d87d87",
+  "method": "Manual primary sources, cached snapshots, explicit conservative editorial rubric. Not sales estimates.",
+  "items": [
+    {
+      "id": "chemex-six-cup",
+      "asin": "B0000YWF5E",
+      "kind": "existing",
+      "consultedAt": "2026-10-12",
+      "cacheAge": "2 days",
+      "rank": 13,
+      "rankCategory": "Pour Over Coffee Makers",
+      "overallRank": "37,640 Home & Kitchen",
+      "reportedMonthlyBadgeLowerBound": 1000,
+      "ratingsCount": 6976,
+      "trendsUS": null,
+      "reviewHistory": null,
+      "scores": [
+        17,
+        22,
+        11,
+        6,
+        10
+      ],
+      "scoreParts": [
+        9,
+        8,
+        9,
+        2,
+        0
+      ],
+      "confidence": "partial",
+      "keyword": "CHEMEX 6 cup vs AeroPress Go apartment coffee maker",
+      "observedCompetitor": "https://cremaandgrind.com/pour-over/aeropress-vs-chemex",
+      "photoStatus": "existing-reviewed",
+      "notes": "Caption explicitly six-cup Classic; wood collar distinguishes the family. Coffee-station and apartment brewer guides; requires filters/hot water. No search-volume evidence.",
+      "intentParts": {
+        "verifiedUseCaseOf10": 10,
+        "specificDecisionQueryOf10": 9,
+        "observedCommercialPagesOf5": 3
+      },
+      "affiliateUrl": "https://www.amazon.com/dp/B0000YWF5E?tag=pickpop03-20",
+      "source": "https://www.amazon.com/dp/B0000YWF5E",
+      "trendsStatus": "unavailable-browser-permission-denied; not zero interest",
+      "scoreJustification": {
+        "demand": "BSR/badge snapshot buckets; Trends and rating history receive no evidence points. Not monthly unit estimates.",
+        "intent": "CHEMEX 6 cup vs AeroPress Go apartment coffee maker; documented model/use + observed competitor https://cremaandgrind.com/pour-over/aeropress-vs-chemex",
+        "commission": "Official conditional category rate; uncertain actual Amazon classification; no inferred ticket. See report for dated primary price observation where present.",
+        "seo": "Conservative editorial opportunity based on the recorded query sample, not US Google position/difficulty/volume.",
+        "relevance": "Caption explicitly six-cup Classic; wood collar distinguishes the family. Coffee-station and apartment brewer guides; requires filters/hot water. No search-volume evidence."
+      },
+      "associatesCategoryEvidence": "Kitchen expected: 4.5% conditional qualifying revenue; actual class to confirm in official reports"
+    },
+    {
+      "id": "logitech-m185",
+      "asin": "B004YAVF8I",
+      "kind": "existing",
+      "consultedAt": "2026-10-12",
+      "cacheAge": "last week",
+      "rank": 1,
+      "rankCategory": "Computer Mice",
+      "overallRank": "not displayed",
+      "reportedMonthlyBadgeLowerBound": 10000,
+      "ratingsCount": 45145,
+      "trendsUS": null,
+      "reviewHistory": null,
+      "scores": [
+        20,
+        20,
+        6,
+        4,
+        2
+      ],
+      "scoreParts": [
+        12,
+        8,
+        5,
+        1,
+        0
+      ],
+      "confidence": "partial",
+      "keyword": "Logitech M185 wireless mouse buying guide",
+      "observedCompetitor": "https://mousegearhq.com/blog/logitech-m510-m310-m185",
+      "photoStatus": "existing-reviewed",
+      "notes": "Photo caption explicitly M185 black/grey. Strong cached rank/badge but little relevance to kitchen guides; preserve, do not prioritize new tech.",
+      "intentParts": {
+        "verifiedUseCaseOf10": 9,
+        "specificDecisionQueryOf10": 8,
+        "observedCommercialPagesOf5": 3
+      },
+      "affiliateUrl": "https://www.amazon.com/dp/B004YAVF8I?tag=pickpop03-20",
+      "source": "https://www.amazon.com/dp/B004YAVF8I",
+      "trendsStatus": "unavailable-browser-permission-denied; not zero interest",
+      "scoreJustification": {
+        "demand": "BSR/badge snapshot buckets; Trends and rating history receive no evidence points. Not monthly unit estimates.",
+        "intent": "Logitech M185 wireless mouse buying guide; documented model/use + observed competitor https://mousegearhq.com/blog/logitech-m510-m310-m185",
+        "commission": "Official conditional category rate; uncertain actual Amazon classification; no inferred ticket. See report for dated primary price observation where present.",
+        "seo": "Conservative editorial opportunity based on the recorded query sample, not US Google position/difficulty/volume.",
+        "relevance": "Photo caption explicitly M185 black/grey. Strong cached rank/badge but little relevance to kitchen guides; preserve, do not prioritize new tech."
+      },
+      "associatesCategoryEvidence": "PC/peripheral: 2.5% if classified PC, 4% if All Other; actual class unknown"
+    },
+    {
+      "id": "logitech-k120",
+      "asin": "B003ELVLKU",
+      "kind": "existing",
+      "consultedAt": "2026-10-12",
+      "cacheAge": "4 days",
+      "rank": 5,
+      "rankCategory": "Computer Keyboards",
+      "overallRank": "not displayed",
+      "reportedMonthlyBadgeLowerBound": 6000,
+      "ratingsCount": null,
+      "trendsUS": null,
+      "reviewHistory": null,
+      "scores": [
+        20,
+        18,
+        6,
+        3,
+        2
+      ],
+      "scoreParts": [
+        12,
+        8,
+        5,
+        1,
+        0
+      ],
+      "confidence": "partial",
+      "keyword": "Logitech K120 wired keyboard buying guide",
+      "observedCompetitor": "https://pc-hybrid.ca/blogs/infos/introducing-the-logitech-k120-the-ultimate-plug-and-play-usb-keyboard",
+      "photoStatus": "existing-reviewed",
+      "notes": "US ANSI layout independently reinspected (horizontal Enter, US legends). Rank/badge observed; rating count not exposed by consulted representation. Preserve; weak article fit.",
+      "intentParts": {
+        "verifiedUseCaseOf10": 8,
+        "specificDecisionQueryOf10": 8,
+        "observedCommercialPagesOf5": 2
+      },
+      "affiliateUrl": "https://www.amazon.com/dp/B003ELVLKU?tag=pickpop03-20",
+      "source": "https://www.amazon.com/dp/B003ELVLKU",
+      "trendsStatus": "unavailable-browser-permission-denied; not zero interest",
+      "scoreJustification": {
+        "demand": "BSR/badge snapshot buckets; Trends and rating history receive no evidence points. Not monthly unit estimates.",
+        "intent": "Logitech K120 wired keyboard buying guide; documented model/use + observed competitor https://pc-hybrid.ca/blogs/infos/introducing-the-logitech-k120-the-ultimate-plug-and-play-usb-keyboard",
+        "commission": "Official conditional category rate; uncertain actual Amazon classification; no inferred ticket. See report for dated primary price observation where present.",
+        "seo": "Conservative editorial opportunity based on the recorded query sample, not US Google position/difficulty/volume.",
+        "relevance": "US ANSI layout independently reinspected (horizontal Enter, US legends). Rank/badge observed; rating count not exposed by consulted representation. Preserve; weak article fit."
+      },
+      "associatesCategoryEvidence": "PC/peripheral: 2.5% if classified PC, 4% if All Other; actual class unknown"
+    },
+    {
+      "id": "logitech-c920",
+      "asin": "B006JH8T3S",
+      "kind": "existing",
+      "consultedAt": "2026-10-12",
+      "cacheAge": "2 weeks",
+      "rank": 34,
+      "rankCategory": "Webcams",
+      "overallRank": "not displayed",
+      "reportedMonthlyBadgeLowerBound": 500,
+      "ratingsCount": null,
+      "trendsUS": null,
+      "reviewHistory": null,
+      "scores": [
+        12,
+        18,
+        6,
+        3,
+        2
+      ],
+      "scoreParts": [
+        6,
+        6,
+        5,
+        1,
+        0
+      ],
+      "confidence": "partial",
+      "keyword": "Logitech C920 webcam buying guide",
+      "observedCompetitor": "https://www.logitech.com/assets/45920/2/hd-pro-webcam-c920-quick-start-guide.pdf",
+      "photoStatus": "existing-reviewed",
+      "notes": "Own photo explicitly C920, not C920s. Rating count unavailable in consulted text. Search sample dominated by manuals rather than a clear US commercial SERP; SEO opportunity unproven.",
+      "intentParts": {
+        "verifiedUseCaseOf10": 8,
+        "specificDecisionQueryOf10": 8,
+        "observedCommercialPagesOf5": 2
+      },
+      "affiliateUrl": "https://www.amazon.com/dp/B006JH8T3S?tag=pickpop03-20",
+      "source": "https://www.amazon.com/dp/B006JH8T3S",
+      "trendsStatus": "unavailable-browser-permission-denied; not zero interest",
+      "scoreJustification": {
+        "demand": "BSR/badge snapshot buckets; Trends and rating history receive no evidence points. Not monthly unit estimates.",
+        "intent": "Logitech C920 webcam buying guide; documented model/use + observed competitor https://www.logitech.com/assets/45920/2/hd-pro-webcam-c920-quick-start-guide.pdf",
+        "commission": "Official conditional category rate; uncertain actual Amazon classification; no inferred ticket. See report for dated primary price observation where present.",
+        "seo": "Conservative editorial opportunity based on the recorded query sample, not US Google position/difficulty/volume.",
+        "relevance": "Own photo explicitly C920, not C920s. Rating count unavailable in consulted text. Search sample dominated by manuals rather than a clear US commercial SERP; SEO opportunity unproven."
+      },
+      "associatesCategoryEvidence": "PC/peripheral: 2.5% if classified PC, 4% if All Other; actual class unknown"
+    },
+    {
+      "id": "lodge-twelve-inch",
+      "asin": "B00006JSUB",
+      "kind": "existing",
+      "consultedAt": "2026-10-12",
+      "cacheAge": "last week",
+      "rank": 2,
+      "rankCategory": "Skillets",
+      "overallRank": "104 Kitchen & Dining",
+      "reportedMonthlyBadgeLowerBound": 5000,
+      "ratingsCount": 132114,
+      "trendsUS": null,
+      "reviewHistory": null,
+      "scores": [
+        20,
+        20,
+        11,
+        5,
+        9
+      ],
+      "scoreParts": [
+        12,
+        8,
+        9,
+        2,
+        0
+      ],
+      "confidence": "partial",
+      "keyword": "Lodge 12 inch cast iron skillet small kitchen",
+      "observedCompetitor": "https://www.rei.com/product/714250/lodge-cast-iron-skillet-12-in",
+      "photoStatus": "existing-reviewed",
+      "notes": "Photo caption 12in and prior readable L10SK3 label support identity. Amazon generic Model Number now says Miniature Skillet despite 12in title: catalogue data conflict flagged, do not copy that field. Good essentials fit, heavy/large for small spaces.",
+      "intentParts": {
+        "verifiedUseCaseOf10": 9,
+        "specificDecisionQueryOf10": 8,
+        "observedCommercialPagesOf5": 3
+      },
+      "affiliateUrl": "https://www.amazon.com/dp/B00006JSUB?tag=pickpop03-20",
+      "source": "https://www.amazon.com/dp/B00006JSUB",
+      "trendsStatus": "unavailable-browser-permission-denied; not zero interest",
+      "scoreJustification": {
+        "demand": "BSR/badge snapshot buckets; Trends and rating history receive no evidence points. Not monthly unit estimates.",
+        "intent": "Lodge 12 inch cast iron skillet small kitchen; documented model/use + observed competitor https://www.rei.com/product/714250/lodge-cast-iron-skillet-12-in",
+        "commission": "Official conditional category rate; uncertain actual Amazon classification; no inferred ticket. See report for dated primary price observation where present.",
+        "seo": "Conservative editorial opportunity based on the recorded query sample, not US Google position/difficulty/volume.",
+        "relevance": "Photo caption 12in and prior readable L10SK3 label support identity. Amazon generic Model Number now says Miniature Skillet despite 12in title: catalogue data conflict flagged, do not copy that field. Good essentials fit, heavy/large for small spaces."
+      },
+      "associatesCategoryEvidence": "Kitchen expected: 4.5% conditional qualifying revenue; actual class to confirm in official reports"
+    },
+    {
+      "id": "kong-classic-medium",
+      "asin": "B000AYN7LU",
+      "kind": "existing",
+      "consultedAt": "2026-10-12",
+      "cacheAge": "4 days",
+      "rank": 4,
+      "rankCategory": "Dog Chew Toys",
+      "overallRank": "378 Pet Supplies",
+      "reportedMonthlyBadgeLowerBound": 5000,
+      "ratingsCount": 93503,
+      "trendsUS": null,
+      "reviewHistory": null,
+      "scores": [
+        20,
+        19,
+        8,
+        3,
+        1
+      ],
+      "scoreParts": [
+        12,
+        8,
+        6,
+        2,
+        0
+      ],
+      "confidence": "partial",
+      "keyword": "KONG Classic medium dog toy size guide",
+      "observedCompetitor": "https://www.chewy.com/kong-classic-dog-toy/dp/38484",
+      "photoStatus": "existing-reviewed",
+      "notes": "Commons description explicitly medium-size toy, independent red Classic photo. Existing pet recommendation retained, not a priority for the kitchen niche; ratings may cover other sizes.",
+      "intentParts": {
+        "verifiedUseCaseOf10": 8,
+        "specificDecisionQueryOf10": 8,
+        "observedCommercialPagesOf5": 3
+      },
+      "affiliateUrl": "https://www.amazon.com/dp/B000AYN7LU?tag=pickpop03-20",
+      "source": "https://www.amazon.com/dp/B000AYN7LU",
+      "trendsStatus": "unavailable-browser-permission-denied; not zero interest",
+      "scoreJustification": {
+        "demand": "BSR/badge snapshot buckets; Trends and rating history receive no evidence points. Not monthly unit estimates.",
+        "intent": "KONG Classic medium dog toy size guide; documented model/use + observed competitor https://www.chewy.com/kong-classic-dog-toy/dp/38484",
+        "commission": "Official conditional category rate; uncertain actual Amazon classification; no inferred ticket. See report for dated primary price observation where present.",
+        "seo": "Conservative editorial opportunity based on the recorded query sample, not US Google position/difficulty/volume.",
+        "relevance": "Commons description explicitly medium-size toy, independent red Classic photo. Existing pet recommendation retained, not a priority for the kitchen niche; ratings may cover other sizes."
+      },
+      "associatesCategoryEvidence": "Pets Products: 3% conditional qualifying revenue"
+    },
+    {
+      "id": "oxo-basting-brush",
+      "asin": "B000HD7FJ4",
+      "kind": "existing",
+      "consultedAt": "2026-10-12",
+      "cacheAge": "last week",
+      "rank": 14,
+      "rankCategory": "Pastry & Basting Brushes",
+      "overallRank": "13,327 Kitchen & Dining",
+      "reportedMonthlyBadgeLowerBound": 400,
+      "ratingsCount": 15779,
+      "trendsUS": null,
+      "reviewHistory": null,
+      "scores": [
+        15,
+        20,
+        11,
+        5,
+        8
+      ],
+      "scoreParts": [
+        9,
+        6,
+        9,
+        2,
+        0
+      ],
+      "confidence": "low; incomplete demand series and photo/variant gate",
+      "keyword": "OXO large silicone basting brush vs small",
+      "observedCompetitor": "https://www.wholefoodsmarket.com/grocery/product/basting-brush%20silicone%2C%201%20ea-b000hd7fj4",
+      "photoStatus": "additional-size-evidence-needed",
+      "notes": "Photo license reconfirmed and local photo inspected. It names Silicone Basting Brush but caption/front tag do not explicitly name Large/1071061. Existing prior acceptance retained pending additional SKU/size evidence; do not call this a new exact-variant approval. Minor utensil, not a centerpiece for coffee/organization.",
+      "intentParts": {
+        "verifiedUseCaseOf10": 9,
+        "specificDecisionQueryOf10": 8,
+        "observedCommercialPagesOf5": 3
+      },
+      "affiliateUrl": "https://www.amazon.com/dp/B000HD7FJ4?tag=pickpop03-20",
+      "source": "https://www.amazon.com/dp/B000HD7FJ4",
+      "trendsStatus": "unavailable-browser-permission-denied; not zero interest",
+      "scoreJustification": {
+        "demand": "BSR/badge snapshot buckets; Trends and rating history receive no evidence points. Not monthly unit estimates.",
+        "intent": "OXO large silicone basting brush vs small; documented model/use + observed competitor https://www.wholefoodsmarket.com/grocery/product/basting-brush%20silicone%2C%201%20ea-b000hd7fj4",
+        "commission": "Official conditional category rate; uncertain actual Amazon classification; no inferred ticket. See report for dated primary price observation where present.",
+        "seo": "Conservative editorial opportunity based on the recorded query sample, not US Google position/difficulty/volume.",
+        "relevance": "Photo license reconfirmed and local photo inspected. It names Silicone Basting Brush but caption/front tag do not explicitly name Large/1071061. Existing prior acceptance retained pending additional SKU/size evidence; do not call this a new exact-variant approval. Minor utensil, not a centerpiece for coffee/organization."
+      },
+      "associatesCategoryEvidence": "Kitchen expected: 4.5% conditional qualifying revenue; actual class to confirm in official reports"
+    },
+    {
+      "id": "aeropress-go",
+      "asin": "B07YVL8SF3",
+      "kind": "existing",
+      "consultedAt": "2026-10-12",
+      "cacheAge": "3 weeks",
+      "rank": 15,
+      "rankCategory": "Coffee Presses",
+      "overallRank": "17,692 Home & Kitchen",
+      "reportedMonthlyBadgeLowerBound": 1000,
+      "ratingsCount": 13051,
+      "trendsUS": null,
+      "reviewHistory": null,
+      "scores": [
+        17,
+        22,
+        11,
+        6,
+        10
+      ],
+      "scoreParts": [
+        9,
+        8,
+        9,
+        2,
+        0
+      ],
+      "confidence": "partial",
+      "keyword": "CHEMEX 6 cup vs AeroPress Go apartment coffee maker",
+      "observedCompetitor": "https://thecoffeeguru.net/gear/aeropress-go-travel-coffee-press",
+      "photoStatus": "existing-reviewed",
+      "notes": "Independent Go photograph and compact 1–3 markings match recorded kit; prior source evidence retained. Consulted cache is three weeks old; current kit/parent review aggregation unknown.",
+      "intentParts": {
+        "verifiedUseCaseOf10": 10,
+        "specificDecisionQueryOf10": 9,
+        "observedCommercialPagesOf5": 3
+      },
+      "affiliateUrl": "https://www.amazon.com/dp/B07YVL8SF3?tag=pickpop03-20",
+      "source": "https://www.amazon.com/dp/B07YVL8SF3",
+      "trendsStatus": "unavailable-browser-permission-denied; not zero interest",
+      "scoreJustification": {
+        "demand": "BSR/badge snapshot buckets; Trends and rating history receive no evidence points. Not monthly unit estimates.",
+        "intent": "CHEMEX 6 cup vs AeroPress Go apartment coffee maker; documented model/use + observed competitor https://thecoffeeguru.net/gear/aeropress-go-travel-coffee-press",
+        "commission": "Official conditional category rate; uncertain actual Amazon classification; no inferred ticket. See report for dated primary price observation where present.",
+        "seo": "Conservative editorial opportunity based on the recorded query sample, not US Google position/difficulty/volume.",
+        "relevance": "Independent Go photograph and compact 1–3 markings match recorded kit; prior source evidence retained. Consulted cache is three weeks old; current kit/parent review aggregation unknown."
+      },
+      "associatesCategoryEvidence": "Kitchen expected: 4.5% conditional qualifying revenue; actual class to confirm in official reports"
+    },
+    {
+      "id": "kuhn-rikon-swiss-peeler-blue",
+      "asin": "B001AQI3J8",
+      "kind": "existing",
+      "consultedAt": "2026-10-12",
+      "cacheAge": "today",
+      "rank": 28,
+      "rankCategory": "Peelers",
+      "overallRank": "7,273 Kitchen & Dining",
+      "reportedMonthlyBadgeLowerBound": 100,
+      "ratingsCount": 5359,
+      "trendsUS": null,
+      "reviewHistory": null,
+      "scores": [
+        10,
+        20,
+        11,
+        5,
+        8
+      ],
+      "scoreParts": [
+        6,
+        4,
+        9,
+        2,
+        0
+      ],
+      "confidence": "partial",
+      "keyword": "Kuhn Rikon original Swiss peeler blue buying guide",
+      "observedCompetitor": "https://cambom.org/blog/buying-guides/best-vegetable-peeler",
+      "photoStatus": "existing-reviewed",
+      "notes": "Prior blue SKU/GTIN and visibly blue Original Swiss match retained. Generic Amazon Model Name Purple conflicts with SKU/GTIN; selected variant needs rechecking when fresh page available. Low badge relative to the other observed snapshots; no sales estimate.",
+      "intentParts": {
+        "verifiedUseCaseOf10": 9,
+        "specificDecisionQueryOf10": 8,
+        "observedCommercialPagesOf5": 3
+      },
+      "affiliateUrl": "https://www.amazon.com/dp/B001AQI3J8?tag=pickpop03-20",
+      "source": "https://www.amazon.com/dp/B001AQI3J8",
+      "trendsStatus": "unavailable-browser-permission-denied; not zero interest",
+      "scoreJustification": {
+        "demand": "BSR/badge snapshot buckets; Trends and rating history receive no evidence points. Not monthly unit estimates.",
+        "intent": "Kuhn Rikon original Swiss peeler blue buying guide; documented model/use + observed competitor https://cambom.org/blog/buying-guides/best-vegetable-peeler",
+        "commission": "Official conditional category rate; uncertain actual Amazon classification; no inferred ticket. See report for dated primary price observation where present.",
+        "seo": "Conservative editorial opportunity based on the recorded query sample, not US Google position/difficulty/volume.",
+        "relevance": "Prior blue SKU/GTIN and visibly blue Original Swiss match retained. Generic Amazon Model Name Purple conflicts with SKU/GTIN; selected variant needs rechecking when fresh page available. Low badge relative to the other observed snapshots; no sales estimate."
+      },
+      "associatesCategoryEvidence": "Kitchen expected: 4.5% conditional qualifying revenue; actual class to confirm in official reports"
+    },
+    {
+      "id": "baratza-encore-black",
+      "asin": "B007F183LK",
+      "kind": "existing",
+      "consultedAt": "2026-10-12",
+      "cacheAge": "last week",
+      "rank": 6,
+      "rankCategory": "Burr Coffee Grinders",
+      "overallRank": "11,054 Home & Kitchen",
+      "reportedMonthlyBadgeLowerBound": 1000,
+      "ratingsCount": 16626,
+      "trendsUS": null,
+      "reviewHistory": null,
+      "scores": [
+        20,
+        23,
+        17,
+        6,
+        10
+      ],
+      "scoreParts": [
+        12,
+        8,
+        9,
+        2,
+        6
+      ],
+      "confidence": "partial",
+      "keyword": "Baratza Encore vs ESP small apartment",
+      "observedCompetitor": "https://apartmentbarista.com/articles/baratza-encore-vs-encore-esp",
+      "photoStatus": "existing-reviewed",
+      "notes": "Original black Encore explicitly photographed; no ESP features imported. Manufacturer ticket observed separately from Amazon. Source Amazon notes 2020 exterior update; full photo/identity evidence in batch03. Strong coffee-station fit, competitive comparison queries.",
+      "intentParts": {
+        "verifiedUseCaseOf10": 10,
+        "specificDecisionQueryOf10": 9,
+        "observedCommercialPagesOf5": 4
+      },
+      "affiliateUrl": "https://www.amazon.com/dp/B007F183LK?tag=pickpop03-20",
+      "source": "https://www.amazon.com/dp/B007F183LK",
+      "trendsStatus": "unavailable-browser-permission-denied; not zero interest",
+      "scoreJustification": {
+        "demand": "BSR/badge snapshot buckets; Trends and rating history receive no evidence points. Not monthly unit estimates.",
+        "intent": "Baratza Encore vs ESP small apartment; documented model/use + observed competitor https://apartmentbarista.com/articles/baratza-encore-vs-encore-esp",
+        "commission": "Official conditional category rate; uncertain actual Amazon classification; no inferred ticket. See report for dated primary price observation where present.",
+        "seo": "Conservative editorial opportunity based on the recorded query sample, not US Google position/difficulty/volume.",
+        "relevance": "Original black Encore explicitly photographed; no ESP features imported. Manufacturer ticket observed separately from Amazon. Source Amazon notes 2020 exterior update; full photo/identity evidence in batch03. Strong coffee-station fit, competitive comparison queries."
+      },
+      "associatesCategoryEvidence": "Kitchen expected: 4.5% conditional qualifying revenue; actual class to confirm in official reports"
+    },
+    {
+      "id": "fellow-stagg-ekg-pro-walnut",
+      "asin": "B0BF7HJ8MX",
+      "kind": "existing",
+      "consultedAt": "2026-10-12",
+      "cacheAge": "last week",
+      "rank": 22,
+      "rankCategory": "Electric Kettles",
+      "overallRank": "11,037 Home & Kitchen",
+      "reportedMonthlyBadgeLowerBound": 500,
+      "ratingsCount": 199,
+      "trendsUS": null,
+      "reviewHistory": null,
+      "scores": [
+        15,
+        22,
+        14,
+        5,
+        10
+      ],
+      "scoreParts": [
+        9,
+        6,
+        9,
+        2,
+        3
+      ],
+      "confidence": "low; incomplete demand series and photo/variant gate",
+      "keyword": "Fellow Stagg EKG Pro vs EKG walnut",
+      "observedCompetitor": "https://www.balancejournal.co/food-drink/fellow-stagg-ekg-vs-ekg-pro",
+      "photoStatus": "held-variant-unproven",
+      "notes": "CC BY-SA 4.0 permits commercial reuse but confirms only EKG Pro family. Brown wood does not establish Walnut, exact finish or US model. Earlier batch03 walnut-photo conclusion was overstated: superseded. Suspend recommendation/photo until written variant proof or another exact licensed image; NOT a demand-based removal.",
+      "intentParts": {
+        "verifiedUseCaseOf10": 10,
+        "specificDecisionQueryOf10": 9,
+        "observedCommercialPagesOf5": 3
+      },
+      "affiliateUrl": "https://www.amazon.com/dp/B0BF7HJ8MX?tag=pickpop03-20",
+      "source": "https://www.amazon.com/dp/B0BF7HJ8MX",
+      "trendsStatus": "unavailable-browser-permission-denied; not zero interest",
+      "scoreJustification": {
+        "demand": "BSR/badge snapshot buckets; Trends and rating history receive no evidence points. Not monthly unit estimates.",
+        "intent": "Fellow Stagg EKG Pro vs EKG walnut; documented model/use + observed competitor https://www.balancejournal.co/food-drink/fellow-stagg-ekg-vs-ekg-pro",
+        "commission": "Official conditional category rate; uncertain actual Amazon classification; no inferred ticket. See report for dated primary price observation where present.",
+        "seo": "Conservative editorial opportunity based on the recorded query sample, not US Google position/difficulty/volume.",
+        "relevance": "CC BY-SA 4.0 permits commercial reuse but confirms only EKG Pro family. Brown wood does not establish Walnut, exact finish or US model. Earlier batch03 walnut-photo conclusion was overstated: superseded. Suspend recommendation/photo until written variant proof or another exact licensed image; NOT a demand-based removal."
+      },
+      "associatesCategoryEvidence": "Kitchen expected: 4.5% conditional qualifying revenue; actual class to confirm in official reports"
+    },
+    {
+      "id": "victorinox-fibrox-chef",
+      "asin": "B008M5U1C2",
+      "kind": "existing",
+      "consultedAt": "2026-10-12",
+      "cacheAge": "today",
+      "rank": 3,
+      "rankCategory": "Chef's Knives",
+      "overallRank": "1,804 Kitchen & Dining",
+      "reportedMonthlyBadgeLowerBound": 5000,
+      "ratingsCount": 14999,
+      "trendsUS": null,
+      "reviewHistory": null,
+      "scores": [
+        20,
+        22,
+        11,
+        5,
+        10
+      ],
+      "scoreParts": [
+        12,
+        8,
+        9,
+        2,
+        0
+      ],
+      "confidence": "partial",
+      "keyword": "Victorinox Fibrox 8 inch chef knife buying guide",
+      "observedCompetitor": "https://pickstead.com/guides/victorinox-fibrox-chefs-knife-review/",
+      "photoStatus": "existing-reviewed",
+      "notes": "Source and visible blade explicitly 5.2063.20, black Fibrox; Amazon 45520/5.2063.20BK. Strong observed subcategory signal and essentials fit. Ratings history, actual conversions and ticket still unknown.",
+      "intentParts": {
+        "verifiedUseCaseOf10": 10,
+        "specificDecisionQueryOf10": 9,
+        "observedCommercialPagesOf5": 3
+      },
+      "affiliateUrl": "https://www.amazon.com/dp/B008M5U1C2?tag=pickpop03-20",
+      "source": "https://www.amazon.com/dp/B008M5U1C2",
+      "trendsStatus": "unavailable-browser-permission-denied; not zero interest",
+      "scoreJustification": {
+        "demand": "BSR/badge snapshot buckets; Trends and rating history receive no evidence points. Not monthly unit estimates.",
+        "intent": "Victorinox Fibrox 8 inch chef knife buying guide; documented model/use + observed competitor https://pickstead.com/guides/victorinox-fibrox-chefs-knife-review/",
+        "commission": "Official conditional category rate; uncertain actual Amazon classification; no inferred ticket. See report for dated primary price observation where present.",
+        "seo": "Conservative editorial opportunity based on the recorded query sample, not US Google position/difficulty/volume.",
+        "relevance": "Source and visible blade explicitly 5.2063.20, black Fibrox; Amazon 45520/5.2063.20BK. Strong observed subcategory signal and essentials fit. Ratings history, actual conversions and ticket still unknown."
+      },
+      "associatesCategoryEvidence": "Kitchen expected: 4.5% conditional qualifying revenue; actual class to confirm in official reports"
+    },
+    {
+      "id": "ninja-af101",
+      "name": "Ninja AF101 4-Qt, Grey",
+      "model": "AF101",
+      "asin": "B07FDJMC9Q",
+      "kind": "candidate",
+      "consultedAt": "2026-10-12",
+      "cacheAge": "2 days",
+      "rank": 10,
+      "rankCategory": "Air Fryers",
+      "overallRank": "275 Kitchen & Dining",
+      "reportedMonthlyBadgeLowerBound": 2000,
+      "ratingsCount": 59477,
+      "trendsUS": null,
+      "reviewHistory": null,
+      "scores": [
+        20,
+        22,
+        13,
+        4,
+        8
+      ],
+      "scoreParts": [
+        12,
+        8,
+        9,
+        2,
+        2
+      ],
+      "confidence": "low; incomplete demand series and photo/variant gate",
+      "keyword": "Ninja AF101 air fryer small kitchen",
+      "observedCompetitor": "https://www.rtings.com/air-fryer/reviews/ninja/af101",
+      "photoStatus": "not-approved",
+      "notes": "No licensed exact-model photograph found in targeted search. A CC research paper mentions AF101; its license does not establish a usable product photo. Do not extract a factory photo or confuse AF100EU with AF101.",
+      "intentParts": {
+        "verifiedUseCaseOf10": 10,
+        "specificDecisionQueryOf10": 9,
+        "observedCommercialPagesOf5": 3
+      },
+      "affiliateUrl": "https://www.amazon.com/dp/B07FDJMC9Q?tag=pickpop03-20",
+      "source": "https://www.amazon.com/dp/B07FDJMC9Q",
+      "trendsStatus": "unavailable-browser-permission-denied; not zero interest",
+      "scoreJustification": {
+        "demand": "BSR/badge snapshot buckets; Trends and rating history receive no evidence points. Not monthly unit estimates.",
+        "intent": "Ninja AF101 air fryer small kitchen; documented model/use + observed competitor https://www.rtings.com/air-fryer/reviews/ninja/af101",
+        "commission": "Official conditional category rate; uncertain actual Amazon classification; no inferred ticket. See report for dated primary price observation where present.",
+        "seo": "Conservative editorial opportunity based on the recorded query sample, not US Google position/difficulty/volume.",
+        "relevance": "No licensed exact-model photograph found in targeted search. A CC research paper mentions AF101; its license does not establish a usable product photo. Do not extract a factory photo or confuse AF100EU with AF101."
+      },
+      "associatesCategoryEvidence": "Kitchen expected: 4.5% conditional qualifying revenue; actual class to confirm in official reports"
+    },
+    {
+      "id": "breville-bambino-plus",
+      "name": "Breville Bambino Plus, Brushed Stainless Steel",
+      "model": "BES500BSS1BUS1",
+      "asin": "B07JVD78TT",
+      "kind": "candidate",
+      "consultedAt": "2026-10-12",
+      "cacheAge": "3 weeks",
+      "rank": 8,
+      "rankCategory": "Semi-Automatic Espresso Machines",
+      "overallRank": "22,238 Home & Kitchen",
+      "reportedMonthlyBadgeLowerBound": 500,
+      "ratingsCount": 2412,
+      "trendsUS": null,
+      "reviewHistory": null,
+      "scores": [
+        18,
+        23,
+        18,
+        4,
+        9
+      ],
+      "scoreParts": [
+        12,
+        6,
+        9,
+        2,
+        7
+      ],
+      "confidence": "low; incomplete demand series and photo/variant gate",
+      "keyword": "Breville Bambino Plus small apartment espresso",
+      "observedCompetitor": "https://www.tomsguide.com/home/coffee-makers/breville-bambino-vs-breville-bambino-plus",
+      "photoStatus": "not-approved",
+      "notes": "No licensed exact US brushed-steel photograph established. A CC heat-up dataset is not a photo license; manufacturer images remain protected. US BES500 cannot be replaced by Sage SES500 or a plain Bambino.",
+      "intentParts": {
+        "verifiedUseCaseOf10": 10,
+        "specificDecisionQueryOf10": 9,
+        "observedCommercialPagesOf5": 4
+      },
+      "affiliateUrl": "https://www.amazon.com/dp/B07JVD78TT?tag=pickpop03-20",
+      "source": "https://www.amazon.com/dp/B07JVD78TT",
+      "trendsStatus": "unavailable-browser-permission-denied; not zero interest",
+      "scoreJustification": {
+        "demand": "BSR/badge snapshot buckets; Trends and rating history receive no evidence points. Not monthly unit estimates.",
+        "intent": "Breville Bambino Plus small apartment espresso; documented model/use + observed competitor https://www.tomsguide.com/home/coffee-makers/breville-bambino-vs-breville-bambino-plus",
+        "commission": "Official conditional category rate; uncertain actual Amazon classification; no inferred ticket. See report for dated primary price observation where present.",
+        "seo": "Conservative editorial opportunity based on the recorded query sample, not US Google position/difficulty/volume.",
+        "relevance": "No licensed exact US brushed-steel photograph established. A CC heat-up dataset is not a photo license; manufacturer images remain protected. US BES500 cannot be replaced by Sage SES500 or a plain Bambino."
+      },
+      "associatesCategoryEvidence": "Kitchen expected: 4.5% conditional qualifying revenue; actual class to confirm in official reports"
+    },
+    {
+      "id": "bialetti-moka-six",
+      "name": "Bialetti Moka Express, Silver, 6 Espresso Shots / 270ml",
+      "model": "06800 / 0001163/SVUS",
+      "asin": "B000CNY6UK",
+      "kind": "candidate",
+      "consultedAt": "2026-10-12",
+      "cacheAge": "last week",
+      "rank": 2,
+      "rankCategory": "Stovetop Espresso & Moka Pots",
+      "overallRank": "1,988 Home & Kitchen",
+      "reportedMonthlyBadgeLowerBound": 700,
+      "ratingsCount": 120094,
+      "trendsUS": null,
+      "reviewHistory": null,
+      "scores": [
+        18,
+        22,
+        11,
+        6,
+        9
+      ],
+      "scoreParts": [
+        12,
+        6,
+        9,
+        2,
+        0
+      ],
+      "confidence": "low; incomplete demand series and photo/variant gate",
+      "keyword": "Bialetti Moka Express 6 cup vs 3 cup",
+      "observedCompetitor": "https://homebaristabasics.com/bialetti-3-cup-vs-6-cup/",
+      "photoStatus": "not-approved",
+      "notes": "The researched ASIN is SIX cups, not three. Commons Moka Express sideview (CC BY-SA 3.0) and Moka Express Bialetti (CC BY-SA 4.0) identify the family but not capacity/revision. Hold both pairings.",
+      "intentParts": {
+        "verifiedUseCaseOf10": 10,
+        "specificDecisionQueryOf10": 9,
+        "observedCommercialPagesOf5": 3
+      },
+      "affiliateUrl": "https://www.amazon.com/dp/B000CNY6UK?tag=pickpop03-20",
+      "source": "https://www.amazon.com/dp/B000CNY6UK",
+      "trendsStatus": "unavailable-browser-permission-denied; not zero interest",
+      "scoreJustification": {
+        "demand": "BSR/badge snapshot buckets; Trends and rating history receive no evidence points. Not monthly unit estimates.",
+        "intent": "Bialetti Moka Express 6 cup vs 3 cup; documented model/use + observed competitor https://homebaristabasics.com/bialetti-3-cup-vs-6-cup/",
+        "commission": "Official conditional category rate; uncertain actual Amazon classification; no inferred ticket. See report for dated primary price observation where present.",
+        "seo": "Conservative editorial opportunity based on the recorded query sample, not US Google position/difficulty/volume.",
+        "relevance": "The researched ASIN is SIX cups, not three. Commons Moka Express sideview (CC BY-SA 3.0) and Moka Express Bialetti (CC BY-SA 4.0) identify the family but not capacity/revision. Hold both pairings."
+      },
+      "associatesCategoryEvidence": "Kitchen expected: 4.5% conditional qualifying revenue; actual class to confirm in official reports"
+    },
+    {
+      "id": "bodum-chambord-34",
+      "name": "Bodum Chambord, Chrome, 34oz / 1L",
+      "model": "1928-16US4",
+      "asin": "B00008XEWG",
+      "kind": "candidate",
+      "consultedAt": "2026-10-12",
+      "cacheAge": "3 days",
+      "rank": 6,
+      "rankCategory": "Coffee Presses",
+      "overallRank": "4,816 Home & Kitchen",
+      "reportedMonthlyBadgeLowerBound": 1000,
+      "ratingsCount": 28664,
+      "trendsUS": null,
+      "reviewHistory": null,
+      "scores": [
+        20,
+        21,
+        11,
+        5,
+        9
+      ],
+      "scoreParts": [
+        12,
+        8,
+        9,
+        2,
+        0
+      ],
+      "confidence": "low; incomplete demand series and photo/variant gate",
+      "keyword": "Bodum Chambord 34 oz vs 12 oz",
+      "observedCompetitor": "https://www.bodum.com/us/en/1928-16us4-chambord",
+      "photoStatus": "not-approved",
+      "notes": "Prior licensed French-press photo lacks Chambord capacity/variant proof; no approved 34oz photo. Reject guessed B00008XJKE (fetch failed); correct ASIN independently identifies 1928-16US4.",
+      "intentParts": {
+        "verifiedUseCaseOf10": 9,
+        "specificDecisionQueryOf10": 9,
+        "observedCommercialPagesOf5": 3
+      },
+      "affiliateUrl": "https://www.amazon.com/dp/B00008XEWG?tag=pickpop03-20",
+      "source": "https://www.amazon.com/dp/B00008XEWG",
+      "trendsStatus": "unavailable-browser-permission-denied; not zero interest",
+      "scoreJustification": {
+        "demand": "BSR/badge snapshot buckets; Trends and rating history receive no evidence points. Not monthly unit estimates.",
+        "intent": "Bodum Chambord 34 oz vs 12 oz; documented model/use + observed competitor https://www.bodum.com/us/en/1928-16us4-chambord",
+        "commission": "Official conditional category rate; uncertain actual Amazon classification; no inferred ticket. See report for dated primary price observation where present.",
+        "seo": "Conservative editorial opportunity based on the recorded query sample, not US Google position/difficulty/volume.",
+        "relevance": "Prior licensed French-press photo lacks Chambord capacity/variant proof; no approved 34oz photo. Reject guessed B00008XJKE (fetch failed); correct ASIN independently identifies 1928-16US4."
+      },
+      "associatesCategoryEvidence": "Kitchen expected: 4.5% conditional qualifying revenue; actual class to confirm in official reports"
+    },
+    {
+      "id": "oxo-pullout-scale",
+      "name": "OXO Good Grips 11-Pound Stainless Steel Scale",
+      "model": "11214800 redesign",
+      "asin": "B079D9B82W",
+      "kind": "candidate",
+      "consultedAt": "2026-10-12",
+      "cacheAge": "3 days",
+      "rank": 13,
+      "rankCategory": "Digital Kitchen Scales",
+      "overallRank": "1,355 Kitchen & Dining",
+      "reportedMonthlyBadgeLowerBound": 4000,
+      "ratingsCount": 8923,
+      "trendsUS": null,
+      "reviewHistory": null,
+      "scores": [
+        17,
+        23,
+        11,
+        6,
+        10
+      ],
+      "scoreParts": [
+        9,
+        8,
+        9,
+        2,
+        0
+      ],
+      "confidence": "low; incomplete demand series and photo/variant gate",
+      "keyword": "OXO food scale pull out display vs basic",
+      "observedCompetitor": "https://www.oxo.com/blog/behind-the-scenes/pull-out-food-scale-design",
+      "photoStatus": "not-approved",
+      "notes": "Frank O'Grady CC BY 4.0 photo already inspected in earlier batch; exact 11214800 revision remains unresolved. Do not repeat the denied factory-image check or substitute a 5lb/older scale.",
+      "intentParts": {
+        "verifiedUseCaseOf10": 10,
+        "specificDecisionQueryOf10": 9,
+        "observedCommercialPagesOf5": 4
+      },
+      "affiliateUrl": "https://www.amazon.com/dp/B079D9B82W?tag=pickpop03-20",
+      "source": "https://www.amazon.com/dp/B079D9B82W",
+      "trendsStatus": "unavailable-browser-permission-denied; not zero interest",
+      "scoreJustification": {
+        "demand": "BSR/badge snapshot buckets; Trends and rating history receive no evidence points. Not monthly unit estimates.",
+        "intent": "OXO food scale pull out display vs basic; documented model/use + observed competitor https://www.oxo.com/blog/behind-the-scenes/pull-out-food-scale-design",
+        "commission": "Official conditional category rate; uncertain actual Amazon classification; no inferred ticket. See report for dated primary price observation where present.",
+        "seo": "Conservative editorial opportunity based on the recorded query sample, not US Google position/difficulty/volume.",
+        "relevance": "Frank O'Grady CC BY 4.0 photo already inspected in earlier batch; exact 11214800 revision remains unresolved. Do not repeat the denied factory-image check or substitute a 5lb/older scale."
+      },
+      "associatesCategoryEvidence": "Kitchen expected: 4.5% conditional qualifying revenue; actual class to confirm in official reports"
+    },
+    {
+      "id": "youcopia-storemore",
+      "name": "YouCopia StoreMore Bakeware Rack, Classic White",
+      "model": "50158",
+      "asin": "B00VG7VZ7I",
+      "kind": "candidate",
+      "consultedAt": "2026-10-12",
+      "cacheAge": "last week",
+      "rank": 7,
+      "rankCategory": "Pot Racks",
+      "overallRank": "5,501 Kitchen & Dining",
+      "reportedMonthlyBadgeLowerBound": 800,
+      "ratingsCount": 16360,
+      "trendsUS": null,
+      "reviewHistory": null,
+      "scores": [
+        18,
+        23,
+        8,
+        6,
+        10
+      ],
+      "scoreParts": [
+        12,
+        6,
+        6,
+        2,
+        0
+      ],
+      "confidence": "low; incomplete demand series and photo/variant gate",
+      "keyword": "YouCopia StoreMore bakeware rack small cabinet",
+      "observedCompetitor": "https://www.apartmenttherapy.com/youcopia-bakeware-storemore-rack-review-37059673",
+      "photoStatus": "not-approved",
+      "notes": "No commercial photo grant established. Current manufacturer page describes a redesigned Organizing Hero edition; its photo cannot prove Classic 50158. Obtain exact Classic asset plus affiliate-use permission or choose a new ASIN after verification.",
+      "intentParts": {
+        "verifiedUseCaseOf10": 10,
+        "specificDecisionQueryOf10": 9,
+        "observedCommercialPagesOf5": 4
+      },
+      "affiliateUrl": "https://www.amazon.com/dp/B00VG7VZ7I?tag=pickpop03-20",
+      "source": "https://www.amazon.com/dp/B00VG7VZ7I",
+      "trendsStatus": "unavailable-browser-permission-denied; not zero interest",
+      "scoreJustification": {
+        "demand": "BSR/badge snapshot buckets; Trends and rating history receive no evidence points. Not monthly unit estimates.",
+        "intent": "YouCopia StoreMore bakeware rack small cabinet; documented model/use + observed competitor https://www.apartmenttherapy.com/youcopia-bakeware-storemore-rack-review-37059673",
+        "commission": "Official conditional category rate; uncertain actual Amazon classification; no inferred ticket. See report for dated primary price observation where present.",
+        "seo": "Conservative editorial opportunity based on the recorded query sample, not US Google position/difficulty/volume.",
+        "relevance": "No commercial photo grant established. Current manufacturer page describes a redesigned Organizing Hero edition; its photo cannot prove Classic 50158. Obtain exact Classic asset plus affiliate-use permission or choose a new ASIN after verification."
+      },
+      "associatesCategoryEvidence": "Kitchen/Home unresolved: 3% conservative scoring; 4.5% only if Amazon classifies Kitchen"
+    },
+    {
+      "id": "rubbermaid-brilliance-five",
+      "name": "Rubbermaid Brilliance Clear Plastic, 5 containers + 5 lids",
+      "model": "two 1.3cup, two 3.2cup, one 9.6cup",
+      "asin": "B01JCNEIC6",
+      "kind": "candidate",
+      "consultedAt": "2026-10-12",
+      "cacheAge": "2 weeks",
+      "rank": 20,
+      "rankCategory": "Food Container Sets",
+      "overallRank": "401 Kitchen & Dining",
+      "reportedMonthlyBadgeLowerBound": 4000,
+      "ratingsCount": 74469,
+      "trendsUS": null,
+      "reviewHistory": null,
+      "scores": [
+        17,
+        23,
+        8,
+        6,
+        10
+      ],
+      "scoreParts": [
+        9,
+        8,
+        6,
+        2,
+        0
+      ],
+      "confidence": "low; incomplete demand series and photo/variant gate",
+      "keyword": "Rubbermaid Brilliance plastic vs glass",
+      "observedCompetitor": "https://www.rubbermaid.com/food-storage/everyday-use-containers/brilliance/brilliance-glass-food-storage-container-large-rectangle/SAP_2118314.html",
+      "photoStatus": "not-approved",
+      "notes": "No licensed photo of this exact ten-piece plastic set established. CC microbiology article merely mentions containers; a glass Brilliance or another set count is not a match. Do not treat rubbermaidus.com search result as verified official manufacturer.",
+      "intentParts": {
+        "verifiedUseCaseOf10": 10,
+        "specificDecisionQueryOf10": 9,
+        "observedCommercialPagesOf5": 4
+      },
+      "affiliateUrl": "https://www.amazon.com/dp/B01JCNEIC6?tag=pickpop03-20",
+      "source": "https://www.amazon.com/dp/B01JCNEIC6",
+      "trendsStatus": "unavailable-browser-permission-denied; not zero interest",
+      "scoreJustification": {
+        "demand": "BSR/badge snapshot buckets; Trends and rating history receive no evidence points. Not monthly unit estimates.",
+        "intent": "Rubbermaid Brilliance plastic vs glass; documented model/use + observed competitor https://www.rubbermaid.com/food-storage/everyday-use-containers/brilliance/brilliance-glass-food-storage-container-large-rectangle/SAP_2118314.html",
+        "commission": "Official conditional category rate; uncertain actual Amazon classification; no inferred ticket. See report for dated primary price observation where present.",
+        "seo": "Conservative editorial opportunity based on the recorded query sample, not US Google position/difficulty/volume.",
+        "relevance": "No licensed photo of this exact ten-piece plastic set established. CC microbiology article merely mentions containers; a glass Brilliance or another set count is not a match. Do not treat rubbermaidus.com search result as verified official manufacturer."
+      },
+      "associatesCategoryEvidence": "Kitchen/Home unresolved: 3% conservative scoring; 4.5% only if Amazon classifies Kitchen"
+    },
+    {
+      "id": "oxo-pop-44",
+      "name": "OXO Good Grips POP Big Square Medium, White, 4.4Qt",
+      "model": "11233500; match UPC 719812684918",
+      "asin": "B07856RRDW",
+      "kind": "candidate",
+      "consultedAt": "2026-10-12",
+      "cacheAge": "3 weeks",
+      "rank": 6,
+      "rankCategory": "Individual Household Food Containers",
+      "overallRank": "306 Kitchen & Dining",
+      "reportedMonthlyBadgeLowerBound": 5000,
+      "ratingsCount": 27706,
+      "trendsUS": null,
+      "reviewHistory": null,
+      "scores": [
+        20,
+        23,
+        8,
+        6,
+        10
+      ],
+      "scoreParts": [
+        12,
+        8,
+        6,
+        2,
+        0
+      ],
+      "confidence": "low; incomplete demand series and photo/variant gate",
+      "keyword": "OXO POP 4.4 quart flour container",
+      "observedCompetitor": "https://www.homedepot.com/p/311017211",
+      "photoStatus": "not-approved",
+      "notes": "No licensed exact 4.4Qt single-container photo established. A 2-piece prelabelled set, old POP revision or 2.8Qt is not interchangeable. Ignore unverified third-party sales estimates and Canadian keyword volumes.",
+      "intentParts": {
+        "verifiedUseCaseOf10": 10,
+        "specificDecisionQueryOf10": 9,
+        "observedCommercialPagesOf5": 4
+      },
+      "affiliateUrl": "https://www.amazon.com/dp/B07856RRDW?tag=pickpop03-20",
+      "source": "https://www.amazon.com/dp/B07856RRDW",
+      "trendsStatus": "unavailable-browser-permission-denied; not zero interest",
+      "scoreJustification": {
+        "demand": "BSR/badge snapshot buckets; Trends and rating history receive no evidence points. Not monthly unit estimates.",
+        "intent": "OXO POP 4.4 quart flour container; documented model/use + observed competitor https://www.homedepot.com/p/311017211",
+        "commission": "Official conditional category rate; uncertain actual Amazon classification; no inferred ticket. See report for dated primary price observation where present.",
+        "seo": "Conservative editorial opportunity based on the recorded query sample, not US Google position/difficulty/volume.",
+        "relevance": "No licensed exact 4.4Qt single-container photo established. A 2-piece prelabelled set, old POP revision or 2.8Qt is not interchangeable. Ignore unverified third-party sales estimates and Canadian keyword volumes."
+      },
+      "associatesCategoryEvidence": "Kitchen/Home unresolved: 3% conservative scoring; 4.5% only if Amazon classifies Kitchen"
+    }
+  ]
+}

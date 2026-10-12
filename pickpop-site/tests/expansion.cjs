@@ -20,9 +20,16 @@ const base=process.env.PICKPOP_TEST_URL||'http://127.0.0.1:8082';
    assert.equal(await page.locator('#product-grid .product-card').count(),catalog.items.length);
    assert.equal((await page.request.get(base+'/ideas/instant-rio-mini-black/')).status(),404);
    assert.equal((await page.request.get(base+'/assets/products/instant-rio-mini-black.webp')).status(),404);
+   const heldFellow=JSON.parse(await fs.readFile(path.join(__dirname,'../../docs/catalog-batches/held-fellow-20261012.json'),'utf8'));
+   assert.equal(heldFellow.item.image.variantReviewed,false);
+   assert(!catalog.items.some(item=>item.id===heldFellow.item.id));
+   assert.equal((await page.request.get(base+'/ideas/'+heldFellow.item.id+'/')).status(),404);
+   assert.equal((await page.request.get(base+heldFellow.item.image.src)).status(),404);
+   await page.locator('#product-search').fill('Fellow');
+   assert.equal(await page.locator('#product-grid .product-card').count(),0);
    assert.deepEqual(errors,[]);assert.deepEqual(external,[]);
-   await fs.writeFile(path.join(__dirname,'artifacts/expansion.json'),JSON.stringify({status:'passed',base,heldProduct:'instant-rio-mini-black',heldProductPage:404,heldPhoto:404,errors,unexpectedExternalRequests:external},null,2));
-   console.log('PASS: held product and unconfirmed photograph excluded from catalog, detail route and public assets. No external requests.');
+   await fs.writeFile(path.join(__dirname,'artifacts/expansion.json'),JSON.stringify({status:'passed',base,heldProducts:['instant-rio-mini-black',heldFellow.item.id],heldProductPages:404,heldPhotos:404,errors,unexpectedExternalRequests:external},null,2));
+   console.log('PASS: held RIO and Fellow, unconfirmed permission/variant photographs excluded from search, detail routes and public assets. No external requests.');
    return;
   }
   await page.goto(base+'/find/?q=pressure%20cooker&category=kitchen&budget=5');await ready();

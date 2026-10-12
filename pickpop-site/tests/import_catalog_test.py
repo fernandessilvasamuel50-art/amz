@@ -65,6 +65,14 @@ class ImportChecks(unittest.TestCase):
         self.item['image']['permissionId'] = 'unreviewed'
         self.assertTrue(item_errors(self.item, ROOT, 'pickpop03-20', {}, True))
 
+    def test_fellow_family_photo_cannot_reenter_as_exact_walnut_variant(self):
+        held = json.loads((ROOT.parent / 'docs/catalog-batches/held-fellow-20261012.json').read_text(encoding='utf-8'))
+        self.assertFalse(held['item']['image']['variantReviewed'])
+        accepted, rejected = plan(self.catalog, {'schemaVersion': 1, 'items': [held['item']]}, ROOT, 'pickpop03-20', self.permissions)
+        self.assertFalse(accepted)
+        self.assertIn('exact variant', str(rejected))
+        self.assertFalse(any(p['id'] == held['item']['id'] for p in self.catalog['items']))
+
     def test_sharealike_2_commercial_license_allowed_but_noncommercial_rejected(self):
         self.item['image']['license'] = 'CC BY-SA 2.0'
         self.item['image']['licenseUrl'] = 'https://creativecommons.org/licenses/by-sa/2.0'
