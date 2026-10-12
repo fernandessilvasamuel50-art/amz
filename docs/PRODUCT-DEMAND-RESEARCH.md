@@ -377,3 +377,7 @@ Cada nota D é reproduzível pelos dois sinais da tabela e pela rubrica; compone
 5. **Trends/histórico:** liberar legitimamente o acesso ao Google Trends e consultar séries US por termos de marca/modelo e tarefa, Web Search, janela comum e data registrada; não comparar índices normalizados de consultas isoladas como volume. Fazer uma segunda observação manual dos mesmos ASINs/variações numa data diferente para estudar evolução de ratings, sem convertê-la em vendas.
 
 6. Revalidar frescor/identidade/categoria paga/foto do primeiro candidato escolhido; só então montar lote no importador existente e executar checks/deploy. Após a suspensão Fellow, 11 ativos; meta20 requer9, incluindo eventual reintegração verificada da Fellow. RIO continua suspenso por permissão comercial. Nenhuma nova contratação/Pinterest/reestruturação.
+
+## Entrega técnica confirmada
+
+Correção publicada no domínio oficial pelo commit `2061533`; catálogo público confere com os **11 ativos** locais. Foram verificados onze destinos diretos com `pickpop03-20`, créditos/disclosure/atributos sponsored, onze fotografias idênticas ao build, páginas principais, sitemap/robots e404 dos dois produtos suspensos. Build34páginas/31URLs;11testes do importador,14Node,1.121referências,102layouts,38auditorias automáticas de acessibilidade passaram. Teste de exclusão dos suspensos passou também em produção. Evidências privadas e limitações estão registradas em `docs/CATALOG-EXPANSION.md`. Nenhum candidato novo publicado; nenhuma atribuição de comissão confirmada.
