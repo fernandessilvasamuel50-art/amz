@@ -120,7 +120,7 @@ Next: research the next small lot of different kitchen/storage products with exa
 
 ## Batch 03 — 2026-10-12
 
-Baseline is the verified batch-02 release (`0a0a9a3`) plus its documentation commit `2b8205e`; no reset or re-audit of the architecture. **9 active before; 3 imported; 12 prepared for publication.** Rollback tag: `pickpop-before-batch03-20261012` at `2b8205e`.
+Baseline is the verified batch-02 release (`0a0a9a3`) plus its documentation commit `2b8205e`; no reset or re-audit of the architecture. **9 active before; 3 imported; 12 published and verified.** Rollback tag: `pickpop-before-batch03-20261012` at `2b8205e`, pushed.
 
 | Product / verified US ASIN | Exact identity and image rights |
 | --- | --- |
@@ -142,4 +142,8 @@ Initial regressions were corrected before publication: accessory brand keywords 
 
 Final checks after source titles: focused nine audits and all three shopping/quiz flows passed again; growth checks passed all twelve early mobile buttons; static validation passed again. The required source title briefly pushed the Encore CTA to y=1310 at 360px, so its displayed name was shortened to the accurate "Baratza Encore Coffee Grinder — Black"; burr type/model remain in facts/search. No relaxed assertion or removed credit. Desktop/mobile captures were inspected. Focused credential-pattern scan in new records/pages found no common private-key, cloud-key or GitHub token patterns; this is not a security certification.
 
-Pending: Git/Netlify publication and public verification. After this approved lot, goal 12 is met; goal 20 needs 8 more verified products and goal 50 needs 38. Prioritize organization/storage in the next lot if exact commercially licensed photographs exist.
+**Production confirmed:** source commit `35dcb60`, pushed to main through the existing Git/Netlify integration. Public verification on 2026-10-12 at 19:05:04 America/Manaus (23:05:04 UTC) confirmed all twelve records equal local data, all original nine objects preserved, three new photo bytes/hashes identical, new detail pages and relevant guides HTTP 200 with official-domain canonical/English metadata, paid-link tag/disclosure and license credits. Robots/sitemap updated; held RIO detail/photo still HTTP 404. Private evidence: `operations/private/batch03-deploy-20261012.json`. No dashboard deploy ID asserted.
+
+Focused browser suite also passed on https://pickpop.netlify.app/: all three new products' search, honest budgets, favorites, comparison, individual compatible quiz recommendations, decoded photos/credits and nine responsive accessibility audits. No JavaScript errors or external requests. QA visits are not acquisition traffic or commercial conversions; commissions/attribution were not inferred.
+
+Goal 12 is met. Next executable action: research a different small lot of organization/storage products with exact commercial-photo/model evidence; goal 20 needs 8 more and goal 50 needs 38. RIO and the four prior Instant Pot candidates remain held until written affiliate-photo permission and remaining identity/access checks; do not resend the permission request or count suspended products. Creators API remains disabled. No Pinterest changes, new articles, paid services, DNS or credential changes.
