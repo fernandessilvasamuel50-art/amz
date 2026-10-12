@@ -1,0 +1,146 @@
+{
+  "schemaVersion": 1,
+  "items": [
+    {
+      "id": "aeropress-go",
+      "name": "AeroPress Go Travel Coffee Maker",
+      "brand": "AeroPress",
+      "model": "Go (15A01)",
+      "category": "kitchen",
+      "emoji": "✳",
+      "color": "#ffe3dc",
+      "chip": "Source reviewed",
+      "description": "A compact manual coffee press that packs into its own mug for a small coffee corner or a travel bag.",
+      "tags": "coffee coffeemaker coffee maker brewer travel camping apartment portable manual press espresso style pour over single cup small kitchen",
+      "search": "AeroPress Go Travel Coffee Maker",
+      "planningBudget": null,
+      "price": null,
+      "asin": "B07YVL8SF3",
+      "productUrl": "https://www.amazon.com/dp/B07YVL8SF3",
+      "affiliateUrl": "https://www.amazon.com/dp/B07YVL8SF3?tag=pickpop03-20",
+      "retailerName": "AeroPress Go Extra Small Portable Coffee Maker Kit",
+      "verification": {
+        "status": "verified",
+        "reviewedAt": "2026-10-12",
+        "sources": [
+          "https://aeropress.com/products/aeropress-go-travel-coffee-press",
+          "https://www.amazon.com/dp/B07YVL8SF3",
+          "https://commons.wikimedia.org/wiki/File:Aeropress_Go_(49770783416).jpg"
+        ],
+        "scope": "Manufacturer facts and Amazon Go model identity reviewed. Independently licensed photograph inspected. No current price, stock, review rating or hands-on testing is claimed.",
+        "identityEvidence": {
+          "amazonTitle": "AeroPress Go Extra Small Portable Coffee Maker Kit",
+          "manufacturerModel": "Manufacturer identifies the compact Go travel system with 8 oz capacity and a mug with a red silicone lid. Amazon identifies Model Name AeroPress Go and Model Number 15A01; not Original, Go Plus or a filter-cap bundle.",
+          "variantMatch": "The selected ASIN is the Go travel kit. The Go chamber has red lettering and three numbered marks, unlike the larger Original visible in alternative research photos. Manufacturer product text and independent photographer's Go identification agree.",
+          "photoMatch": "Bex Walton's licensed image 49770783416 is explicitly titled AeroPress Go and was visually inspected: compact grey chamber with red AeroPress lettering and marks 1–3, filter cap, folding stirrer and scoop. No other brewer appears. The photo shows only part of the kit; current packaging and all included accessories are not asserted. Manufacturer browser image comparison was unavailable due to a denied domain; no bypass or downloaded factory photograph was used."
+        }
+      },
+      "affiliateVerification": {
+        "status": "owner-tag-confirmed",
+        "reviewedAt": "2026-10-12",
+        "method": "Direct Amazon.com ASIN destination reviewed without affiliate test navigation. The configured owner tag is pickpop03-20. URL checks do not prove commission attribution."
+      },
+      "image": {
+        "type": "photo",
+        "authorized": true,
+        "variantReviewed": true,
+        "src": "/assets/products/aeropress-go.webp",
+        "alt": "AeroPress Go with its red-lettered chamber, folding stirrer and scoop, photographed outdoors",
+        "width": 960,
+        "height": 720,
+        "source": "https://commons.wikimedia.org/wiki/File:Aeropress_Go_(49770783416).jpg",
+        "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/2/25/Aeropress_Go_%2849770783416%29.jpg",
+        "author": "Bex Walton",
+        "license": "CC BY 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+        "changes": "Proportionally resized and encoded as WebP. Complete photograph retained; no product appearance altered."
+      },
+      "features": [
+        "8 fl oz brewing capacity, identified by the manufacturer as one cup.",
+        "Press packs into the included mug; the mug has a red silicone lid.",
+        "Manual immersion and pressure brewing with compatible micro-filters."
+      ],
+      "benefits": [
+        "A compact option for a coffee routine without a permanent electric brewer.",
+        "The mug doubles as storage for the press between uses."
+      ],
+      "considerations": [
+        "Requires ground coffee, compatible filters and a separate source of hot water.",
+        "One-cup capacity suits a single serving rather than a large batch.",
+        "Espresso-style recipes do not make this a pump-driven espresso machine; confirm current kit contents on Amazon."
+      ],
+      "styles": ["modern", "space-saving", "gift-ideas"],
+      "priorities": ["small-spaces", "everyday-convenience", "gift-giving"]
+    },
+    {
+      "id": "kuhn-rikon-swiss-peeler-blue",
+      "name": "Kuhn Rikon Original Swiss Peeler — Blue",
+      "brand": "Kuhn Rikon",
+      "model": "2771",
+      "category": "kitchen",
+      "emoji": "✳",
+      "color": "#e6edff",
+      "chip": "Source reviewed",
+      "description": "A small Y-shaped peeler with a carbon steel blade and potato-eye remover for everyday fruit and vegetable prep.",
+      "tags": "peeler vegetable fruit potato carrots kitchen gadget utensil prep y peeler swiss blue drawer compact small apartment",
+      "search": "Kuhn Rikon Original Swiss Peeler Blue 2771",
+      "planningBudget": null,
+      "price": null,
+      "asin": "B001AQI3J8",
+      "productUrl": "https://www.amazon.com/dp/B001AQI3J8",
+      "affiliateUrl": "https://www.amazon.com/dp/B001AQI3J8?tag=pickpop03-20",
+      "retailerName": "Kuhn Rikon Original Swiss Peeler",
+      "verification": {
+        "status": "verified",
+        "reviewedAt": "2026-10-12",
+        "sources": [
+          "https://kuhnrikon.com/us/swiss-peeler-blue-2771-u.html",
+          "https://www.amazon.com/dp/B001AQI3J8",
+          "https://commons.wikimedia.org/wiki/File:Y_Peeler_by_Kuhn_Rikon_(15202361853).jpg"
+        ],
+        "scope": "Manufacturer SKU, selected Amazon blue variant and independent commercial photo license reviewed. Current pricing, inventory and ratings are not verified.",
+        "identityEvidence": {
+          "amazonTitle": "Kuhn Rikon Original Swiss Peeler",
+          "manufacturerModel": "Manufacturer US blue Swiss Peeler SKU 2771, EAN 7610154027711, carbon steel blade, potato-eye remover and right/left-hand use.",
+          "variantMatch": "Amazon B001AQI3J8 has Model Number 2771, GTIN 07610154027711 and selected color Blue. Its generic Model Name incorrectly says Purple; selected blue variation, exact model and GTIN agree with the manufacturer's blue SKU. No dimensions from conflicting retailer fields are used.",
+          "photoMatch": "Didriks' licensed photograph identifies the Original Swiss peeler and was visually inspected: blue molded Y handle with embossed Kuhn Rikon Switzerland lettering, straight swivel blade and side potato-eye remover. It depicts the blue single peeler, not the three-color set or stainless-steel redesign. Background knife is not included. Manufacturer browser image comparison was denied; review uses the already accessible SKU/color/feature evidence and independent photograph, without accessing protected factory images or bypassing browser permissions."
+        }
+      },
+      "affiliateVerification": {
+        "status": "owner-tag-confirmed",
+        "reviewedAt": "2026-10-12",
+        "method": "Amazon ASIN, blue variation, model and GTIN reviewed without affiliate test navigation. Direct remunerated URL uses the configured pickpop03-20 tag; attribution requires Amazon's official reports."
+      },
+      "image": {
+        "type": "photo",
+        "authorized": true,
+        "variantReviewed": true,
+        "src": "/assets/products/kuhn-rikon-swiss-peeler-blue.webp",
+        "alt": "Blue Kuhn Rikon Original Swiss Peeler beside carrot peelings; background knife is not included",
+        "width": 960,
+        "height": 640,
+        "source": "https://commons.wikimedia.org/wiki/File:Y_Peeler_by_Kuhn_Rikon_(15202361853).jpg",
+        "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/9/92/Y_Peeler_by_Kuhn_Rikon_%2815202361853%29.jpg",
+        "author": "Didriks Corporation (Flickr 49889671@N03)",
+        "license": "CC BY 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+        "changes": "Proportionally resized and encoded as WebP. Complete photograph retained; no product appearance altered."
+      },
+      "features": [
+        "Carbon steel blade and an integrated potato-eye remover.",
+        "Designed for right- or left-handed use.",
+        "Manufacturer recommends hand washing and drying the blade thoroughly."
+      ],
+      "benefits": [
+        "Adds a specific prep task to a utensil drawer without a countertop appliance.",
+        "The side remover helps trim potato eyes with the same tool."
+      ],
+      "considerations": [
+        "Dry the carbon steel blade thoroughly after washing; it needs more care than a tool left wet.",
+        "Sharp blade requires careful handling. The background knife in the photograph is not part of this product."
+      ],
+      "styles": ["modern", "space-saving"],
+      "priorities": ["small-spaces", "everyday-convenience"]
+    }
+  ]
+}

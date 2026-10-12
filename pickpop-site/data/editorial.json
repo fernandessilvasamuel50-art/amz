@@ -1,19 +1,27 @@
 {
   "coffee-station.html": {
-    "heading": "A brewer to plan your coffee corner around",
+    "heading": "Choose a brewer for the way you use your coffee corner",
     "items": [
       {
         "id": "chemex-six-cup",
         "reason": "Its documented 30-fluid-ounce capacity helps you plan servings. Allow separate space for heated water, compatible filters, and cleanup."
+      },
+      {
+        "id": "aeropress-go",
+        "reason": "A one-cup manual option that packs into its mug between uses. Consider it for a coffee corner that shares space with other tasks; hot water and ground coffee still need planning."
       }
     ]
   },
   "coffee-maker-small-apartment.html": {
-    "heading": "Explore a source-reviewed manual option",
+    "heading": "Compare two source-reviewed manual options",
     "items": [
       {
         "id": "chemex-six-cup",
         "reason": "A manual glass brewer for a hands-on routine. Check its footprint and the supporting equipment before deciding whether it suits your apartment."
+      },
+      {
+        "id": "aeropress-go",
+        "reason": "Its documented 8-fluid-ounce capacity suits a single serving, while the press packs into its mug. Choose based on servings and storage rather than assuming a manual brewer is automatic or makes pump-machine espresso."
       }
     ]
   },
@@ -31,6 +39,10 @@
       {
         "id": "oxo-basting-brush",
         "reason": "For a cook who actually bastes or brushes on glazes. It adds one specific job without another countertop appliance; check the documented 10.7-inch length against your drawer."
+      },
+      {
+        "id": "kuhn-rikon-swiss-peeler-blue",
+        "reason": "A dedicated hand tool for peeling fruit and vegetables, with a potato-eye remover. Make room only if it fits your cooking routine; dry its carbon steel blade after washing."
       }
     ]
   },

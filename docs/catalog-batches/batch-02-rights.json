@@ -1,0 +1,29 @@
+{
+  "reviewedAt": "2026-10-12",
+  "licenseEvidence": "https://creativecommons.org/licenses/by/2.0/",
+  "scope": "Independent photographs licensed for commercial reuse with attribution. No manufacturer endorsement or license to factory/Amazon photos is claimed.",
+  "items": [
+    {
+      "id": "aeropress-go",
+      "source": "https://commons.wikimedia.org/wiki/File:Aeropress_Go_(49770783416).jpg",
+      "sourceSha256": "13b40dcd0c0d9892f47ae92e0a917a6e2ad828f0886f031064afb8cfaee5ae40",
+      "webpSha256": "0bcd29d81b58d163964b42ae83b9e9d6daa10c42cae26fb3a7262194199011c7",
+      "width": 960,
+      "height": 720,
+      "bytes": 129390,
+      "license": "CC BY 2.0",
+      "author": "Bex Walton"
+    },
+    {
+      "id": "kuhn-rikon-swiss-peeler-blue",
+      "source": "https://commons.wikimedia.org/wiki/File:Y_Peeler_by_Kuhn_Rikon_(15202361853).jpg",
+      "sourceSha256": "999c12e550aadba27b2b446e8f6af872664a8869129fb4977e9277180ba3e2fe",
+      "webpSha256": "c3fc37d946e049782a2461be9cdaf2d2cebefbd37737adeec8d2c5567e498468",
+      "width": 960,
+      "height": 640,
+      "bytes": 66776,
+      "license": "CC BY 2.0",
+      "author": "Didriks Corporation (Flickr 49889671@N03)"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "mode": "applied",
+  "catalogBefore": 7,
+  "accepted": [
+    "aeropress-go",
+    "kuhn-rikon-swiss-peeler-blue"
+  ],
+  "rejected": [],
+  "catalogAfter": 9,
+  "originalSha256": "31954360f94992373b38551de72e71e5dbd1e92c89be8a02964df61d72c7953b",
+  "note": "Technical validation only. Source facts, ASIN identity and photo permission require documented editorial review; this does not confirm Amazon commission attribution."
+}
