@@ -1,6 +1,6 @@
 # PickPop
 
-**PickPop — operação primeiras vendas:** https://pickpop.netlify.app/ — sete produtos reais com fotografias licenciadas, dez artigos e links com a tag oficial `pickpop03-20`. Consulte `docs/GROWTH-OPERATIONS.md` para testes, publicação, Search Console e pendências comerciais. A meta inicial de 12 produtos depende de mais cinco itens com variantes e imagens verificadas.
+**PickPop — operação primeiras vendas:** https://pickpop.netlify.app/ — oito produtos reais com fotografias de uso documentado, dez artigos e links com a tag oficial `pickpop03-20`. Consulte `docs/GROWTH-OPERATIONS.md` para testes, publicação, Search Console e pendências comerciais. A expansão para 20 e depois 50 produtos é registrada em docs/CATALOG-EXPANSION.md; somente itens completos são importados.
 
 Plataforma americana de descoberta de ideias de compra. A versão 2.0 continua o projeto original com Good Finder, filtros de estilo/orçamento, favoritos, quiz explicável, comparações, blog e coleções editoriais.
 

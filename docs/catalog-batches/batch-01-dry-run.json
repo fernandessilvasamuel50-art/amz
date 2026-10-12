@@ -1,0 +1,11 @@
+{
+  "mode": "dry-run",
+  "catalogBefore": 7,
+  "accepted": [
+    "instant-rio-mini-black"
+  ],
+  "rejected": [],
+  "catalogAfter": 7,
+  "originalSha256": "79d984eb26e25a46b4b89651bcb6a435a058f1a32ff9c21a896bdcdb66693e11",
+  "note": "Technical validation only. Source facts, ASIN identity and photo permission require documented editorial review; this does not confirm Amazon commission attribution."
+}

@@ -1,6 +1,6 @@
 # PickPop — catálogo e operação comercial
 
-Site: https://pickpop.netlify.app/. Sete produtos reais com fontes, ASINs, fotografias licenciadas e links diretos associados à tag oficial **pickpop03-20**; dez artigos, cinco otimizados para decisões de compra. Atribuição, pedidos e comissões dependem dos relatórios oficiais Amazon, não de nossos testes técnicos.
+Site: https://pickpop.netlify.app/. Oito produtos reais com fontes, ASINs, fotografias com permissões documentadas e links diretos associados à tag oficial **pickpop03-20**; dez artigos, cinco otimizados para decisões de compra. Atribuição, pedidos e comissões dependem dos relatórios oficiais Amazon, não de nossos testes técnicos.
 
 O projeto continua a base original com HTML estático, CSS próprio e módulos JavaScript. Python gera as páginas; não há React, banco de dados ou servidor para visitantes. Conteúdo público em inglês americano. Nenhum preço, avaliação ou estoque ao vivo é apresentado.
 
@@ -70,4 +70,10 @@ O `netlify.toml` da raiz fixa a configuração. Somente `dist/` deve ser publica
 
 ## Continuidade
 
-Consulte `../docs/GROWTH-OPERATIONS.md` para estado real, testes e próxima ação; `../docs/FIRST-SALES-14-DAYS.md` para o plano; `../marketing/pinterest/` para 12 rascunhos originais; `../operations/` para o painel offline, que separa hospedagem bruta e resultados comerciais. Pins não estão publicados/agendados, cliques Amazon/comissões continuam indisponíveis e a meta de 12 produtos permanece em andamento.
+Consulte `../docs/GROWTH-OPERATIONS.md` para estado real, testes e próxima ação; `../docs/FIRST-SALES-14-DAYS.md` para o plano; `../marketing/pinterest/` para as 12 peças originais; `../operations/` para o painel offline, que separa hospedagem bruta e resultados comerciais. O lote de dez Pins foi agendado em 10/10; o acompanhamento registra publicações somente após confirmação oficial. Não alterar a fila durante a expansão do catálogo. Cliques Amazon/comissões continuam indisponíveis. Consulte ../docs/CATALOG-EXPANSION.md para produtos aceitos, candidatos, testes e próxima ação.
+
+## Importação de catálogo em lote
+
+Execute `python tools/import_catalog.py ../docs/catalog-batches/batch-01.json --report ../docs/catalog-batches/review.json` para revisão técnica sem alterar o catálogo. Adicione `--apply` apenas ao lote pesquisado e aprovado. Relatórios ficam fora do site e backups em `../operations/private/catalog-backups`. Uma nova execução do mesmo lote rejeita duplicatas. Consulte `../docs/CATALOG-EXPANSION.md` para exemplos e evidência. Imagens do fabricante exigem registro da permissão, variante exata e SHA-256 em `data/image-permissions.json`; permissão editorial não autoriza anúncios ou redistribuição em redes sociais. O importador não pesquisa na Amazon e não valida atribuição de comissões.
+
+Testes adicionais: `python -B tests/import_catalog_test.py` e `node tests/expansion.cjs`. O último testa o produto novo e faz três auditorias de acessibilidade nas larguras 360/768/1440.

@@ -20,9 +20,14 @@ export const money = value => new Intl.NumberFormat('en-US', { style: 'currency'
 export function validateCatalog(data) {
   if (data?.schemaVersion !== 1 || !Array.isArray(data.items)) throw new Error('Unsupported catalog');
   const ids = new Set();
+  const asins = new Set();
   for (const item of data.items) {
     if (!/^[a-z0-9-]+$/.test(item.id) || ids.has(item.id)) throw new Error('Invalid or duplicate catalog ID');
     ids.add(item.id);
+    if (item.asin) {
+      if (asins.has(item.asin)) throw new Error('Duplicate catalog ASIN');
+      asins.add(item.asin);
+    }
     if (!CATEGORIES.includes(item.category) || !['demo', 'verified'].includes(item.verification?.status)) throw new Error('Invalid category or verification');
     for (const field of ['name', 'description', 'emoji', 'chip', 'tags', 'search']) {
       if (typeof item[field] !== 'string' || !item[field].trim()) throw new Error('Missing catalog text');

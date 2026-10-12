@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "items": [
+    {
+      "id": "instant-rio-mini-black",
+      "name": "Instant Pot RIO Mini 4QT Multi-Cooker — Black",
+      "brand": "Instant Pot",
+      "model": "RIO Mini 4QT / 140-8006-01",
+      "category": "kitchen",
+      "emoji": "✳",
+      "color": "#e9e3ff",
+      "chip": "Source reviewed",
+      "description": "A 4-quart electric multi-cooker for a smaller cooking setup, with pressure cooking and six other programs.",
+      "tags": "pressure cooker multicooker multi cooker instant pot rice slow cook saute steam yogurt small kitchen apartment cooking meals",
+      "search": "Instant Pot RIO Mini 4QT Black",
+      "planningBudget": null,
+      "price": null,
+      "verification": {
+        "status": "verified",
+        "sources": [
+          "https://instantpot.com/products/instant-pot-4qt-rio-mini-multi-cooker-black",
+          "https://www.amazon.com/dp/B0F9B923NC"
+        ],
+        "reviewedAt": "2026-10-12",
+        "scope": "Manufacturer and Amazon variant identity reviewed. Price, stock, seller and hands-on performance are not verified. Manufacturer SKU matches Amazon part number with packaging suffix; a conflicting generic Amazon model field is not used for specifications.",
+        "identityEvidence": {
+          "amazonTitle": "Instant Pot Rio Mini 4 Qt 7-in-1 Electric Pressure Cooker, Black",
+          "manufacturerModel": "Manufacturer SKU 140-8006-01; Amazon Part Number 140-8006-01B.",
+          "variantMatch": "Manufacturer library folder identifies 4QT RIO Mini in Black. Photo shows the black body, flat front panel and low 4QT profile. Amazon title and part number 140-8006-01B match the manufacturer black model 140-8006-01; B is the retailer packaging suffix. Amazon generic Model Number field also lists a conflicting AU code; do not use that field for electrical specifications.",
+          "photoMatch": "Official library Black 4QT RIO Mini folder; full unaltered scene reviewed visually before download."
+        }
+      },
+      "asin": "B0F9B923NC",
+      "productUrl": "https://www.amazon.com/dp/B0F9B923NC",
+      "affiliateUrl": "https://www.amazon.com/dp/B0F9B923NC?tag=pickpop03-20",
+      "affiliateVerification": {
+        "status": "owner-tag-confirmed",
+        "reviewedAt": "2026-10-12",
+        "method": "Amazon product title and selected part number checked; direct dp URL carries owner-confirmed tag. Technical link validation does not confirm commission attribution."
+      },
+      "image": {
+        "type": "photo",
+        "authorized": true,
+        "variantReviewed": true,
+        "src": "/assets/products/instant-rio-mini-black.webp",
+        "alt": "Black Instant Pot RIO Mini 4-quart multi-cooker on a red table in the manufacturer photograph; serving accessories are shown for styling.",
+        "width": 960,
+        "height": 960,
+        "source": "https://instantbrands.app.box.com/s/0c8m0pf484gz3ujd19xeysztqu55ih86/file/2063031522432",
+        "originalUrl": "https://instantbrands.app.box.com/s/0c8m0pf484gz3ujd19xeysztqu55ih86/file/2063031522432",
+        "author": "Instant Pot Brands",
+        "license": "Manufacturer editorial permission",
+        "licenseUrl": "https://instantpot.com/pages/media-press",
+        "permissionId": "instant-pot-editorial-20261012",
+        "changes": "Proportionally resized and encoded as WebP; complete scene preserved without cropping or changing product appearance. Styling props are not a statement of included accessories."
+      },
+      "benefits": [
+        "Several cooking methods share one appliance and inner pot."
+      ],
+      "features": [
+        "4-quart capacity.",
+        "Pressure cook, slow cook, sauté, steam, rice, yogurt and warm programs.",
+        "Dishwasher-safe stainless steel inner pot and lid.",
+        "Manufacturer lists 800 W, 120 V, 60 Hz for the US model."
+      ],
+      "considerations": [
+        "Measure counter space, outlet access and the ventilation clearance required in the manual before buying.",
+        "Four quarts is vessel capacity, not the permitted pressure-cooking fill level; follow the manual.",
+        "An electric multi-cooker is optional equipment, not a requirement for a small kitchen."
+      ],
+      "styles": [
+        "modern",
+        "space-saving"
+      ],
+      "priorities": [
+        "small-spaces",
+        "everyday-convenience"
+      ],
+      "retailerName": "Instant Pot Rio Mini 4 Qt 7-in-1 Electric Pressure Cooker, Black"
+    }
+  ]
+}

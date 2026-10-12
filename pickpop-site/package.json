@@ -5,7 +5,9 @@
   "type": "module",
   "scripts": {
     "build": "python build.py",
-    "test:unit": "node --test tests/catalog.test.mjs",
-    "test:browser": "node tests/smoke.cjs"
+    "test:unit": "node --test tests/catalog.test.mjs tests/growth.test.mjs",
+    "test:import": "python -B tests/import_catalog_test.py",
+    "test:browser": "node tests/mvp.cjs",
+    "test:expansion": "node tests/expansion.cjs"
   }
 }

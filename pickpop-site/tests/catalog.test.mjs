@@ -19,6 +19,14 @@ test('published catalog contains verified identities, real licensed photos, and 
   const invalid = structuredClone(catalog); invalid.items[0].image.authorized = false;
   assert.throws(() => validateCatalog(invalid));
   const duplicate = structuredClone(catalog); duplicate.items.push(duplicate.items[0]); assert.throws(() => validateCatalog(duplicate));
+  const repeatedAsin = structuredClone(catalog); repeatedAsin.items.push({...repeatedAsin.items[0], id: 'duplicate-asin-fixture'}); assert.throws(() => validateCatalog(repeatedAsin), /ASIN/);
+});
+test('expanded multi-cooker works with related words, combined filters and honest budget', () => {
+  if (!items.some(item => item.id === 'instant-rio-mini-black')) return;
+  const result = matchCatalog(items, filters({query: 'pressure cooker', category: 'kitchen', preferences: ['space-saving'], priority: 'small-spaces', budget: 5}), config);
+  assert(result.some(match => match.item.id === 'instant-rio-mini-black'));
+  assert(result.every(match => match.reference === null && match.reasons.some(reason => reason.includes('Price is unverified'))));
+  assert.equal(matchCatalog(items, filters({query: 'pressure cooker', category: 'pets'}), config).length, 0);
 });
 test('exact numeric budgets reject invalid values without rounding', () => {
   assert.equal(parseBudget('24.99'), 24.99); assert.equal(parseBudget('56'), 56);
