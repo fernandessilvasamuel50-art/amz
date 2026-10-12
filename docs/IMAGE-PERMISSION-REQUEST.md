@@ -1,6 +1,6 @@
-# Instant Pot image permission — request prepared, NOT sent
+# Instant Pot image permission — request sent; response pending
 
-Status on 2026-10-12: owner explicitly authorized sending to `media@instantpot.com`. Gmail connector returned `USER_NOT_LOGGED_IN`; no connected mailbox is available. No email has been sent, no reply or permission is claimed. Connect the owner's Gmail in the app to execute the authorized request. Do not request passwords in chat.
+Status on 2026-10-12: owner explicitly authorized sending to `media@instantpot.com` and subsequently connected Gmail. Sent at 18:00:10 America/Manaus (22:00:10 UTC) using the connected Gmail plugin. A pre-send Sent search found no duplicate; a post-send search confirmed the same message in Sent. Private message/thread evidence is saved outside Git in `operations/private/instantpot-permission-email-20261012.json`. Sending is confirmed; delivery, response and permission are NOT confirmed. RIO Mini remains suspended.
 
 Official contact verified at https://instantpot.com/pages/media-press . Editorial-only wording does not explicitly address affiliate monetization. RIO Mini is held out of the published catalog pending a written response.
 
