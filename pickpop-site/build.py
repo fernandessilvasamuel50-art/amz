@@ -232,13 +232,19 @@ def generate():
         ('feel-good-home', 'A feel-good kind of home.', 'A considered desk belongs at home, too.', 'Choose a tool for a task, not just a look. Compare connectivity, footprint, and the equipment you already use before adding anything to your workspace.', [i['id'] for i in CATALOG['items'] if i['category'] in ['home', 'organization', 'tech']], '/guides/desk-reset.html')
     ]
     collection_tiles = []
+    collection_metadata = {
+        'small-kitchen': ('Small Kitchen Essentials: Cookware & Prep Tools | PickPop', 'Explore source-reviewed cookware and prep tools for a small kitchen. Compare size, weight, care, and storage before choosing; no live prices or hands-on ratings.'),
+        'coffee-corner': ('Coffee Station Essentials: Brewers & Grinders | PickPop', 'Compare CHEMEX, AeroPress Go, and the original Baratza Encore for a coffee station. Check serving capacity, supporting equipment, and storage before buying.')
+    }
     by_id = {item['id']: item for item in CATALOG['items']}
     for slug, title, subtitle, editorial, ids, guide in collections:
         route = '/collections/' + slug + '/'
         content = intro(ESC(title), ESC(subtitle), 'A PICKPOP COLLECTION') + f'<div class="shell collection-body"><p>{ESC(editorial)}</p><p class="results-disclaimer">Source-reviewed products; no live price or stock information. As an Amazon Associate I earn from qualifying purchases.</p><div class="collection-grid">' + ''.join(static_card(by_id[id]) for id in ids) + f'</div><a class="btn btn-dark" href="{guide}">Read the related guide →</a><a class="text-link" href="/find/">Make your own shortlist →</a></div>'
-        page(route, title + ' | PickPop', subtitle + ' Explore editorial shopping prompts and practical considerations before choosing a specific product.', content)
+        meta_title, meta_description = collection_metadata.get(slug, (title + ' | PickPop', subtitle + ' Explore editorial shopping prompts and practical considerations before choosing a specific product.'))
+        page(route, meta_title, meta_description, content)
         collection_tiles.append(f'<article class="collection-tile"><span aria-hidden="true">✳</span><p class="overline">THE INTENTIONAL EDIT</p><h2><a href="{route}">{ESC(title)}</a></h2><p>{ESC(subtitle)}</p><a class="text-link" href="{route}">Explore the collection →</a></article>')
-    page('/collections/', 'Thoughtful Shopping Collections | PickPop', 'Explore small-kitchen ideas, coffee-corner inspiration, and feel-good home concepts with practical editorial guidance.', intro('A few good <em>directions.</em>', 'Thoughtful edits for the corners of life you care about. Browse a theme, then make it yours.', 'COLLECTIONS') + '<div class="shell collections-grid">' + ''.join(collection_tiles) + '</div>')
+    directory = '<section class="shell collection-body" aria-labelledby="catalog-heading"><h2 id="catalog-heading">Browse all source-reviewed products</h2><p>Open a product to see its model, practical limitations, information sources, and photo credit. These are source-reviewed recommendations, not hands-on reviews; current prices and availability are checked on Amazon.</p><ul class="source-list">' + ''.join(f'<li><a href="/ideas/{item["id"]}/">{ESC(item["name"])}</a> · {ESC(item["brand"])} · {ESC(item["category"].title())}</li>' for item in CATALOG['items'] if item['verification']['status'] == 'verified') + '</ul></section>'
+    page('/collections/', 'Thoughtful Shopping Collections | PickPop', 'Explore small-kitchen ideas, coffee-corner inspiration, and feel-good home concepts with practical editorial guidance.', intro('A few good <em>directions.</em>', 'Thoughtful edits for the corners of life you care about. Browse a theme, then make it yours.', 'COLLECTIONS') + '<div class="shell collections-grid">' + ''.join(collection_tiles) + '</div>' + directory)
 
     for item in CATALOG['items']:
         url, paid, label = safe_destination(item)
