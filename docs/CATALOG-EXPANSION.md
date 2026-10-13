@@ -7,6 +7,8 @@
 
 Onze produtos ativos preservados, sem adições. URLs Amazon.com corrigidas para `pickpop-20`; `pickpop03-20` é Brasil e não deve voltar ao catálogo americano. Build/importador e seleção de links no navegador bloqueiam divergências. RIO Mini e Fellow Walnut permanecem suspensos. Testes e publicação: `US-AFFILIATE-TAG-CORRECTION.md`. Próxima ação comercial: conferir os onze links no Link Checker da conta US; acesso do navegador bloqueado por permissão salva, não foi realizada validação autenticada.
 
+Publicado pelo commit `85107b0` e confirmado em12/10 às20:50 Manaus: 33 páginas públicas, catálogo/configuração/JavaScript e onze fotos conferidos; zero URLs comerciais americanas com a tag brasileira. Nenhuma ampliação realizada nesta correção.
+
 ## Historical progress — 2026-10-12 (before tag correction)
 
 - Baseline: seven verified products, seven licensed independent photographs, seven Amazon links using `pickpop03-20`.
