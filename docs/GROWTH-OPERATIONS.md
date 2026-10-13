@@ -3,6 +3,10 @@
 > Correção em 12/10/2026: Amazon.com (EUA) usa **pickpop-20**; **pickpop03-20** pertence ao Brasil, conforme conferência do proprietário. Referências anteriores à tag brasileira como americana são históricas e foram invalidadas. Use as instruções atuais em [US-AFFILIATE-TAG-CORRECTION.md](US-AFFILIATE-TAG-CORRECTION.md).
 
 
+## Sprint ativo — 13–19/10/2026
+
+Consulte [GROWTH-SPRINT-20261013.md](GROWTH-SPRINT-20261013.md): quatro peças novas preparadas, nenhuma publicação nova, painel offline com histórico Amazon informado pelo proprietário separado do sprint, revisão pública móvel/SEO aprovada. Ferramenta de navegador falhou; métricas atuais e estado dos Pins precisam de conferência legítima. Sem alterações no site ou tagUS, sem novas integrações. Próxima ação: confirmarPin01/Analytics, depois aprovar datas do lote13–16.
+
 ## Atualização prioritária — 12/10/2026
 
 Amazon.com agora usa exclusivamente `pickpop-20`, conforme correção de país informada pelo proprietário. Onze produtos preservados, sem alterações Pinterest. Importador/build/navegador impedem reintrodução da tag brasileira. Consulte `US-AFFILIATE-TAG-CORRECTION.md` e `AFFILIATE-AUDIT.csv`; validação oficial da conta US ainda pendente. Os registros abaixo descrevem releases anteriores à correção.

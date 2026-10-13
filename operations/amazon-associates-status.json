@@ -1,0 +1,18 @@
+{
+  "scope": "owner-reported-amazon-historical-summary",
+  "marketplace": "US",
+  "trackingId": "pickpop-20",
+  "source": "Amazon Associates US report, figures relayed by the owner in this chat",
+  "observedAt": "2026-10-13",
+  "periodStart": null,
+  "periodEnd": "2026-10-12",
+  "reportTimezone": null,
+  "clicks": 3,
+  "orders": 0,
+  "commissionUSD": 0,
+  "directAccountReviewByAgent": false,
+  "ownerTestClicksMayBeIncluded": true,
+  "qualifiedBuyerClicks": null,
+  "pinAttribution": null,
+  "note": "Proprietário informou relatório de 13/10, período até12/10: 3 cliques, 0 pedidos e US$0. Pode incluir testes do proprietário. Início da janela/fuso e separação de QA não fornecidos. Nenhuma compra qualificada ou comissão confirmada; não representa os dados do sprint13–19/10."
+}

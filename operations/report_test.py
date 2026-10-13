@@ -13,6 +13,25 @@ class Observations(unittest.TestCase):
         self.assertIn('Indisponível',html)
         self.assertIn('Cliques registrados pela Amazon Associates',html)
 
+    def test_owner_amazon_baseline_is_separate_from_current_sprint(self):
+        summary=json.loads((Path(__file__).parent/'amazon-associates-status.json').read_text(encoding='utf-8'))
+        output=render(self.data, amazon=summary)
+        self.assertIn('3 cliques · 0 pedidos · US$ 0.00', output)
+        self.assertIn('Não pertence à janela atual', output)
+        self.assertIn('Não foi conferido diretamente', output)
+        for field, value in [('trackingId','pickpop03-20'),('marketplace','BR'),('clicks',True),('commissionUSD',float('nan'))]:
+            changed=copy.deepcopy(summary); changed[field]=value
+            with self.subTest(field=field),self.assertRaises(ValueError):render(self.data, amazon=changed)
+
+    def test_pinterest_counts_cannot_come_from_hosting_or_be_negative(self):
+        for key in ['pinterestImpressions','pinterestOutboundClicks']:
+            self.data[key]={**self.record,'source':'Netlify analytics'}
+            with self.assertRaises(ValueError):render(self.data)
+            self.data[key]={**self.record,'source':'SYNTHETIC Pinterest Analytics TEST FIXTURE','value':-1}
+            with self.assertRaises(ValueError):render(self.data)
+            self.data[key]['value']=5
+            self.assertIn('Cliques de saída Pinterest',render(self.data))
+
     def test_qa_cannot_populate_business_report(self):
         self.data['scope']='this-browser-qa-only'
         with self.assertRaises(ValueError):render(self.data)
