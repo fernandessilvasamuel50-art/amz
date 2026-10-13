@@ -69,14 +69,24 @@
     "note": "Runtime recovered but domain blocked. Owner explicitly chose to keep blocked and record current data unavailable. No workaround; prior observations preserved."
   },
   "latestPublicTechnicalCheck": {
-    "checkedAtUTC": "2026-10-13T17:57:51.609510+00:00",
+    "checkedAtUTC": "2026-10-13T22:09:09.724483+00:00",
     "sitemapHttpStatus": 200,
     "contentType": "application/xml",
-    "redirect": false,
     "validXmlUrls": 31,
     "allListedPagesHttp200CanonicalIndexable": true,
+    "allActiveProductsAndArticlesHtmlReachable": true,
+    "maximumHtmlLinkDepth": 2,
     "robotsAllowsCrawl": true,
     "googleProcessingConfirmed": false,
-    "note": "Sprint QA, not Google dashboard status or an indexing confirmation. No technical fault found; no resubmission."
+    "note": "Public production QA passed for6ee99ea. XML preserved; no resubmission. Public QA is not Google crawl, rendering, or index confirmation."
+  },
+  "latestOrganicDiscoveryReview": {
+    "reviewedAtUTC": "2026-10-13T22:09:09.724483+00:00",
+    "access": "not-attempted-owner-keeps-search-google-domain-blocked",
+    "currentSitemapReadStatus": null,
+    "indexedPages": null,
+    "currentExcludedPages": null,
+    "performance": null,
+    "note": "Historical October10 account observations retained; see docs/ORGANIC-DISCOVERY-20261013.md for exact owner checklist."
   }
 }
