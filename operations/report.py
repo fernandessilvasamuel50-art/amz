@@ -12,7 +12,10 @@ import sys
 from pathlib import Path
 ROOT = Path(__file__).resolve().parent
 FIELDS = {'visitors':'Visitantes — relatório disponível','countries':'Países','pages':'Páginas mais acessadas','searchTopics':'Temas buscados no Good Finder','productClicks':'Cliques em produtos no PickPop','amazonClicks':'Saídas para Amazon registradas no PickPop','amazonReportedClicks':'Cliques registrados pela Amazon Associates','trafficSources':'Origem do tráfego','googleImpressions':'Impressões no Google','googleClicks':'Cliques do Google','googleQueries':'Consultas no Google','amazonOrders':'Pedidos qualificados — Amazon','amazonCommissionUSD':'Comissões USD — Amazon'}
-FIELDS = {'pinterestImpressions': 'Impressões no Pinterest', 'pinterestOutboundClicks': 'Cliques de saída Pinterest → PickPop', **FIELDS}
+FIELDS = {'pinterestImpressions': 'Impressões no Pinterest', 'pinterestSaves': 'Salvamentos no Pinterest', 'pinterestPinClicks': 'Cliques no Pin — abertura no Pinterest', 'pinterestOutboundClicks': 'Cliques de saída Pinterest → PickPop', 'pinterestCountries': 'Países — audiência Pinterest', **FIELDS}
+FIELDS['amazonOrders'] = 'Pedidos registrados — Amazon'
+FIELDS['amazonOrderedItems'] = 'Produtos pedidos — Amazon'
+FIELDS['amazonShippedItems'] = 'Produtos enviados — Amazon'
 
 def render(data, hosting=None, amazon=None):
     if data.get('scope') != 'business-observations-only':
@@ -25,13 +28,13 @@ def render(data, hosting=None, amazon=None):
         else:
             if not isinstance(record,dict) or not record.get('source') or not re.fullmatch(r'\d{4}-\d{2}-\d{2}',record.get('observedAt','')) or record.get('value') is None:
                 raise ValueError('A populated metric requires value, source and date: '+key)
-            if key in ['amazonReportedClicks','amazonOrders','amazonCommissionUSD'] and 'amazon associates' not in record['source'].lower():
+            if key in ['amazonReportedClicks','amazonOrders','amazonCommissionUSD','amazonOrderedItems','amazonShippedItems'] and 'amazon associates' not in record['source'].lower():
                 raise ValueError('Amazon-reported clicks, orders and commissions require an Amazon Associates report')
             if key == 'amazonClicks' and any(name in record['source'].lower() for name in ['netlify', 'amazon associates']):
                 raise ValueError('Hosting or Amazon reports do not measure outbound browser events on PickPop')
-            if key in ['pinterestImpressions', 'pinterestOutboundClicks'] and 'pinterest' not in record['source'].lower():
+            if key.startswith('pinterest') and 'pinterest' not in record['source'].lower():
                 raise ValueError('Pinterest metrics require a Pinterest report')
-            numeric = ['pinterestImpressions','pinterestOutboundClicks','visitors','productClicks','amazonClicks','amazonReportedClicks','googleImpressions','googleClicks','amazonOrders','amazonCommissionUSD']
+            numeric = ['pinterestImpressions','pinterestSaves','pinterestPinClicks','pinterestOutboundClicks','visitors','productClicks','amazonClicks','amazonReportedClicks','googleImpressions','googleClicks','amazonOrders','amazonOrderedItems','amazonShippedItems','amazonCommissionUSD']
             if key in numeric and (isinstance(record['value'], bool) or not isinstance(record['value'], (int, float)) or not math.isfinite(record['value']) or record['value'] < 0 or (key != 'amazonCommissionUSD' and not isinstance(record['value'], int))):
                 raise ValueError('Counts must be nonnegative integers; commission must be finite and nonnegative: ' + key)
             value=str(record['value']);source=record['source']+' · '+record['observedAt']

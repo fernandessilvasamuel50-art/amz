@@ -10,8 +10,32 @@
   "latestReviewAttempt": {
     "attemptedAt": "2026-10-13",
     "result": "unavailable-browser-runtime-error",
-    "note": "Browser inventory failed to write kernel assets; repeated once after reset. No Pinterest screen or Analytics report observed this execution."
+    "note": "Inventory failed to write kernel assets, then direct native queue opening failed after reset. Public profile/boards also unavailable via web tool. No Pinterest account screen or current Analytics observed."
   },
-  "preservation": "Original schedule and files01–12 unchanged. Pins11/12 reserved; drafts13–16 prepared locally only, not approved, uploaded or scheduled.",
-  "nextAction": "In the legitimate Business session, inspect scheduled queue and published Pin01; record public URL/date only after platform confirmation. Inspect Analytics for organic Pins with date range and timezone; unavailable metrics remain null. Do not reschedule or duplicate."
+  "preservation": "First-round10 schedule records and all16 images preserved. Owner explicitly authorized Pins11–16 on13/10; approval is not platform execution. No new Pin uploaded, scheduled or published this run.",
+  "nextAction": "Recover official browser tool; inspect existing published Pins and native queue for duplicates/capacity, then execute approved-batch-11-16.json through native scheduler. No further batch approval needed. Record real platform IDs/URLs only after confirmation.",
+  "saves": null,
+  "pinClicks": null,
+  "countries": null,
+  "reportPeriod": null,
+  "reportTimezone": null,
+  "websiteClaimStatus": "unknown-not-observed",
+  "profileCurrentLanguage": "unknown-not-observed",
+  "pendingApprovedPinIds": [
+    "pin-11",
+    "pin-12",
+    "pin-13",
+    "pin-14",
+    "pin-15",
+    "pin-16"
+  ],
+  "monitoring": {
+    "automationId": "conferir-pins-do-pickpop",
+    "status": "ACTIVE",
+    "updatedOn": "2026-10-13",
+    "localTime": "19:00",
+    "endDate": "2026-10-28",
+    "mode": "read-only",
+    "executionRequires": "working browser tool, running app and legitimate authenticated account"
+  }
 }

@@ -20,5 +20,10 @@
   "notes": "Sprint13–19/10. Métricas atuais dos painéis indisponíveis: ferramenta de navegador falhou em13/10, inclusive após reinicialização. Referência Amazon informada pelo proprietário:3 cliques,0 pedidos,US$0 até12/10, possível inclusão de QA; exibida separadamente, não como resultado do sprint. Netlify10/10 também é referência histórica sem filtro de QA. Sem atribuição por Pin, comparação entre coortes, taxa de conversão ou compradores presumidos. GA4/pixels não ativados.",
   "amazonReportedClicks": null,
   "pinterestImpressions": null,
-  "pinterestOutboundClicks": null
+  "pinterestOutboundClicks": null,
+  "pinterestSaves": null,
+  "pinterestPinClicks": null,
+  "pinterestCountries": null,
+  "amazonOrderedItems": null,
+  "amazonShippedItems": null
 }

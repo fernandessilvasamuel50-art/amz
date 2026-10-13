@@ -1,7 +1,7 @@
 [
   {
     "id": "pin-13",
-    "status": "prepared-awaiting-owner-approval",
+    "status": "approved-pending-native-platform-check",
     "title": "Coffee makers for small apartments: one cup or a shared pot?",
     "description": "Compare a small manual coffee routine with a shared pour-over setup. PickPop explains supporting gear, space, and cleanup, with source-reviewed CHEMEX and AeroPress options. Capacity is not a promise of your finished drink size. Read the guide before choosing. This PickPop guide contains Amazon affiliate links. PickPop may earn a commission from qualifying purchases.",
     "primaryKeyword": "coffee makers for small apartments",
@@ -20,12 +20,15 @@
       "impressions": null,
       "outboundClicks": null
     },
-    "approval": "not-requested-or-granted",
-    "scheduleConstraint": "Do not alter Pins 01–10 or reserved Pins 11–12. Use the official scheduler only after specific owner approval."
+    "approval": "approved-publish-or-schedule-20261013",
+    "scheduleConstraint": "Native tools only. Verify no duplicate and future queue count below10 before each confirmation. Preserve Pins01–10; one new Pin/day. Dates/hours proposed, never platform-confirmed.",
+    "approvedAt": "2026-10-13",
+    "proposedDate": "2026-10-24",
+    "proposedTimeDisplay": "18:00"
   },
   {
     "id": "pin-14",
-    "status": "prepared-awaiting-owner-approval",
+    "status": "approved-pending-native-platform-check",
     "title": "Coffee station essentials: a grinder is not a brewer",
     "description": "Planning a coffee station? A Baratza Encore grinder and a CHEMEX brewer do different jobs. Use PickPop’s guide to compare your routine, supporting supplies, and cleanup space. You may already have part of the setup; buy for a missing task, not a matching look. This PickPop guide contains Amazon affiliate links. PickPop may earn a commission from qualifying purchases.",
     "primaryKeyword": "coffee station essentials",
@@ -44,12 +47,15 @@
       "impressions": null,
       "outboundClicks": null
     },
-    "approval": "not-requested-or-granted",
-    "scheduleConstraint": "Do not alter Pins 01–10 or reserved Pins 11–12. Use the official scheduler only after specific owner approval."
+    "approval": "approved-publish-or-schedule-20261013",
+    "scheduleConstraint": "Native tools only. Verify no duplicate and future queue count below10 before each confirmation. Preserve Pins01–10; one new Pin/day. Dates/hours proposed, never platform-confirmed.",
+    "approvedAt": "2026-10-13",
+    "proposedDate": "2026-10-25",
+    "proposedTimeDisplay": "18:00"
   },
   {
     "id": "pin-15",
-    "status": "prepared-awaiting-owner-approval",
+    "status": "approved-pending-native-platform-check",
     "title": "Small-space kitchen tools: start with the meals you cook",
     "description": "Before adding kitchen tools to a small apartment, list the prep tasks you actually repeat. PickPop’s guide discusses useful tools, including a source-reviewed Victorinox Fibrox chef’s knife, with size and storage considerations. A full-size knife will not suit every space or user. This PickPop guide contains Amazon affiliate links. PickPop may earn a commission from qualifying purchases.",
     "primaryKeyword": "kitchen tools for small spaces",
@@ -68,12 +74,15 @@
       "impressions": null,
       "outboundClicks": null
     },
-    "approval": "not-requested-or-granted",
-    "scheduleConstraint": "Do not alter Pins 01–10 or reserved Pins 11–12. Use the official scheduler only after specific owner approval."
+    "approval": "approved-publish-or-schedule-20261013",
+    "scheduleConstraint": "Native tools only. Verify no duplicate and future queue count below10 before each confirmation. Preserve Pins01–10; one new Pin/day. Dates/hours proposed, never platform-confirmed.",
+    "approvedAt": "2026-10-13",
+    "proposedDate": "2026-10-26",
+    "proposedTimeDisplay": "18:00"
   },
   {
     "id": "pin-16",
-    "status": "prepared-awaiting-owner-approval",
+    "status": "approved-pending-native-platform-check",
     "title": "Before buying a cabinet organizer, check these three spaces",
     "description": "A cabinet organizer can fit inside and still be awkward to reach. Measure shelf depth, clearance, and the door opening before comparing a bin, shelf insert, or turntable. PickPop’s practical cabinet guide helps you try the layout first and buy for a specific access problem. This PickPop guide contains Amazon affiliate links. PickPop may earn a commission from qualifying purchases.",
     "primaryKeyword": "kitchen cabinet organizer buying checklist",
@@ -92,7 +101,10 @@
       "impressions": null,
       "outboundClicks": null
     },
-    "approval": "not-requested-or-granted",
-    "scheduleConstraint": "Do not alter Pins 01–10 or reserved Pins 11–12. Use the official scheduler only after specific owner approval."
+    "approval": "approved-publish-or-schedule-20261013",
+    "scheduleConstraint": "Native tools only. Verify no duplicate and future queue count below10 before each confirmation. Preserve Pins01–10; one new Pin/day. Dates/hours proposed, never platform-confirmed.",
+    "approvedAt": "2026-10-13",
+    "proposedDate": "2026-10-27",
+    "proposedTimeDisplay": "18:00"
   }
 ]

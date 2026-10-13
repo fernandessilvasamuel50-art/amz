@@ -38,6 +38,11 @@ def diagram(index):
     return start + body + '</g></svg>'
 
 def main():
+    existing = ROOT / 'pins.json'
+    if existing.exists():
+        pins = json.loads(existing.read_text(encoding='utf-8'))
+        if any(p.get('approval', '').startswith('approved') or p.get('scheduledAt') or p.get('pinUrl') for p in pins):
+            raise ValueError('Preserve approved/scheduled publication records; do not regenerate this batch')
     (ROOT / 'masters').mkdir(parents=True, exist_ok=True)
     manifest=[]
     for index,(pid,title,headline,kicker,tips,keyword,guide,board,description) in enumerate(PINS):

@@ -1,5 +1,10 @@
 # Operação primeiras vendas — atualizado em 2026-10-10
 
+## Operação autorizada — 13/10/2026
+
+Pins11–16 explicitamente autorizados; nenhuma publicação/agendamento novo executado por falha da ferramenta de navegador. Autorização vigente, seis peças e propostas individuais: `marketing/pinterest/approved-batch-11-16.json`. Registros01–10/fotografias preservados; seis destinos200 conferidos. Monitor existenteACTIVE,19h local até28/10, somente leitura e sem duplicação. Painel inclui saves/Pin clicks/paísesPinterest e produtos pedidos/enviadosAmazon, ainda indisponíveis. Relatório: [MARKETING-OPERATIONS-20261013.md](MARKETING-OPERATIONS-20261013.md). Próxima ação: reiniciar aplicativoCodex, voltar ao mesmochat, conferir fila/duplicatas/vagas e executar lote autorizado. Não solicitar nova aprovação.
+
+
 > Correção em 12/10/2026: Amazon.com (EUA) usa **pickpop-20**; **pickpop03-20** pertence ao Brasil, conforme conferência do proprietário. Referências anteriores à tag brasileira como americana são históricas e foram invalidadas. Use as instruções atuais em [US-AFFILIATE-TAG-CORRECTION.md](US-AFFILIATE-TAG-CORRECTION.md).
 
 

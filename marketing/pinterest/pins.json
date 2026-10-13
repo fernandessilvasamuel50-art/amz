@@ -201,7 +201,7 @@
   },
   {
     "id": "pin-11",
-    "status": "draft-not-scheduled",
+    "status": "approved-pending-native-platform-check",
     "title": "Practical gifts for home lovers: ask three questions",
     "description": "A practical gift starts with the recipient. Would they enjoy the routine? Will it fit their space? Does it need extra supplies? Use the PickPop home-lover gift guide to compare thoughtful options without guessing their preferences. This PickPop page contains Amazon affiliate links. PickPop may earn a commission from qualifying purchases.",
     "primaryKeyword": "practical gifts for home lovers",
@@ -211,11 +211,18 @@
     "suggestedDate": "2026-10-22",
     "alt": "PickPop gift-planning graphic with a wrapped present. Three questions cover the recipient’s routine, available space, and extra supplies.",
     "rights": "Original PickPop vector illustration and typography. No Amazon product photos. Outfit and DM Sans fonts under repository OFL licenses.",
-    "copyReviewedAt": "2026-10-10"
+    "copyReviewedAt": "2026-10-10",
+    "approval": "approved-publish-or-schedule-20261013",
+    "approvedAt": "2026-10-13",
+    "proposedDate": "2026-10-22",
+    "proposedTimeDisplay": "18:00",
+    "scheduledAt": null,
+    "pinUrl": null,
+    "publishedAt": null
   },
   {
     "id": "pin-12",
-    "status": "draft-not-scheduled",
+    "status": "approved-pending-native-platform-check",
     "title": "Counter, tray, or cabinet? Plan your coffee station",
     "description": "Counter, tray, or cabinet: which coffee-station layout fits your routine? Compare daily access, portable grouping, and cabinet clearance. Read the PickPop guide to plan a setup that leaves useful room in your kitchen. This PickPop page contains Amazon affiliate links. PickPop may earn a commission from qualifying purchases.",
     "primaryKeyword": "coffee station organization ideas",
@@ -225,6 +232,13 @@
     "suggestedDate": "2026-10-22",
     "alt": "PickPop comparison graphic with counter, tray, and cabinet layouts. Tips cover everyday access, portable grouping, and clearance.",
     "rights": "Original PickPop vector illustration and typography. No Amazon product photos. Outfit and DM Sans fonts under repository OFL licenses.",
-    "copyReviewedAt": "2026-10-10"
+    "copyReviewedAt": "2026-10-10",
+    "approval": "approved-publish-or-schedule-20261013",
+    "approvedAt": "2026-10-13",
+    "proposedDate": "2026-10-23",
+    "proposedTimeDisplay": "18:00",
+    "scheduledAt": null,
+    "pinUrl": null,
+    "publishedAt": null
   }
 ]

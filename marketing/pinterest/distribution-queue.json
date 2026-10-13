@@ -5,7 +5,7 @@
   "batchApproval": "approved",
   "existingScheduledCount": 0,
   "accountProfileUrl": "https://br.pinterest.com/fernandessilvasamuel50/",
-  "note": "Ten Pins confirmed in the Pinterest native scheduled queue on October 10. Three public boards created. No Pin published yet. Pins 11/12 reserved and not approved. Editor timezone not displayed; no UTC instant claimed.",
+  "note": "First-round10 schedule proofs remain historical confirmations. Current queue/publication count not observed. Pins11–16 explicitly authorized on13/10, not scheduled in this execution. Authoritative second-batch record: approved-batch-11-16.json.",
   "pins": [
     {
       "id": "pin-01",
@@ -450,7 +450,7 @@
     },
     {
       "id": "pin-11",
-      "status": "draft-not-scheduled",
+      "status": "approved-pending-native-platform-check",
       "title": "Practical gifts for home lovers: ask three questions",
       "description": "A practical gift starts with the recipient. Would they enjoy the routine? Will it fit their space? Does it need extra supplies? Use the PickPop home-lover gift guide to compare thoughtful options without guessing their preferences. This PickPop page contains Amazon affiliate links. PickPop may earn a commission from qualifying purchases.",
       "primaryKeyword": "practical gifts for home lovers",
@@ -464,14 +464,14 @@
       "batch": 2,
       "plannedDate": "2026-10-22",
       "plannedTime": "18:00",
-      "plannedTimeZone": "America/New_York",
-      "plannedAt": "2026-10-22T18:00:00-04:00",
+      "plannedTimeZone": null,
+      "plannedAt": null,
       "ownerTimeZone": "America/Manaus",
-      "ownerLocalTime": "18:00",
+      "ownerLocalTime": null,
       "proposedBoard": "Everyday Kitchen Essentials",
       "boardId": null,
       "accountTimeZoneVerified": false,
-      "executionStatus": "reserved-not-approved",
+      "executionStatus": "blocked-browser-runtime-before-queue-verification",
       "pinUrl": null,
       "scheduledAt": null,
       "publishedAt": null,
@@ -483,11 +483,13 @@
       "aiDisclosurePlanned": true,
       "similarProductSuggestionsPlanned": false,
       "scheduledPinUrl": null,
-      "boardUrl": "https://br.pinterest.com/fernandessilvasamuel50/everyday-kitchen-essentials/"
+      "boardUrl": "https://br.pinterest.com/fernandessilvasamuel50/everyday-kitchen-essentials/",
+      "approval": "approved-publish-or-schedule-20261013",
+      "approvedAt": "2026-10-13"
     },
     {
       "id": "pin-12",
-      "status": "draft-not-scheduled",
+      "status": "approved-pending-native-platform-check",
       "title": "Counter, tray, or cabinet? Plan your coffee station",
       "description": "Counter, tray, or cabinet: which coffee-station layout fits your routine? Compare daily access, portable grouping, and cabinet clearance. Read the PickPop guide to plan a setup that leaves useful room in your kitchen. This PickPop page contains Amazon affiliate links. PickPop may earn a commission from qualifying purchases.",
       "primaryKeyword": "coffee station organization ideas",
@@ -499,16 +501,16 @@
       "rights": "Original PickPop vector illustration and typography. No Amazon product photos. Outfit and DM Sans fonts under repository OFL licenses.",
       "copyReviewedAt": "2026-10-10",
       "batch": 2,
-      "plannedDate": "2026-10-22",
-      "plannedTime": "20:00",
-      "plannedTimeZone": "America/New_York",
-      "plannedAt": "2026-10-22T20:00:00-04:00",
+      "plannedDate": "2026-10-23",
+      "plannedTime": "18:00",
+      "plannedTimeZone": null,
+      "plannedAt": null,
       "ownerTimeZone": "America/Manaus",
-      "ownerLocalTime": "20:00",
+      "ownerLocalTime": null,
       "proposedBoard": "Coffee Station Ideas",
       "boardId": null,
       "accountTimeZoneVerified": false,
-      "executionStatus": "reserved-not-approved",
+      "executionStatus": "blocked-browser-runtime-before-queue-verification",
       "pinUrl": null,
       "scheduledAt": null,
       "publishedAt": null,
@@ -520,7 +522,9 @@
       "aiDisclosurePlanned": true,
       "similarProductSuggestionsPlanned": false,
       "scheduledPinUrl": null,
-      "boardUrl": "https://br.pinterest.com/fernandessilvasamuel50/coffee-station-ideas/"
+      "boardUrl": "https://br.pinterest.com/fernandessilvasamuel50/coffee-station-ideas/",
+      "approval": "approved-publish-or-schedule-20261013",
+      "approvedAt": "2026-10-13"
     }
   ],
   "accountType": "Business",
@@ -532,7 +536,7 @@
   "nativeDraftsScheduledTotal": 10,
   "scheduledCountConfirmed": 10,
   "scheduledQueueUrl": "https://br.pinterest.com/fernandessilvasamuel50/scheduled-pins/",
-  "lastPlatformVerificationOn": "2026-10-10",
+  "lastPlatformVerificationOn": "2026-10-12",
   "boards": [
     {
       "name": "Everyday Kitchen Essentials",
@@ -557,6 +561,32 @@
     "automationId": "conferir-pins-do-pickpop",
     "status": "ACTIVE",
     "localTime": "19:00",
-    "scope": "Read-only publication and available metrics check, October 12–22; no posting or scheduling authority for Pins 11/12. Requires running desktop app and legitimate connected session."
+    "scope": "Read-only publication/metrics review throughOctober28. Pins11–16 authorized, but automation must not schedule/post. Existing app/session/tool must work."
+  },
+  "lastPlatformVerificationAt": "2026-10-12T19:00:42.267Z",
+  "lastMonitoringEvidenceFile": "operations/private/pinterest-check-20261012-1900Z.json",
+  "latestBatchAuthorization": {
+    "date": "2026-10-13",
+    "source": "Explicit human instruction in this chat: publish or schedule Pins11–16 in existing Pinterest Business account using native free tools",
+    "pinIds": [
+      "pin-11",
+      "pin-12",
+      "pin-13",
+      "pin-14",
+      "pin-15",
+      "pin-16"
+    ],
+    "maxNewPinsPerDay": 1,
+    "preserveExistingFirstRound": true,
+    "accountProfileUrl": "https://br.pinterest.com/fernandessilvasamuel50/",
+    "executionConfirmed": false
+  },
+  "latestExecutionAttempt": {
+    "attemptedOn": "2026-10-13",
+    "result": "blocked-browser-runtime-before-account-access",
+    "error": "failed to write kernel assets: path not found (os error3)",
+    "confirmedNewPinsScheduled": 0,
+    "confirmedNewPinsPublished": 0,
+    "note": "Zero actions executed by this run, not a claim that the account has zero published Pins. No queue screen observed."
   }
 }

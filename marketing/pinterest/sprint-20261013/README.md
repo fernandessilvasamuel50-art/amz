@@ -1,5 +1,8 @@
 # Quatro peças — revisão antes de publicação
 
+> Atualização posterior em13/10: o proprietário autorizou expressamente publicar/agendar os Pins11–16. A autorização substitui o estado anterior de aprovação pendente; não comprova agendamento. Consulte `marketing/pinterest/approved-batch-11-16.json` e `docs/MARKETING-OPERATIONS-20261013.md`. A ferramenta oficial de navegador continua indisponível.
+
+
 **Preparadas, não publicadas/agendadas.** Não houve upload ao Pinterest, criação de pastas, alteração de Pins01–10 ou liberação de11/12. Datas/URLs públicas permanecem null. A aprovação deste lote deve identificar os quatro Pins, pastas e datas na interface oficial; nada nesta pasta constitui autorização.
 
 Abra `review.html` para conferir imagens/textos; copie os metadados de `pins.csv` ou `pins.json` no criador oficial após aprovação. As três pastas propostas já existem; não criar novas pastas nesta rodada.

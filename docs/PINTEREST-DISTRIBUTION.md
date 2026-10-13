@@ -61,3 +61,21 @@ Ficar em silêncio sem alteração relevante. Avisar apenas publicação confirm
 - [Agendamento nativo](https://help.pinterest.com/en/business/article/schedule-pins)
 - [Especificações de imagem e texto](https://help.pinterest.com/en/business/article/pinterest-product-specs)
 - [Acompanhamentos no app e execução local](https://learn.chatgpt.com/docs/automations?surface=app)
+
+## Conferência de 12/10/2026
+
+Sessão legítima PickPop conectada. Leitura única da fila oficial durante esta execução: **10 Pins continuam agendados**, com os mesmos títulos, pastas e datas 12–21/10 às 18:00. Pin 01 ainda aparece “Agendado para seg., 12/10 18:00”. Nenhuma publicação confirmada nesta conferência; sem indicação de falha. O fuso do editor continua não exibido. URLs públicas e datas de publicação permanecem null. Impressões e cliques deste lote indisponíveis, não presumidos como zero. Não houve edição, publicação, reagendamento ou alteração dos Pins 11/12.
+
+Evidência privada textual: `operations/private/pinterest-check-20261012.json`, fora do Git. Comprovantes originais de agendamento preservados. Próxima execução: verificar novamente a fila e, caso um Pin esteja publicado, conferir sua página pública e métricas oficiais disponíveis. Sem mudança relevante, nenhuma notificação ao proprietário.
+
+Nova execução em 12/10, 19:00 UTC (15:00 em Manaus): fila oficial conferida uma vez na sessão legítima; os mesmos dez Pins continuam agendados. Nenhuma publicação, falha ou nova métrica confirmada. Evidência privada adicional: `operations/private/pinterest-check-20261012-1900Z.json`. Comprovantes anteriores preservados; nenhuma notificação necessária.
+
+## Autorização e tentativa de execução — 13/10/2026
+
+O proprietário autorizou expressamente publicar/agendar os Pins11–16 em13/10. Este consentimento substitui a reserva dos11/12 e aprovação pendente dos13–16; não solicitar de novo. Nenhum novo Pin foi publicado/agendado nesta execução: ferramenta oficial falhou ao inicializar, inclusive após reset. Conta/fila/Analytics atuais não observados; os dez registros anteriores permanecem idênticos.
+
+Registro vigente: `marketing/pinterest/approved-batch-11-16.json`; proposta22–27/10, um por dia às18h exibidas pelo editor, fuso a confirmar. Limite oficial10 futuros; conferir vagas/duplicatas antes de executar. URLs públicas/IDs de novos agendamentos permanecemnull. Imagens, texto, direitos e seis destinos200/canonicals conferidos. Não reescrever os comprovantes históricos acima.
+
+Automação `conferir-pins-do-pickpop` atualizada pela ferramenta oficial, resultadoACTIVE:19h local até28/10 para cobrir a nova proposta. Continua somente leitura; não agenda/publica. Sem duplicata. A autorização persistente11–16 será executada por este trabalho assim que o navegador funcionar. Métricas adicionais: saves, Pin clicks, outbound e países quando disponíveis, além dos relatórios autorizados. Silêncio sem mudanças e aviso único por bloqueio. App ligado/sessão/ferramenta funcionais são necessários.
+
+Veja `docs/MARKETING-OPERATIONS-20261013.md`. Próxima ação: proprietário reiniciar o aplicativoCodex e voltar a este chat; então conferir fila real e executar somente o que couber, sem mover a primeira rodada. Não houve nova verificação de login ou de reivindicação do domínio.

@@ -1,5 +1,8 @@
 # Sprint de crescimento — 13 a19/10/2026, R$ 0
 
+> Atualização posterior em13/10: o proprietário autorizou expressamente publicar/agendar os Pins11–16. A autorização substitui o estado anterior de aprovação pendente; não comprova agendamento. Consulte `marketing/pinterest/approved-batch-11-16.json` e `docs/MARKETING-OPERATIONS-20261013.md`. A ferramenta oficial de navegador continua indisponível.
+
+
 ## Executado e evidências disponíveis
 
 **Amazon US pickpop-20:** proprietário informou em 13/10 o relatório até 12/10: **3 cliques, 0 pedidos,US$ 0**. Pode incluir testes. O início da janela e fuso não foram fornecidos; o agente não leu este relatório diretamente. Registrado em `operations/amazon-associates-status.json` como referência histórica, separada das métricas futuras13–19/10. Não prova três compradores nem atribuição a Pins. Nenhuma primeira venda qualificada confirmada.

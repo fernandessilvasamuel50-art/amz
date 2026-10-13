@@ -24,7 +24,7 @@ class Observations(unittest.TestCase):
             with self.subTest(field=field),self.assertRaises(ValueError):render(self.data, amazon=changed)
 
     def test_pinterest_counts_cannot_come_from_hosting_or_be_negative(self):
-        for key in ['pinterestImpressions','pinterestOutboundClicks']:
+        for key in ['pinterestImpressions','pinterestSaves','pinterestPinClicks','pinterestOutboundClicks']:
             self.data[key]={**self.record,'source':'Netlify analytics'}
             with self.assertRaises(ValueError):render(self.data)
             self.data[key]={**self.record,'source':'SYNTHETIC Pinterest Analytics TEST FIXTURE','value':-1}
@@ -37,7 +37,7 @@ class Observations(unittest.TestCase):
         with self.assertRaises(ValueError):render(self.data)
 
     def test_official_clicks_are_distinct_from_browser_outbound(self):
-        for key in ['amazonReportedClicks','amazonOrders','amazonCommissionUSD']:
+        for key in ['amazonReportedClicks','amazonOrders','amazonCommissionUSD','amazonOrderedItems','amazonShippedItems']:
             data=copy.deepcopy(self.data);data[key]={**self.record,'source':'Netlify hosting'}
             with self.assertRaises(ValueError):render(data)
             data[key]=self.record;self.assertIn('dashboard display',render(data))
