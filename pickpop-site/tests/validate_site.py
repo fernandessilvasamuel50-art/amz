@@ -78,6 +78,11 @@ def validate():
                 assert 'noopener' in attrs.get('rel', ''), page
     locations = [element.text for element in ET.parse(DIST / 'sitemap.xml').findall('.//{http://www.sitemaps.org/schemas/sitemap/0.9}loc')]
     assert len(locations) == len(set(locations))
+    pinterest_token = json.loads((ROOT / 'data/site.json').read_text()).get('pinterest', {}).get('verificationToken')
+    if pinterest_token:
+        home = Document((DIST / 'index.html').read_text(encoding='utf-8'))
+        claims = [attrs.get('content') for tag, attrs in home.tags if tag == 'meta' and attrs.get('name') == 'p:domain_verify']
+        assert claims == [pinterest_token], 'Pinterest must receive the exact owner-account verification tag on Home'
     assert all('/find/' not in url and '/contact/' not in url for url in locations)
     catalog = json.loads((ROOT / 'data/catalog.json').read_text(encoding='utf-8'))
     for item in catalog['items']:

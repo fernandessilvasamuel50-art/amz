@@ -46,6 +46,9 @@ def validate():
     token = CONFIG.get('searchConsole', {}).get('verificationToken')
     if token and not re.fullmatch(r'[A-Za-z0-9_-]{20,120}', token):
         raise ValueError('Invalid Search Console verification token')
+    pinterest_token = CONFIG.get('pinterest', {}).get('verificationToken')
+    if pinterest_token and not re.fullmatch(r'[a-fA-F0-9]{32}', pinterest_token):
+        raise ValueError('Invalid Pinterest website verification token')
     if CATALOG['schemaVersion'] != 1 or not isinstance(CATALOG['items'], list):
         raise ValueError('Invalid catalog version')
     ids = set()
@@ -119,6 +122,9 @@ def page(route, title, description, content, interactive=False, index=True, kind
     script = '<script type="module" src="/assets/js/app.js"></script>' if interactive else '<script type="module" src="/assets/js/page-events.js"></script>'
     token = CONFIG.get('searchConsole', {}).get('verificationToken')
     verification = '<meta name="google-site-verification" content="' + ESC(token, quote=True) + '">' if token else ''
+    pinterest_token = CONFIG.get('pinterest', {}).get('verificationToken')
+    if route == '/' and pinterest_token:
+        verification += '<meta name="p:domain_verify" content="' + ESC(pinterest_token, quote=True) + '">'
     document = f'''<!doctype html>
 <html lang="en-US"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#fffaf3">{verification}
