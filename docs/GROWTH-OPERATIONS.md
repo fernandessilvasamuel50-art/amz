@@ -1,5 +1,10 @@
 # Operação primeiras vendas — atualizado em 2026-10-10
 
+## Resultado real da retomada — 13/10/2026
+
+Pinterest acessível: Pin 01 publicado12/10; Pin 11 agendado22/10 às18h exibidas, fila10, anteriorespreservados. Pins12–16 autorizados aguardamvagas. Domínio reivindicado na plataforma ebiografia pública eminglês salva. Overview13/09–13/10UTC:3impressões/0saves/0outbound (potencialQA), amostra insuficiente; recorteorgânico/paísesindisponíveis. Proprietário pediu manterNetlify,SearchConsole,Amazon bloqueados, sem novas tentativas. Monitor existenteACTIVE somenteleitura até28/10. Código público de verificação:3bc34a5, deployconfirmado e18auditoriasproduçãoaprovadas. Registro: [MARKETING-OPERATIONS-20261013.md](MARKETING-OPERATIONS-20261013.md); próximaação é agendarPin12 quando houver vaga, sem pedir aprovação de novo.
+
+
 ## Operação autorizada — 13/10/2026
 
 Pins11–16 explicitamente autorizados; nenhuma publicação/agendamento novo executado por falha da ferramenta de navegador. Autorização vigente, seis peças e propostas individuais: `marketing/pinterest/approved-batch-11-16.json`. Registros01–10/fotografias preservados; seis destinos200 conferidos. Monitor existenteACTIVE,19h local até28/10, somente leitura e sem duplicação. Painel inclui saves/Pin clicks/paísesPinterest e produtos pedidos/enviadosAmazon, ainda indisponíveis. Relatório: [MARKETING-OPERATIONS-20261013.md](MARKETING-OPERATIONS-20261013.md). Próxima ação: reiniciar aplicativoCodex, voltar ao mesmochat, conferir fila/duplicatas/vagas e executar lote autorizado. Não solicitar nova aprovação.

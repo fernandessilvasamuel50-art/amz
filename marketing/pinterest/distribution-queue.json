@@ -5,11 +5,11 @@
   "batchApproval": "approved",
   "existingScheduledCount": 0,
   "accountProfileUrl": "https://br.pinterest.com/fernandessilvasamuel50/",
-  "note": "First-round10 schedule proofs remain historical confirmations. Current queue/publication count not observed. Pins11–16 explicitly authorized on13/10, not scheduled in this execution. Authoritative second-batch record: approved-batch-11-16.json.",
+  "note": "Pin01 published12October; Pins02–10 unchanged; Pin11 scheduled22October18h by native tools. Queue full10. Pins12–16 remain authorized awaiting slots. No timezone offset assumed.",
   "pins": [
     {
       "id": "pin-01",
-      "status": "scheduled",
+      "status": "published",
       "title": "Coffee station ideas for a small kitchen",
       "description": "Build a coffee station that leaves room to cook. Keep a prep zone clear, group your daily coffee gear, and plan a place to rinse and dry. Explore counter, tray, and cabinet layouts in the PickPop guide. This PickPop page contains Amazon affiliate links. PickPop may earn a commission from qualifying purchases.",
       "primaryKeyword": "coffee station ideas for small kitchens",
@@ -30,8 +30,8 @@
       "proposedBoard": "Coffee Station Ideas",
       "boardId": null,
       "accountTimeZoneVerified": false,
-      "executionStatus": "scheduled",
-      "pinUrl": null,
+      "executionStatus": "published-confirmed",
+      "pinUrl": "https://br.pinterest.com/pin/651825746114439516/",
       "scheduledAt": "2026-10-12T18:00:00",
       "publishedAt": null,
       "platformEvidence": "Pinterest native scheduled queue: Agendado para seg., 12/10 18:00 Coffee station ideas for a small kitchen Coffee Station Ideas",
@@ -50,7 +50,10 @@
       "scheduledPinUrl": "https://br.pinterest.com/fernandessilvasamuel50/scheduled-pin/3934074558245345920/",
       "boardUrl": "https://br.pinterest.com/fernandessilvasamuel50/coffee-station-ideas/",
       "aiDisclosureApplied": true,
-      "similarProductSuggestionsEnabled": false
+      "similarProductSuggestionsEnabled": false,
+      "platformPinId": "651825746114439516",
+      "publishedDate": "2026-10-12",
+      "publicationTimeNote": "Official Pin Analytics shows12October2026; exact time/offset not displayed. Original scheduling proof preserved."
     },
     {
       "id": "pin-02",
@@ -450,7 +453,7 @@
     },
     {
       "id": "pin-11",
-      "status": "approved-pending-native-platform-check",
+      "status": "scheduled",
       "title": "Practical gifts for home lovers: ask three questions",
       "description": "A practical gift starts with the recipient. Would they enjoy the routine? Will it fit their space? Does it need extra supplies? Use the PickPop home-lover gift guide to compare thoughtful options without guessing their preferences. This PickPop page contains Amazon affiliate links. PickPop may earn a commission from qualifying purchases.",
       "primaryKeyword": "practical gifts for home lovers",
@@ -471,25 +474,33 @@
       "proposedBoard": "Everyday Kitchen Essentials",
       "boardId": null,
       "accountTimeZoneVerified": false,
-      "executionStatus": "blocked-browser-runtime-before-queue-verification",
+      "executionStatus": "scheduled-confirmed",
       "pinUrl": null,
-      "scheduledAt": null,
+      "scheduledAt": "2026-10-22T18:00:00",
       "publishedAt": null,
-      "platformEvidence": null,
+      "platformEvidence": "Native confirmation toast and official queue10Pins, then individual scheduled-Pin form confirming title/description/link/board/date22October/06:00PM.",
       "impressions": null,
       "outboundClicks": null,
       "metricsObservedAt": null,
-      "nativeDraftPrepared": false,
+      "nativeDraftPrepared": true,
       "aiDisclosurePlanned": true,
       "similarProductSuggestionsPlanned": false,
-      "scheduledPinUrl": null,
+      "scheduledPinUrl": "https://br.pinterest.com/fernandessilvasamuel50/scheduled-pin/3942207151667041088/",
       "boardUrl": "https://br.pinterest.com/fernandessilvasamuel50/everyday-kitchen-essentials/",
       "approval": "approved-publish-or-schedule-20261013",
-      "approvedAt": "2026-10-13"
+      "approvedAt": "2026-10-13",
+      "scheduledPinId": "3942207151667041088",
+      "scheduledTimeZone": null,
+      "scheduledAtDisplay": "22/10/2026 18:00 (Pinterest editor, timezone not displayed)",
+      "scheduleConfirmedOn": "2026-10-13",
+      "actualBoard": "Everyday Kitchen Essentials",
+      "aiDisclosureApplied": true,
+      "similarProductSuggestionsEnabled": false,
+      "evidenceFile": "operations/private/pinterest-20261013/pin11-confirmed.jpg"
     },
     {
       "id": "pin-12",
-      "status": "approved-pending-native-platform-check",
+      "status": "approved-waiting-queue-capacity",
       "title": "Counter, tray, or cabinet? Plan your coffee station",
       "description": "Counter, tray, or cabinet: which coffee-station layout fits your routine? Compare daily access, portable grouping, and cabinet clearance. Read the PickPop guide to plan a setup that leaves useful room in your kitchen. This PickPop page contains Amazon affiliate links. PickPop may earn a commission from qualifying purchases.",
       "primaryKeyword": "coffee station organization ideas",
@@ -510,7 +521,7 @@
       "proposedBoard": "Coffee Station Ideas",
       "boardId": null,
       "accountTimeZoneVerified": false,
-      "executionStatus": "blocked-browser-runtime-before-queue-verification",
+      "executionStatus": "waiting-native-queue-capacity",
       "pinUrl": null,
       "scheduledAt": null,
       "publishedAt": null,
@@ -533,10 +544,10 @@
   "batchApprovalScope": "Create three public thematic boards and schedule Pins 01-10, October 12-21, 2026, at 18:00 as displayed by Pinterest. Pins 11-12 excluded.",
   "timeZoneNote": "Editor does not display a timezone. Eastern/Manaus entries remain editorial intentions; no UTC instant has been confirmed by Pinterest.",
   "nativeDraftCountConfirmed": 0,
-  "nativeDraftsScheduledTotal": 10,
+  "nativeDraftsScheduledTotal": 11,
   "scheduledCountConfirmed": 10,
   "scheduledQueueUrl": "https://br.pinterest.com/fernandessilvasamuel50/scheduled-pins/",
-  "lastPlatformVerificationOn": "2026-10-12",
+  "lastPlatformVerificationOn": "2026-10-13",
   "boards": [
     {
       "name": "Everyday Kitchen Essentials",
@@ -561,10 +572,10 @@
     "automationId": "conferir-pins-do-pickpop",
     "status": "ACTIVE",
     "localTime": "19:00",
-    "scope": "Read-only publication/metrics review throughOctober28. Pins11–16 authorized, but automation must not schedule/post. Existing app/session/tool must work."
+    "scope": "Read-only throughOctober28. Pin01 published, Pin11 scheduled,12–16 authorized waitingcapacity. Owner explicitly keeps Netlify/Google/Amazon domains blocked; do not retry them. No auto-posting."
   },
-  "lastPlatformVerificationAt": "2026-10-12T19:00:42.267Z",
-  "lastMonitoringEvidenceFile": "operations/private/pinterest-check-20261012-1900Z.json",
+  "lastPlatformVerificationAt": "2026-10-13T19:28:29.745783+00:00",
+  "lastMonitoringEvidenceFile": "operations/private/pinterest-20261013/queue10-observed.txt",
   "latestBatchAuthorization": {
     "date": "2026-10-13",
     "source": "Explicit human instruction in this chat: publish or schedule Pins11–16 in existing Pinterest Business account using native free tools",
@@ -579,14 +590,18 @@
     "maxNewPinsPerDay": 1,
     "preserveExistingFirstRound": true,
     "accountProfileUrl": "https://br.pinterest.com/fernandessilvasamuel50/",
-    "executionConfirmed": false
+    "executionConfirmed": true,
+    "executionConfirmedPinIds": [
+      "pin-11"
+    ],
+    "executionScopeNote": "Only Pin11 native scheduling confirmed;12–16 remain authorized waitingqueuecapacity. This does not claim all6 executed."
   },
   "latestExecutionAttempt": {
     "attemptedOn": "2026-10-13",
-    "result": "blocked-browser-runtime-before-account-access",
-    "error": "failed to write kernel assets: path not found (os error3)",
-    "confirmedNewPinsScheduled": 0,
+    "result": "native-pin11-scheduled-confirmed",
+    "confirmedNewPinsScheduled": 1,
     "confirmedNewPinsPublished": 0,
-    "note": "Zero actions executed by this run, not a claim that the account has zero published Pins. No queue screen observed."
-  }
+    "note": "Real new scheduling, not publication. No prior schedule moved. Other accounts kept blocked by owner request."
+  },
+  "currentPublishedCountConfirmed": 1
 }

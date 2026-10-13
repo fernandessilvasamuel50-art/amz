@@ -1,7 +1,7 @@
 [
   {
     "id": "pin-01",
-    "status": "scheduled",
+    "status": "published",
     "title": "Coffee station ideas for a small kitchen",
     "description": "Build a coffee station that leaves room to cook. Keep a prep zone clear, group your daily coffee gear, and plan a place to rinse and dry. Explore counter, tray, and cabinet layouts in the PickPop guide. This PickPop page contains Amazon affiliate links. PickPop may earn a commission from qualifying purchases.",
     "primaryKeyword": "coffee station ideas for small kitchens",
@@ -16,8 +16,12 @@
     "scheduledTimeZone": null,
     "scheduledPinUrl": "https://br.pinterest.com/fernandessilvasamuel50/scheduled-pin/3934074558245345920/",
     "boardUrl": "https://br.pinterest.com/fernandessilvasamuel50/coffee-station-ideas/",
-    "pinUrl": null,
-    "publishedAt": null
+    "pinUrl": "https://br.pinterest.com/pin/651825746114439516/",
+    "publishedAt": null,
+    "executionStatus": "published-confirmed",
+    "platformPinId": "651825746114439516",
+    "publishedDate": "2026-10-12",
+    "publicationTimeNote": "Official Pin Analytics shows12October2026; exact time/offset not displayed. Original scheduling proof preserved."
   },
   {
     "id": "pin-02",
@@ -201,7 +205,7 @@
   },
   {
     "id": "pin-11",
-    "status": "approved-pending-native-platform-check",
+    "status": "scheduled",
     "title": "Practical gifts for home lovers: ask three questions",
     "description": "A practical gift starts with the recipient. Would they enjoy the routine? Will it fit their space? Does it need extra supplies? Use the PickPop home-lover gift guide to compare thoughtful options without guessing their preferences. This PickPop page contains Amazon affiliate links. PickPop may earn a commission from qualifying purchases.",
     "primaryKeyword": "practical gifts for home lovers",
@@ -216,13 +220,25 @@
     "approvedAt": "2026-10-13",
     "proposedDate": "2026-10-22",
     "proposedTimeDisplay": "18:00",
-    "scheduledAt": null,
+    "scheduledAt": "2026-10-22T18:00:00",
     "pinUrl": null,
-    "publishedAt": null
+    "publishedAt": null,
+    "executionStatus": "scheduled-confirmed",
+    "scheduledPinId": "3942207151667041088",
+    "scheduledPinUrl": "https://br.pinterest.com/fernandessilvasamuel50/scheduled-pin/3942207151667041088/",
+    "scheduledTimeZone": null,
+    "scheduledAtDisplay": "22/10/2026 18:00 (Pinterest editor, timezone not displayed)",
+    "scheduleConfirmedOn": "2026-10-13",
+    "actualBoard": "Everyday Kitchen Essentials",
+    "aiDisclosureApplied": true,
+    "similarProductSuggestionsEnabled": false,
+    "nativeDraftPrepared": true,
+    "platformEvidence": "Native confirmation toast and official queue10Pins, then individual scheduled-Pin form confirming title/description/link/board/date22October/06:00PM.",
+    "evidenceFile": "operations/private/pinterest-20261013/pin11-confirmed.jpg"
   },
   {
     "id": "pin-12",
-    "status": "approved-pending-native-platform-check",
+    "status": "approved-waiting-queue-capacity",
     "title": "Counter, tray, or cabinet? Plan your coffee station",
     "description": "Counter, tray, or cabinet: which coffee-station layout fits your routine? Compare daily access, portable grouping, and cabinet clearance. Read the PickPop guide to plan a setup that leaves useful room in your kitchen. This PickPop page contains Amazon affiliate links. PickPop may earn a commission from qualifying purchases.",
     "primaryKeyword": "coffee station organization ideas",
@@ -239,6 +255,7 @@
     "proposedTimeDisplay": "18:00",
     "scheduledAt": null,
     "pinUrl": null,
-    "publishedAt": null
+    "publishedAt": null,
+    "executionStatus": "waiting-native-queue-capacity"
   }
 ]

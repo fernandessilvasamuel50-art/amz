@@ -1,5 +1,8 @@
 # Operação de marketing — autorização recebida em13/10/2026
 
+> Atualização posterior em13/10: acessoPinterest recuperado, Pin 01 publicado ePin11 agendado, domínio reivindicado e biografia em inglês salva. O histórico anterior abaixo descreve a tentativa bloqueada; resultados atuais estão na seção final. Pins12–16 aguardamvagas.
+
+
 ## Resultado real desta execução
 
 **Nenhum Pin novo publicado ou agendado.** Não houve acesso às telas da conta: `cua.getState` falhou ao inicializar (“failed to write kernel assets”, caminho não encontrado); a tentativa direta da fila oficial após reset falhou igualmente. Não foi mostrado login; não é possível afirmar que a conta está desconectada. A leitura pública do perfil/pastas pelo serviço de pesquisa também foi indisponível. Nenhum controle de acesso foi contornado e nenhuma senha/código solicitado.
@@ -25,7 +28,7 @@ Todas as seis peças usam ilustração editorial própria e fontesOFL, não foto
 
 Nome/site/pastasBusiness foram observados em10/10, mas idioma, descrição, categorias e reivindicação atuais não foram conferidos nesta execução. Não afirmar que o domínio está ou não reivindicado apenas pela ausência de uma tag no código.
 
-Quando o acesso voltar: verificar perfil inglês/site https://pickpop.netlify.app/ e Settings→Link to Pinterest/Claimed accounts. Se não reivindicado, usar **HTML tag** ou **HTML file**, ambos gratuitos e semDNS, conforme [instrução oficial](https://help.pinterest.com/en/business/article/claim-your-website). O token/arquivo deve ser obtido dessa conta legítima, nunca inventado. Só após recebê-lo: incluir no build existente, testar, publicar porGit/Netlify e clicarVerify na própria plataforma. Não aceitar novos contratos, criarMerchantCenter, mudarDNS ou remover reivindicações existentes. A confirmação depende da tela Pinterest, não apenas do deploy.
+Quando o acesso voltar: verificar perfil inglês/site https://pickpop.netlify.app/ e Settings→Link to Pinterest/Claimed accounts. Se não reivindicado, usar **HTML tag** ou **HTML file**, ambos gratuitos e sem DNS, conforme [instrução oficial](https://help.pinterest.com/en/business/article/claim-your-website). O token/arquivo deve ser obtido dessa conta legítima, nunca inventado. Só após recebê-lo: incluir no build existente, testar, publicar porGit/Netlify e clicarVerify na própria plataforma. Não aceitar novos contratos, criarMerchantCenter, mudarDNS ou remover reivindicações existentes. A confirmação depende da tela Pinterest, não apenas do deploy.
 
 Descrição possível se a atual precisar de correção: “Good finds. Better budgets. Practical buying guides for small kitchens, coffee routines, and everyday home organization. Explore source-reviewed picks and honest shopping checklists at PickPop.” Não foi gravada no perfil.
 
@@ -55,3 +58,23 @@ Automação existente `conferir-pins-do-pickpop` consultada e atualizada pela fe
 3. Coletar primeiro recorte agregado comparável13–19/10. Registrar porPin IDs, data, impressões, saves, Pin clicks e outbound; Netlifyreferrers/países comQA; Google eAmazon separadamente. Só então mudar copy/ordem/guia com base em interesse observado.
 
 Ponto de retorno: tag `pickpop-before-marketing-ops-20261013` no commit `a3de586`. Sem mudança no código público, tagAmazon, catálogo ou artigos nesta execução; nenhum redeploy necessário. A tarefa de publicação permanece pendente por impedimento técnico, não por falta de autorização. Não alegar distribuição executada ou primeira venda.
+
+## Continuação após recuperação — resultados confirmados em13/10
+
+- **Publicação real:** Pin 01, https://br.pinterest.com/pin/651825746114439516/, data12/10 naAnalytics; horário não exibido.
+- **Novo agendamento real:** Pin 11,22/10 às18h exibidas, https://br.pinterest.com/fernandessilvasamuel50/scheduled-pin/3942207151667041088/; pastaEverydayKitchenEssentials, IA declarada, sem pessoa sintética/sugestões comerciais automáticas.
+- Fila9→10,02–10 intactos.12–16 autorizados aguardamcapacidade. Não houve publicação imediata nova nem duplicação.
+- Domínio reivindicado: token oficial publicado viaGit/Netlify3bc34a5; modal Conectado/Tudo pronto eperfil com site verificado confirmaram. MétodoHTMLgratuito, sem DNS/ads/pixels.
+- BioEnglish profissional salva; nome/site/pastas coerentes, nenhuma falsa localização americana.
+- Overview13/09–13/10UTC, estimativa em tempo real:3impressões,0saves,0outbound,0engagements, uma linhaPin01. Individual anterior:1impressão/0PinClicks, mesmajanela; closeupposterior2impressões. Fonte e instantes preservados, potencialQA, sem ranking/visitas/conversão presumidos.
+- Orgânico12–13/10UTC: indisponível; AudienceInsights: países/interesses insuficientes. Não converter“-” em0 nem identificar três pessoas.
+- PesquisaTrendsUS: coffee station ideas, coffee station ideas countertop, coffee nook/kitchen coffee station; small kitchen organization ideas; kitchen essentials list; coffee bar accessories; small kitchen storage ideas/apartment kitchen. Termos retornados na própria ferramenta, não volumes absolutos. Gráfico coffee station ideas mostrouúltimoano, escalaindexada0–100; nenhuma venda/volume mensal/dificuldade deduzida. Não gerar quatro peças extras porque já há cinco aprovadas esperando vagas e nenhuma evidência de preferência da nossa audiência.
+- Netlify/Google/Amazon: bloqueios salvos recusaram acesso. Proprietário respondeuexpressamente “Manter bloqueados; registrar os dados como indisponíveis.” Essa decisão persiste. Monitor existente preservado/atualizado para não insistir nesses domínios nem solicitar nova liberação.
+
+Dados públicos agregados emoperations/pinterest-platform-observations.json; paineloffline mostra os quatro indicadoresPinteres disponíveis com suas própriasjanelas. ZeroOutbound registrado não comprova ausência de toda visitaNetlify; relatórios têm metodologias distintas e este não foi acessado. Comissões novas continuamindisponíveis.
+
+Testesexecutados após mudançaHTML:build34páginas/31URLs, estático1.139referências incluindo tagPinterest exata naHome,15 testesNode; navegadorprodução18auditoriasresponsivas,11modelos/links,10destinosPins, diagnósticohidden/teclado e saídasAmazon interceptadas.7testespainel aprovados. Nenhum outrocódigo público/layout/catálogo alterado.
+
+**Três ações prioritárias realizadas:** ocupar a vaga real comPin11; reivindicar o domínio; preencherbiografia em inglês. Próximaação: quando um Pin anterior publicar e liberar uma vaga, conferirduplicatas e agendarPin12 autorizado para23/10. Monitor continua estritamenteleitura, sem autopost. O proprietário não precisa aprovar novamente; pode pedir continuação na próxima vaga.
+
+Publicação verificada no domíniooficial:3bc34a5; dadossite.json públicos iguais ao código, tagPinterest naHome exata, onzeprodutos e dezesseisPNGs preservados por comparação/hash. Capturasprivadas:pin11-date-confirmed.jpg eclaim-connected.jpg. Relatórios atualizados no commitoperacional posterior; sem novo deploydesnecessário.

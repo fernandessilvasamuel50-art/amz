@@ -79,3 +79,17 @@ Registro vigente: `marketing/pinterest/approved-batch-11-16.json`; proposta22–
 Automação `conferir-pins-do-pickpop` atualizada pela ferramenta oficial, resultadoACTIVE:19h local até28/10 para cobrir a nova proposta. Continua somente leitura; não agenda/publica. Sem duplicata. A autorização persistente11–16 será executada por este trabalho assim que o navegador funcionar. Métricas adicionais: saves, Pin clicks, outbound e países quando disponíveis, além dos relatórios autorizados. Silêncio sem mudanças e aviso único por bloqueio. App ligado/sessão/ferramenta funcionais são necessários.
 
 Veja `docs/MARKETING-OPERATIONS-20261013.md`. Próxima ação: proprietário reiniciar o aplicativoCodex e voltar a este chat; então conferir fila real e executar somente o que couber, sem mover a primeira rodada. Não houve nova verificação de login ou de reivindicação do domínio.
+
+## Execução nativa confirmada — continuação em13/10/2026
+
+A ferramenta voltou a funcionar. ContaBusinessPickPop legítima conferida: **Pin 01 publicado** em12/10, URL https://br.pinterest.com/pin/651825746114439516/. Horário de publicação não exibido. A fila inicial tinha9Pins (02–10); títulos, datas13–21/10 às18h e IDs anteriores preservados.
+
+**Pin 11 agendado de verdade** para22/10 às18:00 exibidas pelo editor, pastaEverydayKitchenEssentials: https://br.pinterest.com/fernandessilvasamuel50/scheduled-pin/3942207151667041088/. Confirmação nativa/queue10 e detalhe individual conferidos. Fotooriginal, title/description/link/alt; rótuloIA ativado, pessoaIA desativada e sugestões de produtos semelhantes desativadas. Fuso continua não exibido; não atribuir offsetUTC. Esse URL é comprovante privado de agendamento, não publicação pública.
+
+Agora **10 agendados**:02–10 e11. Pins12–16 seguem autorizados aguardando vagas, sem upload/agendamento/ID inventado. Não publicar imediatamente para contornar limite nem alterar primeira rodada. Propostas23–27/10 permanecem posteriores e um por dia.
+
+PinterestAnalyticsOverview13/09–13/10UTC, estimativa emtempo real: **3impressões,0engajamentos,0salvamentos,0outbound**; uma única linhaPin01. Snapshot individual anterior mostrou1impressão/0PinClicks/0saves/0outbound, e a abertura posterior mostrou2impressões. Variação de snapshots não foi tratada como tráfego qualificado; nossas conferências podem estar incluídas. Filtroorgânico12–13/10 eAudienceInsights países: dados insuficientes/indisponíveis, nãozero.
+
+**Domínio conectado/reivindicado** na telaoficial. TokenHTML da conta incluído apenas naHome pelo commit3bc34a5, publicado e conferido; modal Conectado/Tudo pronto eSiteverificado no perfil confirmaram. NenhumDNSpixel/adstag instalado. Bio antes vazia, agora profissional eminglês; website verificado, país/localização e dados privados não modificados.
+
+Monitor existenteACTIVE permanece somenteleitura. Proprietário decidiu manterNetlify/SearchConsole/Amazon bloqueados: não tentar liberar/contornar nem repetir solicitação. Dadosatuais indisponíveis; baselineAmazon3cliques até12/10/0pedidos/US$0 permanece informado pelo proprietário, possivelmenteQA. Evidências privadas emoperations/private/pinterest-20261013/, fora do Git.

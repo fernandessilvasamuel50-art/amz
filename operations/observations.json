@@ -17,12 +17,48 @@
   "googleQueries": null,
   "amazonOrders": null,
   "amazonCommissionUSD": null,
-  "notes": "Sprint13–19/10. Métricas atuais dos painéis indisponíveis: ferramenta de navegador falhou em13/10, inclusive após reinicialização. Referência Amazon informada pelo proprietário:3 cliques,0 pedidos,US$0 até12/10, possível inclusão de QA; exibida separadamente, não como resultado do sprint. Netlify10/10 também é referência histórica sem filtro de QA. Sem atribuição por Pin, comparação entre coortes, taxa de conversão ou compradores presumidos. GA4/pixels não ativados.",
+  "notes": "Pinterest:1published,10scheduled after Pin11 added. Overview snapshot13Sep–13OctUTC:3impressions,0saves/outbound; earlier Pin01 snapshot0Pin clicks. May include owner/agentQA; not qualified buyers. Organic12–13Oct/geo insufficient. Each row retains its actual report window, not the whole future sprint13–19Oct; do not calculate cross-platform conversion. Netlify/Google/Amazon dashboards remain blocked at explicit owner request. Amazon owner-reported3clicks/0orders/US$0 through12Oct stays historical, no new official account report. No paid ads, new trackers or fake location.",
   "amazonReportedClicks": null,
-  "pinterestImpressions": null,
-  "pinterestOutboundClicks": null,
-  "pinterestSaves": null,
-  "pinterestPinClicks": null,
+  "pinterestImpressions": {
+    "value": 3,
+    "source": "Pinterest Business Overview, observed real-time estimate; QA may be included",
+    "observedAt": "2026-10-13",
+    "window": {
+      "start": "2026-09-13",
+      "end": "2026-10-13",
+      "timezone": "UTC"
+    }
+  },
+  "pinterestOutboundClicks": {
+    "value": 0,
+    "source": "Pinterest Business Overview, observed real-time estimate; QA may be included",
+    "observedAt": "2026-10-13",
+    "window": {
+      "start": "2026-09-13",
+      "end": "2026-10-13",
+      "timezone": "UTC"
+    }
+  },
+  "pinterestSaves": {
+    "value": 0,
+    "source": "Pinterest Business Overview, observed real-time estimate; QA may be included",
+    "observedAt": "2026-10-13",
+    "window": {
+      "start": "2026-09-13",
+      "end": "2026-10-13",
+      "timezone": "UTC"
+    }
+  },
+  "pinterestPinClicks": {
+    "value": 0,
+    "source": "Pinterest individual Pin01 Analytics, earlier snapshot before further QA",
+    "observedAt": "2026-10-13",
+    "window": {
+      "start": "2026-09-13",
+      "end": "2026-10-13",
+      "timezone": "UTC"
+    }
+  },
   "pinterestCountries": null,
   "amazonOrderedItems": null,
   "amazonShippedItems": null

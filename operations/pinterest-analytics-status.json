@@ -1,28 +1,33 @@
 {
-  "source": "Previously observed native Pinterest queue; current account access unavailable",
+  "source": "Pinterest native Business Overview and individual Pin Analytics, observed UI",
   "lastConfirmedScheduledCount": 10,
   "lastConfirmedOn": "2026-10-12",
-  "currentPublishedCount": null,
-  "currentScheduledCount": null,
-  "impressions": null,
-  "outboundClicksToPickPop": null,
-  "pinPublicUrls": null,
+  "currentPublishedCount": 1,
+  "currentScheduledCount": 10,
+  "impressions": 3,
+  "outboundClicksToPickPop": 0,
+  "pinPublicUrls": [
+    "https://br.pinterest.com/pin/651825746114439516/"
+  ],
   "latestReviewAttempt": {
     "attemptedAt": "2026-10-13",
-    "result": "unavailable-browser-runtime-error",
-    "note": "Inventory failed to write kernel assets, then direct native queue opening failed after reset. Public profile/boards also unavailable via web tool. No Pinterest account screen or current Analytics observed."
+    "result": "connected-native-ui-reviewed",
+    "note": "Runtime recovered. Publication/queue/individual stats/Overview/Audience/claim/profile observed. Other account domains explicitly kept blocked by owner."
   },
   "preservation": "First-round10 schedule records and all16 images preserved. Owner explicitly authorized Pins11–16 on13/10; approval is not platform execution. No new Pin uploaded, scheduled or published this run.",
-  "nextAction": "Recover official browser tool; inspect existing published Pins and native queue for duplicates/capacity, then execute approved-batch-11-16.json through native scheduler. No further batch approval needed. Record real platform IDs/URLs only after confirmation.",
-  "saves": null,
-  "pinClicks": null,
+  "nextAction": "After a previous Pin is officially published, inspect duplicates/current queue and schedule the next authorized Pin only if a native slot exists. No new approval required; read-only automation must not post.",
+  "saves": 0,
+  "pinClicks": 0,
   "countries": null,
-  "reportPeriod": null,
-  "reportTimezone": null,
-  "websiteClaimStatus": "unknown-not-observed",
-  "profileCurrentLanguage": "unknown-not-observed",
+  "reportPeriod": {
+    "start": "2026-09-13",
+    "end": "2026-10-13",
+    "timezone": "UTC"
+  },
+  "reportTimezone": "UTC",
+  "websiteClaimStatus": "claimed-confirmed-native-ui",
+  "profileCurrentLanguage": "Public bio and content English; owner UI remains Portuguese",
   "pendingApprovedPinIds": [
-    "pin-11",
     "pin-12",
     "pin-13",
     "pin-14",
@@ -37,5 +42,7 @@
     "endDate": "2026-10-28",
     "mode": "read-only",
     "executionRequires": "working browser tool, running app and legitimate authenticated account"
-  }
+  },
+  "websiteClaimConfirmedOn": "2026-10-13",
+  "profileBio": "Good finds. Better budgets. Practical buying guides for small kitchens, coffee routines, and everyday home organization. Explore source-reviewed picks and honest shopping checklists at PickPop."
 }

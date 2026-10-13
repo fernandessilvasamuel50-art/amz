@@ -51,7 +51,7 @@
   "nextAction": "Review after actual authorized Pinterest publishing, use a consistent time window, and record test windows. Netlify does not measure local finder events or Amazon outbound clicks.",
   "latestReviewAttempt": {
     "attemptedAt": "2026-10-13",
-    "result": "unavailable-browser-runtime-error",
-    "note": "cua.getState failed to write kernel assets before account discovery; failed again after reset. Previous sourced dashboard observations preserved; current figures/status unknown. No authentication or saved permission workaround."
+    "result": "saved-browser-domain-permission-denied-owner-keeps-blocked",
+    "note": "Runtime recovered but domain blocked. Owner explicitly chose to keep blocked and record current data unavailable. No workaround; prior observations preserved."
   }
 }

@@ -1,0 +1,51 @@
+{
+  "source": "Pinterest native Business Overview and individual Pin Analytics, observed UI",
+  "observedAt": "2026-10-13",
+  "observedAtUTC": "2026-10-13T19:17:28.308754+00:00",
+  "period": {
+    "start": "2026-09-13",
+    "end": "2026-10-13",
+    "timezone": "UTC"
+  },
+  "currentPublishedCount": 1,
+  "currentScheduledCount": 10,
+  "impressions": 3,
+  "saves": 0,
+  "pinClicks": 0,
+  "outboundClicksToPickPop": 0,
+  "countries": null,
+  "qualifiedVisitors": null,
+  "qaExcluded": false,
+  "note": "Overview latest captured:3impressions,0engagements/saves/outbound. Earlier individual Pin01 snapshot:1impression,0Pin clicks/saves/outbound; later owner close-up showed2impressions. Real-time snapshots differ; owner/agent QA may be included, never label impressions as qualified traffic. Audience countries insufficient; organic12–13Oct filter returned unavailable, not zero.",
+  "pinClickSource": "Individual Pin01 Analytics snapshot captured before further QA views",
+  "pins": [
+    {
+      "id": "pin-01",
+      "platformPinId": "651825746114439516",
+      "pinUrl": "https://br.pinterest.com/pin/651825746114439516/",
+      "publishedDate": "2026-10-12",
+      "publishedTime": null,
+      "period": {
+        "start": "2026-09-13",
+        "end": "2026-10-13",
+        "timezone": "UTC"
+      },
+      "impressions": 3,
+      "impressionSource": "Latest captured Overview top-Pin row",
+      "saves": 0,
+      "pinClicks": 0,
+      "outboundClicks": 0,
+      "qaMayBeIncluded": true,
+      "timePrecision": "publication date only"
+    }
+  ],
+  "organic12to13": {
+    "start": "2026-10-12",
+    "end": "2026-10-13",
+    "timezone": "UTC",
+    "contentType": "organic",
+    "status": "insufficient-data-realtime-unavailable",
+    "impressions": null,
+    "outboundClicks": null
+  }
+}

@@ -13,16 +13,20 @@
     "maxNewPinsPerDay": 1,
     "preserveExistingFirstRound": true,
     "accountProfileUrl": "https://br.pinterest.com/fernandessilvasamuel50/",
-    "executionConfirmed": false
+    "executionConfirmed": true,
+    "executionConfirmedPinIds": [
+      "pin-11"
+    ],
+    "executionScopeNote": "Only Pin11 native scheduling confirmed;12–16 remain authorized waitingqueuecapacity. This does not claim all6 executed."
   },
-  "state": "authorized-not-executed",
+  "state": "partially-executed-native-scheduler",
   "officialFutureQueueLimit": 10,
-  "accountQueueCountNow": null,
+  "accountQueueCountNow": 10,
   "accountTimeZoneNow": null,
   "pins": [
     {
       "id": "pin-11",
-      "status": "approved-pending-native-platform-check",
+      "status": "scheduled",
       "title": "Practical gifts for home lovers: ask three questions",
       "description": "A practical gift starts with the recipient. Would they enjoy the routine? Will it fit their space? Does it need extra supplies? Use the PickPop home-lover gift guide to compare thoughtful options without guessing their preferences. This PickPop page contains Amazon affiliate links. PickPop may earn a commission from qualifying purchases.",
       "primaryKeyword": "practical gifts for home lovers",
@@ -39,14 +43,14 @@
       "proposedDate": "2026-10-22",
       "proposedTimeDisplay": "18:00",
       "proposedTimeZone": null,
-      "scheduledAt": null,
+      "scheduledAt": "2026-10-22T18:00:00",
       "scheduledTimeZone": null,
-      "scheduledPinUrl": null,
+      "scheduledPinUrl": "https://br.pinterest.com/fernandessilvasamuel50/scheduled-pin/3942207151667041088/",
       "pinUrl": null,
       "publishedAt": null,
       "platformPinId": null,
-      "executionStatus": "blocked-browser-runtime-before-queue-verification",
-      "platformEvidence": null,
+      "executionStatus": "scheduled-confirmed",
+      "platformEvidence": "Native confirmation toast and official queue10Pins, then individual scheduled-Pin form confirming title/description/link/board/date22October/06:00PM.",
       "metrics": {
         "impressions": null,
         "saves": null,
@@ -57,11 +61,19 @@
         "timezone": null
       },
       "imageSha256": "d3eabdc045d303a034dc1c26fe06a7d8b19aeca0bf04388527ec5214dfebfbbc",
-      "scheduleConstraint": "Native tools only. Verify no duplicate and future queue count below10 before each confirmation. Preserve Pins01–10; one new Pin/day. Dates/hours proposed, never platform-confirmed."
+      "scheduleConstraint": "Native tools only. Verify no duplicate and future queue count below10 before each confirmation. Preserve Pins01–10; one new Pin/day. Dates/hours proposed, never platform-confirmed.",
+      "scheduledPinId": "3942207151667041088",
+      "scheduledAtDisplay": "22/10/2026 18:00 (Pinterest editor, timezone not displayed)",
+      "scheduleConfirmedOn": "2026-10-13",
+      "actualBoard": "Everyday Kitchen Essentials",
+      "aiDisclosureApplied": true,
+      "similarProductSuggestionsEnabled": false,
+      "nativeDraftPrepared": true,
+      "evidenceFile": "operations/private/pinterest-20261013/pin11-confirmed.jpg"
     },
     {
       "id": "pin-12",
-      "status": "approved-pending-native-platform-check",
+      "status": "approved-waiting-queue-capacity",
       "title": "Counter, tray, or cabinet? Plan your coffee station",
       "description": "Counter, tray, or cabinet: which coffee-station layout fits your routine? Compare daily access, portable grouping, and cabinet clearance. Read the PickPop guide to plan a setup that leaves useful room in your kitchen. This PickPop page contains Amazon affiliate links. PickPop may earn a commission from qualifying purchases.",
       "primaryKeyword": "coffee station organization ideas",
@@ -84,7 +96,7 @@
       "pinUrl": null,
       "publishedAt": null,
       "platformPinId": null,
-      "executionStatus": "blocked-browser-runtime-before-queue-verification",
+      "executionStatus": "waiting-native-queue-capacity",
       "platformEvidence": null,
       "metrics": {
         "impressions": null,
@@ -100,7 +112,7 @@
     },
     {
       "id": "pin-13",
-      "status": "approved-pending-native-platform-check",
+      "status": "approved-waiting-queue-capacity",
       "title": "Coffee makers for small apartments: one cup or a shared pot?",
       "description": "Compare a small manual coffee routine with a shared pour-over setup. PickPop explains supporting gear, space, and cleanup, with source-reviewed CHEMEX and AeroPress options. Capacity is not a promise of your finished drink size. Read the guide before choosing. This PickPop guide contains Amazon affiliate links. PickPop may earn a commission from qualifying purchases.",
       "primaryKeyword": "coffee makers for small apartments",
@@ -133,13 +145,13 @@
       "scheduledTimeZone": null,
       "scheduledPinUrl": null,
       "platformPinId": null,
-      "executionStatus": "blocked-browser-runtime-before-queue-verification",
+      "executionStatus": "waiting-native-queue-capacity",
       "platformEvidence": null,
       "imageSha256": "1648e1b826f7f1564eff130a2dc8fda61ff0bb9e2f6cd033cf3bc8d1f03a4337"
     },
     {
       "id": "pin-14",
-      "status": "approved-pending-native-platform-check",
+      "status": "approved-waiting-queue-capacity",
       "title": "Coffee station essentials: a grinder is not a brewer",
       "description": "Planning a coffee station? A Baratza Encore grinder and a CHEMEX brewer do different jobs. Use PickPop’s guide to compare your routine, supporting supplies, and cleanup space. You may already have part of the setup; buy for a missing task, not a matching look. This PickPop guide contains Amazon affiliate links. PickPop may earn a commission from qualifying purchases.",
       "primaryKeyword": "coffee station essentials",
@@ -172,13 +184,13 @@
       "scheduledTimeZone": null,
       "scheduledPinUrl": null,
       "platformPinId": null,
-      "executionStatus": "blocked-browser-runtime-before-queue-verification",
+      "executionStatus": "waiting-native-queue-capacity",
       "platformEvidence": null,
       "imageSha256": "0717268b4f67f211092ad96cf6857552f8b8f12a9d7354efc41a7937166ed9e3"
     },
     {
       "id": "pin-15",
-      "status": "approved-pending-native-platform-check",
+      "status": "approved-waiting-queue-capacity",
       "title": "Small-space kitchen tools: start with the meals you cook",
       "description": "Before adding kitchen tools to a small apartment, list the prep tasks you actually repeat. PickPop’s guide discusses useful tools, including a source-reviewed Victorinox Fibrox chef’s knife, with size and storage considerations. A full-size knife will not suit every space or user. This PickPop guide contains Amazon affiliate links. PickPop may earn a commission from qualifying purchases.",
       "primaryKeyword": "kitchen tools for small spaces",
@@ -211,13 +223,13 @@
       "scheduledTimeZone": null,
       "scheduledPinUrl": null,
       "platformPinId": null,
-      "executionStatus": "blocked-browser-runtime-before-queue-verification",
+      "executionStatus": "waiting-native-queue-capacity",
       "platformEvidence": null,
       "imageSha256": "8d1c50ab966f4f8790384dcbc849b73e64071e91cda12a4f88b8ba25c6c071ae"
     },
     {
       "id": "pin-16",
-      "status": "approved-pending-native-platform-check",
+      "status": "approved-waiting-queue-capacity",
       "title": "Before buying a cabinet organizer, check these three spaces",
       "description": "A cabinet organizer can fit inside and still be awkward to reach. Measure shelf depth, clearance, and the door opening before comparing a bin, shelf insert, or turntable. PickPop’s practical cabinet guide helps you try the layout first and buy for a specific access problem. This PickPop guide contains Amazon affiliate links. PickPop may earn a commission from qualifying purchases.",
       "primaryKeyword": "kitchen cabinet organizer buying checklist",
@@ -250,10 +262,21 @@
       "scheduledTimeZone": null,
       "scheduledPinUrl": null,
       "platformPinId": null,
-      "executionStatus": "blocked-browser-runtime-before-queue-verification",
+      "executionStatus": "waiting-native-queue-capacity",
       "platformEvidence": null,
       "imageSha256": "fb85511e6f071704844dcbc874b626d95fbacb97a6469f36b21cdb2945a0bdfe"
     }
   ],
-  "nextExecutableAction": "Recover official browser tool, inspect native queue and public Pins for duplicates; then schedule only available slots in proposed order, no prior-round changes."
+  "nextExecutableAction": "After a previous Pin is officially published, inspect duplicates/current queue and schedule the next authorized Pin only if a native slot exists. No new approval required; read-only automation must not post.",
+  "scheduledCountConfirmed": 1,
+  "executedPinIds": [
+    "pin-11"
+  ],
+  "remainingPinIds": [
+    "pin-12",
+    "pin-13",
+    "pin-14",
+    "pin-15",
+    "pin-16"
+  ]
 }
