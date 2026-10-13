@@ -48,7 +48,11 @@ const base=process.env.PICKPOP_TEST_URL||'http://127.0.0.1:8082';
    assert.equal(await page.locator('[data-placement="detail-intro"]').getAttribute('href'),item.affiliateUrl);
    if(item.buyingGuide){
     assert.equal(await page.locator('.buying-guidance').count(),1);
-    assert.equal(await page.locator('.buying-guidance a').getAttribute('href'),item.buyingGuide.guide);
+    const guideHref=await page.locator('.buying-guidance a').getAttribute('href');
+    assert([item.buyingGuide.guide,item.buyingGuide.guide.replace(/\.html$/,'')].includes(guideHref));
+    const guideResponse=await page.request.get(base+guideHref);
+    assert.equal(guideResponse.status(),200);
+    assert((await guideResponse.text()).includes(`href="https://pickpop.netlify.app${item.buyingGuide.guide}"`));
     assert.equal(await page.locator('meta[name="description"]').getAttribute('content'),item.buyingGuide.metaDescription);
     for(const width of [360,768,1440]){
      await page.setViewportSize({width,height:900});
