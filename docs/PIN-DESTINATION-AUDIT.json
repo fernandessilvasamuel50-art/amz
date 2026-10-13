@@ -1,0 +1,86 @@
+{
+  "reviewedAt": "2026-10-12",
+  "scope": "landing-page checks only; not Pinterest publication proof",
+  "pins": [
+    {
+      "id": "pin-01",
+      "title": "Coffee station ideas for a small kitchen",
+      "destination": "https://pickpop.netlify.app/guides/coffee-station.html?utm_source=pinterest&utm_medium=organic_social&utm_campaign=first_sales_14d&utm_content=pin-01",
+      "httpStatus": 200,
+      "canonical": "https://pickpop.netlify.app/guides/coffee-station.html",
+      "scheduleChanged": false
+    },
+    {
+      "id": "pin-02",
+      "title": "Before you buy a coffee maker for your apartment",
+      "destination": "https://pickpop.netlify.app/guides/coffee-maker-small-apartment.html?utm_source=pinterest&utm_medium=organic_social&utm_campaign=first_sales_14d&utm_content=pin-02",
+      "httpStatus": 200,
+      "canonical": "https://pickpop.netlify.app/guides/coffee-maker-small-apartment.html",
+      "scheduleChanged": false
+    },
+    {
+      "id": "pin-03",
+      "title": "Small kitchen organization starts with one clear counter",
+      "destination": "https://pickpop.netlify.app/guides/small-kitchen.html?utm_source=pinterest&utm_medium=organic_social&utm_campaign=first_sales_14d&utm_content=pin-03",
+      "httpStatus": 200,
+      "canonical": "https://pickpop.netlify.app/guides/small-kitchen.html",
+      "scheduleChanged": false
+    },
+    {
+      "id": "pin-04",
+      "title": "Kitchen essentials for small apartments: start with tasks",
+      "destination": "https://pickpop.netlify.app/guides/small-apartment-kitchen-essentials.html?utm_source=pinterest&utm_medium=organic_social&utm_campaign=first_sales_14d&utm_content=pin-04",
+      "httpStatus": 200,
+      "canonical": "https://pickpop.netlify.app/guides/small-apartment-kitchen-essentials.html",
+      "scheduleChanged": false
+    },
+    {
+      "id": "pin-05",
+      "title": "Coffee corner collection: plan the complete setup",
+      "destination": "https://pickpop.netlify.app/collections/coffee-corner/?utm_source=pinterest&utm_medium=organic_social&utm_campaign=first_sales_14d&utm_content=pin-05",
+      "httpStatus": 200,
+      "canonical": "https://pickpop.netlify.app/collections/coffee-corner/",
+      "scheduleChanged": false
+    },
+    {
+      "id": "pin-06",
+      "title": "Kitchen cabinet organization: measure first",
+      "destination": "https://pickpop.netlify.app/guides/kitchen-cabinet-organization.html?utm_source=pinterest&utm_medium=organic_social&utm_campaign=first_sales_14d&utm_content=pin-06",
+      "httpStatus": 200,
+      "canonical": "https://pickpop.netlify.app/guides/kitchen-cabinet-organization.html",
+      "scheduleChanged": false
+    },
+    {
+      "id": "pin-07",
+      "title": "Food storage containers: choose for the job",
+      "destination": "https://pickpop.netlify.app/guides/food-storage-containers.html?utm_source=pinterest&utm_medium=organic_social&utm_campaign=first_sales_14d&utm_content=pin-07",
+      "httpStatus": 200,
+      "canonical": "https://pickpop.netlify.app/guides/food-storage-containers.html",
+      "scheduleChanged": false
+    },
+    {
+      "id": "pin-08",
+      "title": "Coffee mugs and drinkware: the everyday checklist",
+      "destination": "https://pickpop.netlify.app/guides/drinkware-buying-guide.html?utm_source=pinterest&utm_medium=organic_social&utm_campaign=first_sales_14d&utm_content=pin-08",
+      "httpStatus": 200,
+      "canonical": "https://pickpop.netlify.app/guides/drinkware-buying-guide.html",
+      "scheduleChanged": false
+    },
+    {
+      "id": "pin-09",
+      "title": "Spice storage ideas: start with the location",
+      "destination": "https://pickpop.netlify.app/guides/spice-storage.html?utm_source=pinterest&utm_medium=organic_social&utm_campaign=first_sales_14d&utm_content=pin-09",
+      "httpStatus": 200,
+      "canonical": "https://pickpop.netlify.app/guides/spice-storage.html",
+      "scheduleChanged": false
+    },
+    {
+      "id": "pin-10",
+      "title": "Small kitchen collection: buy for a routine",
+      "destination": "https://pickpop.netlify.app/collections/small-kitchen/?utm_source=pinterest&utm_medium=organic_social&utm_campaign=first_sales_14d&utm_content=pin-10",
+      "httpStatus": 200,
+      "canonical": "https://pickpop.netlify.app/collections/small-kitchen/",
+      "scheduleChanged": false
+    }
+  ]
+}

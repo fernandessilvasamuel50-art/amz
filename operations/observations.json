@@ -1,6 +1,9 @@
 {
   "scope": "business-observations-only",
-  "period": {"start": "2026-10-09", "end": "2026-10-22"},
+  "period": {
+    "start": "2026-10-12",
+    "end": "2026-10-18"
+  },
   "marketingSpendBRL": 0,
   "visitors": null,
   "countries": null,
@@ -14,5 +17,6 @@
   "googleQueries": null,
   "amazonOrders": null,
   "amazonCommissionUSD": null,
-  "notes": "No business measurement exports available. Unknown is not zero. Local QA events must never populate this report. Orders and commissions require Amazon Associates official reports."
+  "notes": "Baseline da missão primeira venda, 12–18/10. Métricas desta janela indisponíveis: painéis Netlify/Search Console bloqueados por permissão; nenhum relatório Amazon recebido. Saídas medidas no PickPop e cliques registrados pela Amazon são indicadores distintos. O snapshot de hospedagem de 10/10 inclui QA e não é tráfego desta semana. Não calcular conversão entre contagens sem janela/fuso/método comparáveis. Nenhuma venda/comissão confirmada.",
+  "amazonReportedClicks": null
 }

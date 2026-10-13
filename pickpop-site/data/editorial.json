@@ -14,6 +14,18 @@
         "id": "baratza-encore-black",
         "reason": "For a routine that starts with whole beans: 40 stepped settings and a separate grounds bin support an existing filter brewer. Allow space and power; this is the original Encore, not the espresso-focused ESP."
       }
+    ],
+    "quickHeading": "Choose the piece your coffee routine is missing",
+    "quickIntro": "A brewer and a grinder solve different jobs. Start with the gap in your setup; you do not need to buy both.",
+    "quickChoices": [
+      {
+        "id": "chemex-six-cup",
+        "reason": "Need a manual brewer? The six-cup Classic brews and serves in one glass vessel. Plan compatible filters and heated water separately."
+      },
+      {
+        "id": "baratza-encore-black",
+        "reason": "Already have a brewer? The original Encore grinds whole beans for a filter-coffee routine. It does not brew coffee and is not the Encore ESP."
+      }
     ]
   },
   "coffee-maker-small-apartment.html": {
@@ -26,6 +38,18 @@
       {
         "id": "aeropress-go",
         "reason": "Its documented 8-fluid-ounce capacity suits a single serving, while the press packs into its mug. Choose based on servings and storage rather than assuming a manual brewer is automatic or makes pump-machine espresso."
+      }
+    ],
+    "quickHeading": "One serving or a shared carafe?",
+    "quickIntro": "These are manual options. If you want automatic brewing, use the method comparison below before choosing a machine.",
+    "quickChoices": [
+      {
+        "id": "chemex-six-cup",
+        "reason": "For a shared pour-over routine: 30 fluid ounces of manufacturer-listed capacity. Six 5-ounce cups do not mean six full mugs."
+      },
+      {
+        "id": "aeropress-go",
+        "reason": "For one serving and pack-away storage: the Go has an 8-fluid-ounce capacity and packs into its mug. Ground coffee and hot water are still needed."
       }
     ]
   },
@@ -51,6 +75,14 @@
       {
         "id": "victorinox-fibrox-chef",
         "reason": "A general prep knife for chopping, dicing and slicing, rather than a collection of single-task gadgets. Check the 8-inch blade against your hands, cutting board and protected storage."
+      }
+    ],
+    "quickHeading": "Start with the prep task you repeat",
+    "quickIntro": "A useful kitchen purchase should solve a task you already have. For chopping, compare blade fit and storage before adding more gadgets.",
+    "quickChoices": [
+      {
+        "id": "victorinox-fibrox-chef",
+        "reason": "For general chopping, slicing and dicing: an extra-wide black Fibrox chef's knife marketed as 8 inches. Check the blade against your hands, board and storage."
       }
     ]
   },

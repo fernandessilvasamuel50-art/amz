@@ -62,5 +62,21 @@
       "result": "not-accepted-daily-quota-exceeded",
       "url": "https://pickpop.netlify.app/guides/coffee-station.html"
     }
-  ]
+  ],
+  "latestReviewAttempt": {
+    "attemptedAt": "2026-10-12",
+    "accountStatus": "unavailable-browser-permission-denied",
+    "note": "Do not overwrite Oct10 observed Google processing/indexing status with a public HTTP inference."
+  },
+  "latestPublicTechnicalCheck": {
+    "checkedAtUTC": "2026-10-13T00:04:41.296638+00:00",
+    "sitemapHttpStatus": 200,
+    "contentType": "application/xml",
+    "redirect": false,
+    "validXmlUrls": 31,
+    "allListedPagesHttp200CanonicalIndexable": true,
+    "robotsAllowsCrawl": true,
+    "googleProcessingConfirmed": false,
+    "note": "Own release QA, not a Googlebot crawl/live inspection. No technical fault identified; no blind rewrite or resubmission."
+  }
 }

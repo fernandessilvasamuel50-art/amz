@@ -151,7 +151,30 @@ def photo_credit(item):
 def amazon_cta(item, placement):
     url, paid, label = safe_destination(item)
     note = 'Paid link. As an Amazon Associate I earn from qualifying purchases.' if paid else 'No paid affiliate link is active for this item.'
-    return f'<p class="affiliate-note">{ESC(note)}</p><a class="btn btn-coral" href="{ESC(url, quote=True)}" target="_blank" rel="noopener {"sponsored" if paid else "nofollow"}" referrerpolicy="strict-origin-when-cross-origin" data-product-id="{ESC(item["id"])}" data-placement="{placement}">{label} ↗</a><p class="p-small">Check the selected variant and current price on Amazon.</p>'
+    accessible = f'{label} for {item["name"]} (opens in a new tab)'
+    return f'<p class="affiliate-note">{ESC(note)}</p><a class="btn btn-coral" href="{ESC(url, quote=True)}" target="_blank" rel="noopener {"sponsored" if paid else "nofollow"}" referrerpolicy="strict-origin-when-cross-origin" aria-label="{ESC(accessible, quote=True)}" data-product-id="{ESC(item["id"])}" data-placement="{placement}">{label} ↗</a><p class="p-small">Check the selected variant and current price on Amazon.</p>'
+
+
+def buyer_guidance(item):
+    guide = item.get('buyingGuide')
+    if not guide:
+        return ''
+    if not re.fullmatch(r'/guides/[a-z-]+\.html', guide.get('guide', '')) or not all(guide.get(key) for key in ['goodFit', 'considerAlternative', 'checklist', 'guideLabel', 'metaDescription']):
+        raise ValueError('Buying guidance requires an internal guide and editorial decision facts')
+    return '<section class="buying-guidance" aria-label="Buying decision"><h2>Is this the right fit?</h2><p><strong>A good fit if:</strong> ' + ESC(guide['goodFit']) + '</p><p><strong>Consider another option if:</strong> ' + ESC(guide['considerAlternative']) + '</p><h3>Check before buying</h3><ul>' + ''.join('<li>' + ESC(fact) + '</li>' for fact in guide['checklist']) + '</ul><a class="text-link" href="' + ESC(guide['guide'], quote=True) + '">' + ESC(guide['guideLabel']) + ' →</a></section>'
+
+
+def article_shortlist(filename):
+    edit = EDITORIAL[filename]
+    by_id = {item['id']: item for item in CATALOG['items']}
+    choices = edit.get('quickChoices', [])
+    if not choices or len(choices) > 3 or any(c.get('id') not in by_id or not c.get('reason', '').strip() for c in choices):
+        raise ValueError('An early shortlist needs up to three verified products and useful reasons')
+    cards = []
+    for choice in choices:
+        item = by_id[choice['id']]
+        cards.append(f'<article class="buyer-choice"><div class="buyer-choice-heading">{photo(item, "buyer-choice-photo")}<div><p class="product-category">{ESC(item["brand"])}</p><h3><a href="/ideas/{item["id"]}/">{ESC(item["name"])}</a></h3></div></div><p>{ESC(choice["reason"])}</p>{amazon_cta(item, "article-shortlist")}<a class="text-link" href="/ideas/{item["id"]}/">Details, limitations & photo credit →</a></article>')
+    return '<section class="buyer-shortlist" aria-label="Choose for your routine"><h2>' + ESC(edit['quickHeading']) + '</h2><p>' + ESC(edit['quickIntro']) + '</p><div class="buyer-shortlist-grid">' + ''.join(cards) + '</div><a class="text-link" href="#related-picks">More options and considerations below →</a></section>'
 
 
 def static_card(item, reason=None, placement='collection'):
@@ -165,7 +188,7 @@ def article_picks(filename):
     for choice in edit['items']:
         if choice['id'] not in by_id or not choice['reason'].strip():
             raise ValueError('Article recommendation needs a verified product and a reason')
-    return '<section class="article-picks" aria-label="Related product recommendations"><h2>' + ESC(edit['heading']) + '</h2><p>Source-reviewed options, not hands-on reviews or a ranked list. Prices and stock are checked on Amazon.</p><div class="article-picks-grid">' + ''.join(static_card(by_id[c['id']], c['reason'], 'article') for c in edit['items']) + '</div></section>'
+    return '<section class="article-picks" id="related-picks" aria-label="Related product recommendations"><h2>' + ESC(edit['heading']) + '</h2><p>Source-reviewed options, not hands-on reviews or a ranked list. Prices and stock are checked on Amazon.</p><div class="article-picks-grid">' + ''.join(static_card(by_id[c['id']], c['reason'], 'article') for c in edit['items']) + '</div></section>'
 
 
 def generate():
@@ -185,6 +208,10 @@ def generate():
             if '<!-- VERIFIED PICKS -->' not in body:
                 raise ValueError('Missing article recommendation marker: ' + file.name)
             body = body.replace('<!-- VERIFIED PICKS -->', article_picks(file.name))
+            if EDITORIAL[file.name].get('quickChoices'):
+                if '<!-- BUYER SHORTLIST -->' not in body:
+                    raise ValueError('Missing early buyer shortlist marker: ' + file.name)
+                body = body.replace('<!-- BUYER SHORTLIST -->', article_shortlist(file.name))
         route = '/guides/' + file.name
         schema = {'@context': 'https://schema.org', '@type': 'Article', 'headline': html.unescape(title.split(' | ')[0]), 'description': html.unescape(description), 'inLanguage': 'en-US', 'mainEntityOfPage': ORIGIN + route, 'author': {'@type': 'Organization', 'name': 'PickPop'}, 'publisher': {'@type': 'Organization', 'name': 'PickPop'}}
         page(route, title, html.unescape(description), body, kind='article', schema=schema)
@@ -214,8 +241,8 @@ def generate():
         disclosure = '<p class="affiliate-note">Paid link. As an Amazon Associate I earn from qualifying purchases.</p>' if paid else '<p class="p-small">No paid affiliate link is active for this idea.</p>'
         tags = ', '.join(LABELS[style] for style in item['styles'])
         sources_html = ''.join('<li><a href="' + ESC(url, quote=True) + '" target="_blank" rel="noopener noreferrer">' + ESC(urlparse(url).hostname) + ' product information</a></li>' for url in item['verification']['sources'])
-        content = f'''<div class="shell page-shell"><nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a> / <a href="/collections/">Collections</a> / {ESC(item['name'])}</nav><div class="idea-layout"><figure class="idea-illustration product-detail-photo">{photo(item, "detail-photo")}{photo_credit(item)}</figure><article class="idea-copy"><p class="overline">{ESC(status)}</p><h1>{ESC(item['name'])}</h1><p>{ESC(item['description'])}</p>{amazon_cta(item, 'detail-intro')}<h2>Why consider this product?</h2><p>{ESC(item['benefits'][0])} The discovery tags ({ESC(tags.lower())}) are PickPop editorial choices, not manufacturer claims.</p><h2>Before you choose</h2><ul>{''.join('<li>'+ESC(text)+'</li>' for text in item['considerations'])}</ul><h2>What we know</h2><p><strong>{ESC(item.get("brand", ""))}</strong> · Model: {ESC(item.get("model", ""))} · ASIN: {ESC(item.get("asin", ""))}</p>{facts}<h2>Sources & verification</h2><p>Reviewed {ESC(item["verification"]["reviewedAt"])}. Model identity and listed characteristics are source reviewed; current price and availability are not verified. These are editorial recommendations, not hands-on tests.</p><ul class="source-list">{sources_html}</ul>{disclosure}<a class="btn btn-coral" href="{ESC(url, quote=True)}" target="_blank" rel="noopener {'sponsored' if paid else 'nofollow'}" referrerpolicy="strict-origin-when-cross-origin" data-product-id="{ESC(item['id'])}" data-placement="detail">{label} ↗</a><p class="p-small">Opens Amazon in a new tab. Check the specific product, final price, taxes, delivery, and returns there. PickPop does not sell or fulfill orders.</p><a class="text-link" href="/find/?{ESC(urlencode({'q': item['name']}), quote=True)}#finder">Back to the finder →</a></article></div></div>'''
-        page('/ideas/' + item['id'] + '/', item['name'] + ' — What to Consider | PickPop', 'Explore this ' + ('example shopping concept' if demo else 'sourced recommendation') + ' and practical questions to ask before choosing: ' + item['name'] + '.', content, index=not demo)
+        content = f'''<div class="shell page-shell"><nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a> / <a href="/collections/">Collections</a> / {ESC(item['name'])}</nav><div class="idea-layout"><figure class="idea-illustration product-detail-photo">{photo(item, "detail-photo")}{photo_credit(item)}</figure><article class="idea-copy"><p class="overline">{ESC(status)}</p><h1>{ESC(item['name'])}</h1><p>{ESC(item['description'])}</p>{amazon_cta(item, 'detail-intro')}{buyer_guidance(item)}<h2>Why consider this product?</h2><p>{ESC(item['benefits'][0])} The discovery tags ({ESC(tags.lower())}) are PickPop editorial choices, not manufacturer claims.</p><h2>Before you choose</h2><ul>{''.join('<li>'+ESC(text)+'</li>' for text in item['considerations'])}</ul><h2>What we know</h2><p><strong>{ESC(item.get("brand", ""))}</strong> · Model: {ESC(item.get("model", ""))} · ASIN: {ESC(item.get("asin", ""))}</p>{facts}<h2>Sources & verification</h2><p>Reviewed {ESC(item["verification"]["reviewedAt"])}. Model identity and listed characteristics are source reviewed; current price and availability are not verified. These are editorial recommendations, not hands-on tests.</p><ul class="source-list">{sources_html}</ul>{disclosure}<a class="btn btn-coral" href="{ESC(url, quote=True)}" target="_blank" rel="noopener {'sponsored' if paid else 'nofollow'}" referrerpolicy="strict-origin-when-cross-origin" data-product-id="{ESC(item['id'])}" data-placement="detail">{label} ↗</a><p class="p-small">Opens Amazon in a new tab. Check the specific product, final price, taxes, delivery, and returns there. PickPop does not sell or fulfill orders.</p><a class="text-link" href="/find/?{ESC(urlencode({'q': item['name']}), quote=True)}#finder">Back to the finder →</a></article></div></div>'''
+        page('/ideas/' + item['id'] + '/', item['name'] + ' — What to Consider | PickPop', item.get('buyingGuide', {}).get('metaDescription') or 'Explore this ' + ('example shopping concept' if demo else 'sourced recommendation') + ' and practical questions to ask before choosing: ' + item['name'] + '.', content, index=not demo)
 
     page('/image-credits/', 'Product Photography Credits & Licenses | PickPop', 'Authors, original sources, documented image permissions, and modifications for PickPop product photographs.', intro('The people behind <em>the pictures.</em>', 'Product photography, credited where it belongs.', 'PHOTO CREDITS') + '<div class="shell policy-body">' + ''.join('<h2>' + ESC(item['name']) + '</h2>' + photo_credit(item) for item in CATALOG['items']) + '</div>')
 

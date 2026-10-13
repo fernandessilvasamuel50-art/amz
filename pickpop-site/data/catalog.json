@@ -67,7 +67,18 @@
         "aesthetic-design",
         "gift-giving"
       ],
-      "retailerName": "Chemex Pour-Over Glass Coffeemaker - Classic Series - 6-Cup - Exclusive Packaging"
+      "retailerName": "Chemex Pour-Over Glass Coffeemaker - Classic Series - 6-Cup - Exclusive Packaging",
+      "buyingGuide": {
+        "goodFit": "You want a hands-on pour-over routine and a glass vessel for brewing and serving. The six-cup label means 30 fluid ounces using CHEMEX's 5-ounce cup definition, not six full-size mugs.",
+        "considerAlternative": "You want automatic brewing or do not want to plan for compatible filters and a separate way to heat water.",
+        "checklist": [
+          "Choose the six-cup Classic CM-6A with wood collar; other capacities and handle styles are different products.",
+          "Check compatible filter supplies, working space and the complete current retailer cost."
+        ],
+        "guide": "/guides/coffee-maker-small-apartment.html",
+        "guideLabel": "Compare manual coffee routines",
+        "metaDescription": "Considering the CHEMEX six-cup CM-6A? Check its 30-fluid-ounce capacity, manual brewing routine, filter needs and source-reviewed considerations."
+      }
     },
     {
       "id": "logitech-m185",
@@ -698,7 +709,18 @@
       ],
       "priorities": [
         "everyday-convenience"
-      ]
+      ],
+      "buyingGuide": {
+        "goodFit": "You already have a filter-coffee brewer and want to grind whole beans with an electric burr grinder. The original Encore has 40 stepped settings and a separate grounds bin.",
+        "considerAlternative": "Espresso is your main goal or you need a brewer as well as a grinder. This is the original Encore, not the Encore ESP or an all-in-one coffee machine.",
+        "checklist": [
+          "Choose the original black Encore / ZCG485BLK; do not substitute Encore ESP specifications.",
+          "Check US electrical compatibility, room for the grinder and the current seller, final price and return terms."
+        ],
+        "guide": "/guides/coffee-station.html",
+        "guideLabel": "Plan a coffee station around your routine",
+        "metaDescription": "Considering the original black Baratza Encore? Compare its 40 settings, filter-coffee role, space needs and limitations before opening the Amazon listing."
+      }
     },
     {
       "id": "victorinox-fibrox-chef",
@@ -776,7 +798,18 @@
       "priorities": [
         "everyday-convenience",
         "small-spaces"
-      ]
+      ],
+      "buyingGuide": {
+        "goodFit": "You need a general prep knife for chopping, slicing and dicing rather than another single-task gadget. This black Fibrox model has an extra-wide blade marketed as 8 inches.",
+        "considerAlternative": "You need a shorter blade for small detailed work, or the size does not suit your hands, cutting board or protected storage.",
+        "checklist": [
+          "Match the black Fibrox 5.2063.20 / US retail 45520; other blade lengths and handle families are different products.",
+          "Check the care instructions, a suitable cutting board, storage and the complete current retailer cost."
+        ],
+        "guide": "/guides/small-apartment-kitchen-essentials.html",
+        "guideLabel": "Build a task-first kitchen checklist",
+        "metaDescription": "Considering the Victorinox Fibrox 8-inch chef's knife? Check the black 5.2063.20 model, everyday prep tasks, blade fit, care and storage before buying."
+      }
     }
   ]
 }
