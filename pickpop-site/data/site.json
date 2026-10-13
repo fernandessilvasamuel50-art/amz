@@ -6,8 +6,10 @@
   "affiliate": {
     "enabled": true,
     "approved": true,
-    "associateTag": "pickpop03-20",
-    "confirmation": "Owner confirmed initial US Associates enrollment and updated the official tag on 2026-10-08; Amazon manages final account review."
+    "associateTag": "pickpop-20",
+    "confirmation": "Owner corrected the account mapping on 2026-10-12 after checking Amazon accounts: pickpop-20 belongs to US; pickpop03-20 belongs to Brazil. Official Link Checker and account attribution remain pending.",
+    "marketplace": "US",
+    "retailerHost": "www.amazon.com"
   },
   "amazonContent": {
     "enabled": false,

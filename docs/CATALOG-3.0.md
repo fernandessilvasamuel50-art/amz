@@ -1,5 +1,8 @@
 # Cadastro e manutenção do catálogo real
 
+> Correção em 12/10/2026: Amazon.com (EUA) usa **pickpop-20**; **pickpop03-20** pertence ao Brasil, conforme conferência do proprietário. Referências anteriores à tag brasileira como americana são históricas e foram invalidadas. Use as instruções atuais em [US-AFFILIATE-TAG-CORRECTION.md](US-AFFILIATE-TAG-CORRECTION.md).
+
+
 O catálogo público é `pickpop-site/data/catalog.json`. A configuração comercial está em `pickpop-site/data/site.json`; a tag vigente é **pickpop03-20**. A tag é pública, não uma senha ou chave de API.
 
 Para cadastrar um item:

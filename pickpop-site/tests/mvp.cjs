@@ -116,7 +116,7 @@ const output = path.join(__dirname, 'artifacts');
         const links = await page.locator('a[href^="/"]').evaluateAll(elements => [...new Set(elements.map(el => el.getAttribute('href').split('#')[0].split('?')[0] || '/'))]);
         if (width === 1440) for (const href of links) assert.equal((await page.request.get(base + href)).status(), 200, `Broken link on ${route}: ${href}`);
         const retailers = await page.locator('a[href^="https://www.amazon.com/"]').evaluateAll(elements => elements.map(el => ({ href: el.href, rel: el.rel })));
-        assert(retailers.every(link => link.rel.includes('noopener') && (!new URL(link.href).searchParams.has('tag') || (new URL(link.href).searchParams.get('tag') === 'pickpop03-20' && link.rel.includes('sponsored')))));
+        assert(retailers.every(link => link.rel.includes('noopener') && (!new URL(link.href).searchParams.has('tag') || (new URL(link.href).searchParams.get('tag') === 'pickpop-20' && link.rel.includes('sponsored')))));
         const photos = page.locator('img[src^="/assets/products/"]');
         for (const image of await photos.all()) {
           await image.scrollIntoViewIfNeeded();

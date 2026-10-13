@@ -22,7 +22,7 @@ const base=process.env.PICKPOP_TEST_URL||'http://127.0.0.1:8082';
   let outgoing;
   await context.route('https://www.amazon.com/**',async route=>{outgoing={url:route.request().url(),headers:await route.request().allHeaders()};await route.fulfill({status:200,contentType:'text/html',body:'<title>Local navigation fixture</title>'});});
   const popupPromise=context.waitForEvent('page');await page.locator('a[data-placement="detail-intro"]').click();const popup=await popupPromise;await popup.waitForLoadState();
-  assert.equal(new URL(outgoing.url).searchParams.get('tag'),'pickpop03-20');assert.equal(outgoing.headers.referer,base+'/');await popup.close();
+  assert.equal(new URL(outgoing.url).searchParams.get('tag'),'pickpop-20');assert.equal(outgoing.headers.referer,base+'/');await popup.close();
   // Outbound navigation intercepted: no Amazon request or test click is sent to the account.
   await page.goto(base+'/find/');await page.waitForFunction(()=>!document.querySelector('#product-search').disabled);
   assert.equal(await page.locator('#local-diagnostics').isVisible(),false);

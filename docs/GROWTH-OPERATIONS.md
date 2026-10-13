@@ -1,6 +1,13 @@
 # Operação primeiras vendas — atualizado em 2026-10-10
 
-## Estado atual e próxima ação
+> Correção em 12/10/2026: Amazon.com (EUA) usa **pickpop-20**; **pickpop03-20** pertence ao Brasil, conforme conferência do proprietário. Referências anteriores à tag brasileira como americana são históricas e foram invalidadas. Use as instruções atuais em [US-AFFILIATE-TAG-CORRECTION.md](US-AFFILIATE-TAG-CORRECTION.md).
+
+
+## Atualização prioritária — 12/10/2026
+
+Amazon.com agora usa exclusivamente `pickpop-20`, conforme correção de país informada pelo proprietário. Onze produtos preservados, sem alterações Pinterest. Importador/build/navegador impedem reintrodução da tag brasileira. Consulte `US-AFFILIATE-TAG-CORRECTION.md` e `AFFILIATE-AUDIT.csv`; validação oficial da conta US ainda pendente. Os registros abaixo descrevem releases anteriores à correção.
+
+## Histórico de estado e próxima ação
 
 **Site atualizado e verificado:** https://pickpop.netlify.app/. Implementação `3ee2eb5`, atualização de privacidade `2dbb143` em `main`, com histórico em `codex/first-sales`. Retorno anterior preservado em `ca90fc7`, tag remota `pickpop-before-growth-20261009`. Sem gastos, alteração de DNS, criação de credenciais ou promessa de receita.
 

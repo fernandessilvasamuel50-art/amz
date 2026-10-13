@@ -66,11 +66,23 @@ test('authorized prices fail closed for disabled, stale, future, or unauthorized
 test('owner tag activates verified direct product links; disabled mode falls back to public URLs', () => {
   for (const item of items) {
     const link = retailerDestination(item, config); assert.equal(link.sponsored, true);
-    const url = new URL(link.url); assert.equal(url.hostname, 'www.amazon.com'); assert.equal(url.pathname, '/dp/' + item.asin); assert.equal(url.searchParams.get('tag'), 'pickpop03-20');
+    const url = new URL(link.url); assert.equal(url.hostname, 'www.amazon.com'); assert.equal(url.pathname, '/dp/' + item.asin); assert.equal(url.searchParams.get('tag'), 'pickpop-20');
     const ordinary = retailerDestination(item, { ...config, affiliate: { enabled: false } }); assert.equal(ordinary.sponsored, false); assert.equal(ordinary.url, item.productUrl);
   }
   for (const value of ['javascript:alert(1)', 'https://amazon.com.evil.test/item', 'https://user:pass@amazon.com/item', 'http://amazon.com/item']) assert.equal(safeAmazonURL(value), null);
   const bad = { ...items[0], affiliateUrl: items[0].productUrl + '?tag=someone-else-20' }; assert.equal(retailerDestination(bad, config).sponsored, false);
+});
+test('Brazil tag or marketplace drift cannot activate paid Amazon.com links', () => {
+  const item = items[0];
+  const brazilItem = { ...item, affiliateUrl: item.productUrl + '?tag=pickpop03-20' };
+  for (const changes of [{ associateTag: 'pickpop03-20' }, { marketplace: 'BR' }, { retailerHost: 'www.amazon.com.br' }]) {
+    const invalid = { ...config, affiliate: { ...config.affiliate, ...changes } };
+    for (const record of [item, brazilItem]) {
+      const link = retailerDestination(record, invalid);
+      assert.equal(link.sponsored, false); assert.equal(link.url, item.productUrl);
+    }
+  }
+  assert.equal(retailerDestination(brazilItem, config).sponsored, false);
 });
 test('Amazon provider is disabled and never calls a transport by default', async () => {
   let calls = 0; const api = new AmazonCreatorsApiProvider({ transport: async () => { calls++; } });

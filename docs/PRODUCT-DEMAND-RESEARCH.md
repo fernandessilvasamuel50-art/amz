@@ -1,5 +1,8 @@
 # Seleção comercial baseada em evidências — PickPop
 
+> Correção em 12/10/2026: Amazon.com (EUA) usa **pickpop-20**; **pickpop03-20** pertence ao Brasil, conforme conferência do proprietário. Referências anteriores à tag brasileira como americana são históricas e foram invalidadas. Use as instruções atuais em [US-AFFILIATE-TAG-CORRECTION.md](US-AFFILIATE-TAG-CORRECTION.md).
+
+
 Consulta: **2026-10-12, America/Manaus**. Baseline: 12 ativos no commit `2d87d87` (release `35dcb60`). Auditados os 12; pesquisados oito candidatos. Este documento é interno, não é servido no build. Valores, rankings e avaliações não foram adicionados ao site.
 
 ## Método e limites

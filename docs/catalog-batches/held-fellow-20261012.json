@@ -18,7 +18,7 @@
     "price": null,
     "asin": "B0BF7HJ8MX",
     "productUrl": "https://www.amazon.com/dp/B0BF7HJ8MX",
-    "affiliateUrl": "https://www.amazon.com/dp/B0BF7HJ8MX?tag=pickpop03-20",
+    "affiliateUrl": "https://www.amazon.com/dp/B0BF7HJ8MX?tag=pickpop-20",
     "retailerName": "Fellow Stagg EKG Pro Gooseneck Electric Kettle for Pour-Over Coffee, Tea",
     "verification": {
       "status": "verified",
@@ -39,7 +39,7 @@
     "affiliateVerification": {
       "status": "owner-tag-confirmed",
       "reviewedAt": "2026-10-12",
-      "method": "Amazon US ASIN, model and walnut color reviewed; direct link tagged pickpop03-20. URL validation does not confirm commissions."
+      "method": "Amazon US ASIN, model and walnut color reviewed; direct link tagged pickpop-20. URL validation does not confirm commissions. US tag corrected per owner account mapping on 2026-10-12; official Link Checker remains pending."
     },
     "image": {
       "type": "photo",

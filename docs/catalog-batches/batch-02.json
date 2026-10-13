@@ -7,7 +7,7 @@
       "brand": "AeroPress",
       "model": "Go (15A01)",
       "category": "kitchen",
-      "emoji": "✳",
+      "emoji": "âœ³",
       "color": "#ffe3dc",
       "chip": "Source reviewed",
       "description": "A compact manual coffee press that packs into its own mug for a small coffee corner or a travel bag.",
@@ -17,7 +17,7 @@
       "price": null,
       "asin": "B07YVL8SF3",
       "productUrl": "https://www.amazon.com/dp/B07YVL8SF3",
-      "affiliateUrl": "https://www.amazon.com/dp/B07YVL8SF3?tag=pickpop03-20",
+      "affiliateUrl": "https://www.amazon.com/dp/B07YVL8SF3?tag=pickpop-20",
       "retailerName": "AeroPress Go Extra Small Portable Coffee Maker Kit",
       "verification": {
         "status": "verified",
@@ -32,13 +32,13 @@
           "amazonTitle": "AeroPress Go Extra Small Portable Coffee Maker Kit",
           "manufacturerModel": "Manufacturer identifies the compact Go travel system with 8 oz capacity and a mug with a red silicone lid. Amazon identifies Model Name AeroPress Go and Model Number 15A01; not Original, Go Plus or a filter-cap bundle.",
           "variantMatch": "The selected ASIN is the Go travel kit. The Go chamber has red lettering and three numbered marks, unlike the larger Original visible in alternative research photos. Manufacturer product text and independent photographer's Go identification agree.",
-          "photoMatch": "Bex Walton's licensed image 49770783416 is explicitly titled AeroPress Go and was visually inspected: compact grey chamber with red AeroPress lettering and marks 1–3, filter cap, folding stirrer and scoop. No other brewer appears. The photo shows only part of the kit; current packaging and all included accessories are not asserted. Manufacturer browser image comparison was unavailable due to a denied domain; no bypass or downloaded factory photograph was used."
+          "photoMatch": "Bex Walton's licensed image 49770783416 is explicitly titled AeroPress Go and was visually inspected: compact grey chamber with red AeroPress lettering and marks 1â€“3, filter cap, folding stirrer and scoop. No other brewer appears. The photo shows only part of the kit; current packaging and all included accessories are not asserted. Manufacturer browser image comparison was unavailable due to a denied domain; no bypass or downloaded factory photograph was used."
         }
       },
       "affiliateVerification": {
         "status": "owner-tag-confirmed",
         "reviewedAt": "2026-10-12",
-        "method": "Direct Amazon.com ASIN destination reviewed without affiliate test navigation. The configured owner tag is pickpop03-20. URL checks do not prove commission attribution."
+        "method": "Direct Amazon.com ASIN destination reviewed without affiliate test navigation. The configured owner tag is pickpop-20. URL checks do not prove commission attribution. US tag corrected per owner account mapping on 2026-10-12; official Link Checker remains pending."
       },
       "image": {
         "type": "photo",
@@ -74,11 +74,11 @@
     },
     {
       "id": "kuhn-rikon-swiss-peeler-blue",
-      "name": "Kuhn Rikon Original Swiss Peeler — Blue",
+      "name": "Kuhn Rikon Original Swiss Peeler â€” Blue",
       "brand": "Kuhn Rikon",
       "model": "2771",
       "category": "kitchen",
-      "emoji": "✳",
+      "emoji": "âœ³",
       "color": "#e6edff",
       "chip": "Source reviewed",
       "description": "A small Y-shaped peeler with a carbon steel blade and potato-eye remover for everyday fruit and vegetable prep.",
@@ -88,7 +88,7 @@
       "price": null,
       "asin": "B001AQI3J8",
       "productUrl": "https://www.amazon.com/dp/B001AQI3J8",
-      "affiliateUrl": "https://www.amazon.com/dp/B001AQI3J8?tag=pickpop03-20",
+      "affiliateUrl": "https://www.amazon.com/dp/B001AQI3J8?tag=pickpop-20",
       "retailerName": "Kuhn Rikon Original Swiss Peeler",
       "verification": {
         "status": "verified",
@@ -109,7 +109,7 @@
       "affiliateVerification": {
         "status": "owner-tag-confirmed",
         "reviewedAt": "2026-10-12",
-        "method": "Amazon ASIN, blue variation, model and GTIN reviewed without affiliate test navigation. Direct remunerated URL uses the configured pickpop03-20 tag; attribution requires Amazon's official reports."
+        "method": "Amazon ASIN, blue variation, model and GTIN reviewed without affiliate test navigation. Direct remunerated URL uses the configured pickpop-20 tag; attribution requires Amazon's official reports. US tag corrected per owner account mapping on 2026-10-12; official Link Checker remains pending."
       },
       "image": {
         "type": "photo",

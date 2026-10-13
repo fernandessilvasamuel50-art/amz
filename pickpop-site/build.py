@@ -5,7 +5,7 @@ import re
 import shutil
 from pathlib import Path
 from urllib.parse import urlencode, urlparse
-from catalog_validation import validate_catalog
+from catalog_validation import validate_catalog, validate_affiliate_config
 
 ROOT = Path(__file__).resolve().parent
 TEMPLATES = ROOT / 'templates'
@@ -25,6 +25,7 @@ def source(name):
 
 
 def validate():
+    validate_affiliate_config(CONFIG)
     permissions_path = ROOT / 'data/image-permissions.json'
     permissions = json.loads(permissions_path.read_text(encoding='utf-8')) if permissions_path.exists() else {}
     validate_catalog(CATALOG, ROOT, CONFIG['affiliate']['associateTag'], permissions)

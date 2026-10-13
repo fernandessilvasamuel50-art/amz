@@ -1,5 +1,8 @@
 # Pesquisa operacional — 9 de outubro de 2026
 
+> Correção em 12/10/2026: Amazon.com (EUA) usa **pickpop-20**; **pickpop03-20** pertence ao Brasil, conforme conferência do proprietário. Referências anteriores à tag brasileira como americana são históricas e foram invalidadas. Use as instruções atuais em [US-AFFILIATE-TAG-CORRECTION.md](US-AFFILIATE-TAG-CORRECTION.md).
+
+
 ## Amazon e atribuição
 
 [Políticas oficiais atuais](https://affiliate-program.amazon.com/help/operating/policies) consultadas; links diretos HTTPS Amazon.com `/dp/ASIN?tag=pickpop03-20`, tag central, divulgação junto aos botões e `rel="sponsored"`. Os links não passam por redirecionador. A política de origem foi mantida em `strict-origin-when-cross-origin`: o navegador informa a origem do PickPop, sem transmitir caminho ou busca. Retirar `noreferrer` não prova que cliques anteriores perderam comissões.

@@ -52,7 +52,7 @@ const base=process.env.PICKPOP_TEST_URL||'http://127.0.0.1:8082';
    await page.locator('img[src="/assets/products/instant-rio-mini-black.webp"]').evaluate(img=>img.decode());
    assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));
    const link=page.locator('[data-placement="detail-intro"]');
-   assert.equal(await link.getAttribute('href'),'https://www.amazon.com/dp/B0F9B923NC?tag=pickpop03-20');
+   assert.equal(await link.getAttribute('href'),'https://www.amazon.com/dp/B0F9B923NC?tag=pickpop-20');
    assert((await link.getAttribute('rel')).includes('sponsored'));
    assert((await page.locator('.photo-credit').textContent()).includes('manufacturer permission'));
    await page.evaluate(axe);const audit=await page.evaluate(async()=>window.axe.run(document,{preload:false,runOnly:{type:'tag',values:['wcag2a','wcag2aa','wcag21aa','wcag22aa']}}));

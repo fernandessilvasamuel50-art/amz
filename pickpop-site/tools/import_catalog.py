@@ -9,7 +9,7 @@ import sys
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
-from catalog_validation import item_errors, validate_catalog
+from catalog_validation import item_errors, validate_catalog, validate_affiliate_config
 
 
 def plan(existing, batch, root, tag, permissions):
@@ -43,6 +43,7 @@ def main():
     args = parser.parse_args()
     catalog_path = ROOT / 'data/catalog.json'
     config = json.loads((ROOT / 'data/site.json').read_text(encoding='utf-8'))
+    validate_affiliate_config(config)
     permissions_path = ROOT / 'data/image-permissions.json'
     permissions = json.loads(permissions_path.read_text(encoding='utf-8')) if permissions_path.exists() else {}
     original = catalog_path.read_bytes()

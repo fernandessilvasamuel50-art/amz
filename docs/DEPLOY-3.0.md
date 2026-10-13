@@ -1,5 +1,8 @@
 # PickPop 3.0 — publicação verificada
 
+> Correção em 12/10/2026: Amazon.com (EUA) usa **pickpop-20**; **pickpop03-20** pertence ao Brasil, conforme conferência do proprietário. Referências anteriores à tag brasileira como americana são históricas e foram invalidadas. Use as instruções atuais em [US-AFFILIATE-TAG-CORRECTION.md](US-AFFILIATE-TAG-CORRECTION.md).
+
+
 Publicação autorizada pelo proprietário em **https://pickpop.netlify.app/**, pela integração Git existente. O commit de aplicação `127d034` foi integrado em `main` e enviado em 8 de outubro de 2026 UTC. Nenhum serviço pago, alteração de DNS ou nova credencial foi necessário. Não havia acesso autenticado ao painel Netlify; o resultado foi confirmado no próprio domínio.
 
 ## Conteúdo confirmado em produção

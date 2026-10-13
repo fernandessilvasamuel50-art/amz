@@ -85,7 +85,7 @@ def validate():
         assert origin + '/ideas/' + item['id'] + '/' in locations
         assert item['image']['authorized'] and item['image']['variantReviewed']
         assert target(item['image']['src']).is_file()
-        assert item['affiliateUrl'] == item['productUrl'] + '?tag=pickpop03-20'
+        assert item['affiliateUrl'] == item['productUrl'] + '?tag=pickpop-20'
     assert len(list((ROOT / 'templates/articles').glob('*.html'))) >= 10
     assert all(target(url).is_file() for url in locations)
     assert 'Sitemap: ' + origin + '/sitemap.xml' in (DIST / 'robots.txt').read_text()

@@ -18,6 +18,17 @@ CATEGORIES = {'kitchen', 'home', 'organization', 'tech', 'pets', 'gifts'}
 STYLES = {'minimalist', 'modern', 'cozy', 'budget-friendly', 'space-saving', 'gift-ideas'}
 PRIORITIES = {'saving-money', 'small-spaces', 'everyday-convenience', 'aesthetic-design', 'gift-giving'}
 
+# Owner-confirmed account mapping, not inferred from the ambiguous '-20' suffix.
+US_ASSOCIATE_TAG = 'pickpop-20'
+
+
+def validate_affiliate_config(config):
+    affiliate = config.get('affiliate', {})
+    if (affiliate.get('marketplace') != 'US' or
+            affiliate.get('retailerHost') != 'www.amazon.com' or
+            affiliate.get('associateTag') != US_ASSOCIATE_TAG):
+        raise ValueError('Amazon.com requires the confirmed US account tag pickpop-20; Brazil pickpop03-20 is not valid here')
+
 
 def https_url(value):
     if not isinstance(value, str) or any(c.isspace() for c in value):
@@ -56,6 +67,8 @@ def webp_dimensions(data):
 
 def item_errors(item, root, tag, permissions=None, require_evidence=False):
     errors = []
+    if tag != US_ASSOCIATE_TAG:
+        errors.append('Amazon.com requires the confirmed US tag pickpop-20')
     if not isinstance(item, dict):
         return ['Product must be an object']
     for field in ['id', 'name', 'brand', 'model', 'description', 'tags', 'search', 'chip', 'emoji', 'retailerName']:
@@ -130,6 +143,8 @@ def item_errors(item, root, tag, permissions=None, require_evidence=False):
 
 
 def validate_catalog(data, root, tag, permissions=None):
+    if tag != US_ASSOCIATE_TAG:
+        raise ValueError('Amazon.com requires the confirmed US tag pickpop-20')
     if data.get('schemaVersion') != 1 or not isinstance(data.get('items'), list):
         raise ValueError('Unsupported catalog')
     ids, asins = set(), set()

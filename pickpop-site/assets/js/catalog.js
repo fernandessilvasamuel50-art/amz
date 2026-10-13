@@ -105,9 +105,10 @@ export function matchCatalog(items, filters, config) {
 
 export function retailerDestination(item, config) {
   const affiliate = config?.affiliate;
-  if (item.verification.status === 'verified' && affiliate?.enabled && affiliate.approved && affiliate.associateTag && ['owner-provided', 'owner-tag-confirmed'].includes(item.affiliateVerification?.status)) {
+  const confirmedUS = affiliate?.marketplace === 'US' && affiliate.retailerHost === 'www.amazon.com' && affiliate.associateTag === 'pickpop-20';
+  if (item.verification.status === 'verified' && confirmedUS && affiliate.enabled && affiliate.approved && ['owner-provided', 'owner-tag-confirmed'].includes(item.affiliateVerification?.status)) {
     const url = safeAmazonURL(item.affiliateUrl);
-    if (url && (new URL(url).hostname === 'amzn.to' || new URL(url).searchParams.get('tag') === affiliate.associateTag)) return { url, sponsored: true, label: 'View on Amazon' };
+    if (url && ['amazon.com', 'www.amazon.com'].includes(new URL(url).hostname) && new URL(url).pathname === '/dp/' + item.asin && new URL(url).searchParams.get('tag') === affiliate.associateTag) return { url, sponsored: true, label: 'View on Amazon' };
   }
   if (item.verification.status === 'verified') {
     const url = safeAmazonURL(item.productUrl);

@@ -1,6 +1,13 @@
 # PickPop 4.0 — Catalog expansion
 
-## Current progress — 2026-10-12
+> Correção em 12/10/2026: Amazon.com (EUA) usa **pickpop-20**; **pickpop03-20** pertence ao Brasil, conforme conferência do proprietário. Referências anteriores à tag brasileira como americana são históricas e foram invalidadas. Use as instruções atuais em [US-AFFILIATE-TAG-CORRECTION.md](US-AFFILIATE-TAG-CORRECTION.md).
+
+
+## Correção de marketplace — 12/10/2026
+
+Onze produtos ativos preservados, sem adições. URLs Amazon.com corrigidas para `pickpop-20`; `pickpop03-20` é Brasil e não deve voltar ao catálogo americano. Build/importador e seleção de links no navegador bloqueiam divergências. RIO Mini e Fellow Walnut permanecem suspensos. Testes e publicação: `US-AFFILIATE-TAG-CORRECTION.md`. Próxima ação comercial: conferir os onze links no Link Checker da conta US; acesso do navegador bloqueado por permissão salva, não foi realizada validação autenticada.
+
+## Historical progress — 2026-10-12 (before tag correction)
 
 - Baseline: seven verified products, seven licensed independent photographs, seven Amazon links using `pickpop03-20`.
 - Existing products: CHEMEX six-cup CM-6A, Logitech M185 Swift Grey, Logitech K120 US, Logitech C920, Lodge L10SK3 12-inch skillet, KONG Classic Medium red, OXO large basting brush 1071061.

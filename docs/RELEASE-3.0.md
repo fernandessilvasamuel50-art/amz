@@ -1,5 +1,8 @@
 # PickPop 3.0 — primeira entrega do catálogo real
 
+> Correção em 12/10/2026: Amazon.com (EUA) usa **pickpop-20**; **pickpop03-20** pertence ao Brasil, conforme conferência do proprietário. Referências anteriores à tag brasileira como americana são históricas e foram invalidadas. Use as instruções atuais em [US-AFFILIATE-TAG-CORRECTION.md](US-AFFILIATE-TAG-CORRECTION.md).
+
+
 ## Escopo e estado
 
 Esta entrega continua o gerador estático e os componentes do PickPop 2.0. Não introduz framework, servidor, banco de dados ou serviço pago. A publicação foi autorizada expressamente pelo proprietário.

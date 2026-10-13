@@ -1,6 +1,9 @@
 # Missão primeira venda — baseline e operação de sete dias
 
-**Janela: 12–18 de outubro de 2026.** Site: https://pickpop.netlify.app/. Tag: `pickpop03-20`. Marketing R$0. Onze produtos e dez artigos preservados; nenhum novo produto/artigo, anúncio, conta, serviço ou agendamento Pinterest criado. Os dias futuros abaixo ainda não foram executados.
+> Correção em 12/10/2026: Amazon.com (EUA) usa **pickpop-20**; **pickpop03-20** pertence ao Brasil, conforme conferência do proprietário. Referências anteriores à tag brasileira como americana são históricas e foram invalidadas. Use as instruções atuais em [US-AFFILIATE-TAG-CORRECTION.md](US-AFFILIATE-TAG-CORRECTION.md).
+
+
+**Janela: 12–18 de outubro de 2026.** Site: https://pickpop.netlify.app/. Tag atual US: `pickpop-20`. Marketing R$0. Onze produtos e dez artigos preservados; nenhum novo produto/artigo, anúncio, conta, serviço ou agendamento Pinterest criado. Os dias futuros abaixo ainda não foram executados.
 
 ## Auditoria do caminho do comprador
 
