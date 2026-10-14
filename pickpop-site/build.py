@@ -198,9 +198,26 @@ def article_picks(filename):
     return '<section class="article-picks" id="related-picks" aria-label="Related product recommendations"><h2>' + ESC(edit['heading']) + '</h2><p>Source-reviewed options, not hands-on reviews or a ranked list. Prices and stock are checked on Amazon.</p><div class="article-picks-grid">' + ''.join(static_card(by_id[c['id']], c['reason'], 'article') for c in edit['items']) + '</div></section>'
 
 
+def home_shortcuts():
+    choices = [
+        ('chemex-six-cup', 'Manual coffee', 'CHEMEX six-cup Classic'),
+        ('baratza-encore-black', 'Grind whole beans', 'Original Baratza Encore'),
+        ('victorinox-fibrox-chef', 'Everyday food prep', 'Victorinox Fibrox 8-inch')
+    ]
+    by_id = {item['id']: item for item in CATALOG['items']}
+    links = []
+    for id, task, label in choices:
+        item = by_id[id]
+        if item['verification']['status'] != 'verified':
+            raise ValueError('Home shortcuts require active verified products')
+        links.append(f'<li><a href="/ideas/{id}/" aria-label="{ESC(task + ": explore " + item["name"], quote=True)}"><strong>{ESC(task)}</strong><span>{ESC(label)} →</span></a></li>')
+    return '<nav class="home-routine-shortcuts" aria-label="Explore products by everyday task"><p>Start with your routine</p><ul>' + ''.join(links) + '</ul></nav>'
+
+
 def generate():
     finder, results, quiz = source('finder.html'), source('results.html'), source('quiz.html')
     home = source('home.html').replace('<!-- FINDER -->', finder).replace('<!-- RESULTS -->', results).replace('<!-- QUIZ -->', quiz)
+    home = home.replace('<!-- ROUTINE SHORTCUTS -->', home_shortcuts())
     page('/', 'PickPop — Good finds. Better budgets.', 'Discover thoughtful shopping ideas, match your style and budget, and explore useful guides for home, kitchen, tech, pets, and gifts.', home, interactive=True)
     page('/find/', 'Find Products by Style & Budget | PickPop', 'Search the PickPop idea catalog by keywords, category, style, and budget preference. Save and compare a thoughtful shortlist.', intro('Find your <em>thing.</em>', 'A little inspiration. A few good filters. A shortlist that makes sense for you.') + finder + results, interactive=True, index=False)
 
@@ -254,7 +271,13 @@ def generate():
         disclosure = '<p class="affiliate-note">Paid link. As an Amazon Associate I earn from qualifying purchases.</p>' if paid else '<p class="p-small">No paid affiliate link is active for this idea.</p>'
         tags = ', '.join(LABELS[style] for style in item['styles'])
         sources_html = ''.join('<li><a href="' + ESC(url, quote=True) + '" target="_blank" rel="noopener noreferrer">' + ESC(urlparse(url).hostname) + ' product information</a></li>' for url in item['verification']['sources'])
-        content = f'''<div class="shell page-shell"><nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a> / <a href="/collections/">Collections</a> / {ESC(item['name'])}</nav><div class="idea-layout"><figure class="idea-illustration product-detail-photo">{photo(item, "detail-photo")}{photo_credit(item)}</figure><article class="idea-copy"><p class="overline">{ESC(status)}</p><h1>{ESC(item['name'])}</h1><p>{ESC(item['description'])}</p>{amazon_cta(item, 'detail-intro')}{buyer_guidance(item)}<h2>Why consider this product?</h2><p>{ESC(item['benefits'][0])} The discovery tags ({ESC(tags.lower())}) are PickPop editorial choices, not manufacturer claims.</p><h2>Before you choose</h2><ul>{''.join('<li>'+ESC(text)+'</li>' for text in item['considerations'])}</ul><h2>What we know</h2><p><strong>{ESC(item.get("brand", ""))}</strong> · Model: {ESC(item.get("model", ""))} · ASIN: {ESC(item.get("asin", ""))}</p>{facts}<h2>Sources & verification</h2><p>Reviewed {ESC(item["verification"]["reviewedAt"])}. Model identity and listed characteristics are source reviewed; current price and availability are not verified. These are editorial recommendations, not hands-on tests.</p><ul class="source-list">{sources_html}</ul>{disclosure}<a class="btn btn-coral" href="{ESC(url, quote=True)}" target="_blank" rel="noopener {'sponsored' if paid else 'nofollow'}" referrerpolicy="strict-origin-when-cross-origin" data-product-id="{ESC(item['id'])}" data-placement="detail">{label} ↗</a><p class="p-small">Opens Amazon in a new tab. Check the specific product, final price, taxes, delivery, and returns there. PickPop does not sell or fulfill orders.</p><a class="text-link" href="/find/?{ESC(urlencode({'q': item['name']}), quote=True)}#finder">Back to the finder →</a></article></div></div>'''
+        figure_credit = photo_credit(item)
+        detailed_credit = ''
+        if item.get('buyingGuide'):
+            image = item['image']
+            figure_credit = f'<figcaption class="photo-credit">Photo: {ESC(image["author"])} · <a href="#product-photo-credit">{ESC(image["license"])}; full credit & changes ↓</a></figcaption>'
+            detailed_credit = '<section id="product-photo-credit" aria-label="Product photo credit and license">' + photo_credit(item) + '</section>'
+        content = f'''<div class="shell page-shell"><nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a> / <a href="/collections/">Collections</a> / {ESC(item['name'])}</nav><div class="idea-layout"><figure class="idea-illustration product-detail-photo">{photo(item, "detail-photo")}{figure_credit}</figure><article class="idea-copy"><p class="overline">{ESC(status)}</p><h1>{ESC(item['name'])}</h1><p>{ESC(item['description'])}</p>{amazon_cta(item, 'detail-intro')}{buyer_guidance(item)}<h2>Why consider this product?</h2><p>{ESC(item['benefits'][0])} The discovery tags ({ESC(tags.lower())}) are PickPop editorial choices, not manufacturer claims.</p><h2>Before you choose</h2><ul>{''.join('<li>'+ESC(text)+'</li>' for text in item['considerations'])}</ul><h2>What we know</h2><p><strong>{ESC(item.get("brand", ""))}</strong> · Model: {ESC(item.get("model", ""))} · ASIN: {ESC(item.get("asin", ""))}</p>{facts}<h2>Sources & verification</h2><p>Reviewed {ESC(item["verification"]["reviewedAt"])}. Model identity and listed characteristics are source reviewed; current price and availability are not verified. These are editorial recommendations, not hands-on tests.</p><ul class="source-list">{sources_html}</ul>{detailed_credit}{disclosure}<a class="btn btn-coral" href="{ESC(url, quote=True)}" target="_blank" rel="noopener {'sponsored' if paid else 'nofollow'}" referrerpolicy="strict-origin-when-cross-origin" data-product-id="{ESC(item['id'])}" data-placement="detail">{label} ↗</a><p class="p-small">Opens Amazon in a new tab. Check the specific product, final price, taxes, delivery, and returns there. PickPop does not sell or fulfill orders.</p><a class="text-link" href="/find/?{ESC(urlencode({'q': item['name']}), quote=True)}#finder">Back to the finder →</a></article></div></div>'''
         page('/ideas/' + item['id'] + '/', item['name'] + ' — What to Consider | PickPop', item.get('buyingGuide', {}).get('metaDescription') or 'Explore this ' + ('example shopping concept' if demo else 'sourced recommendation') + ' and practical questions to ask before choosing: ' + item['name'] + '.', content, index=not demo)
 
     page('/image-credits/', 'Product Photography Credits & Licenses | PickPop', 'Authors, original sources, documented image permissions, and modifications for PickPop product photographs.', intro('The people behind <em>the pictures.</em>', 'Product photography, credited where it belongs.', 'PHOTO CREDITS') + '<div class="shell policy-body">' + ''.join('<h2>' + ESC(item['name']) + '</h2>' + photo_credit(item) for item in CATALOG['items']) + '</div>')
