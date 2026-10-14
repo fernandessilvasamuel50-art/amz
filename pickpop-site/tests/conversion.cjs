@@ -33,10 +33,11 @@ const priority=['chemex-six-cup','baratza-encore-black','victorinox-fibrox-chef'
     await page.evaluate(axe);assert.deepEqual((await page.evaluate(()=>window.axe.run(document,{runOnly:{type:'tag',values:['wcag2a','wcag2aa','wcag21aa','wcag22aa']}}))).violations.map(v=>v.id),[]);audits++;
    }
   }
-  const staticContext=await browser.newContext({javaScriptEnabled:false,viewport:{width:360,height:900}});
+  const staticContext=await browser.newContext({javaScriptEnabled:false,reducedMotion:'reduce',viewport:{width:360,height:900}});
   const staticPage=await staticContext.newPage();await staticPage.goto(base+'/');
   const shortcut=staticPage.locator('.home-routine-shortcuts a').first();await shortcut.focus();await staticPage.keyboard.press('Enter');await staticPage.waitForURL('**/ideas/chemex-six-cup/');
-  await staticPage.locator('figcaption a').click();assert(await staticPage.locator('#product-photo-credit').isVisible());
+  await staticPage.locator('figcaption a').focus();await staticPage.keyboard.press('Enter');await staticPage.waitForURL('**#product-photo-credit');
+  await staticPage.waitForFunction(()=>{const rect=document.querySelector('#product-photo-credit').getBoundingClientRect();return rect.top>=0&&rect.top<innerHeight;},null,{timeout:5000});
   assert.deepEqual(errors,[]);console.log(`PASS: ${audits} responsive/accessibility audits, 3 early Home paths, preserved full credits and sponsored URLs; keyboard journey without JavaScript; no retailer navigation.`);
  }finally{await browser.close();}
 })().catch(error=>{console.error(error);process.exit(1)});

@@ -49,7 +49,7 @@ Navegação Amazon bloqueada/interceptada nos testes. As visitas ao PickPop emQA
 
 ## Publicação e continuidade
 
-Ponto de retorno: `pickpop-before-conversion-sprint-20261013`, em `3fe2475`, enviado ao remoto. Commit/publicação pública serão registrados após confirmação.
+Ponto de retorno: `pickpop-before-conversion-sprint-20261013`, em `3fe2475`, enviado ao remoto. Publicação confirmada: commit `23b9b6f`, [domínio oficial](https://pickpop.netlify.app/), verificaçãoUTC `2026-10-14T03:42:16.656258+00:00`. Os12testes responsivos/axe específicos passaram também emprodução; teclado semJS alcançou produto e crédito completo. Capturas/medidas públicas confirmaram os mesmos590/660/715px e891/1.088/910px. Catálogo/configuração pública idênticos ao local,11links comUS tag/disclosure/sponsored; CSS novo e sitemap/robots preservados verificados. Nenhum acesso ao painelNetlify bloqueado. Ajuste final do teste aguarda o posicionamento da âncora apósEnter antes de medir o viewport, evitando uma asserção imediata durante o deslocamento; não houve novo defeito/correção de produção.
 
 Três prioridades comerciais seguintes:
 
